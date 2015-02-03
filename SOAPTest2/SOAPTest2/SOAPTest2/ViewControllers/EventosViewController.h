@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "WSMGPEventos.h"
+#import "GenericTableViewCell.h"
 
 @interface EventosViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 

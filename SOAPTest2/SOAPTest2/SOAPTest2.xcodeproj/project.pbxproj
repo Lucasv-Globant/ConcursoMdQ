@@ -39,6 +39,7 @@
 		A05E48621A7FE651009D81B4 /* WSMGPEventos.m in Sources */ = {isa = PBXBuildFile; fileRef = A05E48611A7FE651009D81B4 /* WSMGPEventos.m */; };
 		A05E486A1A80FC10009D81B4 /* GenericTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A05E48681A80FC10009D81B4 /* GenericTableViewCell.m */; };
 		A05E486B1A80FC10009D81B4 /* GenericTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05E48691A80FC10009D81B4 /* GenericTableViewCell.xib */; };
+		A0CFD4901A8141B000134EA6 /* WSMGPCulturaEnVivoEventos.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CFD48F1A8141B000134EA6 /* WSMGPCulturaEnVivoEventos.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,8 @@
 		A05E48671A80FC0F009D81B4 /* GenericTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericTableViewCell.h; sourceTree = "<group>"; };
 		A05E48681A80FC10009D81B4 /* GenericTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericTableViewCell.m; sourceTree = "<group>"; };
 		A05E48691A80FC10009D81B4 /* GenericTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenericTableViewCell.xib; sourceTree = "<group>"; };
+		A0CFD48E1A81419F00134EA6 /* WSMGPCulturaEnVivoEventos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSMGPCulturaEnVivoEventos.h; sourceTree = "<group>"; };
+		A0CFD48F1A8141B000134EA6 /* WSMGPCulturaEnVivoEventos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMGPCulturaEnVivoEventos.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +242,8 @@
 				A05E48261A78095D009D81B4 /* AFNetworking */,
 				A05E48601A7FE640009D81B4 /* WSMGPEventos.h */,
 				A05E48611A7FE651009D81B4 /* WSMGPEventos.m */,
+				A0CFD48E1A81419F00134EA6 /* WSMGPCulturaEnVivoEventos.h */,
+				A0CFD48F1A8141B000134EA6 /* WSMGPCulturaEnVivoEventos.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -404,6 +409,7 @@
 				A05E483A1A78095D009D81B4 /* AFHTTPRequestOperation.m in Sources */,
 				A05E486A1A80FC10009D81B4 /* GenericTableViewCell.m in Sources */,
 				A05E48011A77DF4F009D81B4 /* AppDelegate.m in Sources */,
+				A0CFD4901A8141B000134EA6 /* WSMGPCulturaEnVivoEventos.m in Sources */,
 				A05E48401A78095D009D81B4 /* AFURLRequestSerialization.m in Sources */,
 				A05E483C1A78095D009D81B4 /* AFHTTPSessionManager.m in Sources */,
 				A05E483D1A78095D009D81B4 /* AFNetworkReachabilityManager.m in Sources */,

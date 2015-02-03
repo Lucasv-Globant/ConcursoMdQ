@@ -20,6 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.beachesTableView registerNib:[UINib nibWithNibName:@"GenericTableViewCell" bundle:[NSBundle mainBundle]]
+                forCellReuseIdentifier:@"GenericCellId"];
+
     self.categoriesList = [[NSDictionary alloc] init];
     
     // Do any additional setup after loading the view from its nib.
@@ -53,7 +56,13 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"GenericCellId"];
+    
+    [cell setData: self.categoriesList
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
 }
 /*
 #pragma mark - Navigation
