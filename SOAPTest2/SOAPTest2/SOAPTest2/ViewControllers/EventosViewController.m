@@ -10,9 +10,10 @@
 
 @interface EventosViewController ()
 
-@property (nonatomic, strong) WSMGPEventos *conector;
-
-@property (nonatomic, strong) NSDictionary *categoriesList;
+@property (nonatomic, strong) WSMGPCulturaEnVivoEventos *connector;
+@property (nonatomic, strong) NSDictionary *response;
+@property (nonatomic, strong) NSArray *eventsList;
+@property (strong, nonatomic) IBOutlet UITableView *eventosTableView;
 
 @end
 
@@ -20,18 +21,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.beachesTableView registerNib:[UINib nibWithNibName:@"GenericTableViewCell" bundle:[NSBundle mainBundle]]
+    [self.eventosTableView registerNib:[UINib nibWithNibName:@"GenericTableViewCell" bundle:[NSBundle mainBundle]]
                 forCellReuseIdentifier:@"GenericCellId"];
 
-    self.categoriesList = [[NSDictionary alloc] init];
+    self.response = [[NSDictionary alloc] init];
     
     // Do any additional setup after loading the view from its nib.
-    self.conector = [[WSMGPEventos alloc] init];
+    self.connector = [[WSMGPCulturaEnVivoEventos alloc] init];
     __weak EventosViewController *weakSelf = self;
-    [self.conector getEventsCategories:^(NSDictionary *response)
+    [self.connector getEvents:^(NSDictionary *response)
                                         {
                                             //Success block
-                                            weakSelf.categoriesList = response;
+                                            weakSelf.response = response;
+                                            weakSelf.eventsList = [self.connector eventsListFromResponse:response];
                                             [weakSelf populateCategoriesTableView];
                                         }
                                failure:^(NSError *error)
@@ -50,20 +52,42 @@
 -(void)populateCategoriesTableView
 {
     NSLog(@"Called populateCategoriesTableView");
-    NSLog(@"Categories dictionary: %@", self.categoriesList);
+    NSLog(@"Categories dictionary: %@", self.response);
+    [self.eventosTableView reloadData];
 }
 
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"GenericCellId"];
+    GenericTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GenericCellId"];
+    if (cell == nil)
+    {
+        GenericTableViewCell *cell = [[GenericTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"GenericCellId"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
     
-    [cell setData: self.categoriesList
+
+    [cell setDataWithDictionary:[self.eventsList objectAtIndex:indexPath.row]];
+    
+    return cell;
 }
+
+
+
+
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    return [self.eventsList count];
 }
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 100;
+}
+
+
 /*
 #pragma mark - Navigation
 

@@ -58,8 +58,8 @@
     
     NSLog(@"Sending POST...");
     
-    NSDictionary *paramsDictionary = @{@"Token":self.token};
-    NSString *url = [NSString stringWithFormat:@"%@/%@",self.baseURL,self.relativePathForEventsCategoriesList];
+    NSDictionary *paramsDictionary = @{@"Token":self.token,@"IdArea":@2};
+    NSString *url = [NSString stringWithFormat:@"%@/%@",self.baseURL,self.relativePathForEventsSearch];
     [manager POST:url
        parameters:paramsDictionary
      

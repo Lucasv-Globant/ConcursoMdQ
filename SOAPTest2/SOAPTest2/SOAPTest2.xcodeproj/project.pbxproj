@@ -40,6 +40,8 @@
 		A05E486A1A80FC10009D81B4 /* GenericTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A05E48681A80FC10009D81B4 /* GenericTableViewCell.m */; };
 		A05E486B1A80FC10009D81B4 /* GenericTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05E48691A80FC10009D81B4 /* GenericTableViewCell.xib */; };
 		A0CFD4901A8141B000134EA6 /* WSMGPCulturaEnVivoEventos.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CFD48F1A8141B000134EA6 /* WSMGPCulturaEnVivoEventos.m */; };
+		A0CFD4921A815E3000134EA6 /* categoryIconTheater.png in Resources */ = {isa = PBXBuildFile; fileRef = A0CFD4911A815E3000134EA6 /* categoryIconTheater.png */; };
+		A0CFD4951A8161DD00134EA6 /* UILabel+AutoHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CFD4941A8161DD00134EA6 /* UILabel+AutoHeight.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,9 @@
 		A05E48691A80FC10009D81B4 /* GenericTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenericTableViewCell.xib; sourceTree = "<group>"; };
 		A0CFD48E1A81419F00134EA6 /* WSMGPCulturaEnVivoEventos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSMGPCulturaEnVivoEventos.h; sourceTree = "<group>"; };
 		A0CFD48F1A8141B000134EA6 /* WSMGPCulturaEnVivoEventos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMGPCulturaEnVivoEventos.m; sourceTree = "<group>"; };
+		A0CFD4911A815E3000134EA6 /* categoryIconTheater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = categoryIconTheater.png; path = Assets/categoryIconTheater.png; sourceTree = "<group>"; };
+		A0CFD4931A8161DD00134EA6 /* UILabel+AutoHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AutoHeight.h"; sourceTree = "<group>"; };
+		A0CFD4941A8161DD00134EA6 /* UILabel+AutoHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AutoHeight.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +156,8 @@
 		A05E47FA1A77DF4F009D81B4 /* SOAPTest2 */ = {
 			isa = PBXGroup;
 			children = (
+				A0CFD4931A8161DD00134EA6 /* UILabel+AutoHeight.h */,
+				A0CFD4941A8161DD00134EA6 /* UILabel+AutoHeight.m */,
 				A05E48631A800BE3009D81B4 /* View */,
 				A05E485E1A7FE5D8009D81B4 /* Model */,
 				A05E47FF1A77DF4F009D81B4 /* AppDelegate.h */,
@@ -269,6 +276,7 @@
 		A05E48651A800C0C009D81B4 /* Img */ = {
 			isa = PBXGroup;
 			children = (
+				A0CFD4911A815E3000134EA6 /* categoryIconTheater.png */,
 				A05E48531A7FC8EA009D81B4 /* mar-del-plata-night_93079-1600x1200.jpg */,
 				A05E48541A7FC8EA009D81B4 /* mar-del-plata.jpg */,
 				A05E48551A7FC8EA009D81B4 /* mdq-bg1.jpg */,
@@ -381,6 +389,7 @@
 				A05E480C1A77DF4F009D81B4 /* LaunchScreen.xib in Resources */,
 				A05E48511A7FC65E009D81B4 /* HomeViewController.xib in Resources */,
 				A05E48091A77DF4F009D81B4 /* Images.xcassets in Resources */,
+				A0CFD4921A815E3000134EA6 /* categoryIconTheater.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +426,7 @@
 				A05E48421A78095D009D81B4 /* AFURLSessionManager.m in Sources */,
 				A05E48621A7FE651009D81B4 /* WSMGPEventos.m in Sources */,
 				A05E47FE1A77DF4F009D81B4 /* main.m in Sources */,
+				A0CFD4951A8161DD00134EA6 /* UILabel+AutoHeight.m in Sources */,
 				A05E485C1A7FE48D009D81B4 /* EventosViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

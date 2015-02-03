@@ -20,4 +20,11 @@
     // Configure the view for the selected state
 }
 
+-(GenericTableViewCell *)setDataWithDictionary:(NSDictionary *) aDictionary
+{
+    self.labelTitle.text = [aDictionary objectForKey:@"NombreEvento"];
+    self.labelDescription.text = [aDictionary objectForKey:@"DescripcionEvento"];
+    return self;
+}
+
 @end

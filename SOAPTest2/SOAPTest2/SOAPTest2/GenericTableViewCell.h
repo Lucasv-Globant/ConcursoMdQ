@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UILabel+AutoHeight.h"
 
 @interface GenericTableViewCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UILabel *labelTitle;
+@property (strong, nonatomic) IBOutlet UILabel *labelDescription;
 
+-(GenericTableViewCell *)setDataWithDictionary:(NSDictionary *) aDictionary;
 @end
