@@ -7,15 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64E23C2D1A824E5200B9C7F6 /* BeachesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E23C201A824E5200B9C7F6 /* BeachesViewController.m */; };
-		64E23C2E1A824E5200B9C7F6 /* BeachesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64E23C211A824E5200B9C7F6 /* BeachesViewController.xib */; };
-		64E23C2F1A824E5200B9C7F6 /* EventosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E23C231A824E5200B9C7F6 /* EventosViewController.m */; };
-		64E23C301A824E5200B9C7F6 /* EventosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64E23C241A824E5200B9C7F6 /* EventosViewController.xib */; };
-		64E23C311A824E5200B9C7F6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E23C261A824E5200B9C7F6 /* HomeViewController.m */; };
-		64E23C321A824E5200B9C7F6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64E23C271A824E5200B9C7F6 /* HomeViewController.xib */; };
-		64E23C331A824E5200B9C7F6 /* SOAPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E23C291A824E5200B9C7F6 /* SOAPViewController.m */; };
-		64E23C341A824E5200B9C7F6 /* SOAPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64E23C2A1A824E5200B9C7F6 /* SOAPViewController.xib */; };
-		64E23C351A824E5200B9C7F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E23C2C1A824E5200B9C7F6 /* ViewController.m */; };
 		64E23C5E1A824EF700B9C7F6 /* UILabel+AutoHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E23C511A824EF700B9C7F6 /* UILabel+AutoHeight.m */; };
 		64E23C5F1A824EF700B9C7F6 /* BeachesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E23C541A824EF700B9C7F6 /* BeachesTableViewCell.m */; };
 		64E23C601A824EF700B9C7F6 /* BeachesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64E23C551A824EF700B9C7F6 /* BeachesTableViewCell.xib */; };
@@ -27,6 +18,16 @@
 		64E23C661A824EF700B9C7F6 /* mdq-bg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 64E23C5D1A824EF700B9C7F6 /* mdq-bg1.jpg */; };
 		64E23C6D1A82519900B9C7F6 /* WSMGPCulturaEnVivoEventos.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E23C6A1A82519900B9C7F6 /* WSMGPCulturaEnVivoEventos.m */; };
 		64E23C6E1A82519900B9C7F6 /* WSMGPEventos.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E23C6C1A82519900B9C7F6 /* WSMGPEventos.m */; };
+		64E23C841A8256D100B9C7F6 /* BeachesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E23C751A8256D100B9C7F6 /* BeachesViewController.m */; };
+		64E23C851A8256D100B9C7F6 /* BeachesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64E23C761A8256D100B9C7F6 /* BeachesViewController.xib */; };
+		64E23C861A8256D100B9C7F6 /* EventosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E23C7A1A8256D100B9C7F6 /* EventosViewController.m */; };
+		64E23C871A8256D100B9C7F6 /* EventosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64E23C7B1A8256D100B9C7F6 /* EventosViewController.xib */; };
+		64E23C881A8256D100B9C7F6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E23C7E1A8256D100B9C7F6 /* HomeViewController.m */; };
+		64E23C891A8256D100B9C7F6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64E23C7F1A8256D100B9C7F6 /* HomeViewController.xib */; };
+		64E23C8A1A8256D100B9C7F6 /* SOAPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E23C821A8256D100B9C7F6 /* SOAPViewController.m */; };
+		64E23C8B1A8256D100B9C7F6 /* SOAPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64E23C831A8256D100B9C7F6 /* SOAPViewController.xib */; };
+		64E23C8E1A82570B00B9C7F6 /* CategoriesViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E23C8C1A82570B00B9C7F6 /* CategoriesViewControllerSwift.swift */; };
+		64E23C8F1A82570B00B9C7F6 /* CategoriesViewControllerSwift.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64E23C8D1A82570B00B9C7F6 /* CategoriesViewControllerSwift.xib */; };
 		97399F43D485365E4CBCD22A /* libPods-SOAPTest2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3445AD8D3076B35E7F65DDB /* libPods-SOAPTest2.a */; };
 		A05E47FE1A77DF4F009D81B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A05E47FD1A77DF4F009D81B4 /* main.m */; };
 		A05E48011A77DF4F009D81B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A05E48001A77DF4F009D81B4 /* AppDelegate.m */; };
@@ -46,20 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		64E23C1F1A824E5200B9C7F6 /* BeachesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeachesViewController.h; sourceTree = "<group>"; };
-		64E23C201A824E5200B9C7F6 /* BeachesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeachesViewController.m; sourceTree = "<group>"; };
-		64E23C211A824E5200B9C7F6 /* BeachesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeachesViewController.xib; sourceTree = "<group>"; };
-		64E23C221A824E5200B9C7F6 /* EventosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventosViewController.h; sourceTree = "<group>"; };
-		64E23C231A824E5200B9C7F6 /* EventosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventosViewController.m; sourceTree = "<group>"; };
-		64E23C241A824E5200B9C7F6 /* EventosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventosViewController.xib; sourceTree = "<group>"; };
-		64E23C251A824E5200B9C7F6 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		64E23C261A824E5200B9C7F6 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		64E23C271A824E5200B9C7F6 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		64E23C281A824E5200B9C7F6 /* SOAPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAPViewController.h; sourceTree = "<group>"; };
-		64E23C291A824E5200B9C7F6 /* SOAPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAPViewController.m; sourceTree = "<group>"; };
-		64E23C2A1A824E5200B9C7F6 /* SOAPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOAPViewController.xib; sourceTree = "<group>"; };
-		64E23C2B1A824E5200B9C7F6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		64E23C2C1A824E5200B9C7F6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		64E23C501A824EF700B9C7F6 /* UILabel+AutoHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AutoHeight.h"; sourceTree = "<group>"; };
 		64E23C511A824EF700B9C7F6 /* UILabel+AutoHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AutoHeight.m"; sourceTree = "<group>"; };
 		64E23C531A824EF700B9C7F6 /* BeachesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeachesTableViewCell.h; sourceTree = "<group>"; };
@@ -76,6 +63,21 @@
 		64E23C6A1A82519900B9C7F6 /* WSMGPCulturaEnVivoEventos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMGPCulturaEnVivoEventos.m; sourceTree = "<group>"; };
 		64E23C6B1A82519900B9C7F6 /* WSMGPEventos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSMGPEventos.h; sourceTree = "<group>"; };
 		64E23C6C1A82519900B9C7F6 /* WSMGPEventos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMGPEventos.m; sourceTree = "<group>"; };
+		64E23C721A82559600B9C7F6 /* SOAPTest2-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SOAPTest2-Bridging-Header.h"; sourceTree = "<group>"; };
+		64E23C741A8256D100B9C7F6 /* BeachesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeachesViewController.h; sourceTree = "<group>"; };
+		64E23C751A8256D100B9C7F6 /* BeachesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeachesViewController.m; sourceTree = "<group>"; };
+		64E23C761A8256D100B9C7F6 /* BeachesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeachesViewController.xib; sourceTree = "<group>"; };
+		64E23C791A8256D100B9C7F6 /* EventosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventosViewController.h; sourceTree = "<group>"; };
+		64E23C7A1A8256D100B9C7F6 /* EventosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventosViewController.m; sourceTree = "<group>"; };
+		64E23C7B1A8256D100B9C7F6 /* EventosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventosViewController.xib; sourceTree = "<group>"; };
+		64E23C7D1A8256D100B9C7F6 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		64E23C7E1A8256D100B9C7F6 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		64E23C7F1A8256D100B9C7F6 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		64E23C811A8256D100B9C7F6 /* SOAPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAPViewController.h; sourceTree = "<group>"; };
+		64E23C821A8256D100B9C7F6 /* SOAPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAPViewController.m; sourceTree = "<group>"; };
+		64E23C831A8256D100B9C7F6 /* SOAPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOAPViewController.xib; sourceTree = "<group>"; };
+		64E23C8C1A82570B00B9C7F6 /* CategoriesViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewControllerSwift.swift; sourceTree = "<group>"; };
+		64E23C8D1A82570B00B9C7F6 /* CategoriesViewControllerSwift.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoriesViewControllerSwift.xib; sourceTree = "<group>"; };
 		A05E47F81A77DF4F009D81B4 /* SOAPTest2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOAPTest2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05E47FC1A77DF4F009D81B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A05E47FD1A77DF4F009D81B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -130,20 +132,11 @@
 		64E23C1E1A824E5200B9C7F6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				64E23C1F1A824E5200B9C7F6 /* BeachesViewController.h */,
-				64E23C201A824E5200B9C7F6 /* BeachesViewController.m */,
-				64E23C211A824E5200B9C7F6 /* BeachesViewController.xib */,
-				64E23C221A824E5200B9C7F6 /* EventosViewController.h */,
-				64E23C231A824E5200B9C7F6 /* EventosViewController.m */,
-				64E23C241A824E5200B9C7F6 /* EventosViewController.xib */,
-				64E23C251A824E5200B9C7F6 /* HomeViewController.h */,
-				64E23C261A824E5200B9C7F6 /* HomeViewController.m */,
-				64E23C271A824E5200B9C7F6 /* HomeViewController.xib */,
-				64E23C281A824E5200B9C7F6 /* SOAPViewController.h */,
-				64E23C291A824E5200B9C7F6 /* SOAPViewController.m */,
-				64E23C2A1A824E5200B9C7F6 /* SOAPViewController.xib */,
-				64E23C2B1A824E5200B9C7F6 /* ViewController.h */,
-				64E23C2C1A824E5200B9C7F6 /* ViewController.m */,
+				64E23C731A8256D100B9C7F6 /* BeachesViewController */,
+				64E23C771A8256D100B9C7F6 /* CategoriesViewControllerSwift */,
+				64E23C781A8256D100B9C7F6 /* EventosViewController */,
+				64E23C7C1A8256D100B9C7F6 /* HomeViewController */,
+				64E23C801A8256D100B9C7F6 /* SOAPViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -154,6 +147,7 @@
 				64E23C4F1A824EF700B9C7F6 /* Categories */,
 				64E23C521A824EF700B9C7F6 /* Custom Cells */,
 				64E23C591A824EF700B9C7F6 /* Imgs */,
+				64E23C721A82559600B9C7F6 /* SOAPTest2-Bridging-Header.h */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -207,6 +201,55 @@
 				64E23C6C1A82519900B9C7F6 /* WSMGPEventos.m */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		64E23C731A8256D100B9C7F6 /* BeachesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				64E23C741A8256D100B9C7F6 /* BeachesViewController.h */,
+				64E23C751A8256D100B9C7F6 /* BeachesViewController.m */,
+				64E23C761A8256D100B9C7F6 /* BeachesViewController.xib */,
+			);
+			path = BeachesViewController;
+			sourceTree = "<group>";
+		};
+		64E23C771A8256D100B9C7F6 /* CategoriesViewControllerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				64E23C8C1A82570B00B9C7F6 /* CategoriesViewControllerSwift.swift */,
+				64E23C8D1A82570B00B9C7F6 /* CategoriesViewControllerSwift.xib */,
+			);
+			path = CategoriesViewControllerSwift;
+			sourceTree = "<group>";
+		};
+		64E23C781A8256D100B9C7F6 /* EventosViewController */ = {
+			isa = PBXGroup;
+			children = (
+				64E23C791A8256D100B9C7F6 /* EventosViewController.h */,
+				64E23C7A1A8256D100B9C7F6 /* EventosViewController.m */,
+				64E23C7B1A8256D100B9C7F6 /* EventosViewController.xib */,
+			);
+			path = EventosViewController;
+			sourceTree = "<group>";
+		};
+		64E23C7C1A8256D100B9C7F6 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				64E23C7D1A8256D100B9C7F6 /* HomeViewController.h */,
+				64E23C7E1A8256D100B9C7F6 /* HomeViewController.m */,
+				64E23C7F1A8256D100B9C7F6 /* HomeViewController.xib */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		64E23C801A8256D100B9C7F6 /* SOAPViewController */ = {
+			isa = PBXGroup;
+			children = (
+				64E23C811A8256D100B9C7F6 /* SOAPViewController.h */,
+				64E23C821A8256D100B9C7F6 /* SOAPViewController.m */,
+				64E23C831A8256D100B9C7F6 /* SOAPViewController.xib */,
+			);
+			path = SOAPViewController;
 			sourceTree = "<group>";
 		};
 		A05E47EF1A77DF4F009D81B4 = {
@@ -353,18 +396,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64E23C851A8256D100B9C7F6 /* BeachesViewController.xib in Resources */,
+				64E23C871A8256D100B9C7F6 /* EventosViewController.xib in Resources */,
 				64E23C641A824EF700B9C7F6 /* mar-del-plata-night_93079-1600x1200.jpg in Resources */,
-				64E23C2E1A824E5200B9C7F6 /* BeachesViewController.xib in Resources */,
 				64E23C621A824EF700B9C7F6 /* GenericTableViewCell.xib in Resources */,
-				64E23C301A824E5200B9C7F6 /* EventosViewController.xib in Resources */,
-				64E23C341A824E5200B9C7F6 /* SOAPViewController.xib in Resources */,
 				64E23C601A824EF700B9C7F6 /* BeachesTableViewCell.xib in Resources */,
 				A05E480C1A77DF4F009D81B4 /* LaunchScreen.xib in Resources */,
 				A05E48091A77DF4F009D81B4 /* Images.xcassets in Resources */,
 				64E23C631A824EF700B9C7F6 /* categoryIconTheater.png in Resources */,
-				64E23C321A824E5200B9C7F6 /* HomeViewController.xib in Resources */,
 				64E23C651A824EF700B9C7F6 /* mar-del-plata.jpg in Resources */,
+				64E23C8B1A8256D100B9C7F6 /* SOAPViewController.xib in Resources */,
 				64E23C661A824EF700B9C7F6 /* mdq-bg1.jpg in Resources */,
+				64E23C8F1A82570B00B9C7F6 /* CategoriesViewControllerSwift.xib in Resources */,
+				64E23C891A8256D100B9C7F6 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,18 +459,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64E23C8E1A82570B00B9C7F6 /* CategoriesViewControllerSwift.swift in Sources */,
 				64E23C5E1A824EF700B9C7F6 /* UILabel+AutoHeight.m in Sources */,
 				A05E48011A77DF4F009D81B4 /* AppDelegate.m in Sources */,
-				64E23C2F1A824E5200B9C7F6 /* EventosViewController.m in Sources */,
+				64E23C861A8256D100B9C7F6 /* EventosViewController.m in Sources */,
+				64E23C881A8256D100B9C7F6 /* HomeViewController.m in Sources */,
 				64E23C6E1A82519900B9C7F6 /* WSMGPEventos.m in Sources */,
-				64E23C351A824E5200B9C7F6 /* ViewController.m in Sources */,
 				64E23C611A824EF700B9C7F6 /* GenericTableViewCell.m in Sources */,
-				64E23C311A824E5200B9C7F6 /* HomeViewController.m in Sources */,
+				64E23C841A8256D100B9C7F6 /* BeachesViewController.m in Sources */,
+				64E23C8A1A8256D100B9C7F6 /* SOAPViewController.m in Sources */,
 				64E23C5F1A824EF700B9C7F6 /* BeachesTableViewCell.m in Sources */,
-				64E23C2D1A824E5200B9C7F6 /* BeachesViewController.m in Sources */,
 				64E23C6D1A82519900B9C7F6 /* WSMGPCulturaEnVivoEventos.m in Sources */,
 				A05E47FE1A77DF4F009D81B4 /* main.m in Sources */,
-				64E23C331A824E5200B9C7F6 /* SOAPViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,10 +587,13 @@
 			baseConfigurationReference = B0588BF514234BB08D1EF11E /* Pods-SOAPTest2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SOAPTest2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SOAPTest2/ViewControllers/SOAPTest2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -555,10 +602,12 @@
 			baseConfigurationReference = AC302210063E472C83E8D7A4 /* Pods-SOAPTest2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SOAPTest2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SOAPTest2/ViewControllers/SOAPTest2-Bridging-Header.h";
 			};
 			name = Release;
 		};
