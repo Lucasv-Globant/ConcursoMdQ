@@ -28,6 +28,13 @@
                     <color key="textColor" red="0.68281045740000001" green="1" blue="0.64558506569999996" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mar del Plata" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2IE-90-syF">
+                    <rect key="frame" x="22" y="121" width="122" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" red="0.99215692281723022" green="0.9960784912109375" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="0.61176472902297974" green="0.92549026012420654" blue="0.20784315466880798" alpha="1" colorSpace="deviceRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
