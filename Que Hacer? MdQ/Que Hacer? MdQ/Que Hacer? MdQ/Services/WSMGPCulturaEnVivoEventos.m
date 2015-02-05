@@ -21,7 +21,7 @@
 @property (nonatomic, strong) NSString *relativePathForEventDetail;
 @property (nonatomic, strong) NSString *keyNameForResultStatus;    //Key of the WS result that will contain the status of the call
 @property (nonatomic, strong) NSString *keyNameForResultEvents;  //Key of the WS result that will contain the events
-
+@property (nonatomic, strong) NSDictionary *requiredParametersDictionary; //This dictionary holds the mandatory parameters for making the WS call.
 
 @end
 
@@ -43,13 +43,16 @@
         self.relativePathForEventDetail = @"consultas/wsCalendario/RESTServiceCalendario.svc/calendario/consultaDetalleEvento";
         self.keyNameForResultStatus = @"Estado";
         self.keyNameForResultEvents = @"Eventos";
+        self.requiredParametersDictionary = @{@"Token":self.token,@"IdArea":@2};
     }
     return self;
 }
 
 
--(void)getEvents:(void (^)(NSDictionary *response))success
-         failure:(void (^)(NSError *error))failure
+-(void)getEventsWithSuccess:(void (^)(NSDictionary *response))success
+                    failure:(void (^)(NSError *error))failure
+    withFilteringParameters:(NSDictionary *)filteringParameters
+
 {
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
@@ -58,7 +61,10 @@
     
     NSLog(@"Sending POST...");
     
-    NSDictionary *paramsDictionary = @{@"Token":self.token,@"IdArea":@2};
+    NSMutableDictionary *paramsDictionary = [self.requiredParametersDictionary mutableCopy] ;
+    
+    [paramsDictionary addEntriesFromDictionary:filteringParameters];
+    
     NSString *url = [NSString stringWithFormat:@"%@/%@",self.baseURL,self.relativePathForEventsSearch];
     [manager POST:url
        parameters:paramsDictionary
@@ -93,6 +99,16 @@
      }
      ];
     NSLog(@"GET REQUEST COMPLETED!");
+    
+}
+
+
+-(void)getEvents:(void (^)(NSDictionary *response))success
+         failure:(void (^)(NSError *error))failure
+//Method for backwards compatibility. It invokes the method with an empty parameters dictionary
+{
+    
+    [self getEventsWithSuccess:success failure:failure withFilteringParameters:@{}];
     
 }
 
@@ -153,6 +169,48 @@
     {
         return nil;
     }
+}
+
+
+-(NSString *)getDateInStringFormatWithNSDate:(NSDate *)date addingDays:(int)daysToAdd
+{
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    NSDate *targetDate = [date dateByAddingTimeInterval:60*60*24*daysToAdd];
+    [df setDateFormat:@"dd"];
+    NSString *dayString = [df stringFromDate:targetDate];
+    
+    [df setDateFormat:@"MM"];
+    NSString *monthString = [df stringFromDate:targetDate];
+    
+    [df setDateFormat:@"yyyy"];
+    NSString *yearString = [df stringFromDate:targetDate];
+    
+    return [NSString stringWithFormat:@"%@%@%@", yearString,monthString,dayString];
+}
+
+-(NSString *)getTimeStartOfDay
+{
+    return @"T000000";
+}
+
+-(NSString *)getTimeEndOfDay
+{
+    return @"T235959";
+}
+
+-(NSDictionary *)eventsFilteringParametersForToday
+//Builds the parameters for the WS to filter (include) only today's and tomorrow's elements
+{
+    
+    //Build the string for today (concatenated with the start of the day)
+    NSString *stringForToday = [NSString stringWithFormat:[self getDateInStringFormatWithNSDate:[NSDate date] addingDays:0],[self getTimeStartOfDay]];
+    
+    //Build the string for tomorrow (concatenated with the end of the day)
+    NSString *stringForTomorrow = [NSString stringWithFormat:[self getDateInStringFormatWithNSDate:[NSDate date] addingDays:1],[self getTimeEndOfDay]];
+    
+    //Build the NSDictionary and return it
+    return @{@"FechaDesde" : stringForToday, @"FechaHasta" : stringForTomorrow};
+    
 }
 
 
