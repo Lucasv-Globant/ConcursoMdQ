@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "WSMGPCulturaEnVivoEventos.h"
 #import "GenericTableViewCell.h"
+#import "UILabel+AutoHeight.h"
 
 @interface EventosViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
