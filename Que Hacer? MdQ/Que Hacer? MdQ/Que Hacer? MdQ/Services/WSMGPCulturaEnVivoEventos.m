@@ -14,6 +14,7 @@
 
 @interface WSMGPCulturaEnVivoEventos ()
 
+#pragma mark Instance variables
 @property (nonatomic, strong) NSString *token;
 @property (nonatomic, strong) NSString *baseURL;
 @property (nonatomic, strong) NSString *relativePathForEventsCategoriesList;
@@ -31,6 +32,7 @@
 
 @implementation WSMGPCulturaEnVivoEventos : NSObject
 
+#pragma mark Initialization
 
 -(WSMGPCulturaEnVivoEventos *)init
 {
@@ -49,6 +51,9 @@
 }
 
 
+
+
+#pragma mark Web service requests
 -(void)getEventsWithSuccess:(void (^)(NSDictionary *response))success
                     failure:(void (^)(NSError *error))failure
     withFilteringParameters:(NSDictionary *)filteringParameters
@@ -113,6 +118,22 @@
 }
 
 
+#pragma mark Response Accessors
+-(NSArray *)eventsListFromResponse:(NSDictionary *)aDictionary
+{
+    if ([self eventsListDownloadedOk:aDictionary] || [self eventsListDownloadedWithWarnings:aDictionary])
+    {
+        return [aDictionary objectForKey:self.keyNameForResultEvents];
+    }
+    else
+    {
+        return nil;
+    }
+}
+
+
+#pragma mark Helper methods - Status checks
+
 -(BOOL)eventsListIsDownloaded:(NSDictionary *)aDictionary
 //Based on the structure of a given dictionary, it will tell whether it has been downloaded or not.
 {
@@ -159,18 +180,11 @@
     return result;
 }
 
--(NSArray *)eventsListFromResponse:(NSDictionary *)aDictionary
-{
-    if ([self eventsListDownloadedOk:aDictionary] || [self eventsListDownloadedWithWarnings:aDictionary])
-    {
-        return [aDictionary objectForKey:self.keyNameForResultEvents];
-    }
-    else
-    {
-        return nil;
-    }
-}
 
+
+
+
+#pragma mark Helper methods - Parameters builders
 
 -(NSString *)getDateInStringFormatWithNSDate:(NSDate *)date addingDays:(int)daysToAdd
 {

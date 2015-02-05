@@ -10,6 +10,7 @@
 #import "WSMGPCulturaEnVivoEventos.h"
 #import "GenericTableViewCell.h"
 #import "UILabel+AutoHeight.h"
+#import "MBProgressHUD.h"
 
 @interface EventosViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 

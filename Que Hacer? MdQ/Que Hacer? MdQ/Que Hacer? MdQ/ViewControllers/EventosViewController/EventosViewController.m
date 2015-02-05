@@ -8,6 +8,7 @@
 
 #import "EventosViewController.h"
 
+
 @interface EventosViewController ()
 
 @property (nonatomic, strong) WSMGPCulturaEnVivoEventos *connector;
@@ -23,24 +24,34 @@
     [super viewDidLoad];
     [self.eventosTableView registerNib:[UINib nibWithNibName:@"GenericTableViewCell" bundle:[NSBundle mainBundle]]
                 forCellReuseIdentifier:@"GenericCellId"];
-
+    
     self.response = [[NSDictionary alloc] init];
     
     // Do any additional setup after loading the view from its nib.
     self.connector = [[WSMGPCulturaEnVivoEventos alloc] init];
     __weak EventosViewController *weakSelf = self;
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [self.connector getEvents:^(NSDictionary *response)
-                                        {
-                                            //Success block
-                                            weakSelf.response = response;
-                                            weakSelf.eventsList = [self.connector eventsListFromResponse:response];
-                                            [weakSelf populateCategoriesTableView];
-                                        }
-                               failure:^(NSError *error)
-                                        {
-                                            //Failure block
-                                            NSLog(@"UPS! OCURRIO UN ERROR!");
-                                        }
+     {
+         
+         //This is the actual success block
+         weakSelf.response = response;
+         weakSelf.eventsList = [self.connector eventsListFromResponse:response];
+         [weakSelf populateCategoriesTableView];
+         
+         [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
+         
+         
+         
+         
+         
+     }
+                      failure:^(NSError *error)
+     {
+         //Failure block
+         NSLog(@"UPS! OCURRIO UN ERROR!");
+         [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
+     }
      ];
 }
 
@@ -66,7 +77,7 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
-
+    
     [cell setDataWithDictionary:[self.eventsList objectAtIndex:indexPath.row]];
     
     return cell;
@@ -89,13 +100,12 @@
 
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
