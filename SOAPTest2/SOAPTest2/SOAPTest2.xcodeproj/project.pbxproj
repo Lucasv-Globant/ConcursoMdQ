@@ -34,6 +34,7 @@
 		A05E48091A77DF4F009D81B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A05E48081A77DF4F009D81B4 /* Images.xcassets */; };
 		A05E480C1A77DF4F009D81B4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05E480A1A77DF4F009D81B4 /* LaunchScreen.xib */; };
 		A05E48181A77DF50009D81B4 /* SOAPTest2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A05E48171A77DF50009D81B4 /* SOAPTest2Tests.m */; };
+		A0A89DFA1A83A2D200FDA3A6 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A89DF91A83A2D200FDA3A6 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		A05E48111A77DF50009D81B4 /* SOAPTest2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOAPTest2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05E48161A77DF50009D81B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A05E48171A77DF50009D81B4 /* SOAPTest2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOAPTest2Tests.m; sourceTree = "<group>"; };
+		A0A89DF81A83A2D200FDA3A6 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = "Assets/External Libraries/MBProgressHUD.h"; sourceTree = "<group>"; };
+		A0A89DF91A83A2D200FDA3A6 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = "Assets/External Libraries/MBProgressHUD.m"; sourceTree = "<group>"; };
 		AC302210063E472C83E8D7A4 /* Pods-SOAPTest2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOAPTest2.release.xcconfig"; path = "Pods/Target Support Files/Pods-SOAPTest2/Pods-SOAPTest2.release.xcconfig"; sourceTree = "<group>"; };
 		B0588BF514234BB08D1EF11E /* Pods-SOAPTest2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOAPTest2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SOAPTest2/Pods-SOAPTest2.debug.xcconfig"; sourceTree = "<group>"; };
 		D3445AD8D3076B35E7F65DDB /* libPods-SOAPTest2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SOAPTest2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -275,6 +278,7 @@
 		A05E47FA1A77DF4F009D81B4 /* SOAPTest2 */ = {
 			isa = PBXGroup;
 			children = (
+				A0A89DF71A83A26400FDA3A6 /* External Libraries */,
 				64E23C681A82519900B9C7F6 /* Services */,
 				64E23C671A82519000B9C7F6 /* Classes */,
 				64E23C4E1A824EF700B9C7F6 /* Assets */,
@@ -312,6 +316,15 @@
 				A05E48161A77DF50009D81B4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0A89DF71A83A26400FDA3A6 /* External Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				A0A89DF81A83A2D200FDA3A6 /* MBProgressHUD.h */,
+				A0A89DF91A83A2D200FDA3A6 /* MBProgressHUD.m */,
+			);
+			name = "External Libraries";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,6 +481,7 @@
 				64E23C611A824EF700B9C7F6 /* GenericTableViewCell.m in Sources */,
 				64E23C841A8256D100B9C7F6 /* BeachesViewController.m in Sources */,
 				64E23C8A1A8256D100B9C7F6 /* SOAPViewController.m in Sources */,
+				A0A89DFA1A83A2D200FDA3A6 /* MBProgressHUD.m in Sources */,
 				64E23C5F1A824EF700B9C7F6 /* BeachesTableViewCell.m in Sources */,
 				64E23C6D1A82519900B9C7F6 /* WSMGPCulturaEnVivoEventos.m in Sources */,
 				A05E47FE1A77DF4F009D81B4 /* main.m in Sources */,
@@ -592,7 +606,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SOAPTest2/ViewControllers/SOAPTest2-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SOAPTest2/Assets/SOAPTest2-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -607,7 +621,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SOAPTest2/ViewControllers/SOAPTest2-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SOAPTest2/Assets/SOAPTest2-Bridging-Header.h";
 			};
 			name = Release;
 		};
