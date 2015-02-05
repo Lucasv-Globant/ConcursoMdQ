@@ -1,5 +1,5 @@
 # Uncomment this line to define a global platform for your project
-platform :ios, '7.1'
+platform :ios, '8.0'      #Incorpored Swift so it's 8+
 
 target 'SOAPTest2' do
 pod 'AFNetworking', '~> 2.0'

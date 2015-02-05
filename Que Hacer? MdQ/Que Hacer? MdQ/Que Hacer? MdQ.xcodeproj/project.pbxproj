@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64C392001A83D26000963580 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391CF1A83D26000963580 /* AppDelegate.m */; };
+		64C392011A83D26000963580 /* UILabel+AutoHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391D31A83D26000963580 /* UILabel+AutoHeight.m */; };
+		64C392021A83D26000963580 /* BeachesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391D61A83D26000963580 /* BeachesTableViewCell.m */; };
+		64C392031A83D26000963580 /* BeachesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64C391D71A83D26000963580 /* BeachesTableViewCell.xib */; };
+		64C392041A83D26000963580 /* GenericTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391D91A83D26000963580 /* GenericTableViewCell.m */; };
+		64C392051A83D26000963580 /* GenericTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64C391DA1A83D26000963580 /* GenericTableViewCell.xib */; };
+		64C392061A83D26000963580 /* categoryIconTheater.png in Resources */ = {isa = PBXBuildFile; fileRef = 64C391DC1A83D26000963580 /* categoryIconTheater.png */; };
+		64C392071A83D26000963580 /* mar-del-plata-night_93079-1600x1200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 64C391DD1A83D26000963580 /* mar-del-plata-night_93079-1600x1200.jpg */; };
+		64C392081A83D26000963580 /* mar-del-plata.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 64C391DE1A83D26000963580 /* mar-del-plata.jpg */; };
+		64C392091A83D26000963580 /* mdq-bg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 64C391DF1A83D26000963580 /* mdq-bg1.jpg */; };
+		64C3920A1A83D26000963580 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64C391E11A83D26000963580 /* LaunchScreen.xib */; };
+		64C3920B1A83D26000963580 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C391E41A83D26000963580 /* Images.xcassets */; };
+		64C3920C1A83D26000963580 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64C391E51A83D26000963580 /* Info.plist */; };
+		64C3920D1A83D26000963580 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391E61A83D26000963580 /* main.m */; };
+		64C3920E1A83D26000963580 /* WSMGPCulturaEnVivoEventos.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391E91A83D26000963580 /* WSMGPCulturaEnVivoEventos.m */; };
+		64C3920F1A83D26000963580 /* WSMGPEventos.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391EB1A83D26000963580 /* WSMGPEventos.m */; };
+		64C392101A83D26000963580 /* BeachesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391EF1A83D26000963580 /* BeachesViewController.m */; };
+		64C392111A83D26000963580 /* BeachesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64C391F01A83D26000963580 /* BeachesViewController.xib */; };
+		64C392121A83D26000963580 /* CategoriesViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C391F21A83D26000963580 /* CategoriesViewControllerSwift.swift */; };
+		64C392131A83D26000963580 /* CategoriesViewControllerSwift.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64C391F31A83D26000963580 /* CategoriesViewControllerSwift.xib */; };
+		64C392141A83D26000963580 /* EventosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391F61A83D26000963580 /* EventosViewController.m */; };
+		64C392151A83D26000963580 /* EventosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64C391F71A83D26000963580 /* EventosViewController.xib */; };
+		64C392161A83D26000963580 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391FA1A83D26000963580 /* HomeViewController.m */; };
+		64C392171A83D26000963580 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64C391FB1A83D26000963580 /* HomeViewController.xib */; };
+		64C392181A83D26000963580 /* SOAPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391FE1A83D26000963580 /* SOAPViewController.m */; };
+		64C392191A83D26000963580 /* SOAPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64C391FF1A83D26000963580 /* SOAPViewController.xib */; };
+		64C3921D1A83D41D00963580 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64C3921B1A83D41D00963580 /* Info.plist */; };
+		97399F43D485365E4CBCD22A /* libPods-SOAPTest2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3445AD8D3076B35E7F65DDB /* libPods-SOAPTest2.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A05E48121A77DF50009D81B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A05E47F01A77DF4F009D81B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A05E47F71A77DF4F009D81B4;
+			remoteInfo = SOAPTest2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		64C391CE1A83D26000963580 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		64C391CF1A83D26000963580 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		64C391D21A83D26000963580 /* UILabel+AutoHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AutoHeight.h"; sourceTree = "<group>"; };
+		64C391D31A83D26000963580 /* UILabel+AutoHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AutoHeight.m"; sourceTree = "<group>"; };
+		64C391D51A83D26000963580 /* BeachesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeachesTableViewCell.h; sourceTree = "<group>"; };
+		64C391D61A83D26000963580 /* BeachesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeachesTableViewCell.m; sourceTree = "<group>"; };
+		64C391D71A83D26000963580 /* BeachesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeachesTableViewCell.xib; sourceTree = "<group>"; };
+		64C391D81A83D26000963580 /* GenericTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericTableViewCell.h; sourceTree = "<group>"; };
+		64C391D91A83D26000963580 /* GenericTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericTableViewCell.m; sourceTree = "<group>"; };
+		64C391DA1A83D26000963580 /* GenericTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenericTableViewCell.xib; sourceTree = "<group>"; };
+		64C391DC1A83D26000963580 /* categoryIconTheater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = categoryIconTheater.png; sourceTree = "<group>"; };
+		64C391DD1A83D26000963580 /* mar-del-plata-night_93079-1600x1200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mar-del-plata-night_93079-1600x1200.jpg"; sourceTree = "<group>"; };
+		64C391DE1A83D26000963580 /* mar-del-plata.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mar-del-plata.jpg"; sourceTree = "<group>"; };
+		64C391DF1A83D26000963580 /* mdq-bg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mdq-bg1.jpg"; sourceTree = "<group>"; };
+		64C391E01A83D26000963580 /* SOAPTest2-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SOAPTest2-Bridging-Header.h"; sourceTree = "<group>"; };
+		64C391E21A83D26000963580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		64C391E41A83D26000963580 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
+		64C391E51A83D26000963580 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64C391E61A83D26000963580 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		64C391E81A83D26000963580 /* WSMGPCulturaEnVivoEventos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSMGPCulturaEnVivoEventos.h; sourceTree = "<group>"; };
+		64C391E91A83D26000963580 /* WSMGPCulturaEnVivoEventos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMGPCulturaEnVivoEventos.m; sourceTree = "<group>"; };
+		64C391EA1A83D26000963580 /* WSMGPEventos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSMGPEventos.h; sourceTree = "<group>"; };
+		64C391EB1A83D26000963580 /* WSMGPEventos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMGPEventos.m; sourceTree = "<group>"; };
+		64C391EE1A83D26000963580 /* BeachesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeachesViewController.h; sourceTree = "<group>"; };
+		64C391EF1A83D26000963580 /* BeachesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeachesViewController.m; sourceTree = "<group>"; };
+		64C391F01A83D26000963580 /* BeachesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeachesViewController.xib; sourceTree = "<group>"; };
+		64C391F21A83D26000963580 /* CategoriesViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewControllerSwift.swift; sourceTree = "<group>"; };
+		64C391F31A83D26000963580 /* CategoriesViewControllerSwift.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoriesViewControllerSwift.xib; sourceTree = "<group>"; };
+		64C391F51A83D26000963580 /* EventosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventosViewController.h; sourceTree = "<group>"; };
+		64C391F61A83D26000963580 /* EventosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventosViewController.m; sourceTree = "<group>"; };
+		64C391F71A83D26000963580 /* EventosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventosViewController.xib; sourceTree = "<group>"; };
+		64C391F91A83D26000963580 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		64C391FA1A83D26000963580 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		64C391FB1A83D26000963580 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		64C391FD1A83D26000963580 /* SOAPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAPViewController.h; sourceTree = "<group>"; };
+		64C391FE1A83D26000963580 /* SOAPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAPViewController.m; sourceTree = "<group>"; };
+		64C391FF1A83D26000963580 /* SOAPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOAPViewController.xib; sourceTree = "<group>"; };
+		64C3921B1A83D41D00963580 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A05E47F81A77DF4F009D81B4 /* Que Hacer? MdQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Que Hacer? MdQ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A05E48111A77DF50009D81B4 /* Que Hacer? MdQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Que Hacer? MdQTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC302210063E472C83E8D7A4 /* Pods-SOAPTest2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOAPTest2.release.xcconfig"; path = "Pods/Target Support Files/Pods-SOAPTest2/Pods-SOAPTest2.release.xcconfig"; sourceTree = "<group>"; };
+		B0588BF514234BB08D1EF11E /* Pods-SOAPTest2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOAPTest2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SOAPTest2/Pods-SOAPTest2.debug.xcconfig"; sourceTree = "<group>"; };
+		D3445AD8D3076B35E7F65DDB /* libPods-SOAPTest2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SOAPTest2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A05E47F51A77DF4F009D81B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97399F43D485365E4CBCD22A /* libPods-SOAPTest2.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A05E480E1A77DF50009D81B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B05E61C0FF448A030E50613 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0588BF514234BB08D1EF11E /* Pods-SOAPTest2.debug.xcconfig */,
+				AC302210063E472C83E8D7A4 /* Pods-SOAPTest2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4D4541816078923CBAFE663A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3445AD8D3076B35E7F65DDB /* libPods-SOAPTest2.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64C391CD1A83D26000963580 /* Que Hacer? MdQ */ = {
+			isa = PBXGroup;
+			children = (
+				64C391CE1A83D26000963580 /* AppDelegate.h */,
+				64C391CF1A83D26000963580 /* AppDelegate.m */,
+				64C391E11A83D26000963580 /* LaunchScreen.xib */,
+				64C391E51A83D26000963580 /* Info.plist */,
+				64C391E61A83D26000963580 /* main.m */,
+				64C391D01A83D26000963580 /* Assets */,
+				64C391E31A83D26000963580 /* Classes */,
+				64C391E71A83D26000963580 /* Services */,
+				64C391EC1A83D26000963580 /* ViewControllers */,
+			);
+			path = "Que Hacer? MdQ";
+			sourceTree = "<group>";
+		};
+		64C391D01A83D26000963580 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				64C391E41A83D26000963580 /* Images.xcassets */,
+				64C391D11A83D26000963580 /* Categories */,
+				64C391D41A83D26000963580 /* Custom Cells */,
+				64C391DB1A83D26000963580 /* Imgs */,
+				64C391E01A83D26000963580 /* SOAPTest2-Bridging-Header.h */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		64C391D11A83D26000963580 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				64C391D21A83D26000963580 /* UILabel+AutoHeight.h */,
+				64C391D31A83D26000963580 /* UILabel+AutoHeight.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		64C391D41A83D26000963580 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				64C391D51A83D26000963580 /* BeachesTableViewCell.h */,
+				64C391D61A83D26000963580 /* BeachesTableViewCell.m */,
+				64C391D71A83D26000963580 /* BeachesTableViewCell.xib */,
+				64C391D81A83D26000963580 /* GenericTableViewCell.h */,
+				64C391D91A83D26000963580 /* GenericTableViewCell.m */,
+				64C391DA1A83D26000963580 /* GenericTableViewCell.xib */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		64C391DB1A83D26000963580 /* Imgs */ = {
+			isa = PBXGroup;
+			children = (
+				64C391DC1A83D26000963580 /* categoryIconTheater.png */,
+				64C391DD1A83D26000963580 /* mar-del-plata-night_93079-1600x1200.jpg */,
+				64C391DE1A83D26000963580 /* mar-del-plata.jpg */,
+				64C391DF1A83D26000963580 /* mdq-bg1.jpg */,
+			);
+			path = Imgs;
+			sourceTree = "<group>";
+		};
+		64C391E31A83D26000963580 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		64C391E71A83D26000963580 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				64C391E81A83D26000963580 /* WSMGPCulturaEnVivoEventos.h */,
+				64C391E91A83D26000963580 /* WSMGPCulturaEnVivoEventos.m */,
+				64C391EA1A83D26000963580 /* WSMGPEventos.h */,
+				64C391EB1A83D26000963580 /* WSMGPEventos.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		64C391EC1A83D26000963580 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				64C391ED1A83D26000963580 /* BeachesViewController */,
+				64C391F11A83D26000963580 /* CategoriesViewControllerSwift */,
+				64C391F41A83D26000963580 /* EventosViewController */,
+				64C391F81A83D26000963580 /* HomeViewController */,
+				64C391FC1A83D26000963580 /* SOAPViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		64C391ED1A83D26000963580 /* BeachesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				64C391EE1A83D26000963580 /* BeachesViewController.h */,
+				64C391EF1A83D26000963580 /* BeachesViewController.m */,
+				64C391F01A83D26000963580 /* BeachesViewController.xib */,
+			);
+			path = BeachesViewController;
+			sourceTree = "<group>";
+		};
+		64C391F11A83D26000963580 /* CategoriesViewControllerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				64C391F21A83D26000963580 /* CategoriesViewControllerSwift.swift */,
+				64C391F31A83D26000963580 /* CategoriesViewControllerSwift.xib */,
+			);
+			path = CategoriesViewControllerSwift;
+			sourceTree = "<group>";
+		};
+		64C391F41A83D26000963580 /* EventosViewController */ = {
+			isa = PBXGroup;
+			children = (
+				64C391F51A83D26000963580 /* EventosViewController.h */,
+				64C391F61A83D26000963580 /* EventosViewController.m */,
+				64C391F71A83D26000963580 /* EventosViewController.xib */,
+			);
+			path = EventosViewController;
+			sourceTree = "<group>";
+		};
+		64C391F81A83D26000963580 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				64C391F91A83D26000963580 /* HomeViewController.h */,
+				64C391FA1A83D26000963580 /* HomeViewController.m */,
+				64C391FB1A83D26000963580 /* HomeViewController.xib */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		64C391FC1A83D26000963580 /* SOAPViewController */ = {
+			isa = PBXGroup;
+			children = (
+				64C391FD1A83D26000963580 /* SOAPViewController.h */,
+				64C391FE1A83D26000963580 /* SOAPViewController.m */,
+				64C391FF1A83D26000963580 /* SOAPViewController.xib */,
+			);
+			path = SOAPViewController;
+			sourceTree = "<group>";
+		};
+		64C3921A1A83D41D00963580 /* Que Hacer? MdQ Tests */ = {
+			isa = PBXGroup;
+			children = (
+				64C3921B1A83D41D00963580 /* Info.plist */,
+			);
+			path = "Que Hacer? MdQ Tests";
+			sourceTree = "<group>";
+		};
+		A05E47EF1A77DF4F009D81B4 = {
+			isa = PBXGroup;
+			children = (
+				64C391CD1A83D26000963580 /* Que Hacer? MdQ */,
+				A05E47F91A77DF4F009D81B4 /* Products */,
+				1B05E61C0FF448A030E50613 /* Pods */,
+				4D4541816078923CBAFE663A /* Frameworks */,
+				64C3921A1A83D41D00963580 /* Que Hacer? MdQ Tests */,
+			);
+			sourceTree = "<group>";
+		};
+		A05E47F91A77DF4F009D81B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A05E47F81A77DF4F009D81B4 /* Que Hacer? MdQ.app */,
+				A05E48111A77DF50009D81B4 /* Que Hacer? MdQTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A05E47F71A77DF4F009D81B4 /* Que Hacer? MdQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A05E481B1A77DF50009D81B4 /* Build configuration list for PBXNativeTarget "Que Hacer? MdQ" */;
+			buildPhases = (
+				5A3E14892209BAEFB9645E1D /* Check Pods Manifest.lock */,
+				A05E47F41A77DF4F009D81B4 /* Sources */,
+				A05E47F51A77DF4F009D81B4 /* Frameworks */,
+				A05E47F61A77DF4F009D81B4 /* Resources */,
+				83A330821C96CC1320D493D7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Que Hacer? MdQ";
+			productName = SOAPTest2;
+			productReference = A05E47F81A77DF4F009D81B4 /* Que Hacer? MdQ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A05E48101A77DF50009D81B4 /* Que Hacer? MdQTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A05E481E1A77DF50009D81B4 /* Build configuration list for PBXNativeTarget "Que Hacer? MdQTests" */;
+			buildPhases = (
+				A05E480D1A77DF50009D81B4 /* Sources */,
+				A05E480E1A77DF50009D81B4 /* Frameworks */,
+				A05E480F1A77DF50009D81B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A05E48131A77DF50009D81B4 /* PBXTargetDependency */,
+			);
+			name = "Que Hacer? MdQTests";
+			productName = SOAPTest2Tests;
+			productReference = A05E48111A77DF50009D81B4 /* Que Hacer? MdQTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A05E47F01A77DF4F009D81B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Globant iOS MDQ";
+				TargetAttributes = {
+					A05E47F71A77DF4F009D81B4 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					A05E48101A77DF50009D81B4 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = A05E47F71A77DF4F009D81B4;
+					};
+				};
+			};
+			buildConfigurationList = A05E47F31A77DF4F009D81B4 /* Build configuration list for PBXProject "Que Hacer? MdQ" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A05E47EF1A77DF4F009D81B4;
+			productRefGroup = A05E47F91A77DF4F009D81B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A05E47F71A77DF4F009D81B4 /* Que Hacer? MdQ */,
+				A05E48101A77DF50009D81B4 /* Que Hacer? MdQTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A05E47F61A77DF4F009D81B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C392111A83D26000963580 /* BeachesViewController.xib in Resources */,
+				64C392151A83D26000963580 /* EventosViewController.xib in Resources */,
+				64C392171A83D26000963580 /* HomeViewController.xib in Resources */,
+				64C392191A83D26000963580 /* SOAPViewController.xib in Resources */,
+				64C392071A83D26000963580 /* mar-del-plata-night_93079-1600x1200.jpg in Resources */,
+				64C3920B1A83D26000963580 /* Images.xcassets in Resources */,
+				64C3920C1A83D26000963580 /* Info.plist in Resources */,
+				64C392031A83D26000963580 /* BeachesTableViewCell.xib in Resources */,
+				64C3921D1A83D41D00963580 /* Info.plist in Resources */,
+				64C392081A83D26000963580 /* mar-del-plata.jpg in Resources */,
+				64C392131A83D26000963580 /* CategoriesViewControllerSwift.xib in Resources */,
+				64C3920A1A83D26000963580 /* LaunchScreen.xib in Resources */,
+				64C392061A83D26000963580 /* categoryIconTheater.png in Resources */,
+				64C392051A83D26000963580 /* GenericTableViewCell.xib in Resources */,
+				64C392091A83D26000963580 /* mdq-bg1.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A05E480F1A77DF50009D81B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A3E14892209BAEFB9645E1D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		83A330821C96CC1320D493D7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SOAPTest2/Pods-SOAPTest2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A05E47F41A77DF4F009D81B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C3920D1A83D26000963580 /* main.m in Sources */,
+				64C3920E1A83D26000963580 /* WSMGPCulturaEnVivoEventos.m in Sources */,
+				64C392011A83D26000963580 /* UILabel+AutoHeight.m in Sources */,
+				64C3920F1A83D26000963580 /* WSMGPEventos.m in Sources */,
+				64C392101A83D26000963580 /* BeachesViewController.m in Sources */,
+				64C392181A83D26000963580 /* SOAPViewController.m in Sources */,
+				64C392041A83D26000963580 /* GenericTableViewCell.m in Sources */,
+				64C392161A83D26000963580 /* HomeViewController.m in Sources */,
+				64C392121A83D26000963580 /* CategoriesViewControllerSwift.swift in Sources */,
+				64C392021A83D26000963580 /* BeachesTableViewCell.m in Sources */,
+				64C392001A83D26000963580 /* AppDelegate.m in Sources */,
+				64C392141A83D26000963580 /* EventosViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A05E480D1A77DF50009D81B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A05E48131A77DF50009D81B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A05E47F71A77DF4F009D81B4 /* Que Hacer? MdQ */;
+			targetProxy = A05E48121A77DF50009D81B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64C391E11A83D26000963580 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64C391E21A83D26000963580 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A05E48191A77DF50009D81B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A05E481A1A77DF50009D81B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A05E481C1A77DF50009D81B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0588BF514234BB08D1EF11E /* Pods-SOAPTest2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Que Hacer? MdQ/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "Que Hacer? MdQ";
+				SWIFT_OBJC_BRIDGING_HEADER = "Que Hacer? MdQ/Assets/SOAPTest2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A05E481D1A77DF50009D81B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC302210063E472C83E8D7A4 /* Pods-SOAPTest2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Que Hacer? MdQ/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "Que Hacer? MdQ";
+				SWIFT_OBJC_BRIDGING_HEADER = "Que Hacer? MdQ/Assets/SOAPTest2-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A05E481F1A77DF50009D81B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SOAPTest2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "Que Hacer? MdQTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SOAPTest2.app/SOAPTest2";
+			};
+			name = Debug;
+		};
+		A05E48201A77DF50009D81B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SOAPTest2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "Que Hacer? MdQTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SOAPTest2.app/SOAPTest2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A05E47F31A77DF4F009D81B4 /* Build configuration list for PBXProject "Que Hacer? MdQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A05E48191A77DF50009D81B4 /* Debug */,
+				A05E481A1A77DF50009D81B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A05E481B1A77DF50009D81B4 /* Build configuration list for PBXNativeTarget "Que Hacer? MdQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A05E481C1A77DF50009D81B4 /* Debug */,
+				A05E481D1A77DF50009D81B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A05E481E1A77DF50009D81B4 /* Build configuration list for PBXNativeTarget "Que Hacer? MdQTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A05E481F1A77DF50009D81B4 /* Debug */,
+				A05E48201A77DF50009D81B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A05E47F01A77DF4F009D81B4 /* Project object */;
+}
