@@ -1,6 +1,6 @@
 //
-//  CategoriesViewControllerSwift.swift
-//  SOAPTest2
+//  GastronomiaViewControllerSwift.swift
+//  Que Hacer? MdQ
 //
 //  Created by Federico Gonzalez on 2/4/15.
 //  Copyright (c) 2015 Globant iOS MDQ. All rights reserved.
@@ -10,7 +10,7 @@ import UIKit
 
 let reuseIdentifier = "Cell"
 
-class CategoriesViewControllerSwift: UICollectionViewController {
+class GastronomiaViewControllerSwift: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class CategoriesViewControllerSwift: UICollectionViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Dispose of any resourceGastronomiaViewControllerSwifts that can be recreated.
     }
 
 // MARK: UICollectionViewDataSource
@@ -49,7 +49,7 @@ class CategoriesViewControllerSwift: UICollectionViewController {
         return cell
     }
 
-    // MARK: UICollectionViewDelegate
+// MARK: UICollectionViewDelegate
 
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking

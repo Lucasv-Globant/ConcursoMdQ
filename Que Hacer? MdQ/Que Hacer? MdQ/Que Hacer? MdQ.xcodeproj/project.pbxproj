@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		648E7D1E1A8505D400B6A5CD /* GastronomiaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648E7D1C1A8505D400B6A5CD /* GastronomiaViewController.xib */; };
+		648E7D1F1A8505D400B6A5CD /* GastronomiaViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E7D1D1A8505D400B6A5CD /* GastronomiaViewControllerSwift.swift */; };
 		64C392001A83D26000963580 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391CF1A83D26000963580 /* AppDelegate.m */; };
 		64C392011A83D26000963580 /* UILabel+AutoHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391D31A83D26000963580 /* UILabel+AutoHeight.m */; };
 		64C392021A83D26000963580 /* BeachesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391D61A83D26000963580 /* BeachesTableViewCell.m */; };
@@ -24,8 +26,6 @@
 		64C3920F1A83D26000963580 /* WSMGPEventos.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391EB1A83D26000963580 /* WSMGPEventos.m */; };
 		64C392101A83D26000963580 /* BeachesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391EF1A83D26000963580 /* BeachesViewController.m */; };
 		64C392111A83D26000963580 /* BeachesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64C391F01A83D26000963580 /* BeachesViewController.xib */; };
-		64C392121A83D26000963580 /* CategoriesViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C391F21A83D26000963580 /* CategoriesViewControllerSwift.swift */; };
-		64C392131A83D26000963580 /* CategoriesViewControllerSwift.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64C391F31A83D26000963580 /* CategoriesViewControllerSwift.xib */; };
 		64C392141A83D26000963580 /* EventosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391F61A83D26000963580 /* EventosViewController.m */; };
 		64C392151A83D26000963580 /* EventosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64C391F71A83D26000963580 /* EventosViewController.xib */; };
 		64C392161A83D26000963580 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391FA1A83D26000963580 /* HomeViewController.m */; };
@@ -49,6 +49,8 @@
 
 /* Begin PBXFileReference section */
 		4D18E0386C480C5CA8D1EB3C /* libPods-Que Hacer? MdQ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Que Hacer? MdQ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		648E7D1C1A8505D400B6A5CD /* GastronomiaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GastronomiaViewController.xib; sourceTree = "<group>"; };
+		648E7D1D1A8505D400B6A5CD /* GastronomiaViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GastronomiaViewControllerSwift.swift; sourceTree = "<group>"; };
 		64C391CE1A83D26000963580 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		64C391CF1A83D26000963580 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		64C391D21A83D26000963580 /* UILabel+AutoHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AutoHeight.h"; sourceTree = "<group>"; };
@@ -75,8 +77,6 @@
 		64C391EE1A83D26000963580 /* BeachesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeachesViewController.h; sourceTree = "<group>"; };
 		64C391EF1A83D26000963580 /* BeachesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeachesViewController.m; sourceTree = "<group>"; };
 		64C391F01A83D26000963580 /* BeachesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeachesViewController.xib; sourceTree = "<group>"; };
-		64C391F21A83D26000963580 /* CategoriesViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewControllerSwift.swift; sourceTree = "<group>"; };
-		64C391F31A83D26000963580 /* CategoriesViewControllerSwift.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoriesViewControllerSwift.xib; sourceTree = "<group>"; };
 		64C391F51A83D26000963580 /* EventosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventosViewController.h; sourceTree = "<group>"; };
 		64C391F61A83D26000963580 /* EventosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventosViewController.m; sourceTree = "<group>"; };
 		64C391F71A83D26000963580 /* EventosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventosViewController.xib; sourceTree = "<group>"; };
@@ -130,6 +130,15 @@
 				4D18E0386C480C5CA8D1EB3C /* libPods-Que Hacer? MdQ.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		648E7D1B1A8505D400B6A5CD /* GastronomiaViewController_swift */ = {
+			isa = PBXGroup;
+			children = (
+				648E7D1C1A8505D400B6A5CD /* GastronomiaViewController.xib */,
+				648E7D1D1A8505D400B6A5CD /* GastronomiaViewControllerSwift.swift */,
+			);
+			path = GastronomiaViewController_swift;
 			sourceTree = "<group>";
 		};
 		64C391CD1A83D26000963580 /* Que Hacer? MdQ */ = {
@@ -214,8 +223,8 @@
 		64C391EC1A83D26000963580 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				648E7D1B1A8505D400B6A5CD /* GastronomiaViewController_swift */,
 				64C391ED1A83D26000963580 /* BeachesViewController */,
-				64C391F11A83D26000963580 /* CategoriesViewControllerSwift */,
 				64C391F41A83D26000963580 /* EventosViewController */,
 				64C391F81A83D26000963580 /* HomeViewController */,
 				64C391FC1A83D26000963580 /* SOAPViewController */,
@@ -231,15 +240,6 @@
 				64C391F01A83D26000963580 /* BeachesViewController.xib */,
 			);
 			path = BeachesViewController;
-			sourceTree = "<group>";
-		};
-		64C391F11A83D26000963580 /* CategoriesViewControllerSwift */ = {
-			isa = PBXGroup;
-			children = (
-				64C391F21A83D26000963580 /* CategoriesViewControllerSwift.swift */,
-				64C391F31A83D26000963580 /* CategoriesViewControllerSwift.xib */,
-			);
-			path = CategoriesViewControllerSwift;
 			sourceTree = "<group>";
 		};
 		64C391F41A83D26000963580 /* EventosViewController */ = {
@@ -383,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64C392111A83D26000963580 /* BeachesViewController.xib in Resources */,
+				648E7D1E1A8505D400B6A5CD /* GastronomiaViewController.xib in Resources */,
 				64C392151A83D26000963580 /* EventosViewController.xib in Resources */,
 				64C392171A83D26000963580 /* HomeViewController.xib in Resources */,
 				64C392191A83D26000963580 /* SOAPViewController.xib in Resources */,
@@ -391,7 +392,6 @@
 				64C392031A83D26000963580 /* BeachesTableViewCell.xib in Resources */,
 				64C3921D1A83D41D00963580 /* Info.plist in Resources */,
 				64C392081A83D26000963580 /* mar-del-plata.jpg in Resources */,
-				64C392131A83D26000963580 /* CategoriesViewControllerSwift.xib in Resources */,
 				64C3920A1A83D26000963580 /* LaunchScreen.xib in Resources */,
 				64C392061A83D26000963580 /* categoryIconTheater.png in Resources */,
 				64C392051A83D26000963580 /* GenericTableViewCell.xib in Resources */,
@@ -454,10 +454,10 @@
 				64C392181A83D26000963580 /* SOAPViewController.m in Sources */,
 				64C392041A83D26000963580 /* GenericTableViewCell.m in Sources */,
 				64C392161A83D26000963580 /* HomeViewController.m in Sources */,
-				64C392121A83D26000963580 /* CategoriesViewControllerSwift.swift in Sources */,
 				64C392021A83D26000963580 /* BeachesTableViewCell.m in Sources */,
 				64C392001A83D26000963580 /* AppDelegate.m in Sources */,
 				64C392141A83D26000963580 /* EventosViewController.m in Sources */,
+				648E7D1F1A8505D400B6A5CD /* GastronomiaViewControllerSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
