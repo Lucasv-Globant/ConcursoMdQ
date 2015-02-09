@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6410589B1A8913A1006113CF /* DataAccessHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 641058991A8913A1006113CF /* DataAccessHelper.m */; };
+		6410589E1A891402006113CF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6410589C1A891402006113CF /* Model.xcdatamodeld */; };
+		641058A01A891C33006113CF /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410589F1A891C33006113CF /* Activity.swift */; };
+		641058A21A892485006113CF /* NSDate+ParseFromString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641058A11A892485006113CF /* NSDate+ParseFromString.swift */; };
 		64C392001A83D26000963580 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391CF1A83D26000963580 /* AppDelegate.m */; };
 		64C392011A83D26000963580 /* UILabel+AutoHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391D31A83D26000963580 /* UILabel+AutoHeight.m */; };
 		64C392021A83D26000963580 /* BeachesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391D61A83D26000963580 /* BeachesTableViewCell.m */; };
@@ -49,6 +53,11 @@
 
 /* Begin PBXFileReference section */
 		4D18E0386C480C5CA8D1EB3C /* libPods-Que Hacer? MdQ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Que Hacer? MdQ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		641058981A8913A1006113CF /* DataAccessHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataAccessHelper.h; sourceTree = "<group>"; };
+		641058991A8913A1006113CF /* DataAccessHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataAccessHelper.m; sourceTree = "<group>"; };
+		6410589D1A891402006113CF /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		6410589F1A891C33006113CF /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		641058A11A892485006113CF /* NSDate+ParseFromString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+ParseFromString.swift"; sourceTree = "<group>"; };
 		64C391CE1A83D26000963580 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		64C391CF1A83D26000963580 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		64C391D21A83D26000963580 /* UILabel+AutoHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AutoHeight.h"; sourceTree = "<group>"; };
@@ -132,6 +141,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		641058961A8913A1006113CF /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				641058971A8913A1006113CF /* DataAccessHelper */,
+				6410589A1A8913A1006113CF /* Model */,
+				6410589F1A891C33006113CF /* Activity.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		641058971A8913A1006113CF /* DataAccessHelper */ = {
+			isa = PBXGroup;
+			children = (
+				641058981A8913A1006113CF /* DataAccessHelper.h */,
+				641058991A8913A1006113CF /* DataAccessHelper.m */,
+			);
+			path = DataAccessHelper;
+			sourceTree = "<group>";
+		};
+		6410589A1A8913A1006113CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6410589C1A891402006113CF /* Model.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		64C391CD1A83D26000963580 /* Que Hacer? MdQ */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +201,7 @@
 			children = (
 				64C391D21A83D26000963580 /* UILabel+AutoHeight.h */,
 				64C391D31A83D26000963580 /* UILabel+AutoHeight.m */,
+				641058A11A892485006113CF /* NSDate+ParseFromString.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -196,6 +233,7 @@
 		64C391E31A83D26000963580 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				641058961A8913A1006113CF /* DataManager */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -446,14 +484,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				641058A01A891C33006113CF /* Activity.swift in Sources */,
 				64C3920D1A83D26000963580 /* main.m in Sources */,
 				64C3920E1A83D26000963580 /* WSMGPCulturaEnVivoEventos.m in Sources */,
 				64C392011A83D26000963580 /* UILabel+AutoHeight.m in Sources */,
+				6410589E1A891402006113CF /* Model.xcdatamodeld in Sources */,
 				64C3920F1A83D26000963580 /* WSMGPEventos.m in Sources */,
 				64C392101A83D26000963580 /* BeachesViewController.m in Sources */,
+				641058A21A892485006113CF /* NSDate+ParseFromString.swift in Sources */,
 				64C392181A83D26000963580 /* SOAPViewController.m in Sources */,
 				64C392041A83D26000963580 /* GenericTableViewCell.m in Sources */,
 				64C392161A83D26000963580 /* HomeViewController.m in Sources */,
+				6410589B1A8913A1006113CF /* DataAccessHelper.m in Sources */,
 				64C392121A83D26000963580 /* CategoriesViewControllerSwift.swift in Sources */,
 				64C392021A83D26000963580 /* BeachesTableViewCell.m in Sources */,
 				64C392001A83D26000963580 /* AppDelegate.m in Sources */,
@@ -664,6 +706,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6410589C1A891402006113CF /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6410589D1A891402006113CF /* Model.xcdatamodel */,
+			);
+			currentVersion = 6410589D1A891402006113CF /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A05E47F01A77DF4F009D81B4 /* Project object */;
 }

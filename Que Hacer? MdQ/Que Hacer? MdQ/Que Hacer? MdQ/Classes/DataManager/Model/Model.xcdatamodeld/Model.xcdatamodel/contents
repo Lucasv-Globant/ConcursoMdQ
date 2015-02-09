@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="13F34" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Activities" syncable="YES">
+        <attribute name="contactPhone1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactPhone2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactPhone3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cost" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="costString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="end" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="handicapAccessRamp" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="handicapRestroom" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="idArea" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="locationDetails" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationHouseNumberingOrKm" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationStreetOrRoute" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="paidParkingZone" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="photoUrl1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoUrl2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoUrl3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sharingUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="start" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Activities" positionX="-63" positionY="-18" width="128" height="43"/>
+    </elements>
+</model>
