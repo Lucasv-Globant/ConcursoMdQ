@@ -13,17 +13,19 @@ import CoreData
 class Activity: NSManagedObject {
     
     @NSManaged var id: Int
+    
+    //Relationships:
+    @NSManaged var images: NSSet
+    @NSManaged var contacts: NSSet
+    @NSManaged var feeds: NSSet
+    @NSManaged var areas: NSSet
+    @NSManaged var tags: NSSet
+    @NSManaged var schedule: NSSet
+    @NSManaged var location: Location
+
+    //Attributes:
     @NSManaged var name: String
     @NSManaged var desc: String
-    @NSManaged var idArea: Int
-    @NSManaged var latitude: Float
-    @NSManaged var longitude: Float
-    @NSManaged var locationStreetOrRoute: String
-    @NSManaged var locationHouseNumberingOrKm: String
-    @NSManaged var locationDetails: String  //in case of no specific data of street and number
-    @NSManaged var contactPhone1: String
-    @NSManaged var contactPhone2: String
-    @NSManaged var contactPhone3: String
     @NSManaged var website: String //NSURL
     @NSManaged var usesSchedule: Bool
     @NSManaged var visitingHours: String
@@ -33,17 +35,15 @@ class Activity: NSManagedObject {
     @NSManaged var costString: String //In case of no numeric cost specified
     @NSManaged var handicapAccessRamp: Bool
     @NSManaged var handicapRestroom: Bool
-    @NSManaged var photoUrl1: String
-    @NSManaged var photoUrl2: String
-    @NSManaged var photoUrl3: String
     @NSManaged var paidParkingZone: Bool
     @NSManaged var sharingUrl: String
+    @NSManaged var visible: Bool
     
     //Inferred by other attributes for simplicity
-    @NSManaged var occurrsOnce: Bool
-    @NSManaged var multipleTags: Bool
-    @NSManaged var idTag: Int  //In case of single tag
-    @NSManaged var usesDateString: Bool
-    @NSManaged var usesTimeString: Bool
+//    @NSManaged var occurrsOnce: Bool
+//    @NSManaged var multipleTags: Bool
+//    @NSManaged var idTag: Int  //In case of single tag
+//    @NSManaged var usesDateString: Bool
+//    @NSManaged var usesTimeString: Bool
 
 }
