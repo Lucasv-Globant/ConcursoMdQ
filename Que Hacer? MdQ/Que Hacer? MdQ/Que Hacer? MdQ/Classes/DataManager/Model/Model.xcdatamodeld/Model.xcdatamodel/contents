@@ -15,10 +15,7 @@
         <attribute name="visible" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="areas" toMany="YES" deletionRule="Nullify" destinationEntity="Area" inverseName="activity" inverseEntity="Area" syncable="YES"/>
-        <relationship name="contacts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Contact" inverseName="activity" inverseEntity="Contact" syncable="YES"/>
         <relationship name="feeds" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Feed" inverseName="activity" inverseEntity="Feed" syncable="YES"/>
-        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Image" inverseName="activity" inverseEntity="Image" syncable="YES"/>
-        <relationship name="location" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="activity" inverseEntity="Location" syncable="YES"/>
         <relationship name="schedules" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Schedule" inverseName="activity" inverseEntity="Schedule" syncable="YES"/>
         <relationship name="tags" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="activities" inverseEntity="Tag" syncable="YES"/>
     </entity>
@@ -28,12 +25,6 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="activity" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Activity" inverseName="areas" inverseEntity="Activity" syncable="YES"/>
     </entity>
-    <entity name="Contact" representedClassName="Que Hacer? MdQ.Contact" syncable="YES">
-        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="activity" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="Activity" inverseName="contacts" inverseEntity="Activity" syncable="YES"/>
-    </entity>
     <entity name="Feed" representedClassName="Que Hacer? MdQ.Feed" syncable="YES">
         <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="entryPoint" optional="YES" attributeType="String" syncable="YES"/>
@@ -41,21 +32,6 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="activity" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="Activity" inverseName="feeds" inverseEntity="Activity" syncable="YES"/>
-    </entity>
-    <entity name="Image" representedClassName="Que Hacer? MdQ.Image" syncable="YES">
-        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="activity" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="Activity" inverseName="images" inverseEntity="Activity" syncable="YES"/>
-    </entity>
-    <entity name="Location" representedClassName="Que Hacer? MdQ.Location" syncable="YES">
-        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="houseNumberingOrKm" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="streetOrRoute" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="activity" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="Activity" inverseName="location" inverseEntity="Activity" syncable="YES"/>
     </entity>
     <entity name="Schedule" representedClassName="Que Hacer? MdQ.Schedule" syncable="YES">
         <attribute name="dayDescription" optional="YES" attributeType="String" syncable="YES"/>
@@ -73,13 +49,10 @@
         <relationship name="activities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="tags" inverseEntity="Activity" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Activity" positionX="-333" positionY="-16" width="128" height="343"/>
+        <element name="Activity" positionX="-333" positionY="-16" width="128" height="300"/>
         <element name="Area" positionX="-63" positionY="-18" width="128" height="103"/>
         <element name="Feed" positionX="-551" positionY="-73" width="128" height="118"/>
         <element name="Schedule" positionX="-666" positionY="284" width="128" height="148"/>
         <element name="Tag" positionX="-81" positionY="423" width="128" height="103"/>
-        <element name="Location" positionX="-632" positionY="77" width="128" height="148"/>
-        <element name="Contact" positionX="-398" positionY="464" width="128" height="103"/>
-        <element name="Image" positionX="-47" positionY="207" width="128" height="103"/>
     </elements>
 </model>
