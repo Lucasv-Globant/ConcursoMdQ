@@ -11,6 +11,8 @@
 		6410589E1A891402006113CF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6410589C1A891402006113CF /* Model.xcdatamodeld */; };
 		641058A01A891C33006113CF /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410589F1A891C33006113CF /* Activity.swift */; };
 		641058A21A892485006113CF /* NSDate+ParseFromString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641058A11A892485006113CF /* NSDate+ParseFromString.swift */; };
+		64809F471A8E3B8C0045794F /* WSConcurso.m in Sources */ = {isa = PBXBuildFile; fileRef = 64809F461A8E3B8C0045794F /* WSConcurso.m */; };
+		64809F4C1A8E498B0045794F /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 64809F4B1A8E498B0045794F /* Constants.m */; };
 		648F86431A8B998100903F3B /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F86421A8B998100903F3B /* Feed.swift */; };
 		648F86451A8B999500903F3B /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F86441A8B999500903F3B /* Area.swift */; };
 		648F86491A8B9A0100903F3B /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F86481A8B9A0100903F3B /* Schedule.swift */; };
@@ -62,6 +64,10 @@
 		6410589D1A891402006113CF /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		6410589F1A891C33006113CF /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		641058A11A892485006113CF /* NSDate+ParseFromString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+ParseFromString.swift"; sourceTree = "<group>"; };
+		64809F451A8E3B8C0045794F /* WSConcurso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSConcurso.h; sourceTree = "<group>"; };
+		64809F461A8E3B8C0045794F /* WSConcurso.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSConcurso.m; sourceTree = "<group>"; };
+		64809F4A1A8E498B0045794F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		64809F4B1A8E498B0045794F /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		648F86421A8B998100903F3B /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		648F86441A8B999500903F3B /* Area.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
 		648F86481A8B9A0100903F3B /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
@@ -204,6 +210,8 @@
 				64C391D41A83D26000963580 /* Custom Cells */,
 				64C391DB1A83D26000963580 /* Imgs */,
 				64C391E01A83D26000963580 /* SOAPTest2-Bridging-Header.h */,
+				64809F4A1A8E498B0045794F /* Constants.h */,
+				64809F4B1A8E498B0045794F /* Constants.m */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -257,6 +265,8 @@
 				64C391E91A83D26000963580 /* WSMGPCulturaEnVivoEventos.m */,
 				64C391EA1A83D26000963580 /* WSMGPEventos.h */,
 				64C391EB1A83D26000963580 /* WSMGPEventos.m */,
+				64809F451A8E3B8C0045794F /* WSConcurso.h */,
+				64809F461A8E3B8C0045794F /* WSConcurso.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -507,7 +517,9 @@
 				641058A21A892485006113CF /* NSDate+ParseFromString.swift in Sources */,
 				648F86451A8B999500903F3B /* Area.swift in Sources */,
 				64C392181A83D26000963580 /* SOAPViewController.m in Sources */,
+				64809F4C1A8E498B0045794F /* Constants.m in Sources */,
 				648F864B1A8B9A3E00903F3B /* Tag.swift in Sources */,
+				64809F471A8E3B8C0045794F /* WSConcurso.m in Sources */,
 				64C392041A83D26000963580 /* GenericTableViewCell.m in Sources */,
 				64C392161A83D26000963580 /* HomeViewController.m in Sources */,
 				6410589B1A8913A1006113CF /* DataAccessHelper.m in Sources */,
