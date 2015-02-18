@@ -14,7 +14,7 @@
         <attribute name="start" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="visible" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="areas" toMany="YES" deletionRule="Nullify" destinationEntity="Area" inverseName="activity" inverseEntity="Area" syncable="YES"/>
+        <relationship name="area" maxCount="1" deletionRule="Nullify" destinationEntity="Area" inverseName="activity" inverseEntity="Area" syncable="YES"/>
         <relationship name="feeds" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Feed" inverseName="activity" inverseEntity="Feed" syncable="YES"/>
         <relationship name="schedules" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Schedule" inverseName="activity" inverseEntity="Schedule" syncable="YES"/>
         <relationship name="tags" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="activities" inverseEntity="Tag" syncable="YES"/>
@@ -23,7 +23,7 @@
         <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="activity" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Activity" inverseName="areas" inverseEntity="Activity" syncable="YES"/>
+        <relationship name="activity" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Activity" inverseName="area" inverseEntity="Activity" syncable="YES"/>
     </entity>
     <entity name="Feed" representedClassName="Que Hacer? MdQ.Feed" syncable="YES">
         <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
@@ -49,7 +49,7 @@
         <relationship name="activities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="tags" inverseEntity="Activity" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Activity" positionX="-333" positionY="-16" width="128" height="300"/>
+        <element name="Activity" positionX="-333" positionY="-16" width="128" height="298"/>
         <element name="Area" positionX="-63" positionY="-18" width="128" height="103"/>
         <element name="Feed" positionX="-551" positionY="-73" width="128" height="118"/>
         <element name="Schedule" positionX="-666" positionY="284" width="128" height="148"/>

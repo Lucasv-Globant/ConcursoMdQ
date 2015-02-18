@@ -16,4 +16,6 @@ class Tag: NSManagedObject {
     @NSManaged var name: String
     @NSManaged var desc: String
     
+    
+    @NSManaged var activities: NSSet
 }

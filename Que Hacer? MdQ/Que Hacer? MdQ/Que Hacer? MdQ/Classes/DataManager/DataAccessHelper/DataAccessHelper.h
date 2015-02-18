@@ -17,6 +17,7 @@
 
 
 + (instancetype) sharedInstance;
++ (BOOL) saveContext;
 - (NSURL *)applicationDocumentsDirectory; // nice to have to reference files for core data
 
 @end

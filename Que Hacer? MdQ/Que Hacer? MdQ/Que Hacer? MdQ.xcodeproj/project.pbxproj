@@ -17,6 +17,7 @@
 		648F86451A8B999500903F3B /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F86441A8B999500903F3B /* Area.swift */; };
 		648F86491A8B9A0100903F3B /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F86481A8B9A0100903F3B /* Schedule.swift */; };
 		648F864B1A8B9A3E00903F3B /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F864A1A8B9A3E00903F3B /* Tag.swift */; };
+		64B45A8B1A952731008A89F1 /* NSManagedObject+addObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B45A8A1A952731008A89F1 /* NSManagedObject+addObject.swift */; };
 		64C392001A83D26000963580 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391CF1A83D26000963580 /* AppDelegate.m */; };
 		64C392011A83D26000963580 /* UILabel+AutoHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391D31A83D26000963580 /* UILabel+AutoHeight.m */; };
 		64C392021A83D26000963580 /* BeachesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391D61A83D26000963580 /* BeachesTableViewCell.m */; };
@@ -72,6 +73,7 @@
 		648F86441A8B999500903F3B /* Area.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
 		648F86481A8B9A0100903F3B /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		648F864A1A8B9A3E00903F3B /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		64B45A8A1A952731008A89F1 /* NSManagedObject+addObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+addObject.swift"; sourceTree = "<group>"; };
 		64C391CE1A83D26000963580 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		64C391CF1A83D26000963580 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		64C391D21A83D26000963580 /* UILabel+AutoHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AutoHeight.h"; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				64C391D21A83D26000963580 /* UILabel+AutoHeight.h */,
 				64C391D31A83D26000963580 /* UILabel+AutoHeight.m */,
 				641058A11A892485006113CF /* NSDate+ParseFromString.swift */,
+				64B45A8A1A952731008A89F1 /* NSManagedObject+addObject.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -522,6 +525,7 @@
 				64809F471A8E3B8C0045794F /* WSConcurso.m in Sources */,
 				64C392041A83D26000963580 /* GenericTableViewCell.m in Sources */,
 				64C392161A83D26000963580 /* HomeViewController.m in Sources */,
+				64B45A8B1A952731008A89F1 /* NSManagedObject+addObject.swift in Sources */,
 				6410589B1A8913A1006113CF /* DataAccessHelper.m in Sources */,
 				64C392121A83D26000963580 /* CategoriesViewControllerSwift.swift in Sources */,
 				64C392021A83D26000963580 /* BeachesTableViewCell.m in Sources */,

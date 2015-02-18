@@ -82,4 +82,26 @@
 }
 
 
+//------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------
+
+
++ (BOOL) saveContext {
+    
+    NSManagedObjectContext *context = [[DataAccessHelper sharedInstance] managedObjectContext];
+    
+    NSError *localerror;
+    if (![context save:&localerror]) { //Guardamos los cambios en el contexto.
+        NSLog([NSString stringWithFormat:@"Error in saveContext, couldn't save: %@", [localerror localizedDescription]]);
+        [context rollback];
+        
+        return false;
+    }
+    
+    
+    return true;
+    
+}
+
+
 @end
