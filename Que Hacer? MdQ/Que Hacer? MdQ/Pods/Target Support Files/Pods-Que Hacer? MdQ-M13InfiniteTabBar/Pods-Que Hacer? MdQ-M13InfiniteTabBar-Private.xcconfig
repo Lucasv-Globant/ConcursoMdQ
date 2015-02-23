@@ -1,0 +1,5 @@
+#include "Pods-Que Hacer? MdQ-M13InfiniteTabBar.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/M13InfiniteTabBar" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/M13InfiniteTabBar" "${PODS_ROOT}/Headers/Public/MBProgressHUD"
+OTHER_LDFLAGS = ${PODS_QUE_HACER__MDQ_M__INFINITETABBAR_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}

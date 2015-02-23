@@ -18,14 +18,14 @@ class Area: NSManagedObject {
 
     
     
-    
+    //To get a Area object by its id
     class func getArea(areaId: Int) -> Area? {
         
         var context: NSManagedObjectContext = DataAccessHelper.sharedInstance().managedObjectContext
-        
         let fetchRequest = NSFetchRequest(entityName: "Area")
         
         fetchRequest.returnsObjectsAsFaults = false
+        fetchRequest.includesPropertyValues = false
         fetchRequest.predicate = NSPredicate(format: "id == %d", areaId)
         
         var error: NSError? = nil

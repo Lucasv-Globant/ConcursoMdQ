@@ -18,7 +18,7 @@ class Activity: NSManagedObject {
     @NSManaged var feeds: NSSet
     @NSManaged var area: Area
     @NSManaged var tags: NSSet
-    @NSManaged var schedule: NSSet
+    @NSManaged var schedules: NSSet
 
     //Atributes
     @NSManaged var locationLatitude: Float
@@ -49,11 +49,14 @@ class Activity: NSManagedObject {
     @NSManaged var createdAt: NSDate
     @NSManaged var updatedAt: NSDate
     
+    
     //Inferred by other attributes for simplicity
 //    @NSManaged var usesDateString: Bool
 //    @NSManaged var usesTimeString: Bool
     
     
+    
+    //Returns true if the activity has more than one tag
     func hasMultipleTags() -> Bool {
         
         if self.tags.count > 1 {
@@ -64,6 +67,7 @@ class Activity: NSManagedObject {
     
     }
     
+    //If the activity has only one tag it returns it, otherwise returns nil (with console error).
     func getSingleTag() -> Tag? {
         
         if self.hasMultipleTags() {
@@ -207,22 +211,39 @@ class Activity: NSManagedObject {
         //Relationships:
         newActivity.area = Area.getArea(dic.objectForKey("areaId") as Int)!
         
+        if let tags = dic["tags"] as? [[String:String]] {
+            for tag in tags {
+                
+                var tagId: Int = tag["tagId"]!.toInt()!
+                var auxTag: Tag = Tag.getTag(tagId)!
+                newActivity.addObject(auxTag, forKey: "tags")
+            }
+        } else {
+            NSLog("Error trying to parse the tags for the activity.")
+        }
         
+        if let schedules = dic["schedules"] as? [[String:String]] {
+            for dicSchedule in schedules {
+                
+                let newSchedule = NSEntityDescription.insertNewObjectForEntityForName("Schedule",
+                                                    inManagedObjectContext: context) as Schedule
+                
+                newSchedule.startDate = NSDate(dateString: dicSchedule["dateStringStart"]!)
+                newSchedule.endDate = NSDate(dateString: dicSchedule["dateStringEnd"]!)
+                //newSchedule.startTime = NSDate(dateString: dicSchedule["timeStringStart"]!)
+                //newSchedule.endTime = NSDate(dateString: dicSchedule["timeStringStart"]!)
+                
+                newActivity.addObject(newSchedule, forKey: "schedules")
+            }
+        } else {
+            NSLog("Error trying to parse the schedule for the activity.")
+        }
         
         return newActivity
     }
     
-    
 
 }
-
-
-
-
-
-
-
-
 
 
 

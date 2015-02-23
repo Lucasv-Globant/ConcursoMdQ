@@ -18,6 +18,10 @@
 		648F86491A8B9A0100903F3B /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F86481A8B9A0100903F3B /* Schedule.swift */; };
 		648F864B1A8B9A3E00903F3B /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F864A1A8B9A3E00903F3B /* Tag.swift */; };
 		64B45A8B1A952731008A89F1 /* NSManagedObject+addObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B45A8A1A952731008A89F1 /* NSManagedObject+addObject.swift */; };
+		64BFA0E71A97704200B76F72 /* ActivitiesViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BFA0E51A97704200B76F72 /* ActivitiesViewControllerSwift.swift */; };
+		64BFA0E81A97704200B76F72 /* ActivitiesViewControllerSwift.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64BFA0E61A97704200B76F72 /* ActivitiesViewControllerSwift.xib */; };
+		64BFA0EC1A97758400B76F72 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BFA0EA1A97758400B76F72 /* ActivityTableViewCell.swift */; };
+		64BFA0ED1A97758400B76F72 /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64BFA0EB1A97758400B76F72 /* ActivityTableViewCell.xib */; };
 		64C392001A83D26000963580 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391CF1A83D26000963580 /* AppDelegate.m */; };
 		64C392011A83D26000963580 /* UILabel+AutoHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391D31A83D26000963580 /* UILabel+AutoHeight.m */; };
 		64C392021A83D26000963580 /* BeachesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C391D61A83D26000963580 /* BeachesTableViewCell.m */; };
@@ -74,6 +78,10 @@
 		648F86481A8B9A0100903F3B /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		648F864A1A8B9A3E00903F3B /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		64B45A8A1A952731008A89F1 /* NSManagedObject+addObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+addObject.swift"; sourceTree = "<group>"; };
+		64BFA0E51A97704200B76F72 /* ActivitiesViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesViewControllerSwift.swift; sourceTree = "<group>"; };
+		64BFA0E61A97704200B76F72 /* ActivitiesViewControllerSwift.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivitiesViewControllerSwift.xib; sourceTree = "<group>"; };
+		64BFA0EA1A97758400B76F72 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		64BFA0EB1A97758400B76F72 /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
 		64C391CE1A83D26000963580 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		64C391CF1A83D26000963580 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		64C391D21A83D26000963580 /* UILabel+AutoHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AutoHeight.h"; sourceTree = "<group>"; };
@@ -188,6 +196,25 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		64BFA0E41A976D8700B76F72 /* ActivitiesViewControllerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				64BFA0E91A97755500B76F72 /* ActivitiesCell */,
+				64BFA0E51A97704200B76F72 /* ActivitiesViewControllerSwift.swift */,
+				64BFA0E61A97704200B76F72 /* ActivitiesViewControllerSwift.xib */,
+			);
+			path = ActivitiesViewControllerSwift;
+			sourceTree = "<group>";
+		};
+		64BFA0E91A97755500B76F72 /* ActivitiesCell */ = {
+			isa = PBXGroup;
+			children = (
+				64BFA0EA1A97758400B76F72 /* ActivityTableViewCell.swift */,
+				64BFA0EB1A97758400B76F72 /* ActivityTableViewCell.xib */,
+			);
+			path = ActivitiesCell;
+			sourceTree = "<group>";
+		};
 		64C391CD1A83D26000963580 /* Que Hacer? MdQ */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +304,7 @@
 		64C391EC1A83D26000963580 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				64BFA0E41A976D8700B76F72 /* ActivitiesViewControllerSwift */,
 				64C391ED1A83D26000963580 /* BeachesViewController */,
 				64C391F11A83D26000963580 /* CategoriesViewControllerSwift */,
 				64C391F41A83D26000963580 /* EventosViewController */,
@@ -448,12 +476,14 @@
 				64C392111A83D26000963580 /* BeachesViewController.xib in Resources */,
 				64C392151A83D26000963580 /* EventosViewController.xib in Resources */,
 				64C392171A83D26000963580 /* HomeViewController.xib in Resources */,
+				64BFA0E81A97704200B76F72 /* ActivitiesViewControllerSwift.xib in Resources */,
 				64C392191A83D26000963580 /* SOAPViewController.xib in Resources */,
 				64C392071A83D26000963580 /* mar-del-plata-night_93079-1600x1200.jpg in Resources */,
 				64C3920B1A83D26000963580 /* Images.xcassets in Resources */,
 				64C392031A83D26000963580 /* BeachesTableViewCell.xib in Resources */,
 				64C3921D1A83D41D00963580 /* Info.plist in Resources */,
 				64C392081A83D26000963580 /* mar-del-plata.jpg in Resources */,
+				64BFA0ED1A97758400B76F72 /* ActivityTableViewCell.xib in Resources */,
 				64C392131A83D26000963580 /* CategoriesViewControllerSwift.xib in Resources */,
 				64C3920A1A83D26000963580 /* LaunchScreen.xib in Resources */,
 				64C392061A83D26000963580 /* categoryIconTheater.png in Resources */,
@@ -524,12 +554,14 @@
 				648F864B1A8B9A3E00903F3B /* Tag.swift in Sources */,
 				64809F471A8E3B8C0045794F /* WSConcurso.m in Sources */,
 				64C392041A83D26000963580 /* GenericTableViewCell.m in Sources */,
+				64BFA0E71A97704200B76F72 /* ActivitiesViewControllerSwift.swift in Sources */,
 				64C392161A83D26000963580 /* HomeViewController.m in Sources */,
 				64B45A8B1A952731008A89F1 /* NSManagedObject+addObject.swift in Sources */,
 				6410589B1A8913A1006113CF /* DataAccessHelper.m in Sources */,
 				64C392121A83D26000963580 /* CategoriesViewControllerSwift.swift in Sources */,
 				64C392021A83D26000963580 /* BeachesTableViewCell.m in Sources */,
 				64C392001A83D26000963580 /* AppDelegate.m in Sources */,
+				64BFA0EC1A97758400B76F72 /* ActivityTableViewCell.swift in Sources */,
 				64C392141A83D26000963580 /* EventosViewController.m in Sources */,
 				648F86431A8B998100903F3B /* Feed.swift in Sources */,
 			);

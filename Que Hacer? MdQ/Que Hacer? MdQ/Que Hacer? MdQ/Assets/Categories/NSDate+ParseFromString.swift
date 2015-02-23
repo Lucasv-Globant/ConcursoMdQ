@@ -14,13 +14,16 @@ extension NSDate
 {
     convenience
     
-    //Initialize from string in format yyyy-MM-dd
+    //Initialize from string in format yyyyMMdd
     init(dateString:String) {
         let dateStringFormatter = NSDateFormatter()
-        dateStringFormatter.dateFormat = "yyyy-MM-dd"
+        dateStringFormatter.dateFormat = "yyyyMMdd"
         dateStringFormatter.locale = NSLocale(localeIdentifier: "es_AR")
         let d = dateStringFormatter.dateFromString(dateString)
         self.init(timeInterval:0, sinceDate:d!)
     }
+    
+    
+    
 }
 

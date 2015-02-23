@@ -20,14 +20,17 @@ PODS:
   - AFNetworking/UIKit (2.5.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - M13InfiniteTabBar (2.3.2)
   - MBProgressHUD (0.9)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - M13InfiniteTabBar (~> 2.3)
   - MBProgressHUD (~> 0.8)
 
 SPEC CHECKSUMS:
   AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
+  M13InfiniteTabBar: 7d6df992b8955b9d24fa7f1e4d90e0ef451bea05
   MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
 
 COCOAPODS: 0.35.0

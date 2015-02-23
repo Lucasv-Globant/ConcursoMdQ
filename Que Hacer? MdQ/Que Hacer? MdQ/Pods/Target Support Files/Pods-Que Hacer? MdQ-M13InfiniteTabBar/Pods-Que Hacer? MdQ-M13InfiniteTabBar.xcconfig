@@ -1,0 +1,1 @@
+PODS_QUE_HACER__MDQ_M__INFINITETABBAR_OTHER_LDFLAGS = -framework "CoreGraphics" -framework "Foundation" -framework "QuartzCore" -framework "UIKit"
