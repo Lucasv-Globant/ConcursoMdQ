@@ -11,6 +11,7 @@
 #import "GenericTableViewCell.h"
 #import "UILabel+AutoHeight.h"
 #import "MBProgressHUD.h"
+#import "WSConcurso.h"
 
 @interface EventosViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 

@@ -19,16 +19,12 @@
 		A0EF61151AA4B6B600D74C01 /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EF60FE1AA4B6B600D74C01 /* ActivityTableViewCell.xib */; };
 		A0EF61161AA4B6B600D74C01 /* ActivitiesViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60FF1AA4B6B600D74C01 /* ActivitiesViewControllerSwift.swift */; };
 		A0EF61171AA4B6B600D74C01 /* ActivitiesViewControllerSwift.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EF61001AA4B6B600D74C01 /* ActivitiesViewControllerSwift.xib */; };
-		A0EF61181AA4B6B600D74C01 /* BeachesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61031AA4B6B600D74C01 /* BeachesViewController.m */; };
-		A0EF61191AA4B6B600D74C01 /* BeachesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EF61041AA4B6B600D74C01 /* BeachesViewController.xib */; };
 		A0EF611A1AA4B6B600D74C01 /* CategoriesViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61061AA4B6B600D74C01 /* CategoriesViewControllerSwift.swift */; };
 		A0EF611B1AA4B6B600D74C01 /* CategoriesViewControllerSwift.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EF61071AA4B6B600D74C01 /* CategoriesViewControllerSwift.xib */; };
 		A0EF611C1AA4B6B600D74C01 /* EventosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF610A1AA4B6B600D74C01 /* EventosViewController.m */; };
 		A0EF611D1AA4B6B600D74C01 /* EventosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EF610B1AA4B6B600D74C01 /* EventosViewController.xib */; };
 		A0EF611E1AA4B6B600D74C01 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF610E1AA4B6B600D74C01 /* HomeViewController.m */; };
 		A0EF611F1AA4B6B600D74C01 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EF610F1AA4B6B600D74C01 /* HomeViewController.xib */; };
-		A0EF61201AA4B6B600D74C01 /* SOAPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61121AA4B6B600D74C01 /* SOAPViewController.m */; };
-		A0EF61211AA4B6B600D74C01 /* SOAPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EF61131AA4B6B600D74C01 /* SOAPViewController.xib */; };
 		A0EF61371AA4B70C00D74C01 /* NSDate+ParseFromString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61241AA4B70B00D74C01 /* NSDate+ParseFromString.swift */; };
 		A0EF61381AA4B70C00D74C01 /* NSManagedObject+addObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61251AA4B70B00D74C01 /* NSManagedObject+addObject.swift */; };
 		A0EF61391AA4B70C00D74C01 /* UILabel+AutoHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61271AA4B70B00D74C01 /* UILabel+AutoHeight.m */; };
@@ -51,6 +47,7 @@
 		A0EF615E1AA4CF4600D74C01 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61561AA4CF4600D74C01 /* Model.xcdatamodeld */; };
 		A0EF615F1AA4CF4600D74C01 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61581AA4CF4600D74C01 /* Schedule.swift */; };
 		A0EF61601AA4CF4600D74C01 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61591AA4CF4600D74C01 /* Tag.swift */; };
+		A0EF61641AA4FE8000D74C01 /* WSMDQActivities.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61631AA4FE8000D74C01 /* WSMDQActivities.m */; };
 		F310C4A83EA7E2612DE2B98F /* libPods-Que Hacer MDQ v2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFAAE7248CABC14EFB98466 /* libPods-Que Hacer MDQ v2.a */; };
 /* End PBXBuildFile section */
 
@@ -86,9 +83,6 @@
 		A0EF60FE1AA4B6B600D74C01 /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
 		A0EF60FF1AA4B6B600D74C01 /* ActivitiesViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesViewControllerSwift.swift; sourceTree = "<group>"; };
 		A0EF61001AA4B6B600D74C01 /* ActivitiesViewControllerSwift.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivitiesViewControllerSwift.xib; sourceTree = "<group>"; };
-		A0EF61021AA4B6B600D74C01 /* BeachesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeachesViewController.h; sourceTree = "<group>"; };
-		A0EF61031AA4B6B600D74C01 /* BeachesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeachesViewController.m; sourceTree = "<group>"; };
-		A0EF61041AA4B6B600D74C01 /* BeachesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeachesViewController.xib; sourceTree = "<group>"; };
 		A0EF61061AA4B6B600D74C01 /* CategoriesViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewControllerSwift.swift; sourceTree = "<group>"; };
 		A0EF61071AA4B6B600D74C01 /* CategoriesViewControllerSwift.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoriesViewControllerSwift.xib; sourceTree = "<group>"; };
 		A0EF61091AA4B6B600D74C01 /* EventosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventosViewController.h; sourceTree = "<group>"; };
@@ -97,9 +91,6 @@
 		A0EF610D1AA4B6B600D74C01 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		A0EF610E1AA4B6B600D74C01 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		A0EF610F1AA4B6B600D74C01 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		A0EF61111AA4B6B600D74C01 /* SOAPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAPViewController.h; sourceTree = "<group>"; };
-		A0EF61121AA4B6B600D74C01 /* SOAPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAPViewController.m; sourceTree = "<group>"; };
-		A0EF61131AA4B6B600D74C01 /* SOAPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOAPViewController.xib; sourceTree = "<group>"; };
 		A0EF61241AA4B70B00D74C01 /* NSDate+ParseFromString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+ParseFromString.swift"; sourceTree = "<group>"; };
 		A0EF61251AA4B70B00D74C01 /* NSManagedObject+addObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+addObject.swift"; sourceTree = "<group>"; };
 		A0EF61261AA4B70B00D74C01 /* UILabel+AutoHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AutoHeight.h"; sourceTree = "<group>"; };
@@ -131,6 +122,8 @@
 		A0EF61581AA4CF4600D74C01 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		A0EF61591AA4CF4600D74C01 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		A0EF61611AA4D51F00D74C01 /* Que Hacer MDQ v2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Que Hacer MDQ v2-Bridging-Header.h"; path = "Que Hacer MDQ v2/Que Hacer MDQ v2-Bridging-Header.h"; sourceTree = "<group>"; };
+		A0EF61621AA4FE6700D74C01 /* WSMDQActivities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSMDQActivities.h; sourceTree = "<group>"; };
+		A0EF61631AA4FE8000D74C01 /* WSMDQActivities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMDQActivities.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,11 +224,9 @@
 			isa = PBXGroup;
 			children = (
 				A0EF60FB1AA4B6B600D74C01 /* ActivitiesViewControllerSwift */,
-				A0EF61011AA4B6B600D74C01 /* BeachesViewController */,
 				A0EF61051AA4B6B600D74C01 /* CategoriesViewControllerSwift */,
 				A0EF61081AA4B6B600D74C01 /* EventosViewController */,
 				A0EF610C1AA4B6B600D74C01 /* HomeViewController */,
-				A0EF61101AA4B6B600D74C01 /* SOAPViewController */,
 			);
 			name = ViewControllers;
 			path = "Que Hacer MDQ v2/ViewControllers";
@@ -258,16 +249,6 @@
 				A0EF60FE1AA4B6B600D74C01 /* ActivityTableViewCell.xib */,
 			);
 			path = ActivitiesCell;
-			sourceTree = "<group>";
-		};
-		A0EF61011AA4B6B600D74C01 /* BeachesViewController */ = {
-			isa = PBXGroup;
-			children = (
-				A0EF61021AA4B6B600D74C01 /* BeachesViewController.h */,
-				A0EF61031AA4B6B600D74C01 /* BeachesViewController.m */,
-				A0EF61041AA4B6B600D74C01 /* BeachesViewController.xib */,
-			);
-			path = BeachesViewController;
 			sourceTree = "<group>";
 		};
 		A0EF61051AA4B6B600D74C01 /* CategoriesViewControllerSwift */ = {
@@ -297,16 +278,6 @@
 				A0EF610F1AA4B6B600D74C01 /* HomeViewController.xib */,
 			);
 			path = HomeViewController;
-			sourceTree = "<group>";
-		};
-		A0EF61101AA4B6B600D74C01 /* SOAPViewController */ = {
-			isa = PBXGroup;
-			children = (
-				A0EF61111AA4B6B600D74C01 /* SOAPViewController.h */,
-				A0EF61121AA4B6B600D74C01 /* SOAPViewController.m */,
-				A0EF61131AA4B6B600D74C01 /* SOAPViewController.xib */,
-			);
-			path = SOAPViewController;
 			sourceTree = "<group>";
 		};
 		A0EF61221AA4B70B00D74C01 /* Assets */ = {
@@ -366,6 +337,8 @@
 				A0EF61471AA4B76700D74C01 /* WSMGPCulturaEnVivoEventos.m */,
 				A0EF61481AA4B76700D74C01 /* WSMGPEventos.h */,
 				A0EF61491AA4B76700D74C01 /* WSMGPEventos.m */,
+				A0EF61621AA4FE6700D74C01 /* WSMDQActivities.h */,
+				A0EF61631AA4FE8000D74C01 /* WSMDQActivities.m */,
 			);
 			name = Services;
 			path = "Que Hacer MDQ v2/Services";
@@ -506,8 +479,6 @@
 				A0EF613E1AA4B70C00D74C01 /* GenericTableViewCell.xib in Resources */,
 				A0EF61411AA4B70C00D74C01 /* mar-del-plata.jpg in Resources */,
 				A0EF61421AA4B70C00D74C01 /* mdq-bg1.jpg in Resources */,
-				A0EF61211AA4B6B600D74C01 /* SOAPViewController.xib in Resources */,
-				A0EF61191AA4B6B600D74C01 /* BeachesViewController.xib in Resources */,
 				A0EF60E01AA4A6CA00D74C01 /* Main.storyboard in Resources */,
 				A0EF60E51AA4A6CA00D74C01 /* LaunchScreen.xib in Resources */,
 				A0EF61151AA4B6B600D74C01 /* ActivityTableViewCell.xib in Resources */,
@@ -577,9 +548,8 @@
 				A0EF613A1AA4B70C00D74C01 /* Constants.m in Sources */,
 				A0EF61141AA4B6B600D74C01 /* ActivityTableViewCell.swift in Sources */,
 				A0EF61161AA4B6B600D74C01 /* ActivitiesViewControllerSwift.swift in Sources */,
-				A0EF61201AA4B6B600D74C01 /* SOAPViewController.m in Sources */,
+				A0EF61641AA4FE8000D74C01 /* WSMDQActivities.m in Sources */,
 				A0EF615A1AA4CF4600D74C01 /* Activity.swift in Sources */,
-				A0EF61181AA4B6B600D74C01 /* BeachesViewController.m in Sources */,
 				A0EF60DD1AA4A6CA00D74C01 /* ViewController.m in Sources */,
 				A0EF613D1AA4B70C00D74C01 /* GenericTableViewCell.m in Sources */,
 				A0EF61381AA4B70C00D74C01 /* NSManagedObject+addObject.swift in Sources */,

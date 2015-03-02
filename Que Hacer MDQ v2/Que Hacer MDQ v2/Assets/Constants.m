@@ -25,6 +25,11 @@ NSString* const token = @"012345678901234567890123456789012";
 
 //ConcursoWS
 NSString* const ConcursoWS_baseURL = @"http://sysadminsoftware.com";
-NSString* const ConcursoWS_Activities = @"rest/beta/index.php/v001/betaactivities";
+NSString* const ConcursoWS_Activities = @"qhmdq/rest/beta/index.php/v001/betaactivities";
+
+
+//WSMDQActividades
+NSString* const WSActividades_baseURL = @"http://sysadminsoftware.com";
+NSString* const WSActividades_Activities = @"qhmdq/rest/beta/index.php/v001/betaactivities";
 
 @end

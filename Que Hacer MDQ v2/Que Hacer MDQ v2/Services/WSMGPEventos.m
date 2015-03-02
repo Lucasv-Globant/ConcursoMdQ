@@ -57,7 +57,6 @@
      {
          if(success) //si el parametro success esta seteado...
          {
-             
              if ([responseObject isKindOfClass:[NSDictionary class]])
              {
                  NSLog(@"DICCIONARIO DESCARGADO CON %lu ELEMENTOS",(unsigned long)[responseObject count]);
@@ -67,7 +66,6 @@
              {
                  NSLog(@"SE DESCARGO UN TIPO DE DATO NO ESPERADO!");
              }
-             
          }
 
      }

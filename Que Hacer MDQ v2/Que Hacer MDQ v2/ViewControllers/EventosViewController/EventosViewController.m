@@ -11,15 +11,22 @@
 
 @interface EventosViewController ()
 
-@property (nonatomic, strong) WSMGPCulturaEnVivoEventos *connector;
+@property (nonatomic, strong) WSConcurso *connector;
 @property (nonatomic, strong) NSDictionary *response;
-@property (nonatomic, strong) NSArray *eventsList;
+@property (nonatomic, strong) NSArray *activitiesList;
 @property (strong, nonatomic) IBOutlet UITableView *eventosTableView;
 
 @end
 
 @implementation EventosViewController
 
+/*
+ 
+ + (void) getAllActivitiesWithSuccess: (Success) SuccessBlock
+ andFailure: (Failure) FailureBlock;
+ typedef void (^Success)(AFHTTPRequestOperation *operation, id responseObject);
+ typedef void (^Failure)(AFHTTPRequestOperation *operation, NSError *error);
+ */
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.eventosTableView registerNib:[UINib nibWithNibName:@"GenericTableViewCell" bundle:[NSBundle mainBundle]]
@@ -28,12 +35,18 @@
     self.response = [[NSDictionary alloc] init];
     
     // Do any additional setup after loading the view from its nib.
-    self.connector = [[WSMGPCulturaEnVivoEventos alloc] init];
-    __weak EventosViewController *weakSelf = self;
+
+    
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    [self.connector getEvents:^(NSDictionary *response)
+    [WSConcurso getAllActivitiesWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject)
      {
          
+     }
+                                     andFailure:^(AFHTTPRequestOperation *operation, NSError *error)
+     {
+         
+     }];
+     /*
          //This is the actual success block
          weakSelf.response = response;
          weakSelf.eventsList = [self.connector eventsListFromResponse:response];
@@ -46,13 +59,14 @@
          
          
      }
-                      failure:^(NSError *error)
+                      andFailure:^(NSError *error)
      {
          //Failure block
          NSLog(@"UPS! OCURRIO UN ERROR!");
          [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
      }
      ];
+      */
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,22 +1,19 @@
 //
-//  WSMGPCulturaEnVivoEventos.m
-//  SOAPTest2
+//  WSMDQActividades.m
+//  Que Hacer MDQ v2
 //
-//  Created by Lucas on 2/3/15.
+//  Created by Lucas on 3/2/15.
 //  Copyright (c) 2015 Globant iOS MDQ. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "WSMGPCulturaEnVivoEventos.h"
+#import "WSMDQActivities.h"
 
-@interface WSMGPCulturaEnVivoEventos ()
+@interface WSMDQActivities ()
 
 #pragma mark Instance variables
 @property (nonatomic, strong) NSString *token;
-@property (nonatomic, strong) NSString *baseURL;
-@property (nonatomic, strong) NSString *relativePathForEventsCategoriesList;
-@property (nonatomic, strong) NSString *relativePathForEventsSearch;
-@property (nonatomic, strong) NSString *relativePathForEventDetail;
+@property (nonatomic, strong) NSString *activitiesURL;
 @property (nonatomic, strong) NSString *keyNameForResultStatus;    //Key of the WS result that will contain the status of the call
 @property (nonatomic, strong) NSString *keyNameForResultEvents;  //Key of the WS result that will contain the events
 @property (nonatomic, strong) NSDictionary *requiredParametersDictionary; //This dictionary holds the mandatory parameters for making the WS call.
@@ -26,23 +23,19 @@
 
 
 
-
-@implementation WSMGPCulturaEnVivoEventos : NSObject
+@implementation WSMDQActivities : NSObject
 
 #pragma mark Initialization
 
--(WSMGPCulturaEnVivoEventos *)init
+-(WSMDQActivities *)init
 {
     if (self = [super init])
     {
         self.token = @"012345678901234567890123456789012";
-        self.baseURL = @"http://appsb.mardelplata.gob.ar";
-        self.relativePathForEventsCategoriesList = @"consultas/wsCalendario/RESTServiceCalendario.svc/calendario/consultaAreas";
-        self.relativePathForEventsSearch = @"consultas/wsCalendario/RESTServiceCalendario.svc/calendario/consultaEventos";
-        self.relativePathForEventDetail = @"consultas/wsCalendario/RESTServiceCalendario.svc/calendario/consultaDetalleEvento";
-        self.keyNameForResultStatus = @"Estado";
-        self.keyNameForResultEvents = @"Eventos";
-        self.requiredParametersDictionary = @{@"Token":self.token,@"IdArea":@2};
+        self.activitiesURL = [NSString stringWithFormat:@"%@/%@",WSMDQActividades_baseURL,WSMDQActividades_Activities];
+        self.keyNameForResultStatus = @"ResultCode";
+        self.keyNameForResultEvents = @"Results";
+        self.requiredParametersDictionary = @{@"Token":self.token};
     }
     return self;
 }
@@ -66,9 +59,8 @@
     NSMutableDictionary *paramsDictionary = [self.requiredParametersDictionary mutableCopy] ;
     
     [paramsDictionary addEntriesFromDictionary:filteringParameters];
-    
-    NSString *url = [NSString stringWithFormat:@"%@/%@",self.baseURL,self.relativePathForEventsSearch];
-    [manager POST:url
+
+    [manager POST:self.activitiesURL
        parameters:paramsDictionary
      
           success:^(AFHTTPRequestOperation *operation, id responseObject)
@@ -116,9 +108,9 @@
 
 
 #pragma mark Response Accessors
--(NSArray *)eventsListFromResponse:(NSDictionary *)aDictionary
+-(NSArray *)activitiesListFromResponse:(NSDictionary *)aDictionary
 {
-    if ([self eventsListDownloadedOk:aDictionary] || [self eventsListDownloadedWithWarnings:aDictionary])
+    if ([self activitiesListDownloadedOk:aDictionary] || [self activitiesListDownloadedWithWarnings:aDictionary])
     {
         return [aDictionary objectForKey:self.keyNameForResultEvents];
     }
@@ -131,20 +123,20 @@
 
 #pragma mark Helper methods - Status checks
 
--(BOOL)eventsListIsDownloaded:(NSDictionary *)aDictionary
+-(BOOL)activitiesListIsDownloaded:(NSDictionary *)aDictionary
 //Based on the structure of a given dictionary, it will tell whether it has been downloaded or not.
 {
     return ([aDictionary objectForKey:self.keyNameForResultStatus]);
 }
 
 
--(BOOL)eventsListDownloadedOk:(NSDictionary *) aDictionary
+-(BOOL)activitiesListDownloadedOk:(NSDictionary *) aDictionary
 {
     BOOL result = NO;
     
-    if ([self eventsListIsDownloaded:aDictionary])
+    if ([self activitiesListIsDownloaded:aDictionary])
     {
-        result = [[aDictionary objectForKey:self.keyNameForResultStatus] isEqual:@"Ok"];
+        result = [[aDictionary objectForKey:self.keyNameForResultStatus] isEqual:[NSNumber numberWithInt:0]];
     }
     
     return result;
@@ -152,26 +144,26 @@
 
 
 
--(BOOL)eventsListDownloadedWithWarnings:(NSDictionary *) aDictionary
+-(BOOL)activitiesListDownloadedWithWarnings:(NSDictionary *) aDictionary
 {
     BOOL result = NO;
     
-    if ([self eventsListIsDownloaded:aDictionary])
+    if ([self activitiesListIsDownloaded:aDictionary])
     {
-        result = [[aDictionary objectForKey:self.keyNameForResultStatus] isEqual:@"Advertencia"];
+        result = [[aDictionary objectForKey:self.keyNameForResultStatus] isEqual:[NSNumber numberWithInt:2]];
     }
     
     return result;
 }
 
 
--(BOOL)eventsListDownloadedWithErrors:(NSDictionary *) aDictionary
+-(BOOL)activitiesListDownloadedWithErrors:(NSDictionary *) aDictionary
 {
     BOOL result = NO;
     
-    if ([self eventsListIsDownloaded:aDictionary])
+    if ([self activitiesListIsDownloaded:aDictionary])
     {
-        result = [[aDictionary objectForKey:self.keyNameForResultStatus] isEqual:@"Error"];
+        result = [[aDictionary objectForKey:self.keyNameForResultStatus] isEqual:[NSNumber numberWithInt:1]];
     }
     
     return result;
@@ -220,10 +212,8 @@
     NSString *stringForTomorrow = [NSString stringWithFormat:[self getDateInStringFormatWithNSDate:[NSDate date] addingDays:1],[self getTimeEndOfDay]];
     
     //Build the NSDictionary and return it
-    return @{@"FechaDesde" : stringForToday, @"FechaHasta" : stringForTomorrow};
+    return @{@"DateFrom" : stringForToday, @"DateTo" : stringForTomorrow};
     
 }
-
-
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ActivitiesViewControllerSwift-Swift.h"
+//#import "ActivitiesViewControllerSwift.swift-Swift.h"
 
 //@synthesize viewObj,window,navObj;
 
