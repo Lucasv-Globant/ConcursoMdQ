@@ -92,7 +92,7 @@
     }
     
     
-    [cell setDataWithDictionary:[self.eventsList objectAtIndex:indexPath.row]];
+    [cell setDataWithDictionary:[self.activitiesList objectAtIndex:indexPath.row]];
     
     return cell;
 }
@@ -103,7 +103,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.eventsList count];
+    return [self.activitiesList count];
 }
 
 

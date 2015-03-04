@@ -48,6 +48,7 @@
 		A0EF615F1AA4CF4600D74C01 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61581AA4CF4600D74C01 /* Schedule.swift */; };
 		A0EF61601AA4CF4600D74C01 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61591AA4CF4600D74C01 /* Tag.swift */; };
 		A0EF61641AA4FE8000D74C01 /* WSMDQActivities.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61631AA4FE8000D74C01 /* WSMDQActivities.m */; };
+		A0EF61661AA76AE800D74C01 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0EF61651AA76AE800D74C01 /* Localizable.strings */; };
 		F310C4A83EA7E2612DE2B98F /* libPods-Que Hacer MDQ v2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFAAE7248CABC14EFB98466 /* libPods-Que Hacer MDQ v2.a */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +125,7 @@
 		A0EF61611AA4D51F00D74C01 /* Que Hacer MDQ v2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Que Hacer MDQ v2-Bridging-Header.h"; path = "Que Hacer MDQ v2/Que Hacer MDQ v2-Bridging-Header.h"; sourceTree = "<group>"; };
 		A0EF61621AA4FE6700D74C01 /* WSMDQActivities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSMDQActivities.h; sourceTree = "<group>"; };
 		A0EF61631AA4FE8000D74C01 /* WSMDQActivities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMDQActivities.m; sourceTree = "<group>"; };
+		A0EF61651AA76AE800D74C01 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ../Services/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +285,7 @@
 		A0EF61221AA4B70B00D74C01 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				A0EF61651AA76AE800D74C01 /* Localizable.strings */,
 				A0EF61231AA4B70B00D74C01 /* Categories */,
 				A0EF61281AA4B70B00D74C01 /* Constants.h */,
 				A0EF61291AA4B70B00D74C01 /* Constants.m */,
@@ -485,6 +488,7 @@
 				A0EF611D1AA4B6B600D74C01 /* EventosViewController.xib in Resources */,
 				A0EF61401AA4B70C00D74C01 /* mar-del-plata-night_93079-1600x1200.jpg in Resources */,
 				A0EF61171AA4B6B600D74C01 /* ActivitiesViewControllerSwift.xib in Resources */,
+				A0EF61661AA76AE800D74C01 /* Localizable.strings in Resources */,
 				A0EF60E21AA4A6CA00D74C01 /* Images.xcassets in Resources */,
 				A0EF613C1AA4B70C00D74C01 /* BeachesTableViewCell.xib in Resources */,
 				A0EF611F1AA4B6B600D74C01 /* HomeViewController.xib in Resources */,
@@ -689,6 +693,7 @@
 			baseConfigurationReference = 29DCABC4F6AA7800E8EE2E68 /* Pods-Que Hacer MDQ v2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "Que Hacer MDQ v2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -701,6 +706,7 @@
 			baseConfigurationReference = 91E527D31B69B45960D711D2 /* Pods-Que Hacer MDQ v2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "Que Hacer MDQ v2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
