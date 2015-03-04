@@ -20,6 +20,7 @@
 @property (nonatomic, strong) NSString *keyNameForResultStatus;    //Key of the WS result that will contain the status of the call
 @property (nonatomic, strong) NSString *keyNameForResultEvents;  //Key of the WS result that will contain the events
 @property (nonatomic, strong) NSDictionary *requiredParametersDictionary; //This dictionary holds the mandatory parameters for making the WS call.
+@property WSMDQActivitiesDownloadResultCode lastRequestResultCode;
 
 @end
 
@@ -31,30 +32,27 @@
 //Error handling - Domain
 NSString *const WSMDQActivitiesErrorDomain = @"com.globant.Que_Hacer_MDQ_v2";
 
-//Error handling - Localized description
-/*
- WSMDQActivitiesUnkownError = -1,
- WSMDQActivitiesDataBaseError = 1000,
- WSMDQActivitiesIncorrectParameterError = 1001,
- WSMDQActivitiesIncorrectTokenError = 1002
- */
-- (NSError *)getErrorCodeForCode:(WSMDQActivitiesErrorCode)errorCode
+
+- (NSError *)getNSErrorForCode:(WSMDQActivitiesDownloadResultCode)errorCode
 {
     NSString *localizedDescription = nil;
     
     switch (errorCode)
     {
-        case  WSMDQActivitiesUnkownError:
+        case  WSMDQActivitiesDownloadResultCodeUnkownError:
             localizedDescription = NSLocalizedString(@"WSMDQActivities.Error.Unknown", @"");
             break;
-        case WSMDQActivitiesDataBaseError:
+        case WSMDQActivitiesDownloadResultCodeDataBaseError:
             localizedDescription = NSLocalizedString(@"WSMDQActivities.Error.DataBase", @"");
             break;
-        case WSMDQActivitiesIncorrectParameterError:
+        case WSMDQActivitiesDownloadResultCodeIncorrectParameterError:
             localizedDescription = NSLocalizedString(@"WSMDQActivities.Error.IncorrectParameter", @"");
             break;
-        case WSMDQActivitiesIncorrectTokenError:
+        case WSMDQActivitiesDownloadResultCodeIncorrectTokenError:
             localizedDescription = NSLocalizedString(@"WSMDQActivities.Error.IncorrectToken", @"");
+            break;
+        case WSMDQActivitiesDownloadResultCodeConnectivityError:
+            localizedDescription = NSLocalizedString((@"WSMDQActivities.Error.Connectivity"), @"");
             break;
         default:
             localizedDescription = NSLocalizedString(@"WSMDQActivities.Error.Unknown", @"");
@@ -65,6 +63,36 @@ NSString *const WSMDQActivitiesErrorDomain = @"com.globant.Que_Hacer_MDQ_v2";
     return [NSError errorWithDomain:WSMDQActivitiesErrorDomain code:errorCode userInfo:userInfo];
 }
 
+
+-(WSMDQActivitiesDownloadResultCode)getResultCodeFromResponseObject:(NSDictionary *)responseObject
+{
+    WSMDQActivitiesDownloadResultCode result = WSMDQActivitiesDownloadResultCodeUnkownError;
+    
+    if ([self responseObjectDownloaded:responseObject])
+    {
+        if ([self responseObjectDownloadedOk:responseObject])
+        {
+            result = WSMDQActivitiesDownloadResultCodeOk;
+        }
+        else
+        {
+            if ([self responseObjectDownloadedWithWarnings:responseObject])
+            {
+                result = WSMDQActivitiesDownloadResultCodeWarning;
+            }
+            else
+            {
+                if ([self responseObjectDownloadedWithErrors:(responseObject)])
+                {
+                    result = WSMDQActivitiesDownloadResultCodeDataBaseError;
+                }
+            }
+            
+        }
+    }
+    
+    return result;
+}
 
 
 #pragma mark Initialization
@@ -111,33 +139,36 @@ NSString *const WSMDQActivitiesErrorDomain = @"com.globant.Que_Hacer_MDQ_v2";
      {
          if(successBlock) //si el parametro success esta seteado...
          {
-             if ([responseObject isKindOfClass:[NSDictionary class]])
+             if (![responseObject isKindOfClass:[NSDictionary class]])
              {
-                 
-                 NSLog(@"DICCIONARIO DESCARGADO CON %lu ELEMENTOS",(unsigned long)[responseObject count]);
-                 for (NSDictionary *item in responseObject)
+                 //A dictionary was expected, but something else was received
+                 self.lastRequestResultCode = WSMDQActivitiesDownloadResultCodeUnkownError;
+             }
+             else
+             {
+                 self.lastRequestResultCode = [self getResultCodeFromResponseObject:responseObject];
+             }
+             
+             //NSError *resultError = [self getNSErrorForCode:self.lastRequestResultCode];
+             for (NSDictionary *item in responseObject)
                  {
                      Activity *activityItem = [[Activity alloc] initWithDictionary: item];
                      [self.buffer addObject:activityItem];
                  }
                  
-                 successBlock(responseObject); //ejecuto esto (un bloque)
-             }
-             else
-             {
-                 NSLog(@"SE DESCARGO UN TIPO DE DATO NO ESPERADO!");
-             }
-             
-         }
+                 successBlock(self.buffer); //ejecuto esto (un bloque)
+          }
          
      }
      
           failure:^(AFHTTPRequestOperation *operation, NSError *error)
      {
          
-         if(failure) //si el parametro failure esta seteado...
+         if(failureBlock) //si el parametro failure esta seteado...
          {
-             failureBlock(error); //ejecuto esto (un bloque)
+             self.lastRequestResultCode = WSMDQActivitiesDownloadResultCodeConnectivityError;
+             NSError *resultError = [self getNSErrorForCode:self.lastRequestResultCode];
+             failureBlock(resultError); //ejecuto esto (un bloque)
          }
          
      }
@@ -158,11 +189,11 @@ NSString *const WSMDQActivitiesErrorDomain = @"com.globant.Que_Hacer_MDQ_v2";
 
 
 #pragma mark Response Accessors
--(NSArray *)activitiesListFromResponse:(NSDictionary *)aDictionary
+-(NSArray *)activitiesListFromResponseObject:(NSDictionary *)responseObject
 {
-    if ([self activitiesListDownloadedOk:aDictionary] || [self activitiesListDownloadedWithWarnings:aDictionary])
+    if ([self responseObjectDownloadedOk:responseObject] || [self responseObjectDownloadedWithWarnings:responseObject])
     {
-        return [aDictionary objectForKey:self.keyNameForResultEvents];
+        return [responseObject objectForKey:self.keyNameForResultEvents];
     }
     else
     {
@@ -173,14 +204,18 @@ NSString *const WSMDQActivitiesErrorDomain = @"com.globant.Que_Hacer_MDQ_v2";
 
 #pragma mark Helper methods - Status checks
 
+
+
+
+
 /**
  * Based on the structure of a given dictionary, this function will tell whether it has been downloaded or not.
  *
 */
--(BOOL)activitiesListIsDownloaded:(NSDictionary *)aDictionary
+-(BOOL)responseObjectDownloaded:(NSDictionary *)responseObject
 
 {
-    return ([aDictionary objectForKey:self.keyNameForResultStatus]);
+    return ([responseObject objectForKey:self.keyNameForResultStatus]);
 }
 
 
@@ -189,13 +224,13 @@ NSString *const WSMDQActivitiesErrorDomain = @"com.globant.Que_Hacer_MDQ_v2";
  *  Receives a dictionary from a WSActivities Web service response.
  *  Returns YES if the parameter contains the key flag that corresponds to a success status
  */
--(BOOL)activitiesListDownloadedOk:(NSDictionary *) aDictionary
+-(BOOL)responseObjectDownloadedOk:(NSDictionary *) responseObject
 {
     BOOL result = NO;
     
-    if ([self activitiesListIsDownloaded:aDictionary])
+    if ([self responseObjectDownloaded:responseObject])
     {
-        result = [[aDictionary objectForKey:self.keyNameForResultStatus] isEqual:[NSNumber numberWithInt:0]];
+        result = [[responseObject objectForKey:self.keyNameForResultStatus] isEqual:[NSNumber numberWithInt:0]];
     }
     
     return result;
@@ -208,13 +243,13 @@ NSString *const WSMDQActivitiesErrorDomain = @"com.globant.Que_Hacer_MDQ_v2";
  *  Receives a dictionary from a WSActivities Web service response.
  *  Returns YES if the parameter contains the key flag that corresponds to a warning.
  */
--(BOOL)activitiesListDownloadedWithWarnings:(NSDictionary *) aDictionary
+-(BOOL)responseObjectDownloadedWithWarnings:(NSDictionary *) responseObject
 {
     BOOL result = NO;
     
-    if ([self activitiesListIsDownloaded:aDictionary])
+    if ([self responseObjectDownloaded:responseObject])
     {
-        result = [[aDictionary objectForKey:self.keyNameForResultStatus] isEqual:[NSNumber numberWithInt:2]];
+        result = [[responseObject objectForKey:self.keyNameForResultStatus] isEqual:[NSNumber numberWithInt:2]];
     }
     
     return result;
@@ -226,13 +261,13 @@ NSString *const WSMDQActivitiesErrorDomain = @"com.globant.Que_Hacer_MDQ_v2";
  *  Receives a dictionary from a WSActivities Web service response.
  *  Returns YES if the parameter contains the key flag that corresponds to an error.
  */
--(BOOL)activitiesListDownloadedWithErrors:(NSDictionary *) aDictionary
+-(BOOL)responseObjectDownloadedWithErrors:(NSDictionary *) responseObject
 {
     BOOL result = NO;
     
-    if ([self activitiesListIsDownloaded:aDictionary])
+    if ([self responseObjectDownloaded:responseObject])
     {
-        result = [[aDictionary objectForKey:self.keyNameForResultStatus] isEqual:[NSNumber numberWithInt:1]];
+        result = [[responseObject objectForKey:self.keyNameForResultStatus] isEqual:[NSNumber numberWithInt:1]];
     }
     
     return result;

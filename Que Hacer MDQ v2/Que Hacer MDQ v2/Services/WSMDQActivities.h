@@ -16,8 +16,11 @@
 typedef void (^Success)(NSMutableArray *activitiesArray);
 typedef void (^Failure)(NSError *error);
 
+//This is the only method you'll need to make use of this class.
+//The success block receives an array containing activities
+//The failure block receives a NSError
 -(void)getAllActivities:(Success)successBlock
-         failure:(Failure)failureBlock;
+                failure:(Failure)failureBlock;
 
 
 @property BOOL downloadInProgress;
@@ -25,16 +28,16 @@ typedef void (^Failure)(NSError *error);
 @property (nonatomic, strong) NSMutableArray *buffer;
 
 
--(NSArray *)activitiesListFromResponse:(NSDictionary *)aDictionary;
-
-
 //Error Handling
 typedef enum {
-    WSMDQActivitiesUnkownError = -1,
-    WSMDQActivitiesDataBaseError = 1000,
-    WSMDQActivitiesIncorrectParameterError = 1001,
-    WSMDQActivitiesIncorrectTokenError = 1002
-} WSMDQActivitiesErrorCode;
+    WSMDQActivitiesDownloadResultCodeUnkownError = -1,
+    WSMDQActivitiesDownloadResultCodeOk = 0,
+    WSMDQActivitiesDownloadResultCodeDataBaseError = 1000,
+    WSMDQActivitiesDownloadResultCodeIncorrectParameterError = 1001,
+    WSMDQActivitiesDownloadResultCodeIncorrectTokenError = 1002,
+    WSMDQActivitiesDownloadResultCodeConnectivityError = 1003,
+    WSMDQActivitiesDownloadResultCodeWarning = 2000
+} WSMDQActivitiesDownloadResultCode;
 
 extern NSString *const WSMDQActivitiesErrorDomain;
 
