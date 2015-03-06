@@ -20,13 +20,7 @@
 
 @implementation EventosViewController
 
-/*
- 
- + (void) getAllActivitiesWithSuccess: (Success) SuccessBlock
- andFailure: (Failure) FailureBlock;
- typedef void (^Success)(AFHTTPRequestOperation *operation, id responseObject);
- typedef void (^Failure)(AFHTTPRequestOperation *operation, NSError *error);
- */
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.eventosTableView registerNib:[UINib nibWithNibName:@"GenericTableViewCell" bundle:[NSBundle mainBundle]]
@@ -46,27 +40,7 @@
      {
          
      }];
-     /*
-         //This is the actual success block
-         weakSelf.response = response;
-         weakSelf.eventsList = [self.connector eventsListFromResponse:response];
-         [weakSelf populateCategoriesTableView];
-         
-         [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
-         
-         
-         
-         
-         
-     }
-                      andFailure:^(NSError *error)
-     {
-         //Failure block
-         NSLog(@"UPS! OCURRIO UN ERROR!");
-         [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
-     }
-     ];
-      */
+
 }
 
 - (void)didReceiveMemoryWarning {
