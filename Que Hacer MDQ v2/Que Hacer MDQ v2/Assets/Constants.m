@@ -28,8 +28,8 @@ NSString* const ConcursoWS_baseURL = @"http://sysadminsoftware.com";
 NSString* const ConcursoWS_Activities = @"qhmdq/rest/beta/index.php/v001/betaactivities";
 
 
-//WSMDQActividades
-NSString* const WSActividades_baseURL = @"http://sysadminsoftware.com";
-NSString* const WSActividades_Activities = @"qhmdq/rest/beta/index.php/v001/betaactivities";
+//WSMDQActivities
+NSString* const WSMDQActivities_baseURL = @"http://sysadminsoftware.com";
+NSString* const WSMDQActivities_Activities = @"qhmdq/rest/beta/index.php/v001/betaactivities";
 
 @end

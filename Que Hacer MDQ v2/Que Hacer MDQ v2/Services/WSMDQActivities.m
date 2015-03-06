@@ -1,5 +1,5 @@
 //
-//  WSMDQActividades.m
+//  WSMDQActivities.m
 //  Que Hacer MDQ v2
 //
 //  Created by Lucas on 3/2/15.
@@ -103,7 +103,7 @@ NSString *const WSMDQActivitiesErrorDomain = @"com.globant.Que_Hacer_MDQ_v2";
     {
         self.downloadInProgress = NO;
         self.token = @"012345678901234567890123456789012";
-        self.activitiesURL = [NSString stringWithFormat:@"%@/%@",WSMDQActividades_baseURL,WSMDQActividades_Activities];
+        self.activitiesURL = [NSString stringWithFormat:@"%@/%@",WSMDQActivities_baseURL,WSMDQActivities_Activities];
         self.keyNameForResultStatus = @"ResultCode";
         self.keyNameForResultEvents = @"Results";
         self.requiredParametersDictionary = @{@"Token":self.token};

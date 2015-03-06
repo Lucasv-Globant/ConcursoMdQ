@@ -138,7 +138,7 @@ class Activity: NSManagedObject {
         }
         
     }
-    
+    /*
     //Activities With Sort Descriptor
     class func getAllActivities(sortDescriptor: NSSortDescriptor?) -> NSArray? {
         //optional sortDescriptor
@@ -162,7 +162,7 @@ class Activity: NSManagedObject {
         }
         
     }
-    
+    */
     func initWithDictionary(dic: NSDictionary) -> Activity {
         //NOT FINISHED
         

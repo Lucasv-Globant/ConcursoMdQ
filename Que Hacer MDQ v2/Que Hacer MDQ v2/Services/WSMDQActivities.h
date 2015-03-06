@@ -1,5 +1,5 @@
 //
-//  WSMDQActividades.h
+//  WSMDQActivities.h
 //  Que Hacer MDQ v2
 //
 //  Created by Lucas on 3/2/15.
@@ -40,6 +40,5 @@ typedef enum {
 } WSMDQActivitiesDownloadResultCode;
 
 extern NSString *const WSMDQActivitiesErrorDomain;
-
 
 @end

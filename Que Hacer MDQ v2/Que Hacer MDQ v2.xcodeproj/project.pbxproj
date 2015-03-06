@@ -695,6 +695,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "Que Hacer MDQ v2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "Que Hacer MDQ v2/Que Hacer MDQ v2-Bridging-Header.h";
@@ -708,6 +709,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "Que Hacer MDQ v2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "Que Hacer MDQ v2/Que Hacer MDQ v2-Bridging-Header.h";

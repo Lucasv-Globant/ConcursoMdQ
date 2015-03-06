@@ -21,9 +21,9 @@ extern NSString* const token;
 extern NSString* const ConcursoWS_baseURL;
 extern NSString* const ConcursoWS_Activities;
 
-//WSMDQActividades
-extern NSString* const WSMDQActividades_baseURL;
-extern NSString* const WSMDQActividades_Activities;
+//WSMDQActivities
+extern NSString* const WSMDQActivities_baseURL;
+extern NSString* const WSMDQActivities_Activities;
 
 
 
