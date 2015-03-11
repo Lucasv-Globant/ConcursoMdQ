@@ -57,6 +57,43 @@
     return _persistentStoreCoordinator;
 }
 
+//------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------
+
+#pragma mark Insert into context
+-(id)insertManagedObjectOfClass:(Class)aClass
+{
+    NSManagedObject *managedObject = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass(aClass) inManagedObjectContext:_managedObjectContext];
+    return managedObject;
+}
+
+
+//------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------
+
+#pragma mark Fetch Entities
+-(NSArray*)fetchEntitiesForClass:(Class)aClass withPredicate:(NSPredicate*)predicate
+{
+    NSError* error;
+    NSFetchRequest* fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription* entityDescription = [NSEntityDescription entityForName:NSStringFromClass(aClass) inManagedObjectContext:_managedObjectContext];
+    [fetchRequest setEntity:entityDescription];
+    [fetchRequest setPredicate:predicate];
+    NSArray* items = [_managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    
+    if (error)
+    {
+        NSLog(@"%@",[error localizedDescription]);
+        return nil;
+    }
+    return items;
+    
+}
+
+
+
+
+
 #pragma mark - Application's Documents directory
 
 // Returns the URL to the application's Documents directory.
@@ -82,6 +119,8 @@
 }
 
 
+
+
 //------------------------------------------------------------------------------------------------------
 //------------------------------------------------------------------------------------------------------
 
@@ -91,10 +130,11 @@
     NSManagedObjectContext *context = [[DataAccessHelper sharedInstance] managedObjectContext];
     
     NSError *localerror;
-    if (![context save:&localerror]) { //Guardamos los cambios en el contexto.
+    if (![context save:&localerror]) //Guardamos los cambios en el contexto.
+    {
+        //Hubo error
         NSLog([NSString stringWithFormat:@"Error in saveContext, couldn't save: %@", [localerror localizedDescription]]);
-        [context rollback];
-        
+        [context rollback];        
         return false;
     }
     
@@ -102,6 +142,9 @@
     return true;
     
 }
+
+
+
 
 
 @end

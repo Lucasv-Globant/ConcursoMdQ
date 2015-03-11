@@ -139,12 +139,7 @@ class Activity: NSManagedObject {
         
     }
     
-    /*
-    class func getAllActivities() -> NSArray? {
-        
-    }
-    
-    */
+
     
     
     

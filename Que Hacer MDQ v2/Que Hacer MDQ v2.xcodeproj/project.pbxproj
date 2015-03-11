@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0C5CE1A1AAF6E2B002A0A6C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CE181AAF6E2B002A0A6C /* LoginViewController.swift */; };
+		A0C5CE1B1AAF6E2B002A0A6C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CE191AAF6E2B002A0A6C /* LoginViewController.xib */; };
 		A0EF60D41AA4A6CA00D74C01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60D31AA4A6CA00D74C01 /* main.m */; };
 		A0EF60D71AA4A6CA00D74C01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60D61AA4A6CA00D74C01 /* AppDelegate.m */; };
 		A0EF60DA1AA4A6CA00D74C01 /* Que_Hacer_MDQ_v2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60D81AA4A6CA00D74C01 /* Que_Hacer_MDQ_v2.xcdatamodeld */; };
@@ -66,6 +68,8 @@
 		1AFAAE7248CABC14EFB98466 /* libPods-Que Hacer MDQ v2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Que Hacer MDQ v2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29DCABC4F6AA7800E8EE2E68 /* Pods-Que Hacer MDQ v2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Que Hacer MDQ v2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Que Hacer MDQ v2/Pods-Que Hacer MDQ v2.debug.xcconfig"; sourceTree = "<group>"; };
 		91E527D31B69B45960D711D2 /* Pods-Que Hacer MDQ v2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Que Hacer MDQ v2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Que Hacer MDQ v2/Pods-Que Hacer MDQ v2.release.xcconfig"; sourceTree = "<group>"; };
+		A0C5CE181AAF6E2B002A0A6C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = LoginViewController/LoginViewController.swift; sourceTree = "<group>"; };
+		A0C5CE191AAF6E2B002A0A6C /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = LoginViewController/LoginViewController.xib; sourceTree = "<group>"; };
 		A0EF60CE1AA4A6CA00D74C01 /* Que Hacer MDQ v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Que Hacer MDQ v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EF60D21AA4A6CA00D74C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0EF60D31AA4A6CA00D74C01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -229,6 +233,8 @@
 				A0EF61051AA4B6B600D74C01 /* CategoriesViewControllerSwift */,
 				A0EF61081AA4B6B600D74C01 /* EventosViewController */,
 				A0EF610C1AA4B6B600D74C01 /* HomeViewController */,
+				A0C5CE181AAF6E2B002A0A6C /* LoginViewController.swift */,
+				A0C5CE191AAF6E2B002A0A6C /* LoginViewController.xib */,
 			);
 			name = ViewControllers;
 			path = "Que Hacer MDQ v2/ViewControllers";
@@ -478,6 +484,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0C5CE1B1AAF6E2B002A0A6C /* LoginViewController.xib in Resources */,
 				A0EF611B1AA4B6B600D74C01 /* CategoriesViewControllerSwift.xib in Resources */,
 				A0EF613E1AA4B70C00D74C01 /* GenericTableViewCell.xib in Resources */,
 				A0EF61411AA4B70C00D74C01 /* mar-del-plata.jpg in Resources */,
@@ -543,6 +550,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0C5CE1A1AAF6E2B002A0A6C /* LoginViewController.swift in Sources */,
 				A0EF611A1AA4B6B600D74C01 /* CategoriesViewControllerSwift.swift in Sources */,
 				A0EF615D1AA4CF4600D74C01 /* Feed.swift in Sources */,
 				A0EF60DA1AA4A6CA00D74C01 /* Que_Hacer_MDQ_v2.xcdatamodeld in Sources */,

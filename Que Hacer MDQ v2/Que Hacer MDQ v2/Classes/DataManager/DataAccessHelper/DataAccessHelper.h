@@ -18,6 +18,7 @@
 
 + (instancetype) sharedInstance;
 + (BOOL) saveContext;
+-(id)insertManagedObjectOfClass:(Class)aClass;
 - (NSURL *)applicationDocumentsDirectory; // nice to have to reference files for core data
-
+-(NSArray*)fetchEntitiesForClass:(Class)aClass withPredicate:(NSPredicate*)predicate;
 @end
