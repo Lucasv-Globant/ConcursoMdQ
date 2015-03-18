@@ -11,3 +11,5 @@
 "WSMDQActivities.Error.DataBase" = "Error en la base de datos del servidor";
 "WSMDQActivities.Error.IncorrectParameter" = "El parametro provisto no es correcto";
 "WSMDQActivities.Error.IncorrectToken" = "El token provisto no es correcto";
+"WSMDQActivities.Error.Connectivity" = "Error de conectividad, verifique su conexión a internet e intente nuevamente.";
+"CoreDataHelper.Error.CouldNotGetPersistentCoordinator" = "Error de DB: No se pudo obtener una instancia de persistent store coordinator"

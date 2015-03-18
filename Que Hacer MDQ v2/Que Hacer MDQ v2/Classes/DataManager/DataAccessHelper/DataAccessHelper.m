@@ -14,7 +14,6 @@
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 
-
 - (NSManagedObjectContext *) managedObjectContext {
     
     if (_managedObjectContext != nil) {
@@ -133,7 +132,7 @@
     if (![context save:&localerror]) //Guardamos los cambios en el contexto.
     {
         //Hubo error
-        NSLog([NSString stringWithFormat:@"Error in saveContext, couldn't save: %@", [localerror localizedDescription]]);
+        NSLog([NSString stringWithFormat:@"Error in saveContext, couldn't save: %@", [localerror localizedDescription]],nil);
         [context rollback];        
         return false;
     }

@@ -24,7 +24,7 @@ extern NSString* const ConcursoWS_Activities;
 //WSMDQActivities
 extern NSString* const WSMDQActivities_baseURL;
 extern NSString* const WSMDQActivities_Activities;
-
+extern NSString* const WSMDActivities_TagsList;
 
 
 @end

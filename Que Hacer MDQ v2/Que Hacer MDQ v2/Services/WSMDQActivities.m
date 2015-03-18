@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "WSMDQActivities.h"
-#import "Que_Hacer_MDQ_v2-Swift.h"
 
-@class Activity;
+
+
+//@class Activity;
 
 @interface WSMDQActivities ()
 
@@ -126,7 +127,7 @@ NSString *const WSMDQActivitiesErrorDomain = @"com.globant.Que_Hacer_MDQ_v2";
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     
-    NSLog(@"Sending POST...");
+    NSLog(@"Sending POST request...");
     
     NSMutableDictionary *paramsDictionary = [self.requiredParametersDictionary mutableCopy] ;
     
@@ -149,11 +150,11 @@ NSString *const WSMDQActivitiesErrorDomain = @"com.globant.Que_Hacer_MDQ_v2";
                  self.lastRequestResultCode = [self getResultCodeFromResponseObject:responseObject];
              }
              
-             //NSError *resultError = [self getNSErrorForCode:self.lastRequestResultCode];
-             for (NSDictionary *item in responseObject)
+             NSArray* arrayOfJSONActivities = [responseObject objectForKey:@"Results"];
+             for (NSDictionary *item in arrayOfJSONActivities)
                  {
-                     Activity *activityItem = [[Activity alloc] initWithDictionary: item];
-                     [self.buffer addObject:activityItem];
+                    Activity *activityItem = [Activity instanceFromDictionary:item];
+                    [self.buffer addObject:activityItem];
                  }
                  
                  successBlock(self.buffer); //ejecuto esto (un bloque)
@@ -203,10 +204,6 @@ NSString *const WSMDQActivitiesErrorDomain = @"com.globant.Que_Hacer_MDQ_v2";
 
 
 #pragma mark Helper methods - Status checks
-
-
-
-
 
 /**
  * Based on the structure of a given dictionary, this function will tell whether it has been downloaded or not.
@@ -271,6 +268,61 @@ NSString *const WSMDQActivitiesErrorDomain = @"com.globant.Que_Hacer_MDQ_v2";
     }
     
     return result;
+}
+
+
+
+#pragma mark Supporting methods - Date to String
+
+
+-(NSString *)getDateInStringFormatWithNSDate:(NSDate *)date addingDays:(int)daysToAdd
+{
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    NSDate *targetDate = [date dateByAddingTimeInterval:60*60*24*daysToAdd];
+    [df setDateFormat:@"dd"];
+    NSString *dayString = [df stringFromDate:targetDate];
+    
+    [df setDateFormat:@"MM"];
+    NSString *monthString = [df stringFromDate:targetDate];
+    
+    [df setDateFormat:@"yyyy"];
+    NSString *yearString = [df stringFromDate:targetDate];
+    
+    return [NSString stringWithFormat:@"%@%@%@", yearString,monthString,dayString];
+}
+
+-(NSDate*)getNSDateFromNSString:(NSString*)str
+{
+    [NSDate alloc] init
+}
+
+
+
+
+#pragma mark Supporting methods - Deprecated
+-(NSString *)getTimeStartOfDay
+{
+    return @"T000000";
+}
+
+-(NSString *)getTimeEndOfDay
+{
+    return @"T235959";
+}
+
+-(NSDictionary *)eventsFilteringParametersForToday
+//Builds the parameters for the WS to filter (include) only today's and tomorrow's elements
+{
+    
+    //Build the string for today (concatenated with the start of the day)
+    NSString *stringForToday = [NSString stringWithFormat:[self getDateInStringFormatWithNSDate:[NSDate date] addingDays:0],[self getTimeStartOfDay]];
+    
+    //Build the string for tomorrow (concatenated with the end of the day)
+    NSString *stringForTomorrow = [NSString stringWithFormat:[self getDateInStringFormatWithNSDate:[NSDate date] addingDays:1],[self getTimeEndOfDay]];
+    
+    //Build the NSDictionary and return it
+    return @{@"FechaDesde" : stringForToday, @"FechaHasta" : stringForTomorrow};
+    
 }
 
 

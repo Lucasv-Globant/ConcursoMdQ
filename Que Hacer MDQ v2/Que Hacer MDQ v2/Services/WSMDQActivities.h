@@ -8,7 +8,10 @@
 
 #import "AFNetworking.h"
 #import "Constants.h"
-
+#import <CoreData/CoreData.h>
+#import "Activity.h"
+#import "Tag.h"
+#import "Schedule.h"
 
 @interface WSMDQActivities : NSObject
 

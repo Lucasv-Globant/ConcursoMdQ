@@ -29,7 +29,8 @@ NSString* const ConcursoWS_Activities = @"qhmdq/rest/beta/index.php/v001/betaact
 
 
 //WSMDQActivities
-NSString* const WSMDQActivities_baseURL = @"http://sysadminsoftware.com";
-NSString* const WSMDQActivities_Activities = @"qhmdq/rest/beta/index.php/v001/betaactivities";
+NSString* const WSMDQActivities_baseURL = @"http://sysadminsoftware.com/qhmdq/rest/beta/index.php/v001";
+NSString* const WSMDQActivities_Activities = @"betaactivities";
+NSString* const WSMDActivities_TagsList = @"tasglist";
 
 @end

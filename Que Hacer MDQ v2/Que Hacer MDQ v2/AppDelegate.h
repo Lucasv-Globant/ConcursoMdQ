@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CoreData/CoreData.h>
+#import "CoreDataHelper.h"
 #import "HomeViewController.h"
 
 
@@ -28,7 +28,7 @@
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 - (void)saveContext;
-- (NSURL *)applicationDocumentsDirectory;
+//- (NSURL *)applicationDocumentsDirectory;
 
 
 @end
