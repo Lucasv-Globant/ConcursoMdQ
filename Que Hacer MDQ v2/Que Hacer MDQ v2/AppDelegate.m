@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "Que_Hacer_MDQ_v2-Swift.h"
-
+#import "WSMDQActivities.h"
 
 //@synthesize viewObj,window,navObj;
 
@@ -19,13 +18,37 @@
 @implementation AppDelegate
 
 
+/*
+void(^Success)(NSMutableArray*) = ^(NSMutableArray* activitiesArray){ NSLog(@"Checking errors..");};
+
+int (^add)(int,int) = ^(int number1, int number2){
+    return number1+number2;
+};
+*/
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-
+    /*
+     //Testing Core Data:
     Activity *activity = [[CoreDataHelper sharedInstance] insertManagedObjectOfClass:[Activity class] inManagedObjectContext:[[CoreDataHelper sharedInstance] managedObjectContext]];
     activity.contactPhone1 = @"55511111";
     activity.name = @"Evento de prueba, xyz xyz xyz xyz xyz xyz xyz xyz";
     [[CoreDataHelper sharedInstance] saveContext];
+    */
+    
+    
+    
+
+    WSMDQActivities* ws = [[WSMDQActivities alloc] init];
+    [ws getActivitiesWithSuccess:^(NSMutableArray* activitiesArray)
+                                {
+                                    NSLog(@"Checking success..");
+                                }
+                         failure:^(NSError* error)
+                                {
+                                    NSLog(@"Checking errors..");
+                                }
+         withFilteringParameters:[[NSDictionary alloc] init]];
+    
     
     // Override point for customization after application launch.
     self.window=[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

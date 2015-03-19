@@ -17,4 +17,10 @@
 @dynamic name;
 @dynamic activity;
 
++(Tag*)instanceFromDictionary:(NSDictionary*)aDictionary
+{
+    //TO BE COMPLETED
+    return [[Tag alloc] init];
+}
+
 @end

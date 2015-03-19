@@ -2,7 +2,7 @@
 //  Activity.h
 //  Que Hacer MDQ v2
 //
-//  Created by Lucas on 3/17/15.
+//  Created by Lucas on 3/19/15.
 //  Copyright (c) 2015 Globant iOS MDQ. All rights reserved.
 //
 
@@ -59,5 +59,5 @@
 - (void)removeTagsObject:(Tag *)value;
 - (void)addTags:(NSSet *)values;
 - (void)removeTags:(NSSet *)values;
-+ (Activity*)instanceFromDictionary:(NSDictionary*)aDictionary;
++(Activity*)persistentInstanceFromDictionary:(NSDictionary*)aDictionary;
 @end

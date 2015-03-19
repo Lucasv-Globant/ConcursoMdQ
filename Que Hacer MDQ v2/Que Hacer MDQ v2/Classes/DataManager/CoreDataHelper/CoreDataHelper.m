@@ -135,6 +135,11 @@
 
 -(NSArray*)getTagWithId:(NSNumber*)tagId
 {
+    if (!tagId)
+    {
+        NSLog(@"Warning: a nil TagID was passed to getTagWithId function");
+        return nil;
+    }
     NSPredicate* predicate = [NSPredicate predicateWithFormat:@"id == %@",tagId];
     return [self fetchEntitiesForClass:[Tag class] withPredicate:predicate inManagedObjectContext:[self managedObjectContext]];
 }

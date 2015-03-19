@@ -13,8 +13,8 @@
 
 
 
-+ (void) getAllActivitiesWithSuccess: (Success) successBlock
-                          andFailure: (Failure) failureBlock {
++ (void) getAllActivitiesWithSuccess: (WSConcursoSuccess) successBlock
+                          andFailure: (WSConcursoFailure) failureBlock {
     
     
     

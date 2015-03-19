@@ -8,10 +8,6 @@
 
 #import "AFNetworking.h"
 #import "Constants.h"
-#import <CoreData/CoreData.h>
-#import "Activity.h"
-#import "Tag.h"
-#import "Schedule.h"
 
 @interface WSMDQActivities : NSObject
 
@@ -20,15 +16,17 @@ typedef void (^Success)(NSMutableArray *activitiesArray);
 typedef void (^Failure)(NSError *error);
 
 //This is the only method you'll need to make use of this class.
-//The success block receives an array containing activities
+//The success block receives an array containing activities (each activity being a NSDictionary)
 //The failure block receives a NSError
--(void)getAllActivities:(Success)successBlock
-                failure:(Failure)failureBlock;
+-(void)getActivitiesWithSuccess:(Success)successBlock
+                        failure:(Failure)failureBlock
+        withFilteringParameters:(NSDictionary *)filteringParameters;
 
 
 @property BOOL downloadInProgress;
 @property BOOL downloadCompletedWithWarnings;
-@property (nonatomic, strong) NSMutableArray *buffer;
+@property (nonatomic, strong) NSMutableArray *activitiesBuffer;
+@property (nonatomic, strong) NSMutableArray *tagsBuffer;
 
 
 //Error Handling

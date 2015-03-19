@@ -17,5 +17,5 @@
 @property (nonatomic, retain) NSNumber * id;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) Activity *activity;
-
++(Tag*)instanceFromDictionary:(NSDictionary*)aDictionary;
 @end

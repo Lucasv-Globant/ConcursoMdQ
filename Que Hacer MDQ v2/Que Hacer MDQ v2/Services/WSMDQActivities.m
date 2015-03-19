@@ -10,7 +10,6 @@
 #import "WSMDQActivities.h"
 
 
-
 //@class Activity;
 
 @interface WSMDQActivities ()
@@ -18,6 +17,7 @@
 #pragma mark Instance variables
 @property (nonatomic, strong) NSString *token;
 @property (nonatomic, strong) NSString *activitiesURL;
+@property (nonatomic, strong) NSString *tagsURL;
 @property (nonatomic, strong) NSString *keyNameForResultStatus;    //Key of the WS result that will contain the status of the call
 @property (nonatomic, strong) NSString *keyNameForResultEvents;  //Key of the WS result that will contain the events
 @property (nonatomic, strong) NSDictionary *requiredParametersDictionary; //This dictionary holds the mandatory parameters for making the WS call.
@@ -107,7 +107,7 @@ NSString *const WSMDQActivitiesErrorDomain = @"com.globant.Que_Hacer_MDQ_v2";
         self.activitiesURL = [NSString stringWithFormat:@"%@/%@",WSMDQActivities_baseURL,WSMDQActivities_Activities];
         self.keyNameForResultStatus = @"ResultCode";
         self.keyNameForResultEvents = @"Results";
-        self.requiredParametersDictionary = @{@"Token":self.token};
+        self.requiredParametersDictionary = @{@"token":self.token};
     }
     return self;
 }
@@ -122,7 +122,7 @@ NSString *const WSMDQActivitiesErrorDomain = @"com.globant.Que_Hacer_MDQ_v2";
 
 {
     self.downloadInProgress = YES;
-    self.buffer = [[ NSMutableArray alloc] init];
+    self.activitiesBuffer = [[ NSMutableArray alloc] init];
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
@@ -150,14 +150,8 @@ NSString *const WSMDQActivitiesErrorDomain = @"com.globant.Que_Hacer_MDQ_v2";
                  self.lastRequestResultCode = [self getResultCodeFromResponseObject:responseObject];
              }
              
-             NSArray* arrayOfJSONActivities = [responseObject objectForKey:@"Results"];
-             for (NSDictionary *item in arrayOfJSONActivities)
-                 {
-                    Activity *activityItem = [Activity instanceFromDictionary:item];
-                    [self.buffer addObject:activityItem];
-                 }
-                 
-                 successBlock(self.buffer); //ejecuto esto (un bloque)
+             
+                 successBlock([responseObject objectForKey:@"Results"]); //ejecuto esto (un bloque)
           }
          
      }
@@ -174,7 +168,7 @@ NSString *const WSMDQActivitiesErrorDomain = @"com.globant.Que_Hacer_MDQ_v2";
          
      }
      ];
-    NSLog(@"GET REQUEST COMPLETED!");
+    NSLog(@"POST REQUEST COMPLETED!");
     
 }
 
@@ -272,59 +266,59 @@ NSString *const WSMDQActivitiesErrorDomain = @"com.globant.Que_Hacer_MDQ_v2";
 
 
 
-#pragma mark Supporting methods - Date to String
 
 
--(NSString *)getDateInStringFormatWithNSDate:(NSDate *)date addingDays:(int)daysToAdd
+#pragma mark Web service requests
+-(void)getTagsWithSuccess:(Success)successBlock
+                        failure:(Failure)failureBlock
 {
-    NSDateFormatter *df = [[NSDateFormatter alloc] init];
-    NSDate *targetDate = [date dateByAddingTimeInterval:60*60*24*daysToAdd];
-    [df setDateFormat:@"dd"];
-    NSString *dayString = [df stringFromDate:targetDate];
+    self.downloadInProgress = YES;
+    self.tagsBuffer = [[ NSMutableArray alloc] init];
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
     
-    [df setDateFormat:@"MM"];
-    NSString *monthString = [df stringFromDate:targetDate];
+    NSLog(@"Sending Tags request...");
     
-    [df setDateFormat:@"yyyy"];
-    NSString *yearString = [df stringFromDate:targetDate];
+    NSMutableDictionary *paramsDictionary = [self.requiredParametersDictionary mutableCopy] ;
     
-    return [NSString stringWithFormat:@"%@%@%@", yearString,monthString,dayString];
+    [manager POST:self.tagsURL
+       parameters:paramsDictionary
+     
+          success:^(AFHTTPRequestOperation *operation, id responseObject)
+     {
+         if(successBlock) //si el parametro success esta seteado...
+         {
+             if (![responseObject isKindOfClass:[NSArray class]])
+             {
+                 //An array was expected, but something else was received
+                 self.lastRequestResultCode = WSMDQActivitiesDownloadResultCodeUnkownError;
+             }
+             else
+             {
+                 self.lastRequestResultCode = [self getResultCodeFromResponseObject:responseObject];
+             }
+             
+             successBlock(responseObject); //ejecuto esto (un bloque)
+         }
+         
+     }
+     
+          failure:^(AFHTTPRequestOperation *operation, NSError *error)
+     {
+         
+         if(failureBlock) //si el parametro failure esta seteado...
+         {
+             self.lastRequestResultCode = WSMDQActivitiesDownloadResultCodeConnectivityError;
+             NSError *resultError = [self getNSErrorForCode:self.lastRequestResultCode];
+             failureBlock(resultError); //ejecuto esto (un bloque)
+         }
+         
+     }
+     ];
+    NSLog(@"TAGS REQUEST COMPLETED!");
+    
 }
-
--(NSDate*)getNSDateFromNSString:(NSString*)str
-{
-    [NSDate alloc] init
-}
-
-
-
-
-#pragma mark Supporting methods - Deprecated
--(NSString *)getTimeStartOfDay
-{
-    return @"T000000";
-}
-
--(NSString *)getTimeEndOfDay
-{
-    return @"T235959";
-}
-
--(NSDictionary *)eventsFilteringParametersForToday
-//Builds the parameters for the WS to filter (include) only today's and tomorrow's elements
-{
-    
-    //Build the string for today (concatenated with the start of the day)
-    NSString *stringForToday = [NSString stringWithFormat:[self getDateInStringFormatWithNSDate:[NSDate date] addingDays:0],[self getTimeStartOfDay]];
-    
-    //Build the string for tomorrow (concatenated with the end of the day)
-    NSString *stringForTomorrow = [NSString stringWithFormat:[self getDateInStringFormatWithNSDate:[NSDate date] addingDays:1],[self getTimeEndOfDay]];
-    
-    //Build the NSDictionary and return it
-    return @{@"FechaDesde" : stringForToday, @"FechaHasta" : stringForTomorrow};
-    
-}
-
 
 
 @end

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "DataTypesHelper.h"
 
 @class Activity;
 
@@ -21,4 +22,5 @@
 @property (nonatomic, retain) NSDate * startTime;
 @property (nonatomic, retain) Activity *activity;
 -(id)initWithDictionary:scheduleDictionary;
++(Schedule*)instanceFromDictionary:(NSDictionary*)aDictionary;
 @end

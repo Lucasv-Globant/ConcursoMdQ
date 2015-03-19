@@ -13,12 +13,12 @@
 @interface WSConcurso : NSObject
 
 //Blocks
-typedef void (^Success)(AFHTTPRequestOperation *operation, id responseObject);
-typedef void (^Failure)(AFHTTPRequestOperation *operation, NSError *error);
+typedef void (^WSConcursoSuccess)(AFHTTPRequestOperation *operation, id responseObject);
+typedef void (^WSConcursoFailure)(AFHTTPRequestOperation *operation, NSError *error);
 
 
-+ (void) getAllActivitiesWithSuccess: (Success) SuccessBlock
-                             andFailure: (Failure) FailureBlock;
++ (void) getAllActivitiesWithSuccess: (WSConcursoSuccess) SuccessBlock
+                             andFailure: (WSConcursoFailure) FailureBlock;
 
 
 @end
