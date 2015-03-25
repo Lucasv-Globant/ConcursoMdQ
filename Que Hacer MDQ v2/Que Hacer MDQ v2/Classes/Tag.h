@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "DataTypesHelper.h"
 
 @class Activity;
 
@@ -18,4 +19,5 @@
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) Activity *activity;
 +(Tag*)instanceFromDictionary:(NSDictionary*)aDictionary;
++(Tag*)persistentInstanceFromDictionary:(NSDictionary*)aDictionary;
 @end

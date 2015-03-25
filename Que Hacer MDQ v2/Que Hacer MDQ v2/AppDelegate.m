@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "WSMDQActivities.h"
+#import "Synchronizer.h"
+
 
 //@synthesize viewObj,window,navObj;
 
@@ -27,6 +29,7 @@ int (^add)(int,int) = ^(int number1, int number2){
 */
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    NSLog(@"PATH TO DATA FOLDER: %@",[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject]);
     /*
      //Testing Core Data:
     Activity *activity = [[CoreDataHelper sharedInstance] insertManagedObjectOfClass:[Activity class] inManagedObjectContext:[[CoreDataHelper sharedInstance] managedObjectContext]];
@@ -37,7 +40,7 @@ int (^add)(int,int) = ^(int number1, int number2){
     
     
     
-
+    /*
     WSMDQActivities* ws = [[WSMDQActivities alloc] init];
     [ws getActivitiesWithSuccess:^(NSMutableArray* activitiesArray)
                                 {
@@ -49,6 +52,17 @@ int (^add)(int,int) = ^(int number1, int number2){
                                 }
          withFilteringParameters:[[NSDictionary alloc] init]];
     
+    */
+    NSLog(@"Synchronizing...");
+    Synchronizer* sync = [[Synchronizer alloc] init];
+    [sync syncWithSuccess:^(NSMutableArray* activitiesArray)
+                        {
+                            NSLog(@"Checking success..");
+                        }
+                failure:^(NSError* error)
+                        {
+                            NSLog(@"Checking errors..");
+                        }];
     
     // Override point for customization after application launch.
     self.window=[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

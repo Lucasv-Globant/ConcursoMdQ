@@ -105,6 +105,7 @@ NSString *const WSMDQActivitiesErrorDomain = @"com.globant.Que_Hacer_MDQ_v2";
         self.downloadInProgress = NO;
         self.token = @"012345678901234567890123456789012";
         self.activitiesURL = [NSString stringWithFormat:@"%@/%@",WSMDQActivities_baseURL,WSMDQActivities_Activities];
+        self.tagsURL = [NSString stringWithFormat:@"%@/%@",WSMDQActivities_baseURL,WSMDQActivities_TagsList];
         self.keyNameForResultStatus = @"ResultCode";
         self.keyNameForResultEvents = @"Results";
         self.requiredParametersDictionary = @{@"token":self.token};
@@ -289,9 +290,9 @@ NSString *const WSMDQActivitiesErrorDomain = @"com.globant.Que_Hacer_MDQ_v2";
      {
          if(successBlock) //si el parametro success esta seteado...
          {
-             if (![responseObject isKindOfClass:[NSArray class]])
+             if (![responseObject isKindOfClass:[NSDictionary class]])
              {
-                 //An array was expected, but something else was received
+                 //A NSDictionary was expected, but something else has been received
                  self.lastRequestResultCode = WSMDQActivitiesDownloadResultCodeUnkownError;
              }
              else
@@ -299,7 +300,7 @@ NSString *const WSMDQActivitiesErrorDomain = @"com.globant.Que_Hacer_MDQ_v2";
                  self.lastRequestResultCode = [self getResultCodeFromResponseObject:responseObject];
              }
              
-             successBlock(responseObject); //ejecuto esto (un bloque)
+             successBlock([responseObject objectForKey:@"Results"]); //ejecuto esto (un bloque)
          }
          
      }

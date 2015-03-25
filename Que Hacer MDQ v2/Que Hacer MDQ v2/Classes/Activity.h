@@ -60,4 +60,5 @@
 - (void)addTags:(NSSet *)values;
 - (void)removeTags:(NSSet *)values;
 +(Activity*)persistentInstanceFromDictionary:(NSDictionary*)aDictionary;
+
 @end

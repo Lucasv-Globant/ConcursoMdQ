@@ -12,7 +12,7 @@
 @interface WSMDQActivities : NSObject
 
 //Blocks
-typedef void (^Success)(NSMutableArray *activitiesArray);
+typedef void (^Success)(NSMutableArray *json);
 typedef void (^Failure)(NSError *error);
 
 //This is the only method you'll need to make use of this class.
@@ -21,6 +21,9 @@ typedef void (^Failure)(NSError *error);
 -(void)getActivitiesWithSuccess:(Success)successBlock
                         failure:(Failure)failureBlock
         withFilteringParameters:(NSDictionary *)filteringParameters;
+
+-(void)getTagsWithSuccess:(Success)successBlock
+                  failure:(Failure)failureBlock;
 
 
 @property BOOL downloadInProgress;

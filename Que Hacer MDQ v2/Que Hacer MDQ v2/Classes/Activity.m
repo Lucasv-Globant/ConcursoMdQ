@@ -83,7 +83,7 @@
     NSArray* tagsSource = [aDictionary objectForKey:@"tags"];
     NSMutableArray* tagsArray = [[NSMutableArray alloc] init];
     for ( NSDictionary* tagDictionary in tagsSource) {
-        [tagsArray addObject:[[CoreDataHelper sharedInstance] getTagWithId:[tagDictionary objectForKey:@"id"]]];
+        [tagsArray addObject:[[CoreDataHelper sharedInstance] getTagWithId:[tagDictionary objectForKey:@"tagId"]]];
     }
     newActivity.tags = [[NSSet alloc] initWithArray:tagsArray];
     
@@ -97,6 +97,13 @@
     }
     newActivity.schedules = [[NSSet alloc] initWithArray:schedulesArray];
     
+    NSError* error;
+    [context save:&error];
+    if (error)
+    {
+        NSLog(@"There was an error when trying to save the activity with id %@", newActivity.id);
+        return nil;
+    }
     return newActivity;
 }
 

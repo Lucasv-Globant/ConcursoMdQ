@@ -141,12 +141,14 @@
         return nil;
     }
     NSPredicate* predicate = [NSPredicate predicateWithFormat:@"id == %@",tagId];
-    return [self fetchEntitiesForClass:[Tag class] withPredicate:predicate inManagedObjectContext:[self managedObjectContext]];
+    return [self fetchEntitiesForClass:[Tag class] withPredicate:predicate inManagedObjectContext:_managedObjectContext];
 }
 
--(void)deleteAllActivities
+
+#pragma mark - Generic method to delete a given entity from Core Data
+-(void)deleteEntityNamed:(NSString*) entityName
 {
-    NSEntityDescription* entityDesc = [NSEntityDescription entityForName:@"Tag" inManagedObjectContext:[self managedObjectContext]];
+    NSEntityDescription* entityDesc = [NSEntityDescription entityForName:entityName inManagedObjectContext:[self managedObjectContext]];
     
     NSFetchRequest* request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDesc];
@@ -157,6 +159,24 @@
     {
         [[self managedObjectContext] deleteObject:act];
     }
+}
+
+#pragma mark - Delete Tags from Core Data
+-(void)deleteAllTags
+{
+    [self deleteEntityNamed:@"Tag"];
+}
+
+#pragma mark - Delete Activities from Core Data
+-(void)deleteAllActivities
+{
+    [self deleteEntityNamed:@"Activity"];
+}
+
+#pragma mark - Delete Schedules from Core Data
+-(void)deleteAllSchedules
+{
+    [self deleteEntityNamed:@"Schedule"];
 }
 
 #pragma mark - Singleton method
