@@ -81,21 +81,20 @@
     
     //Relationship: Tags
     NSArray* tagsSource = [aDictionary objectForKey:@"tags"];
-    NSMutableArray* tagsArray = [[NSMutableArray alloc] init];
+    //NSMutableArray* tagsArray = [[NSMutableArray alloc] init];
     for ( NSDictionary* tagDictionary in tagsSource) {
-        [tagsArray addObject:[[CoreDataHelper sharedInstance] getTagWithId:[tagDictionary objectForKey:@"tagId"]]];
+        //[tagsArray addObject:[[CoreDataHelper sharedInstance] getTagWithId:[tagDictionary objectForKey:@"tagId"]]];
+        [newActivity addTagsObject:[[CoreDataHelper sharedInstance] getTagWithId:[tagDictionary objectForKey:@"tagId"]]] ;
+
     }
-    newActivity.tags = [[NSSet alloc] initWithArray:tagsArray];
-    
-    
+
     //Relationship: Schedules
     NSArray* schedulesSource = [aDictionary objectForKey:@"schedules"];
-    NSMutableArray* schedulesArray = [[NSMutableArray alloc] init];
     for (NSDictionary* scheduleDictionary in schedulesSource)
     {
-        [schedulesArray addObject:[[NSEntityDescription insertNewObjectForEntityForName:@"Schedule" inManagedObjectContext:context] initWithDictionary:scheduleDictionary]];
+        [newActivity addSchedulesObject:[[NSEntityDescription insertNewObjectForEntityForName:@"Schedule" inManagedObjectContext:context] initWithDictionary:scheduleDictionary]];
     }
-    newActivity.schedules = [[NSSet alloc] initWithArray:schedulesArray];
+
     
     NSError* error;
     [context save:&error];

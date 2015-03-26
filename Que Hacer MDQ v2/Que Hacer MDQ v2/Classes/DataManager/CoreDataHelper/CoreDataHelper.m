@@ -133,15 +133,32 @@
 }
 */
 
--(NSArray*)getTagWithId:(NSNumber*)tagId
+-(Tag*)getTagWithId:(NSNumber*)tagId
 {
+    Tag* result = nil;
     if (!tagId)
     {
         NSLog(@"Warning: a nil TagID was passed to getTagWithId function");
-        return nil;
     }
-    NSPredicate* predicate = [NSPredicate predicateWithFormat:@"id == %@",tagId];
-    return [self fetchEntitiesForClass:[Tag class] withPredicate:predicate inManagedObjectContext:_managedObjectContext];
+    else
+    {
+        NSPredicate* predicate = [NSPredicate predicateWithFormat:@"id == %@",tagId];
+        NSArray* entities =  [self fetchEntitiesForClass:[Tag class] withPredicate:predicate inManagedObjectContext:_managedObjectContext];
+        if ([entities count] > 0)
+        {
+            result = [entities objectAtIndex:0];
+            if ([entities count] > 1)
+            {
+                NSLog(@"Warning: The query in getTagWithId(%@) returned more than one element!",tagId);
+            }
+        }
+        else
+        {
+            NSLog(@"Warning: The query in getTagWithId(%@) returned zero elements!",tagId);
+        }
+    }
+
+    return result;
 }
 
 

@@ -8,26 +8,28 @@
 
 #import <UIKit/UIKit.h>
 #import "CoreDataHelper.h"
-#import "HomeViewController.h"
+#import "SplashViewController.h"
 
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 {
+    /*
     HomeViewController *viewObj;
     UINavigationController *navObj;
+     */
 }
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic)  HomeViewController *viewObj;
-@property (strong, nonatomic) UINavigationController *navObj;
+//@property (strong, nonatomic)  HomeViewController *viewObj;
+//@property (strong, nonatomic) UINavigationController *navObj;
 
 
 
-@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+//@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+//@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
+//@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
-- (void)saveContext;
+//- (void)saveContext;
 //- (NSURL *)applicationDocumentsDirectory;
 
 

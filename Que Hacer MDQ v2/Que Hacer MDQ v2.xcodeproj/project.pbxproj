@@ -16,6 +16,12 @@
 		A0C5CE9F1AB9EC5F002A0A6C /* DataTypesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CE9E1AB9EC5F002A0A6C /* DataTypesHelper.m */; };
 		A0C5CEA21ABB2901002A0A6C /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CEA11ABB2901002A0A6C /* Activity.m */; };
 		A0C5CEA51ABB6579002A0A6C /* Synchronizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CEA41ABB6579002A0A6C /* Synchronizer.m */; };
+		A0C5CEA91AC31A02002A0A6C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CEA71AC31A02002A0A6C /* DetailViewController.m */; };
+		A0C5CEAA1AC31A02002A0A6C /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEA81AC31A02002A0A6C /* DetailViewController.xib */; };
+		A0C5CEB01AC326B1002A0A6C /* ActivitiesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CEAE1AC326B1002A0A6C /* ActivitiesListViewController.m */; };
+		A0C5CEB11AC326B2002A0A6C /* ActivitiesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEAF1AC326B1002A0A6C /* ActivitiesListViewController.xib */; };
+		A0C5CEB61AC45639002A0A6C /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CEB41AC45639002A0A6C /* SplashViewController.m */; };
+		A0C5CEB71AC45639002A0A6C /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEB51AC45639002A0A6C /* SplashViewController.xib */; };
 		A0EF60D41AA4A6CA00D74C01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60D31AA4A6CA00D74C01 /* main.m */; };
 		A0EF60D71AA4A6CA00D74C01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60D61AA4A6CA00D74C01 /* AppDelegate.m */; };
 		A0EF60DA1AA4A6CA00D74C01 /* Que_Hacer_MDQ_v2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60D81AA4A6CA00D74C01 /* Que_Hacer_MDQ_v2.xcdatamodeld */; };
@@ -83,6 +89,15 @@
 		A0C5CEA11ABB2901002A0A6C /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
 		A0C5CEA31ABB6579002A0A6C /* Synchronizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Synchronizer.h; sourceTree = "<group>"; };
 		A0C5CEA41ABB6579002A0A6C /* Synchronizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Synchronizer.m; sourceTree = "<group>"; };
+		A0C5CEA61AC31A02002A0A6C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = DetailViewController/DetailViewController.h; sourceTree = "<group>"; };
+		A0C5CEA71AC31A02002A0A6C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = DetailViewController/DetailViewController.m; sourceTree = "<group>"; };
+		A0C5CEA81AC31A02002A0A6C /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailViewController.xib; path = DetailViewController/DetailViewController.xib; sourceTree = "<group>"; };
+		A0C5CEAD1AC326B1002A0A6C /* ActivitiesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivitiesListViewController.h; path = ActivitiesListViewController/ActivitiesListViewController.h; sourceTree = "<group>"; };
+		A0C5CEAE1AC326B1002A0A6C /* ActivitiesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivitiesListViewController.m; path = ActivitiesListViewController/ActivitiesListViewController.m; sourceTree = "<group>"; };
+		A0C5CEAF1AC326B1002A0A6C /* ActivitiesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ActivitiesListViewController.xib; path = ActivitiesListViewController/ActivitiesListViewController.xib; sourceTree = "<group>"; };
+		A0C5CEB31AC45639002A0A6C /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplashViewController.h; path = SplashViewController/SplashViewController.h; sourceTree = "<group>"; };
+		A0C5CEB41AC45639002A0A6C /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SplashViewController.m; path = SplashViewController/SplashViewController.m; sourceTree = "<group>"; };
+		A0C5CEB51AC45639002A0A6C /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SplashViewController.xib; path = SplashViewController/SplashViewController.xib; sourceTree = "<group>"; };
 		A0EF60CE1AA4A6CA00D74C01 /* Que Hacer MDQ v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Que Hacer MDQ v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EF60D21AA4A6CA00D74C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0EF60D31AA4A6CA00D74C01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -185,6 +200,36 @@
 			path = "Que Hacer MDQ v2/Classes";
 			sourceTree = "<group>";
 		};
+		A0C5CEAB1AC31EFF002A0A6C /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0C5CEA61AC31A02002A0A6C /* DetailViewController.h */,
+				A0C5CEA71AC31A02002A0A6C /* DetailViewController.m */,
+				A0C5CEA81AC31A02002A0A6C /* DetailViewController.xib */,
+			);
+			name = DetailViewController;
+			sourceTree = "<group>";
+		};
+		A0C5CEAC1AC3267D002A0A6C /* ActivitiesListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0C5CEAD1AC326B1002A0A6C /* ActivitiesListViewController.h */,
+				A0C5CEAE1AC326B1002A0A6C /* ActivitiesListViewController.m */,
+				A0C5CEAF1AC326B1002A0A6C /* ActivitiesListViewController.xib */,
+			);
+			name = ActivitiesListViewController;
+			sourceTree = "<group>";
+		};
+		A0C5CEB21AC455ED002A0A6C /* SplashViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0C5CEB31AC45639002A0A6C /* SplashViewController.h */,
+				A0C5CEB41AC45639002A0A6C /* SplashViewController.m */,
+				A0C5CEB51AC45639002A0A6C /* SplashViewController.xib */,
+			);
+			name = SplashViewController;
+			sourceTree = "<group>";
+		};
 		A0EF60C51AA4A6CA00D74C01 = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +301,9 @@
 		A0EF60FA1AA4B6B600D74C01 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A0C5CEB21AC455ED002A0A6C /* SplashViewController */,
+				A0C5CEAC1AC3267D002A0A6C /* ActivitiesListViewController */,
+				A0C5CEAB1AC31EFF002A0A6C /* DetailViewController */,
 				A0EF60FB1AA4B6B600D74C01 /* ActivitiesViewControllerSwift */,
 				A0EF61051AA4B6B600D74C01 /* CategoriesViewControllerSwift */,
 				A0EF61081AA4B6B600D74C01 /* EventosViewController */,
@@ -495,8 +543,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0C5CEB71AC45639002A0A6C /* SplashViewController.xib in Resources */,
 				A0C5CE1B1AAF6E2B002A0A6C /* LoginViewController.xib in Resources */,
 				A0EF611B1AA4B6B600D74C01 /* CategoriesViewControllerSwift.xib in Resources */,
+				A0C5CEAA1AC31A02002A0A6C /* DetailViewController.xib in Resources */,
 				A0EF613E1AA4B70C00D74C01 /* GenericTableViewCell.xib in Resources */,
 				A0EF61411AA4B70C00D74C01 /* mar-del-plata.jpg in Resources */,
 				A0EF61421AA4B70C00D74C01 /* mdq-bg1.jpg in Resources */,
@@ -510,6 +560,7 @@
 				A0EF60E21AA4A6CA00D74C01 /* Images.xcassets in Resources */,
 				A0EF613C1AA4B70C00D74C01 /* BeachesTableViewCell.xib in Resources */,
 				A0EF611F1AA4B6B600D74C01 /* HomeViewController.xib in Resources */,
+				A0C5CEB11AC326B2002A0A6C /* ActivitiesListViewController.xib in Resources */,
 				A0EF613F1AA4B70C00D74C01 /* categoryIconTheater.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,6 +617,8 @@
 				A0EF60DA1AA4A6CA00D74C01 /* Que_Hacer_MDQ_v2.xcdatamodeld in Sources */,
 				A0EF611C1AA4B6B600D74C01 /* EventosViewController.m in Sources */,
 				A0EF611E1AA4B6B600D74C01 /* HomeViewController.m in Sources */,
+				A0C5CEB61AC45639002A0A6C /* SplashViewController.m in Sources */,
+				A0C5CEB01AC326B1002A0A6C /* ActivitiesListViewController.m in Sources */,
 				A0C5CE1F1AB1C4AC002A0A6C /* CoreDataHelper.m in Sources */,
 				A0EF60D71AA4A6CA00D74C01 /* AppDelegate.m in Sources */,
 				A0EF613A1AA4B70C00D74C01 /* Constants.m in Sources */,
@@ -588,6 +641,7 @@
 				A0EF61371AA4B70C00D74C01 /* NSDate+ParseFromString.swift in Sources */,
 				A0EF613B1AA4B70C00D74C01 /* BeachesTableViewCell.m in Sources */,
 				A0EF614C1AA4B76700D74C01 /* WSMGPEventos.m in Sources */,
+				A0C5CEA91AC31A02002A0A6C /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

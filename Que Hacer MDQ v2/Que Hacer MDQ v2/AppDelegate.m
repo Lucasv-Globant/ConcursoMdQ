@@ -10,9 +10,6 @@
 #import "WSMDQActivities.h"
 #import "Synchronizer.h"
 
-
-//@synthesize viewObj,window,navObj;
-
 @interface AppDelegate ()
 
 @end
@@ -66,9 +63,9 @@ int (^add)(int,int) = ^(int number1, int number2){
     
     // Override point for customization after application launch.
     self.window=[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.viewObj= [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
-    self.navObj=[[UINavigationController alloc] initWithRootViewController:self.viewObj];
-    self.window.rootViewController=self.navObj;
+    SplashViewController* viewObj= [[SplashViewController alloc] initWithNibName:@"SplashViewController" bundle:nil];
+    UINavigationController* navigationController=[[UINavigationController alloc] initWithRootViewController:viewObj];
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -94,7 +91,7 @@ int (^add)(int,int) = ^(int number1, int number2){
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
-    [self saveContext];
+    [[CoreDataHelper sharedInstance] saveContext];
 }
 
 

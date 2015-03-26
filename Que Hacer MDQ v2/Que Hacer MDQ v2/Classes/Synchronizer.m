@@ -16,8 +16,7 @@
 -(void)syncWithSuccess:(SyncSuccess)successBlock
                 failure:(SyncFailure)failureBlock
 {
-
-    __weak Synchronizer* weakself = self;
+    
     WSMDQActivities* ws = [[WSMDQActivities alloc] init];
     self.webserviceInstance = ws;
     [ws getTagsWithSuccess:^(NSMutableArray* json)
