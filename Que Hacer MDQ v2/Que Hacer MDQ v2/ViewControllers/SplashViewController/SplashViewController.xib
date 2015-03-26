@@ -23,18 +23,21 @@
                         <constraint firstAttribute="width" secondItem="vUO-vU-buk" secondAttribute="height" multiplier="1:1" id="qD9-ln-IJa"/>
                     </constraints>
                 </imageView>
-                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="65g-sX-9zY">
-                    <rect key="frame" x="298" y="290" width="20" height="20"/>
-                    <color key="color" red="0.85613777619999998" green="0.85613777619999998" blue="0.85613777619999998" alpha="1" colorSpace="calibratedRGB"/>
-                </activityIndicatorView>
-                <imageView userInteractionEnabled="NO" alpha="0.34999999999999964" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8hh-fN-Zei">
+                <imageView userInteractionEnabled="NO" alpha="0.34999999999999964" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8hh-fN-Zei">
                     <rect key="frame" x="229" y="232" width="172" height="123"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="172" id="Z2b-oX-gte"/>
+                    </constraints>
                 </imageView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="65g-sX-9zY">
+                    <rect key="frame" x="298" y="290" width="20" height="20"/>
+                    <color key="color" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Buscando..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQh-WO-R0h">
                     <rect key="frame" x="274" y="232" width="118" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.91971685082872923" green="0.91971685082872923" blue="0.91971685082872923" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -42,6 +45,7 @@
             <constraints>
                 <constraint firstItem="65g-sX-9zY" firstAttribute="top" secondItem="NQh-WO-R0h" secondAttribute="bottom" constant="17" id="105-Xa-tmh"/>
                 <constraint firstAttribute="bottom" secondItem="vUO-vU-buk" secondAttribute="bottom" id="7KB-fV-wdP"/>
+                <constraint firstItem="8hh-fN-Zei" firstAttribute="top" secondItem="NQh-WO-R0h" secondAttribute="top" id="GEC-bB-4Ec"/>
                 <constraint firstItem="vUO-vU-buk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Glq-g6-2rs"/>
                 <constraint firstItem="vUO-vU-buk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Pf2-p7-zad"/>
                 <constraint firstAttribute="centerX" secondItem="65g-sX-9zY" secondAttribute="centerX" id="Q41-5y-vfC"/>
