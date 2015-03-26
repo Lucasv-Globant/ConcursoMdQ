@@ -12,5 +12,6 @@
 +(NSDate*)getDateFromNSString:(NSString*)str;
 +(NSDate*)getTimeFromNSString:(NSString*)str;
 +(NSNumber*)stringToNSNumber:(NSString*) str;
++(NSNumber*)getHourOfCurrentTime;
 +(NSDate*)qhmdqDateTimeStringToNSDate:(NSString*)str;
 @end

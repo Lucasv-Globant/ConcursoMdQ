@@ -3,10 +3,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController">
             <connections>
+                <outlet property="background" destination="vUO-vU-buk" id="w99-ZP-K2n"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,14 +17,40 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mar-del-plata-night_93079-1600x1200.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vUO-vU-buk">
-                    <rect key="frame" x="36" y="63" width="600" height="600"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vUO-vU-buk">
+                    <rect key="frame" x="15" y="0.0" width="600" height="600"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="vUO-vU-buk" secondAttribute="height" multiplier="1:1" id="qD9-ln-IJa"/>
+                    </constraints>
                 </imageView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="65g-sX-9zY">
+                    <rect key="frame" x="298" y="290" width="20" height="20"/>
+                    <color key="color" red="0.85613777619999998" green="0.85613777619999998" blue="0.85613777619999998" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
+                <imageView userInteractionEnabled="NO" alpha="0.34999999999999964" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8hh-fN-Zei">
+                    <rect key="frame" x="229" y="232" width="172" height="123"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Buscando..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQh-WO-R0h">
+                    <rect key="frame" x="274" y="232" width="118" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.91971685082872923" green="0.91971685082872923" blue="0.91971685082872923" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="65g-sX-9zY" firstAttribute="top" secondItem="NQh-WO-R0h" secondAttribute="bottom" constant="17" id="105-Xa-tmh"/>
+                <constraint firstAttribute="bottom" secondItem="vUO-vU-buk" secondAttribute="bottom" id="7KB-fV-wdP"/>
+                <constraint firstItem="vUO-vU-buk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Glq-g6-2rs"/>
+                <constraint firstItem="vUO-vU-buk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Pf2-p7-zad"/>
+                <constraint firstAttribute="centerX" secondItem="65g-sX-9zY" secondAttribute="centerX" id="Q41-5y-vfC"/>
+                <constraint firstAttribute="centerY" secondItem="8hh-fN-Zei" secondAttribute="centerY" id="YZo-c3-WvM"/>
+                <constraint firstAttribute="trailing" secondItem="vUO-vU-buk" secondAttribute="trailing" id="eMM-iL-3Bj"/>
+                <constraint firstAttribute="centerX" secondItem="8hh-fN-Zei" secondAttribute="centerX" id="mei-90-QQB"/>
+                <constraint firstAttribute="centerX" secondItem="NQh-WO-R0h" secondAttribute="centerX" id="pBo-2J-hfA"/>
+                <constraint firstAttribute="centerY" secondItem="65g-sX-9zY" secondAttribute="centerY" id="wnf-2W-Ts7"/>
+            </constraints>
         </view>
     </objects>
-    <resources>
-        <image name="mar-del-plata-night_93079-1600x1200.jpg" width="1600" height="1200"/>
-    </resources>
 </document>

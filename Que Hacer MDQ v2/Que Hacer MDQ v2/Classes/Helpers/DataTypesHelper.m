@@ -63,19 +63,29 @@
 
 +(NSDate*)qhmdqDateTimeStringToNSDate:(NSString*)str
 {
-    /*
-    NSRange rangeDatePart = NSMakeRange(0,8);
-    NSRange rangeTimePart = NSMakeRange(9,6);
-    NSString* strDatePart = [str substringWithRange:rangeDatePart];
-    NSString* strTimePart = [str substringWithRange:rangeTimePart];
-    NSDate* dateDatePart  =
-     */
     NSDateFormatter* dsf = [[NSDateFormatter alloc] init];
     dsf.dateFormat = @"yyyyMMddTHHmmss";
     dsf.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"es_AR"];
     return [dsf dateFromString:str];
 }
 
+
+#pragma mark Supporting methods - Hour of current time
++(NSNumber*)getHourOfCurrentTime
+{
+    //Set a date formater to hours only:
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"HH"];
+    
+    //Get current date & time:
+    NSDate* now = [NSDate date];
+    
+    //Convert to hours (as string):
+    NSString *hoursString = [df stringFromDate:now];
+    
+    //Convert the string to NSNumber and return it:
+    return [DataTypesHelper stringToNSNumber:hoursString];
+}
 
 
 #pragma mark Supporting methods - Deprecated

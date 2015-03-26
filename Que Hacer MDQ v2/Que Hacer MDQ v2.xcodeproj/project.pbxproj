@@ -22,6 +22,20 @@
 		A0C5CEB11AC326B2002A0A6C /* ActivitiesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEAF1AC326B1002A0A6C /* ActivitiesListViewController.xib */; };
 		A0C5CEB61AC45639002A0A6C /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CEB41AC45639002A0A6C /* SplashViewController.m */; };
 		A0C5CEB71AC45639002A0A6C /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEB51AC45639002A0A6C /* SplashViewController.xib */; };
+		A0C5CEB91AC48A9A002A0A6C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEB81AC48A9A002A0A6C /* Default-568h@2x.png */; };
+		A0C5CEC71AC48E67002A0A6C /* bg_amanecer1-landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEBA1AC48E67002A0A6C /* bg_amanecer1-landscape.png */; };
+		A0C5CEC81AC48E67002A0A6C /* bg_amanecer1.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEBB1AC48E67002A0A6C /* bg_amanecer1.png */; };
+		A0C5CEC91AC48E67002A0A6C /* bg_amanecer2.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEBC1AC48E67002A0A6C /* bg_amanecer2.png */; };
+		A0C5CECA1AC48E67002A0A6C /* bg_amanecer3.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEBD1AC48E67002A0A6C /* bg_amanecer3.png */; };
+		A0C5CECB1AC48E67002A0A6C /* bg_anochecer1.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEBE1AC48E67002A0A6C /* bg_anochecer1.png */; };
+		A0C5CECC1AC48E67002A0A6C /* bg_atardecer1.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEBF1AC48E67002A0A6C /* bg_atardecer1.png */; };
+		A0C5CECD1AC48E67002A0A6C /* bg_noche1-landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEC01AC48E67002A0A6C /* bg_noche1-landscape.png */; };
+		A0C5CECE1AC48E67002A0A6C /* bg_noche1.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEC11AC48E67002A0A6C /* bg_noche1.png */; };
+		A0C5CECF1AC48E67002A0A6C /* bg_noche2-lansdscape.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEC21AC48E67002A0A6C /* bg_noche2-lansdscape.png */; };
+		A0C5CED01AC48E67002A0A6C /* bg_noche2.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEC31AC48E67002A0A6C /* bg_noche2.png */; };
+		A0C5CED11AC48E67002A0A6C /* bg_nublado1.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEC41AC48E67002A0A6C /* bg_nublado1.png */; };
+		A0C5CED21AC48E67002A0A6C /* bg_soleado1.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEC51AC48E67002A0A6C /* bg_soleado1.png */; };
+		A0C5CED31AC48E67002A0A6C /* cat_lnb1.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEC61AC48E67002A0A6C /* cat_lnb1.png */; };
 		A0EF60D41AA4A6CA00D74C01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60D31AA4A6CA00D74C01 /* main.m */; };
 		A0EF60D71AA4A6CA00D74C01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60D61AA4A6CA00D74C01 /* AppDelegate.m */; };
 		A0EF60DA1AA4A6CA00D74C01 /* Que_Hacer_MDQ_v2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60D81AA4A6CA00D74C01 /* Que_Hacer_MDQ_v2.xcdatamodeld */; };
@@ -48,10 +62,6 @@
 		A0EF613C1AA4B70C00D74C01 /* BeachesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EF612D1AA4B70B00D74C01 /* BeachesTableViewCell.xib */; };
 		A0EF613D1AA4B70C00D74C01 /* GenericTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF612F1AA4B70B00D74C01 /* GenericTableViewCell.m */; };
 		A0EF613E1AA4B70C00D74C01 /* GenericTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EF61301AA4B70B00D74C01 /* GenericTableViewCell.xib */; };
-		A0EF613F1AA4B70C00D74C01 /* categoryIconTheater.png in Resources */ = {isa = PBXBuildFile; fileRef = A0EF61321AA4B70C00D74C01 /* categoryIconTheater.png */; };
-		A0EF61401AA4B70C00D74C01 /* mar-del-plata-night_93079-1600x1200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0EF61331AA4B70C00D74C01 /* mar-del-plata-night_93079-1600x1200.jpg */; };
-		A0EF61411AA4B70C00D74C01 /* mar-del-plata.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0EF61341AA4B70C00D74C01 /* mar-del-plata.jpg */; };
-		A0EF61421AA4B70C00D74C01 /* mdq-bg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0EF61351AA4B70C00D74C01 /* mdq-bg1.jpg */; };
 		A0EF614A1AA4B76700D74C01 /* WSConcurso.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61451AA4B76700D74C01 /* WSConcurso.m */; };
 		A0EF614B1AA4B76700D74C01 /* WSMGPCulturaEnVivoEventos.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61471AA4B76700D74C01 /* WSMGPCulturaEnVivoEventos.m */; };
 		A0EF614C1AA4B76700D74C01 /* WSMGPEventos.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61491AA4B76700D74C01 /* WSMGPEventos.m */; };
@@ -98,6 +108,20 @@
 		A0C5CEB31AC45639002A0A6C /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplashViewController.h; path = SplashViewController/SplashViewController.h; sourceTree = "<group>"; };
 		A0C5CEB41AC45639002A0A6C /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SplashViewController.m; path = SplashViewController/SplashViewController.m; sourceTree = "<group>"; };
 		A0C5CEB51AC45639002A0A6C /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SplashViewController.xib; path = SplashViewController/SplashViewController.xib; sourceTree = "<group>"; };
+		A0C5CEB81AC48A9A002A0A6C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A0C5CEBA1AC48E67002A0A6C /* bg_amanecer1-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_amanecer1-landscape.png"; sourceTree = "<group>"; };
+		A0C5CEBB1AC48E67002A0A6C /* bg_amanecer1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_amanecer1.png; sourceTree = "<group>"; };
+		A0C5CEBC1AC48E67002A0A6C /* bg_amanecer2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_amanecer2.png; sourceTree = "<group>"; };
+		A0C5CEBD1AC48E67002A0A6C /* bg_amanecer3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_amanecer3.png; sourceTree = "<group>"; };
+		A0C5CEBE1AC48E67002A0A6C /* bg_anochecer1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_anochecer1.png; sourceTree = "<group>"; };
+		A0C5CEBF1AC48E67002A0A6C /* bg_atardecer1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_atardecer1.png; sourceTree = "<group>"; };
+		A0C5CEC01AC48E67002A0A6C /* bg_noche1-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_noche1-landscape.png"; sourceTree = "<group>"; };
+		A0C5CEC11AC48E67002A0A6C /* bg_noche1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_noche1.png; sourceTree = "<group>"; };
+		A0C5CEC21AC48E67002A0A6C /* bg_noche2-lansdscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_noche2-lansdscape.png"; sourceTree = "<group>"; };
+		A0C5CEC31AC48E67002A0A6C /* bg_noche2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_noche2.png; sourceTree = "<group>"; };
+		A0C5CEC41AC48E67002A0A6C /* bg_nublado1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_nublado1.png; sourceTree = "<group>"; };
+		A0C5CEC51AC48E67002A0A6C /* bg_soleado1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_soleado1.png; sourceTree = "<group>"; };
+		A0C5CEC61AC48E67002A0A6C /* cat_lnb1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat_lnb1.png; sourceTree = "<group>"; };
 		A0EF60CE1AA4A6CA00D74C01 /* Que Hacer MDQ v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Que Hacer MDQ v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EF60D21AA4A6CA00D74C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0EF60D31AA4A6CA00D74C01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -136,10 +160,6 @@
 		A0EF612E1AA4B70B00D74C01 /* GenericTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericTableViewCell.h; sourceTree = "<group>"; };
 		A0EF612F1AA4B70B00D74C01 /* GenericTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericTableViewCell.m; sourceTree = "<group>"; };
 		A0EF61301AA4B70B00D74C01 /* GenericTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenericTableViewCell.xib; sourceTree = "<group>"; };
-		A0EF61321AA4B70C00D74C01 /* categoryIconTheater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = categoryIconTheater.png; sourceTree = "<group>"; };
-		A0EF61331AA4B70C00D74C01 /* mar-del-plata-night_93079-1600x1200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mar-del-plata-night_93079-1600x1200.jpg"; sourceTree = "<group>"; };
-		A0EF61341AA4B70C00D74C01 /* mar-del-plata.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mar-del-plata.jpg"; sourceTree = "<group>"; };
-		A0EF61351AA4B70C00D74C01 /* mdq-bg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mdq-bg1.jpg"; sourceTree = "<group>"; };
 		A0EF61441AA4B76700D74C01 /* WSConcurso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSConcurso.h; sourceTree = "<group>"; };
 		A0EF61451AA4B76700D74C01 /* WSConcurso.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSConcurso.m; sourceTree = "<group>"; };
 		A0EF61461AA4B76700D74C01 /* WSMGPCulturaEnVivoEventos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSMGPCulturaEnVivoEventos.h; sourceTree = "<group>"; };
@@ -233,6 +253,7 @@
 		A0EF60C51AA4A6CA00D74C01 = {
 			isa = PBXGroup;
 			children = (
+				A0C5CEB81AC48A9A002A0A6C /* Default-568h@2x.png */,
 				A0EF61611AA4D51F00D74C01 /* Que Hacer MDQ v2-Bridging-Header.h */,
 				A0C5CE9C1AB9EC12002A0A6C /* Helpers */,
 				A0EF614D1AA4CF4600D74C01 /* Classes */,
@@ -404,10 +425,19 @@
 		A0EF61311AA4B70B00D74C01 /* Imgs */ = {
 			isa = PBXGroup;
 			children = (
-				A0EF61321AA4B70C00D74C01 /* categoryIconTheater.png */,
-				A0EF61331AA4B70C00D74C01 /* mar-del-plata-night_93079-1600x1200.jpg */,
-				A0EF61341AA4B70C00D74C01 /* mar-del-plata.jpg */,
-				A0EF61351AA4B70C00D74C01 /* mdq-bg1.jpg */,
+				A0C5CEBA1AC48E67002A0A6C /* bg_amanecer1-landscape.png */,
+				A0C5CEBB1AC48E67002A0A6C /* bg_amanecer1.png */,
+				A0C5CEBC1AC48E67002A0A6C /* bg_amanecer2.png */,
+				A0C5CEBD1AC48E67002A0A6C /* bg_amanecer3.png */,
+				A0C5CEBE1AC48E67002A0A6C /* bg_anochecer1.png */,
+				A0C5CEBF1AC48E67002A0A6C /* bg_atardecer1.png */,
+				A0C5CEC01AC48E67002A0A6C /* bg_noche1-landscape.png */,
+				A0C5CEC11AC48E67002A0A6C /* bg_noche1.png */,
+				A0C5CEC21AC48E67002A0A6C /* bg_noche2-lansdscape.png */,
+				A0C5CEC31AC48E67002A0A6C /* bg_noche2.png */,
+				A0C5CEC41AC48E67002A0A6C /* bg_nublado1.png */,
+				A0C5CEC51AC48E67002A0A6C /* bg_soleado1.png */,
+				A0C5CEC61AC48E67002A0A6C /* cat_lnb1.png */,
 			);
 			path = Imgs;
 			sourceTree = "<group>";
@@ -544,24 +574,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C5CEB71AC45639002A0A6C /* SplashViewController.xib in Resources */,
+				A0C5CECF1AC48E67002A0A6C /* bg_noche2-lansdscape.png in Resources */,
 				A0C5CE1B1AAF6E2B002A0A6C /* LoginViewController.xib in Resources */,
 				A0EF611B1AA4B6B600D74C01 /* CategoriesViewControllerSwift.xib in Resources */,
 				A0C5CEAA1AC31A02002A0A6C /* DetailViewController.xib in Resources */,
+				A0C5CED01AC48E67002A0A6C /* bg_noche2.png in Resources */,
 				A0EF613E1AA4B70C00D74C01 /* GenericTableViewCell.xib in Resources */,
-				A0EF61411AA4B70C00D74C01 /* mar-del-plata.jpg in Resources */,
-				A0EF61421AA4B70C00D74C01 /* mdq-bg1.jpg in Resources */,
+				A0C5CED11AC48E67002A0A6C /* bg_nublado1.png in Resources */,
 				A0EF60E01AA4A6CA00D74C01 /* Main.storyboard in Resources */,
+				A0C5CED31AC48E67002A0A6C /* cat_lnb1.png in Resources */,
 				A0EF60E51AA4A6CA00D74C01 /* LaunchScreen.xib in Resources */,
 				A0EF61151AA4B6B600D74C01 /* ActivityTableViewCell.xib in Resources */,
+				A0C5CEC81AC48E67002A0A6C /* bg_amanecer1.png in Resources */,
+				A0C5CECB1AC48E67002A0A6C /* bg_anochecer1.png in Resources */,
+				A0C5CECD1AC48E67002A0A6C /* bg_noche1-landscape.png in Resources */,
+				A0C5CED21AC48E67002A0A6C /* bg_soleado1.png in Resources */,
+				A0C5CECC1AC48E67002A0A6C /* bg_atardecer1.png in Resources */,
 				A0EF611D1AA4B6B600D74C01 /* EventosViewController.xib in Resources */,
-				A0EF61401AA4B70C00D74C01 /* mar-del-plata-night_93079-1600x1200.jpg in Resources */,
+				A0C5CEC91AC48E67002A0A6C /* bg_amanecer2.png in Resources */,
 				A0EF61171AA4B6B600D74C01 /* ActivitiesViewControllerSwift.xib in Resources */,
+				A0C5CEB91AC48A9A002A0A6C /* Default-568h@2x.png in Resources */,
 				A0EF61661AA76AE800D74C01 /* Localizable.strings in Resources */,
 				A0EF60E21AA4A6CA00D74C01 /* Images.xcassets in Resources */,
 				A0EF613C1AA4B70C00D74C01 /* BeachesTableViewCell.xib in Resources */,
+				A0C5CEC71AC48E67002A0A6C /* bg_amanecer1-landscape.png in Resources */,
 				A0EF611F1AA4B6B600D74C01 /* HomeViewController.xib in Resources */,
+				A0C5CECA1AC48E67002A0A6C /* bg_amanecer3.png in Resources */,
+				A0C5CECE1AC48E67002A0A6C /* bg_noche1.png in Resources */,
 				A0C5CEB11AC326B2002A0A6C /* ActivitiesListViewController.xib in Resources */,
-				A0EF613F1AA4B70C00D74C01 /* categoryIconTheater.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
