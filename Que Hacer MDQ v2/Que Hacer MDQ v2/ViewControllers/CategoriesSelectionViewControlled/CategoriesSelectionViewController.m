@@ -52,6 +52,8 @@
     UICollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CategoryCollectionViewCell" forIndexPath:indexPath];
     UILabel* label = (UILabel*)[cell viewWithTag:2];
     label.text = [[self.categories objectAtIndex:[indexPath row]] name];
+    UIImageView* background = (UIImageView*)[cell viewWithTag:1];
+    background.image = [UIImage imageNamed:@"cat_lnb1.png"];
     return cell;
 }
 /*
