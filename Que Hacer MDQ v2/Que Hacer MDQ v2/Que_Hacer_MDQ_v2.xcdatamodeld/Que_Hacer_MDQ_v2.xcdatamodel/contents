@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14C109" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Activity" representedClassName="Activity" syncable="YES">
+        <attribute name="areaId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="contactPhone1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactPhone2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactPhone3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cost" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="costNumber" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="costString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="end" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="handicapAccessRamp" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="handicapRestroom" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="handicapRestroomInGroundFloor" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="locationDetails" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationHouseNumberingOrKm" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationLatitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="locationLongitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="locationStreetOrRoute" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ocurrsOnce" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="paidParkingZone" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="photoUrl1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoUrl2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoUrl3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sharingUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sourceWebServiceName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="start" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="visible" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="visitingHoursString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="schedules" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Schedule" inverseName="activity" inverseEntity="Schedule" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" syncable="YES"/>
+    </entity>
+    <entity name="Schedule" representedClassName="Schedule" syncable="YES">
+        <attribute name="dayDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="activity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Activity" inverseName="schedules" inverseEntity="Activity" syncable="YES"/>
+    </entity>
+    <entity name="Tag" representedClassName="Tag" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="activity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Activity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Activity" positionX="-63" positionY="-18" width="128" height="523"/>
+        <element name="Schedule" positionX="252" positionY="482" width="128" height="148"/>
+        <element name="Tag" positionX="-45" positionY="611" width="128" height="103"/>
+    </elements>
+</model>

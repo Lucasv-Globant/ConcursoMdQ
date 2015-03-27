@@ -1,0 +1,1 @@
+PODS_QUE_HACER_MDQ_V__MBPROGRESSHUD_OTHER_LDFLAGS = -framework "CoreGraphics"
