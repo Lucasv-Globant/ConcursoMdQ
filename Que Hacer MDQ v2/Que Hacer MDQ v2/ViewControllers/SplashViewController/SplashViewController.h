@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataTypesHelper.h"
+#import "Synchronizer.h"
+#import "CategoriesSelectionViewController.h"
 
-@interface SplashViewController : UIViewController
+@interface SplashViewController : UIViewController<UIAlertViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UILabel *txtLoading;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @end

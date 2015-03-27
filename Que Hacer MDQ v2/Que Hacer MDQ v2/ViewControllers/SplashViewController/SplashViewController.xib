@@ -8,7 +8,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController">
             <connections>
+                <outlet property="activityIndicator" destination="65g-sX-9zY" id="XQt-CC-Wdx"/>
                 <outlet property="background" destination="vUO-vU-buk" id="w99-ZP-K2n"/>
+                <outlet property="txtLoading" destination="NQh-WO-R0h" id="xwq-11-lR0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

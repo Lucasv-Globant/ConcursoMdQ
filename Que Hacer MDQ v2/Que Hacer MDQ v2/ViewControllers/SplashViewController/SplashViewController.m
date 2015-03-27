@@ -7,7 +7,6 @@
 //
 
 #import "SplashViewController.h"
-#import "DataTypesHelper.h"
 
 
 @interface SplashViewController ()
@@ -23,7 +22,34 @@
     
     //Set the background according to the time of the day:
     [[self background] setImage:[UIImage imageNamed:[self backgroundImageFileNameByTime]]];
+    [self startSynchronizing];
     
+}
+
+- (void) startSynchronizing
+{
+    [self.activityIndicator startAnimating];
+    NSLog(@"Synchronizing...");
+    Synchronizer* sync = [[Synchronizer alloc] init];
+    [sync syncWithSuccess:^(NSMutableArray* activitiesArray)
+     {
+         NSLog(@"Entered synchro success block..");
+         [self.activityIndicator stopAnimating];
+         CategoriesSelectionViewController* csvc = [[CategoriesSelectionViewController alloc] initWithNibName:@"CategoriesSelectionViewController" bundle:nil];
+         [self.navigationController pushViewController:csvc animated:YES];
+         
+     }
+                  failure:^(NSError* error)
+     {
+         NSLog(@"Entered synchro error block..");
+         UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Error" message:[NSString stringWithFormat:@"Ocurrio un error: %@",[error localizedDescription]] delegate:self cancelButtonTitle:@"Reintentar" otherButtonTitles:nil];
+         [alert show];
+     }];
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    [self startSynchronizing];
 }
 
 - (void)didReceiveMemoryWarning {

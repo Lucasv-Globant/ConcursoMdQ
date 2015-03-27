@@ -36,6 +36,14 @@
 		A0C5CED11AC48E67002A0A6C /* bg_nublado1.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEC41AC48E67002A0A6C /* bg_nublado1.png */; };
 		A0C5CED21AC48E67002A0A6C /* bg_soleado1.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEC51AC48E67002A0A6C /* bg_soleado1.png */; };
 		A0C5CED31AC48E67002A0A6C /* cat_lnb1.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEC61AC48E67002A0A6C /* cat_lnb1.png */; };
+		A0C5CEDC1AC58F4E002A0A6C /* ActivityCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CEDB1AC58F4E002A0A6C /* ActivityCategory.m */; };
+		A0C5CEE11AC59DEE002A0A6C /* CategoriesSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CEDF1AC59DEE002A0A6C /* CategoriesSelectionViewController.m */; };
+		A0C5CEE21AC59DEE002A0A6C /* CategoriesSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEE01AC59DEE002A0A6C /* CategoriesSelectionViewController.xib */; };
+		A0C5CEE51AC5D5F5002A0A6C /* art_checkbox_check_32.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEE31AC5D5F5002A0A6C /* art_checkbox_check_32.png */; };
+		A0C5CEE61AC5D5F5002A0A6C /* art_checkbox_empty_32.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEE41AC5D5F5002A0A6C /* art_checkbox_empty_32.png */; };
+		A0C5CEE91AC5E5FB002A0A6C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CEE81AC5E5FB002A0A6C /* Reachability.m */; };
+		A0C5CEF21AC5F2B4002A0A6C /* CategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CEF01AC5F2B4002A0A6C /* CategoryCollectionViewCell.m */; };
+		A0C5CEF31AC5F2B4002A0A6C /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEF11AC5F2B4002A0A6C /* CategoryCollectionViewCell.xib */; };
 		A0EF60D41AA4A6CA00D74C01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60D31AA4A6CA00D74C01 /* main.m */; };
 		A0EF60D71AA4A6CA00D74C01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60D61AA4A6CA00D74C01 /* AppDelegate.m */; };
 		A0EF60DA1AA4A6CA00D74C01 /* Que_Hacer_MDQ_v2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60D81AA4A6CA00D74C01 /* Que_Hacer_MDQ_v2.xcdatamodeld */; };
@@ -122,6 +130,18 @@
 		A0C5CEC41AC48E67002A0A6C /* bg_nublado1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_nublado1.png; sourceTree = "<group>"; };
 		A0C5CEC51AC48E67002A0A6C /* bg_soleado1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_soleado1.png; sourceTree = "<group>"; };
 		A0C5CEC61AC48E67002A0A6C /* cat_lnb1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat_lnb1.png; sourceTree = "<group>"; };
+		A0C5CEDA1AC58F4E002A0A6C /* ActivityCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityCategory.h; sourceTree = "<group>"; };
+		A0C5CEDB1AC58F4E002A0A6C /* ActivityCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityCategory.m; sourceTree = "<group>"; };
+		A0C5CEDE1AC59DEE002A0A6C /* CategoriesSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoriesSelectionViewController.h; path = CategoriesSelectionViewControlled/CategoriesSelectionViewController.h; sourceTree = "<group>"; };
+		A0C5CEDF1AC59DEE002A0A6C /* CategoriesSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoriesSelectionViewController.m; path = CategoriesSelectionViewControlled/CategoriesSelectionViewController.m; sourceTree = "<group>"; };
+		A0C5CEE01AC59DEE002A0A6C /* CategoriesSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoriesSelectionViewController.xib; path = CategoriesSelectionViewControlled/CategoriesSelectionViewController.xib; sourceTree = "<group>"; };
+		A0C5CEE31AC5D5F5002A0A6C /* art_checkbox_check_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_checkbox_check_32.png; sourceTree = "<group>"; };
+		A0C5CEE41AC5D5F5002A0A6C /* art_checkbox_empty_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_checkbox_empty_32.png; sourceTree = "<group>"; };
+		A0C5CEE71AC5E5FB002A0A6C /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Helpers/Reachability.h; sourceTree = "<group>"; };
+		A0C5CEE81AC5E5FB002A0A6C /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Helpers/Reachability.m; sourceTree = "<group>"; };
+		A0C5CEEF1AC5F2B4002A0A6C /* CategoryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoryCollectionViewCell.h; path = CategoriesSelectionViewControlled/CategoryCollectionViewCell.h; sourceTree = "<group>"; };
+		A0C5CEF01AC5F2B4002A0A6C /* CategoryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoryCollectionViewCell.m; path = CategoriesSelectionViewControlled/CategoryCollectionViewCell.m; sourceTree = "<group>"; };
+		A0C5CEF11AC5F2B4002A0A6C /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoryCollectionViewCell.xib; path = CategoriesSelectionViewControlled/CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		A0EF60CE1AA4A6CA00D74C01 /* Que Hacer MDQ v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Que Hacer MDQ v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EF60D21AA4A6CA00D74C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0EF60D31AA4A6CA00D74C01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -211,6 +231,8 @@
 		A0C5CE9C1AB9EC12002A0A6C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				A0C5CEE71AC5E5FB002A0A6C /* Reachability.h */,
+				A0C5CEE81AC5E5FB002A0A6C /* Reachability.m */,
 				A0C5CE9D1AB9EC5F002A0A6C /* DataTypesHelper.h */,
 				A0C5CE9E1AB9EC5F002A0A6C /* DataTypesHelper.m */,
 				A0C5CEA31ABB6579002A0A6C /* Synchronizer.h */,
@@ -248,6 +270,19 @@
 				A0C5CEB51AC45639002A0A6C /* SplashViewController.xib */,
 			);
 			name = SplashViewController;
+			sourceTree = "<group>";
+		};
+		A0C5CEDD1AC59D3C002A0A6C /* CategoriesSelectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0C5CEDE1AC59DEE002A0A6C /* CategoriesSelectionViewController.h */,
+				A0C5CEDF1AC59DEE002A0A6C /* CategoriesSelectionViewController.m */,
+				A0C5CEE01AC59DEE002A0A6C /* CategoriesSelectionViewController.xib */,
+				A0C5CEEF1AC5F2B4002A0A6C /* CategoryCollectionViewCell.h */,
+				A0C5CEF01AC5F2B4002A0A6C /* CategoryCollectionViewCell.m */,
+				A0C5CEF11AC5F2B4002A0A6C /* CategoryCollectionViewCell.xib */,
+			);
+			name = CategoriesSelectionViewController;
 			sourceTree = "<group>";
 		};
 		A0EF60C51AA4A6CA00D74C01 = {
@@ -322,6 +357,7 @@
 		A0EF60FA1AA4B6B600D74C01 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A0C5CEDD1AC59D3C002A0A6C /* CategoriesSelectionViewController */,
 				A0C5CEB21AC455ED002A0A6C /* SplashViewController */,
 				A0C5CEAC1AC3267D002A0A6C /* ActivitiesListViewController */,
 				A0C5CEAB1AC31EFF002A0A6C /* DetailViewController */,
@@ -425,6 +461,8 @@
 		A0EF61311AA4B70B00D74C01 /* Imgs */ = {
 			isa = PBXGroup;
 			children = (
+				A0C5CEE31AC5D5F5002A0A6C /* art_checkbox_check_32.png */,
+				A0C5CEE41AC5D5F5002A0A6C /* art_checkbox_empty_32.png */,
 				A0C5CEBA1AC48E67002A0A6C /* bg_amanecer1-landscape.png */,
 				A0C5CEBB1AC48E67002A0A6C /* bg_amanecer1.png */,
 				A0C5CEBC1AC48E67002A0A6C /* bg_amanecer2.png */,
@@ -469,6 +507,8 @@
 				A0C5CE941AB8AE3D002A0A6C /* Schedule.m */,
 				A0C5CE851AB70BDA002A0A6C /* Area.swift */,
 				A0EF614E1AA4CF4600D74C01 /* DataManager */,
+				A0C5CEDA1AC58F4E002A0A6C /* ActivityCategory.h */,
+				A0C5CEDB1AC58F4E002A0A6C /* ActivityCategory.m */,
 			);
 			name = Classes;
 			path = "Que Hacer MDQ v2/Classes";
@@ -582,11 +622,15 @@
 				A0EF613E1AA4B70C00D74C01 /* GenericTableViewCell.xib in Resources */,
 				A0C5CED11AC48E67002A0A6C /* bg_nublado1.png in Resources */,
 				A0EF60E01AA4A6CA00D74C01 /* Main.storyboard in Resources */,
+				A0C5CEF31AC5F2B4002A0A6C /* CategoryCollectionViewCell.xib in Resources */,
 				A0C5CED31AC48E67002A0A6C /* cat_lnb1.png in Resources */,
 				A0EF60E51AA4A6CA00D74C01 /* LaunchScreen.xib in Resources */,
+				A0C5CEE61AC5D5F5002A0A6C /* art_checkbox_empty_32.png in Resources */,
+				A0C5CEE21AC59DEE002A0A6C /* CategoriesSelectionViewController.xib in Resources */,
 				A0EF61151AA4B6B600D74C01 /* ActivityTableViewCell.xib in Resources */,
 				A0C5CEC81AC48E67002A0A6C /* bg_amanecer1.png in Resources */,
 				A0C5CECB1AC48E67002A0A6C /* bg_anochecer1.png in Resources */,
+				A0C5CEE51AC5D5F5002A0A6C /* art_checkbox_check_32.png in Resources */,
 				A0C5CECD1AC48E67002A0A6C /* bg_noche1-landscape.png in Resources */,
 				A0C5CED21AC48E67002A0A6C /* bg_soleado1.png in Resources */,
 				A0C5CECC1AC48E67002A0A6C /* bg_atardecer1.png in Resources */,
@@ -664,11 +708,13 @@
 				A0EF613A1AA4B70C00D74C01 /* Constants.m in Sources */,
 				A0C5CEA51ABB6579002A0A6C /* Synchronizer.m in Sources */,
 				A0EF61141AA4B6B600D74C01 /* ActivityTableViewCell.swift in Sources */,
+				A0C5CEF21AC5F2B4002A0A6C /* CategoryCollectionViewCell.m in Sources */,
 				A0EF61161AA4B6B600D74C01 /* ActivitiesViewControllerSwift.swift in Sources */,
 				A0C5CE861AB70BDA002A0A6C /* Area.swift in Sources */,
 				A0EF61641AA4FE8000D74C01 /* WSMDQActivities.m in Sources */,
 				A0EF60DD1AA4A6CA00D74C01 /* ViewController.m in Sources */,
 				A0EF613D1AA4B70C00D74C01 /* GenericTableViewCell.m in Sources */,
+				A0C5CEE11AC59DEE002A0A6C /* CategoriesSelectionViewController.m in Sources */,
 				A0C5CE981AB8AE3E002A0A6C /* Tag.m in Sources */,
 				A0EF61381AA4B70C00D74C01 /* NSManagedObject+addObject.swift in Sources */,
 				A0C5CEA21ABB2901002A0A6C /* Activity.m in Sources */,
@@ -676,9 +722,11 @@
 				A0EF60D41AA4A6CA00D74C01 /* main.m in Sources */,
 				A0C5CE951AB8AE3D002A0A6C /* Schedule.m in Sources */,
 				A0EF61391AA4B70C00D74C01 /* UILabel+AutoHeight.m in Sources */,
+				A0C5CEE91AC5E5FB002A0A6C /* Reachability.m in Sources */,
 				A0C5CE9F1AB9EC5F002A0A6C /* DataTypesHelper.m in Sources */,
 				A0EF614A1AA4B76700D74C01 /* WSConcurso.m in Sources */,
 				A0EF61371AA4B70C00D74C01 /* NSDate+ParseFromString.swift in Sources */,
+				A0C5CEDC1AC58F4E002A0A6C /* ActivityCategory.m in Sources */,
 				A0EF613B1AA4B70C00D74C01 /* BeachesTableViewCell.m in Sources */,
 				A0EF614C1AA4B76700D74C01 /* WSMGPEventos.m in Sources */,
 				A0C5CEA91AC31A02002A0A6C /* DetailViewController.m in Sources */,
