@@ -9,6 +9,7 @@
 #import "CategoriesSelectionViewController.h"
 #import "CategoryCollectionViewCell.h"
 #import "ActivityCategory.h"
+
 @interface CategoriesSelectionViewController ()
 @property (nonatomic,strong) NSArray* categories;
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -17,15 +18,48 @@
 
 @implementation CategoriesSelectionViewController
 
+
+
+
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
     self.categories = [ActivityCategory categoriesListing];
     
     UINib *cellNib = [UINib nibWithNibName:@"CategoryCollectionViewCell" bundle:nil];
+
     [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"CategoryCollectionViewCell"];
-    
+    self.navigationItem.hidesBackButton = YES;
+    /*
+     UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Test" message:@"Test" delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+     [alert show];
+     */
+     
+}
+
+- (IBAction)btnContinue2:(id)sender {
+
+    //Check if there is **at least** one category selected:
+    BOOL selectionMade = NO;
+    for (ActivityCategory* category in self.categories) {
+        selectionMade = selectionMade || category.isSelected;
+    }
+    if (selectionMade)
+    {
+        //All OK, at least one category has been selected. Let's move on.
+        [ActivityCategory saveSettingsForCategories:[self categories]];
+        
+    }
+    else
+    {
+        //No category has been selected
+        //Present the user with a pop-up alert
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Seleccion" message:@"Debe seleccionar al menos una categoría" delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles: nil];
+        [alert show];
+    }
     
     
 }
@@ -49,13 +83,36 @@
 
 -(UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
+
     UICollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CategoryCollectionViewCell" forIndexPath:indexPath];
+    
+    ActivityCategory* category = [self.categories objectAtIndex:[indexPath row]];
+    
+    //Set the text label:
     UILabel* label = (UILabel*)[cell viewWithTag:2];
-    label.text = [[self.categories objectAtIndex:[indexPath row]] name];
+    label.text = [category name];
+    //Set the background:
     UIImageView* background = (UIImageView*)[cell viewWithTag:1];
-    background.image = [UIImage imageNamed:@"cat_lnb1.png"];
+    background.image = [UIImage imageNamed:[category imageFileName]];
+    //Set the checkmark (checked/unchecked):
+    UIImageView* check = (UIImageView*)[cell viewWithTag:3];
+    check.hidden = !category.isSelected;
+    
     return cell;
 }
+
+- (void)collectionView:(UICollectionView *)collectionView
+didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    //When a cell is tapped, its' "selected" value should be inverted
+    UICollectionViewCell* cell = [collectionView cellForItemAtIndexPath:indexPath];
+    ActivityCategory* category = [self.categories objectAtIndex:[indexPath row]];
+    category.isSelected = !category.isSelected;
+    UIImageView* check = (UIImageView*)[cell viewWithTag:3];
+    check.hidden = !category.isSelected;
+    
+}
+
 /*
 #pragma mark - Navigation
 

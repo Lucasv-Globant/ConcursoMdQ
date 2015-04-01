@@ -15,6 +15,10 @@
 @end
 
 @implementation SplashViewController
+- (IBAction)btnTest:(id)sender {
+    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Test" message:@"Test" delegate:self cancelButtonTitle:@"Test" otherButtonTitles:nil];
+    [alert show];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,9 +39,11 @@
      {
          NSLog(@"Entered synchro success block..");
          [self.activityIndicator stopAnimating];
+         
          CategoriesSelectionViewController* csvc = [[CategoriesSelectionViewController alloc] initWithNibName:@"CategoriesSelectionViewController" bundle:nil];
          [self.navigationController pushViewController:csvc animated:YES];
-         
+          
+
      }
                   failure:^(NSError* error)
      {
@@ -47,10 +53,12 @@
      }];
 }
 
+
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     [self startSynchronizing];
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

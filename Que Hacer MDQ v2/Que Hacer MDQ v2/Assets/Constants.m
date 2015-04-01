@@ -33,4 +33,7 @@ NSString* const WSMDQActivities_baseURL = @"http://sysadminsoftware.com/qhmdq/re
 NSString* const WSMDQActivities_Activities = @"betaactivities";
 NSString* const WSMDQActivities_TagsList = @"tagslist";
 
+//Key strings for NSUserDefaults
+NSString* const NSUserDefaults_KeyForCategoriesSelection = @"CategoriesSelection";
+
 @end

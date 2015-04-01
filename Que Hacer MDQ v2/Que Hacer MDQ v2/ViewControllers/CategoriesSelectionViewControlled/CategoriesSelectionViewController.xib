@@ -30,29 +30,46 @@
                 </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="enb-Y1-KQB">
                     <rect key="frame" x="8" y="139" width="584" height="379"/>
-                    <inset key="scrollIndicatorInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="19" minimumInteritemSpacing="10" id="V3O-3w-sAw">
-                        <size key="itemSize" width="150" height="150"/>
+                    <inset key="scrollIndicatorInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="V3O-3w-sAw">
+                        <size key="itemSize" width="120" height="120"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="30" minY="20" maxX="30" maxY="30"/>
+                        <inset key="sectionInset" minX="10" minY="5" maxX="10" maxY="5"/>
                     </collectionViewFlowLayout>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Sai-rh-jKE"/>
                         <outlet property="delegate" destination="-1" id="1Br-m3-bre"/>
                     </connections>
                 </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wy6-Pn-Tof">
+                    <rect key="frame" x="140" y="562" width="330" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="51C-bC-GoJ"/>
+                    </constraints>
+                    <state key="normal" title="Continuar">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnContinue2:" destination="-1" eventType="touchUpInside" id="PLu-r3-mt0"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="pKN-YH-VUO" secondAttribute="centerX" id="1Tl-On-Qzg"/>
                 <constraint firstItem="enb-Y1-KQB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="1e0-jq-EkZ"/>
+                <constraint firstAttribute="bottom" secondItem="wy6-Pn-Tof" secondAttribute="bottom" constant="8" id="AYx-LH-jdN"/>
+                <constraint firstItem="wy6-Pn-Tof" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="OB5-0p-xDo"/>
                 <constraint firstAttribute="centerX" secondItem="gDN-P8-0Ym" secondAttribute="centerX" id="haB-HQ-rQo"/>
                 <constraint firstItem="gDN-P8-0Ym" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="iJC-Wv-hfa"/>
+                <constraint firstAttribute="trailing" secondItem="wy6-Pn-Tof" secondAttribute="trailing" constant="5" id="jyC-rt-cQv"/>
                 <constraint firstAttribute="trailing" secondItem="enb-Y1-KQB" secondAttribute="trailing" constant="8" id="u8n-Yv-VGW"/>
                 <constraint firstItem="pKN-YH-VUO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="yyc-ia-1Cp"/>
             </constraints>
-            <point key="canvasLocation" x="587" y="467"/>
+            <point key="canvasLocation" x="379" y="467"/>
         </view>
     </objects>
 </document>

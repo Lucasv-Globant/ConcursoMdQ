@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AppSettings.h"
 
 @interface ActivityCategory : NSObject
 
 @property int categoryId;
 @property (nonatomic,strong) NSString* name;
 @property (nonatomic, strong) NSString* imageFileName;
-
+@property BOOL isSelected;
 +(NSArray*)categoriesListing;
++(void)saveSettingsForCategories:(NSArray*)categories;
 @end

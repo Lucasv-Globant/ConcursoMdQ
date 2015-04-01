@@ -21,6 +21,7 @@
     self.webserviceInstance = ws;
     [ws getTagsWithSuccess:^(NSMutableArray* json)
                             {
+
                                 self.tagsJSON = json;
                                 //Tags were captured, now we should continue with an attempt to download the activities
                                 [ws getActivitiesWithSuccess:^(NSMutableArray* activitiesjson)
@@ -33,7 +34,7 @@
                                                                 failureBlock(error);
                                                             }
                                  
-                                     withFilteringParameters:@{}];
+                                     withFilteringParameters:@{}];                        
                                 //If the download of activities goes well, we should proceed with converting the tags from JSON to model objects in core data
                                 //Once the tags are persisted, do the same with the Activities.
                             }
@@ -47,6 +48,7 @@
 
 -(void)importIntoCoreDataWithSuccess:(SyncSuccess)successBlock
 {
+    
     NSLog(@"Core Data Import begins...");
     //Grab shared instance of CoreDataHelper
     CoreDataHelper* cdh = [CoreDataHelper sharedInstance];
@@ -77,8 +79,10 @@
     //Save the temporary mutable array of Activities as a immutable array
     self.activityObjects = [[NSArray alloc] initWithArray:activityObjectsMutableArray];
     
+     
     //Finally, execute the success block that was passed as a parameter:
     successBlock(activityObjectsMutableArray);
+
 }
 
 

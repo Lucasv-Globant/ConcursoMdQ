@@ -6,29 +6,52 @@
 //  Copyright (c) 2015 Globant iOS MDQ. All rights reserved.
 //
 
-
-
 #import "ActivityCategory.h"
+
 
 @implementation ActivityCategory
 
+
+#pragma mark - Factory method for the list of categories
 +(NSArray*)categoriesListing
 {
+    //Get the dictionary containing the state of all categories (BOOL: selected/not-selected)
+    NSDictionary* selectionDictionary = [ActivityCategory getCategoriesSelectionDictionary];
+    
     NSMutableArray* list = [[NSMutableArray alloc] init];
     int i;
-    for (i=1; i<=17; i++) {
-        [list addObject:[[ActivityCategory alloc] initById:i]];
+    for (i=1; i<=17; i++)
+    {
+        ActivityCategory* category = [[ActivityCategory alloc] initById:i];
+        
+        
+        NSString* keyObject = @(i).stringValue;
+        if ([selectionDictionary objectForKey:keyObject] != nil)
+        {
+            //convert the "isSelected" value stored, from NSNumber to bool
+            category.isSelected = [[selectionDictionary objectForKey:keyObject] boolValue];
+        }
+        else
+        {
+            //The category does not exist in the dictionary. Defaulting to NO
+            category.isSelected = NO;
+        }
+        
+        
+        [list addObject:category];
     }
     return [NSArray arrayWithArray:list];
 }
 
 
-
+#pragma mark - (Internal) Initializer by Category ID
 -(ActivityCategory*)initById:(int)categoryId
 {
     if (self=[super init])
     {
         self.categoryId = categoryId;
+        self.isSelected = NO;
+        
         switch (categoryId)
         {
             case 1:
@@ -96,14 +119,47 @@
                 self.name = @"Teatros";
                 break;
             default:
+                //ID:17 - and any other value than 1..16
                 self.imageFileName = @"cat_otros.png";
                 self.name = @"Otros";
                 break;
         }
         
     }
-    
+
     return self;
+}
+
+
+#pragma mark - Save to persistence
++(void)saveSettingsForCategories:(NSArray*)categories
+{
+    //Save the selection setting of each category (selected/not selected) for all settings, as a dictionary
+    NSMutableDictionary* categoriesSelectionSettings = [[NSMutableDictionary alloc] init];
+
+    for (ActivityCategory* category in categories)
+    {
+        [categoriesSelectionSettings setObject:[NSNumber numberWithBool:category.isSelected] forKey:@(category.categoryId).stringValue];
+    }
+
+
+    NSDictionary* immutableDictionary = [[NSDictionary alloc] initWithDictionary:categoriesSelectionSettings];
+    [[AppSettings sharedInstance] setCategoriesSelectionDictionary:immutableDictionary];
+}
+
+
+#pragma mark - Retrieve from persistence
++(NSDictionary*)getCategoriesSelectionDictionary
+{
+    NSDictionary* result = [[AppSettings sharedInstance] getCategoriesSelectionDictionary];
+    
+    if (!result)
+    {
+        result = [[NSDictionary alloc] init];
+    }
+    
+    return result;
+
 }
 
 
