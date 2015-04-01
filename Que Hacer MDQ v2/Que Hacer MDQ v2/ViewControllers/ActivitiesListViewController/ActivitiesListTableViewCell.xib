@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="ActivitiesListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8To-lD-7hq">
+                        <rect key="frame" x="0.0" y="1" width="320" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="8To-lD-7hq" secondAttribute="height" multiplier="4:1" id="aoE-re-Cuo"/>
+                            <constraint firstAttribute="height" constant="80" id="oAv-ed-pZp"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icon_teatro1" translatesAutoresizingMaskIntoConstraints="NO" id="FAp-6v-64F">
+                        <rect key="frame" x="8" y="10" width="64" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="64" id="8sM-II-7oV"/>
+                            <constraint firstAttribute="width" constant="64" id="QYh-bG-adf"/>
+                            <constraint firstAttribute="width" secondItem="FAp-6v-64F" secondAttribute="height" multiplier="1:1" id="jPC-E9-LdB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Activity Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63z-Li-DdL">
+                        <rect key="frame" x="85" y="10" width="227" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Activity location (truncated)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBu-fh-kQj">
+                        <rect key="frame" x="88" y="51" width="224" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Activity description (truncated)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D82-3M-1Ti">
+                        <rect key="frame" x="88" y="31" width="224" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="8To-lD-7hq" secondAttribute="trailing" constant="-8" id="64L-Ta-mAU"/>
+                    <constraint firstItem="FAp-6v-64F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="IpB-6c-q80"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="8To-lD-7hq" secondAttribute="bottom" constant="-8" id="MhE-Qp-00p"/>
+                    <constraint firstItem="QBu-fh-kQj" firstAttribute="top" secondItem="63z-Li-DdL" secondAttribute="bottom" constant="20" id="Sws-PF-cBG"/>
+                    <constraint firstItem="63z-Li-DdL" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Txi-H5-bc9"/>
+                    <constraint firstItem="FAp-6v-64F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="Vha-rn-RX8"/>
+                    <constraint firstItem="63z-Li-DdL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="WeB-5k-AtZ"/>
+                    <constraint firstItem="QBu-fh-kQj" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="5" id="XUU-if-jNM"/>
+                    <constraint firstItem="QBu-fh-kQj" firstAttribute="leading" secondItem="FAp-6v-64F" secondAttribute="trailing" constant="13" id="YEE-Gm-Ipn"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="D82-3M-1Ti" secondAttribute="trailing" id="Z5g-ne-dxM"/>
+                    <constraint firstItem="8To-lD-7hq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="ZtX-nT-e0C"/>
+                    <constraint firstItem="D82-3M-1Ti" firstAttribute="leading" secondItem="FAp-6v-64F" secondAttribute="trailing" constant="13" id="gDa-T4-KCb"/>
+                    <constraint firstItem="D82-3M-1Ti" firstAttribute="top" secondItem="63z-Li-DdL" secondAttribute="bottom" constant="5" id="s3J-4D-eUS"/>
+                    <constraint firstItem="8To-lD-7hq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="uWl-Db-6Q8"/>
+                    <constraint firstItem="63z-Li-DdL" firstAttribute="leading" secondItem="FAp-6v-64F" secondAttribute="trailing" constant="13" id="vmV-vD-Lav"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageActivityIcon" destination="FAp-6v-64F" id="fjb-kV-VBL"/>
+                <outlet property="labelActivityDescription" destination="D82-3M-1Ti" id="t94-FH-NRU"/>
+                <outlet property="labelActivityLocation" destination="QBu-fh-kQj" id="SeU-BR-Clv"/>
+                <outlet property="labelActivityName" destination="63z-Li-DdL" id="BQE-gG-voF"/>
+            </connections>
+            <point key="canvasLocation" x="337" y="305.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_teatro1" width="32" height="32"/>
+    </resources>
+</document>

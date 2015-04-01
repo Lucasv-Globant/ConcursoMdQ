@@ -7,6 +7,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController">
             <connections>
+                <outlet property="imageHeader" destination="8oh-cG-bE5" id="TXH-wC-Gfa"/>
+                <outlet property="labelActivityDetails1" destination="jU2-bT-Zby" id="II2-wV-Zs9"/>
+                <outlet property="labelActivityLocation1" destination="nHP-N8-cdK" id="JFa-um-jPu"/>
+                <outlet property="labelActivityLocation2" destination="OkN-Sk-Y44" id="gMZ-Ej-xeb"/>
+                <outlet property="labelActivityName" destination="HPg-TS-PbR" id="0jC-Sz-Z8b"/>
+                <outlet property="labelActivityPhone1" destination="hb7-0B-6eA" id="oPg-i6-VVP"/>
+                <outlet property="labelActivityTime1" destination="WpV-VJ-9zw" id="cxO-H5-Oy8"/>
+                <outlet property="labelActivityTime2" destination="Y84-xn-cuT" id="07N-Mo-B58"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,7 +23,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8oh-cG-bE5">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat_lnb1.png" id="8oh-cG-bE5">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="214"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -43,11 +51,11 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="tNk-Pv-xnE">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="art_greyButton.png" id="tNk-Pv-xnE">
                     <rect key="frame" x="0.0" y="214" width="189" height="79"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ioh-I6-gCT">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="art_greyButton.png" id="ioh-I6-gCT">
                     <rect key="frame" x="186" y="214" width="189" height="79"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -125,10 +133,6 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="16X-hU-lWx">
-                    <rect key="frame" x="0.0" y="507" width="375" height="160"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </mapView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMO LLEGAR:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WXu-0r-nVs">
                     <rect key="frame" x="8" y="487" width="142" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -142,6 +146,10 @@
             <point key="canvasLocation" x="368.5" y="311.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="art_greyButton.png" width="980" height="453"/>
+        <image name="cat_lnb1.png" width="634" height="364"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

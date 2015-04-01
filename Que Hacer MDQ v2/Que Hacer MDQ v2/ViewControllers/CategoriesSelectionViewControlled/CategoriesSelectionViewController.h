@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CategoryCollectionViewCell.h"
+#import "ActivityCategory.h"
+#import "ActivitiesListViewController.h"
 
 @interface CategoriesSelectionViewController : UIViewController <UICollectionViewDataSource,UICollectionViewDelegate>
 

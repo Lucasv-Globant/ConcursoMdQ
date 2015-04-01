@@ -9,6 +9,14 @@
 #import "DetailViewController.h"
 
 @interface DetailViewController ()
+@property (strong, nonatomic) IBOutlet UIImageView *imageHeader;
+@property (strong, nonatomic) IBOutlet UILabel *labelActivityName;
+@property (strong, nonatomic) IBOutlet UILabel *labelActivityLocation1;
+@property (strong, nonatomic) IBOutlet UILabel *labelActivityLocation2;
+@property (strong, nonatomic) IBOutlet UILabel *labelActivityTime1;
+@property (strong, nonatomic) IBOutlet UILabel *labelActivityTime2;
+@property (strong, nonatomic) IBOutlet UILabel *labelActivityDetails1;
+@property (strong, nonatomic) IBOutlet UILabel *labelActivityPhone1;
 
 @end
 
@@ -17,6 +25,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.labelActivityName.text = self.activity.name;
+    self.labelActivityLocation1.text = self.activity.locationDetails;
+    NSString* locationString;
+    if ([self.activity.locationStreetOrRoute containsString:@"Ruta"] || [self.activity.locationStreetOrRoute containsString:@"Autovía"])
+    {
+        locationString = [NSString stringWithFormat:@"%@ Km.%@",self.activity.locationStreetOrRoute,self.activity.locationHouseNumberingOrKm];
+    }
+    else
+    {
+        locationString = [NSString stringWithFormat:@"%@ %@",self.activity.locationStreetOrRoute,self.activity.locationHouseNumberingOrKm];
+    }
+    self.labelActivityLocation2.text = locationString;
+    
+    self.labelActivityTime1.text = self.activity.visitingHoursString;
+    self.labelActivityTime2.text = @"";
+    self.labelActivityDetails1.text = self.activity.desc;
+    self.labelActivityPhone1.text = self.activity.contactPhone1;
+    self.navigationItem.hidesBackButton = NO;
+    
 }
 
 - (void)didReceiveMemoryWarning {

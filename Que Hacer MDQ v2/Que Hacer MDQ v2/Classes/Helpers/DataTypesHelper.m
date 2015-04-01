@@ -52,6 +52,40 @@
     return [[NSDate alloc] initWithTimeInterval:0 sinceDate:date];
 }
 
+#pragma mark NSString truncate
++(NSString*)truncateString:(NSString*)aNSString withLength:(int)length
+{
+    NSString *result;
+    
+    if ([aNSString length] > length-3)
+    {
+        // define the range you're interested in
+        NSRange stringRange = {0, MIN([aNSString length], length)};
+    
+        // adjust the range to include dependent chars
+        stringRange = [aNSString rangeOfComposedCharacterSequencesForRange:stringRange];
+    
+        // Now you can create the short string
+        NSString* shortString = [aNSString substringWithRange:stringRange];
+        
+        result = [NSString stringWithFormat:@"%@...",shortString];
+    }
+    else
+    {
+        result = aNSString;
+    }
+    return result;
+}
+
+#pragma mark NSString remove return carriage
++(NSString*)removeReturnCarriageFromString:(NSString*)aStr
+{
+    //NSString* result = [aStr stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]];
+    NSString* result = [aStr stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+    result = [result stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    return result;
+}
+
 #pragma mark NSString to NSNumber
 +(NSNumber*)stringToNSNumber:(NSString*) str
 {

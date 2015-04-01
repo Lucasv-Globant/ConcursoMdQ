@@ -7,8 +7,6 @@
 //
 
 #import "CategoriesSelectionViewController.h"
-#import "CategoryCollectionViewCell.h"
-#import "ActivityCategory.h"
 
 @interface CategoriesSelectionViewController ()
 @property (nonatomic,strong) NSArray* categories;
@@ -51,7 +49,9 @@
     {
         //All OK, at least one category has been selected. Let's move on.
         [ActivityCategory saveSettingsForCategories:[self categories]];
-        
+        ActivitiesListViewController* alvc = [[ActivitiesListViewController alloc] initWithNibName:@"ActivitiesListViewController" bundle:nil];
+        [self.navigationController pushViewController:alvc animated:YES];
+        alvc.categories = self.categories;
     }
     else
     {
@@ -60,9 +60,8 @@
         UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Seleccion" message:@"Debe seleccionar al menos una categoría" delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles: nil];
         [alert show];
     }
-    
-    
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -80,6 +79,7 @@
 {
     return [self.categories count];
 }
+
 
 -(UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {

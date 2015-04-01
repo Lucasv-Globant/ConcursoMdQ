@@ -12,6 +12,8 @@
 +(NSDate*)getDateFromNSString:(NSString*)str;
 +(NSDate*)getTimeFromNSString:(NSString*)str;
 +(NSNumber*)stringToNSNumber:(NSString*) str;
++(NSString*)truncateString:(NSString*)aNSString withLength:(int)length;
++(NSString*)removeReturnCarriageFromString:(NSString*)aStr;
 +(NSNumber*)getHourOfCurrentTime;
 +(NSDate*)qhmdqDateTimeStringToNSDate:(NSString*)str;
 @end

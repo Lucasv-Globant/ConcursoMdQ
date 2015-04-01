@@ -47,6 +47,9 @@
 		A0C5CEF61AC9772D002A0A6C /* art_checkbox_check_16.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEF41AC9772D002A0A6C /* art_checkbox_check_16.png */; };
 		A0C5CEF71AC9772D002A0A6C /* art_checkbox_empty_16.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CEF51AC9772D002A0A6C /* art_checkbox_empty_16.png */; };
 		A0C5CEFF1AC99170002A0A6C /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CEFE1AC99170002A0A6C /* AppSettings.m */; };
+		A0C5CF031ACC56C3002A0A6C /* ActivitiesListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CF011ACC56C3002A0A6C /* ActivitiesListTableViewCell.m */; };
+		A0C5CF041ACC56C3002A0A6C /* ActivitiesListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CF021ACC56C3002A0A6C /* ActivitiesListTableViewCell.xib */; };
+		A0C5CF061ACC8DF5002A0A6C /* art_greyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CF051ACC8DF5002A0A6C /* art_greyButton.png */; };
 		A0EF60D41AA4A6CA00D74C01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60D31AA4A6CA00D74C01 /* main.m */; };
 		A0EF60D71AA4A6CA00D74C01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60D61AA4A6CA00D74C01 /* AppDelegate.m */; };
 		A0EF60DA1AA4A6CA00D74C01 /* Que_Hacer_MDQ_v2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60D81AA4A6CA00D74C01 /* Que_Hacer_MDQ_v2.xcdatamodeld */; };
@@ -149,6 +152,10 @@
 		A0C5CEF51AC9772D002A0A6C /* art_checkbox_empty_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_checkbox_empty_16.png; sourceTree = "<group>"; };
 		A0C5CEFD1AC99170002A0A6C /* AppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppSettings.h; path = Helpers/AppSettings.h; sourceTree = "<group>"; };
 		A0C5CEFE1AC99170002A0A6C /* AppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppSettings.m; path = Helpers/AppSettings.m; sourceTree = "<group>"; };
+		A0C5CF001ACC56C2002A0A6C /* ActivitiesListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivitiesListTableViewCell.h; path = ActivitiesListViewController/ActivitiesListTableViewCell.h; sourceTree = "<group>"; };
+		A0C5CF011ACC56C3002A0A6C /* ActivitiesListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivitiesListTableViewCell.m; path = ActivitiesListViewController/ActivitiesListTableViewCell.m; sourceTree = "<group>"; };
+		A0C5CF021ACC56C3002A0A6C /* ActivitiesListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ActivitiesListTableViewCell.xib; path = ActivitiesListViewController/ActivitiesListTableViewCell.xib; sourceTree = "<group>"; };
+		A0C5CF051ACC8DF5002A0A6C /* art_greyButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_greyButton.png; sourceTree = "<group>"; };
 		A0EF60CE1AA4A6CA00D74C01 /* Que Hacer MDQ v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Que Hacer MDQ v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EF60D21AA4A6CA00D74C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0EF60D31AA4A6CA00D74C01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -269,6 +276,9 @@
 				A0C5CEAD1AC326B1002A0A6C /* ActivitiesListViewController.h */,
 				A0C5CEAE1AC326B1002A0A6C /* ActivitiesListViewController.m */,
 				A0C5CEAF1AC326B1002A0A6C /* ActivitiesListViewController.xib */,
+				A0C5CF001ACC56C2002A0A6C /* ActivitiesListTableViewCell.h */,
+				A0C5CF011ACC56C3002A0A6C /* ActivitiesListTableViewCell.m */,
+				A0C5CF021ACC56C3002A0A6C /* ActivitiesListTableViewCell.xib */,
 			);
 			name = ActivitiesListViewController;
 			sourceTree = "<group>";
@@ -472,6 +482,7 @@
 		A0EF61311AA4B70B00D74C01 /* Imgs */ = {
 			isa = PBXGroup;
 			children = (
+				A0C5CF051ACC8DF5002A0A6C /* art_greyButton.png */,
 				A0C5CEF41AC9772D002A0A6C /* art_checkbox_check_16.png */,
 				A0C5CEF51AC9772D002A0A6C /* art_checkbox_empty_16.png */,
 				A0C5CEE31AC5D5F5002A0A6C /* art_checkbox_check_32.png */,
@@ -640,11 +651,13 @@
 				A0C5CECD1AC48E67002A0A6C /* bg_noche1-landscape.png in Resources */,
 				A0C5CED21AC48E67002A0A6C /* bg_soleado1.png in Resources */,
 				A0C5CECC1AC48E67002A0A6C /* bg_atardecer1.png in Resources */,
+				A0C5CF061ACC8DF5002A0A6C /* art_greyButton.png in Resources */,
 				A0EF611D1AA4B6B600D74C01 /* EventosViewController.xib in Resources */,
 				A0C5CEC91AC48E67002A0A6C /* bg_amanecer2.png in Resources */,
 				A0EF61171AA4B6B600D74C01 /* ActivitiesViewControllerSwift.xib in Resources */,
 				A0C5CEB91AC48A9A002A0A6C /* Default-568h@2x.png in Resources */,
 				A0EF61661AA76AE800D74C01 /* Localizable.strings in Resources */,
+				A0C5CF041ACC56C3002A0A6C /* ActivitiesListTableViewCell.xib in Resources */,
 				A0EF60E21AA4A6CA00D74C01 /* Images.xcassets in Resources */,
 				A0EF613C1AA4B70C00D74C01 /* BeachesTableViewCell.xib in Resources */,
 				A0C5CEC71AC48E67002A0A6C /* bg_amanecer1-landscape.png in Resources */,
@@ -730,6 +743,7 @@
 				A0EF61391AA4B70C00D74C01 /* UILabel+AutoHeight.m in Sources */,
 				A0C5CEE91AC5E5FB002A0A6C /* Reachability.m in Sources */,
 				A0C5CE9F1AB9EC5F002A0A6C /* DataTypesHelper.m in Sources */,
+				A0C5CF031ACC56C3002A0A6C /* ActivitiesListTableViewCell.m in Sources */,
 				A0EF614A1AA4B76700D74C01 /* WSConcurso.m in Sources */,
 				A0EF61371AA4B70C00D74C01 /* NSDate+ParseFromString.swift in Sources */,
 				A0C5CEDC1AC58F4E002A0A6C /* ActivityCategory.m in Sources */,

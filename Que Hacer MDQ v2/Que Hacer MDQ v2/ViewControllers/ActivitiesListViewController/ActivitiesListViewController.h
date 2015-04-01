@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ActivityCategory.h"
+#import "CoreDataHelper.h"
 
-@interface ActivitiesListViewController : UIViewController
+@interface ActivitiesListViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic,strong) NSArray* categories;
 
 @end
