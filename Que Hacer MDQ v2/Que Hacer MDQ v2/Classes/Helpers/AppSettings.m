@@ -24,6 +24,57 @@
     [defaults synchronize];
 }
 
+
+
+/*
+----------------------------------------------------------------------------------------
+ Favorites Dictionary:
+ Indexed by ActivityID (as NSString)
+ Structure (elements of type NSDictionary):
+    -activityId
+    -name (NSString)
+    -category (NSNumber)
+-------------------------------------------------
+*/
+
+-(NSDictionary*)getFavoritesDictionary
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSDictionary* favorites = [defaults dictionaryForKey:NSUserDefaults_KeyForFavorites];
+    if (!favorites)
+    {
+        favorites = [[NSDictionary alloc] init];
+    }
+    return favorites;
+    
+}
+
+-(void)setFavoritesDictionary:(NSDictionary*)dict
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:dict forKey:NSUserDefaults_KeyForFavorites];
+    [defaults synchronize];
+}
+
+-(void)addFavorite:(NSDictionary*)favoriteDictionary
+{
+    NSDictionary* favoritesDictionary = [self getFavoritesDictionary];
+    NSMutableDictionary* favoritesMutableDictionary = [favoritesDictionary mutableCopy];
+    [favoritesMutableDictionary setObject:favoriteDictionary forKey:@"activityId"];
+    favoritesDictionary = [[NSDictionary alloc] initWithDictionary:favoritesMutableDictionary];
+    [self setFavoritesDictionary:favoritesDictionary];
+}
+
+-(void)removeFavoriteWithID:(NSString*)activityID
+//Removes the favorite that corresponds to the given ActivityID
+{
+    NSDictionary* favoritesDictionary = [self getFavoritesDictionary];
+    NSMutableDictionary* favoritesMutableDictionary = [favoritesDictionary mutableCopy];
+    [favoritesMutableDictionary removeObjectForKey:activityID];
+    favoritesDictionary = [[NSDictionary alloc] initWithDictionary:favoritesMutableDictionary];
+    [self setFavoritesDictionary:favoritesDictionary];
+}
+
 #pragma mark - Singleton method
 + (instancetype) sharedInstance {
     

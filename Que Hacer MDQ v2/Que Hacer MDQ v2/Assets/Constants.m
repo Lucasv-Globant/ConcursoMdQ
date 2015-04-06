@@ -35,5 +35,5 @@ NSString* const WSMDQActivities_TagsList = @"tagslist";
 
 //Key strings for NSUserDefaults
 NSString* const NSUserDefaults_KeyForCategoriesSelection = @"CategoriesSelection";
-
+NSString* const NSUserDefaults_KeyForFavorites = @"Favorites";
 @end

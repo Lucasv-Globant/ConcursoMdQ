@@ -23,6 +23,7 @@
 - (NSArray*)fetchEntitiesForClass:(Class)aClass withPredicate:(NSPredicate*)predicate inManagedObjectContext:(NSManagedObjectContext*)managedObjectContext;
 + (instancetype) sharedInstance;
 -(Tag*)getTagWithId:(NSNumber*)tagId;
+-(Activity*)getActivityWithId:(NSNumber*)activityId;
 -(void)deleteAllTags;
 -(void)deleteAllActivities;
 -(void)deleteAllSchedules;

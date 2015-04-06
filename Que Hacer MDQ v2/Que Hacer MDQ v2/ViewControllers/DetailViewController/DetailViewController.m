@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "AppSettings.h"
 
 @interface DetailViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageHeader;
@@ -49,6 +50,15 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)btnAddTofavorites:(id)sender
+{
+    NSString* activityIdStr = [self.activity.id stringValue];
+    NSDictionary* favoriteDictionary = [[NSDictionary alloc] initWithObjects:@[self.activity.name,activityIdStr,@"0"] forKeys:@[@"name",@"activityId",@"categoryId"]];
+    [[AppSettings sharedInstance] addFavorite:favoriteDictionary];
+    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Favorito" message:@"Favorito agregado!" delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
+    [alert show];
+    
 }
 
 /*

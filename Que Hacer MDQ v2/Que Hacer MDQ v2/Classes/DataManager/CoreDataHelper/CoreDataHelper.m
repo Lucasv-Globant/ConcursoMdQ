@@ -161,6 +161,36 @@
     return result;
 }
 
+-(Activity*)getActivityWithId:(NSNumber*)activityId
+{
+    Activity* result = nil;
+    if (!activityId)
+    {
+        NSLog(@"Warning: a nil ActivityID was passed to getActivityWithId function");
+    }
+    else
+    {
+        NSPredicate* predicate = [NSPredicate predicateWithFormat:@"id == %@",activityId];
+        NSArray* entities =  [self fetchEntitiesForClass:[Tag class] withPredicate:predicate inManagedObjectContext:_managedObjectContext];
+        if ([entities count] > 0)
+        {
+            result = [entities objectAtIndex:0];
+            if ([entities count] > 1)
+            {
+                NSLog(@"Warning: The query in getActivityWithId(%@) returned more than one element!",activityId);
+            }
+        }
+        else
+        {
+            NSLog(@"Warning: The query in getActivityWithId(%@) returned zero elements!",activityId);
+        }
+    }
+    
+    return result;
+}
+
+
+
 
 #pragma mark - Generic method to delete a given entity from Core Data
 -(void)deleteEntityNamed:(NSString*) entityName
