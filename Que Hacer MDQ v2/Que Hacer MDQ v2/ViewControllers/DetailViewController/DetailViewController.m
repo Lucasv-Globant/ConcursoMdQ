@@ -15,9 +15,9 @@
 @property (strong, nonatomic) IBOutlet UILabel *labelActivityLocation2;
 @property (strong, nonatomic) IBOutlet UILabel *labelActivityTime1;
 @property (strong, nonatomic) IBOutlet UILabel *labelActivityTime2;
-@property (strong, nonatomic) IBOutlet UILabel *labelActivityDetails1;
 @property (strong, nonatomic) IBOutlet UILabel *labelActivityPhone1;
 
+@property (strong, nonatomic) IBOutlet UITextView *textViewActivityDetails;
 @end
 
 @implementation DetailViewController
@@ -40,7 +40,7 @@
     
     self.labelActivityTime1.text = self.activity.visitingHoursString;
     self.labelActivityTime2.text = @"";
-    self.labelActivityDetails1.text = self.activity.desc;
+    self.textViewActivityDetails.text = self.activity.desc;
     self.labelActivityPhone1.text = self.activity.contactPhone1;
     self.navigationItem.hidesBackButton = NO;
     
