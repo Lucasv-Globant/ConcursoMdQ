@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A07358B41AD450EC00AA94DC /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07358B21AD450EC00AA94DC /* FavoritesViewController.m */; };
+		A07358B51AD450EC00AA94DC /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07358B31AD450EC00AA94DC /* FavoritesViewController.xib */; };
 		A0C5CE1A1AAF6E2B002A0A6C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CE181AAF6E2B002A0A6C /* LoginViewController.swift */; };
 		A0C5CE1B1AAF6E2B002A0A6C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CE191AAF6E2B002A0A6C /* LoginViewController.xib */; };
 		A0C5CE1F1AB1C4AC002A0A6C /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CE1E1AB1C4AC002A0A6C /* CoreDataHelper.m */; };
@@ -109,6 +111,9 @@
 		1AFAAE7248CABC14EFB98466 /* libPods-Que Hacer MDQ v2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Que Hacer MDQ v2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29DCABC4F6AA7800E8EE2E68 /* Pods-Que Hacer MDQ v2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Que Hacer MDQ v2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Que Hacer MDQ v2/Pods-Que Hacer MDQ v2.debug.xcconfig"; sourceTree = "<group>"; };
 		91E527D31B69B45960D711D2 /* Pods-Que Hacer MDQ v2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Que Hacer MDQ v2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Que Hacer MDQ v2/Pods-Que Hacer MDQ v2.release.xcconfig"; sourceTree = "<group>"; };
+		A07358B11AD450EC00AA94DC /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavoritesViewController.h; path = FavoritesViewController/FavoritesViewController.h; sourceTree = "<group>"; };
+		A07358B21AD450EC00AA94DC /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavoritesViewController.m; path = FavoritesViewController/FavoritesViewController.m; sourceTree = "<group>"; };
+		A07358B31AD450EC00AA94DC /* FavoritesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FavoritesViewController.xib; path = FavoritesViewController/FavoritesViewController.xib; sourceTree = "<group>"; };
 		A0C5CE181AAF6E2B002A0A6C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = LoginViewController/LoginViewController.swift; sourceTree = "<group>"; };
 		A0C5CE191AAF6E2B002A0A6C /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = LoginViewController/LoginViewController.xib; sourceTree = "<group>"; };
 		A0C5CE1D1AB1C4AC002A0A6C /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataHelper.h; path = CoreDataHelper/CoreDataHelper.h; sourceTree = "<group>"; };
@@ -258,6 +263,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A07358B01AD450B600AA94DC /* FavoritesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A07358B11AD450EC00AA94DC /* FavoritesViewController.h */,
+				A07358B21AD450EC00AA94DC /* FavoritesViewController.m */,
+				A07358B31AD450EC00AA94DC /* FavoritesViewController.xib */,
+			);
+			name = FavoritesViewController;
+			sourceTree = "<group>";
+		};
 		A0C5CE1C1AB1C29A002A0A6C /* CoreDataHelper */ = {
 			isa = PBXGroup;
 			children = (
@@ -403,6 +418,7 @@
 		A0EF60FA1AA4B6B600D74C01 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A07358B01AD450B600AA94DC /* FavoritesViewController */,
 				A0C5CEDD1AC59D3C002A0A6C /* CategoriesSelectionViewController */,
 				A0C5CEB21AC455ED002A0A6C /* SplashViewController */,
 				A0C5CEAC1AC3267D002A0A6C /* ActivitiesListViewController */,
@@ -697,6 +713,7 @@
 				A0EF60E01AA4A6CA00D74C01 /* Main.storyboard in Resources */,
 				A0C5CEF31AC5F2B4002A0A6C /* CategoryCollectionViewCell.xib in Resources */,
 				A0C5CED31AC48E67002A0A6C /* cat_lnb1.png in Resources */,
+				A07358B51AD450EC00AA94DC /* FavoritesViewController.xib in Resources */,
 				A0EF60E51AA4A6CA00D74C01 /* LaunchScreen.xib in Resources */,
 				A0C5CEE61AC5D5F5002A0A6C /* art_checkbox_empty_32.png in Resources */,
 				A0C5CEE21AC59DEE002A0A6C /* CategoriesSelectionViewController.xib in Resources */,
@@ -794,6 +811,7 @@
 				A0EF61141AA4B6B600D74C01 /* ActivityTableViewCell.swift in Sources */,
 				A0C5CEF21AC5F2B4002A0A6C /* CategoryCollectionViewCell.m in Sources */,
 				A0EF61161AA4B6B600D74C01 /* ActivitiesViewControllerSwift.swift in Sources */,
+				A07358B41AD450EC00AA94DC /* FavoritesViewController.m in Sources */,
 				A0C5CE861AB70BDA002A0A6C /* Area.swift in Sources */,
 				A0EF61641AA4FE8000D74C01 /* WSMDQActivities.m in Sources */,
 				A0EF60DD1AA4A6CA00D74C01 /* ViewController.m in Sources */,
