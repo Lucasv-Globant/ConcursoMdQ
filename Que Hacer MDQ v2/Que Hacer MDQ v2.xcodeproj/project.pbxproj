@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A07358B41AD450EC00AA94DC /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07358B21AD450EC00AA94DC /* FavoritesViewController.m */; };
 		A07358B51AD450EC00AA94DC /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07358B31AD450EC00AA94DC /* FavoritesViewController.xib */; };
+		A07358B91AD4553C00AA94DC /* FavoritesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A07358B71AD4553C00AA94DC /* FavoritesTableViewCell.m */; };
+		A07358BA1AD4553C00AA94DC /* FavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07358B81AD4553C00AA94DC /* FavoritesTableViewCell.xib */; };
 		A0C5CE1A1AAF6E2B002A0A6C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CE181AAF6E2B002A0A6C /* LoginViewController.swift */; };
 		A0C5CE1B1AAF6E2B002A0A6C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CE191AAF6E2B002A0A6C /* LoginViewController.xib */; };
 		A0C5CE1F1AB1C4AC002A0A6C /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CE1E1AB1C4AC002A0A6C /* CoreDataHelper.m */; };
@@ -60,16 +62,6 @@
 		A0EF60E21AA4A6CA00D74C01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0EF60E11AA4A6CA00D74C01 /* Images.xcassets */; };
 		A0EF60E51AA4A6CA00D74C01 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EF60E31AA4A6CA00D74C01 /* LaunchScreen.xib */; };
 		A0EF60F11AA4A6CA00D74C01 /* Que_Hacer_MDQ_v2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60F01AA4A6CA00D74C01 /* Que_Hacer_MDQ_v2Tests.m */; };
-		A0EF61141AA4B6B600D74C01 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60FD1AA4B6B600D74C01 /* ActivityTableViewCell.swift */; };
-		A0EF61151AA4B6B600D74C01 /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EF60FE1AA4B6B600D74C01 /* ActivityTableViewCell.xib */; };
-		A0EF61161AA4B6B600D74C01 /* ActivitiesViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60FF1AA4B6B600D74C01 /* ActivitiesViewControllerSwift.swift */; };
-		A0EF61171AA4B6B600D74C01 /* ActivitiesViewControllerSwift.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EF61001AA4B6B600D74C01 /* ActivitiesViewControllerSwift.xib */; };
-		A0EF611A1AA4B6B600D74C01 /* CategoriesViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61061AA4B6B600D74C01 /* CategoriesViewControllerSwift.swift */; };
-		A0EF611B1AA4B6B600D74C01 /* CategoriesViewControllerSwift.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EF61071AA4B6B600D74C01 /* CategoriesViewControllerSwift.xib */; };
-		A0EF611C1AA4B6B600D74C01 /* EventosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF610A1AA4B6B600D74C01 /* EventosViewController.m */; };
-		A0EF611D1AA4B6B600D74C01 /* EventosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EF610B1AA4B6B600D74C01 /* EventosViewController.xib */; };
-		A0EF611E1AA4B6B600D74C01 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF610E1AA4B6B600D74C01 /* HomeViewController.m */; };
-		A0EF611F1AA4B6B600D74C01 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EF610F1AA4B6B600D74C01 /* HomeViewController.xib */; };
 		A0EF61371AA4B70C00D74C01 /* NSDate+ParseFromString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61241AA4B70B00D74C01 /* NSDate+ParseFromString.swift */; };
 		A0EF61381AA4B70C00D74C01 /* NSManagedObject+addObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61251AA4B70B00D74C01 /* NSManagedObject+addObject.swift */; };
 		A0EF61391AA4B70C00D74C01 /* UILabel+AutoHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61271AA4B70B00D74C01 /* UILabel+AutoHeight.m */; };
@@ -114,6 +106,9 @@
 		A07358B11AD450EC00AA94DC /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavoritesViewController.h; path = FavoritesViewController/FavoritesViewController.h; sourceTree = "<group>"; };
 		A07358B21AD450EC00AA94DC /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavoritesViewController.m; path = FavoritesViewController/FavoritesViewController.m; sourceTree = "<group>"; };
 		A07358B31AD450EC00AA94DC /* FavoritesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FavoritesViewController.xib; path = FavoritesViewController/FavoritesViewController.xib; sourceTree = "<group>"; };
+		A07358B61AD4553C00AA94DC /* FavoritesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavoritesTableViewCell.h; path = FavoritesViewController/FavoritesTableViewCell.h; sourceTree = "<group>"; };
+		A07358B71AD4553C00AA94DC /* FavoritesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavoritesTableViewCell.m; path = FavoritesViewController/FavoritesTableViewCell.m; sourceTree = "<group>"; };
+		A07358B81AD4553C00AA94DC /* FavoritesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FavoritesTableViewCell.xib; path = FavoritesViewController/FavoritesTableViewCell.xib; sourceTree = "<group>"; };
 		A0C5CE181AAF6E2B002A0A6C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = LoginViewController/LoginViewController.swift; sourceTree = "<group>"; };
 		A0C5CE191AAF6E2B002A0A6C /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = LoginViewController/LoginViewController.xib; sourceTree = "<group>"; };
 		A0C5CE1D1AB1C4AC002A0A6C /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataHelper.h; path = CoreDataHelper/CoreDataHelper.h; sourceTree = "<group>"; };
@@ -186,18 +181,6 @@
 		A0EF60EA1AA4A6CA00D74C01 /* Que Hacer MDQ v2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Que Hacer MDQ v2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EF60EF1AA4A6CA00D74C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0EF60F01AA4A6CA00D74C01 /* Que_Hacer_MDQ_v2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Que_Hacer_MDQ_v2Tests.m; sourceTree = "<group>"; };
-		A0EF60FD1AA4B6B600D74C01 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
-		A0EF60FE1AA4B6B600D74C01 /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
-		A0EF60FF1AA4B6B600D74C01 /* ActivitiesViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesViewControllerSwift.swift; sourceTree = "<group>"; };
-		A0EF61001AA4B6B600D74C01 /* ActivitiesViewControllerSwift.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivitiesViewControllerSwift.xib; sourceTree = "<group>"; };
-		A0EF61061AA4B6B600D74C01 /* CategoriesViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewControllerSwift.swift; sourceTree = "<group>"; };
-		A0EF61071AA4B6B600D74C01 /* CategoriesViewControllerSwift.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoriesViewControllerSwift.xib; sourceTree = "<group>"; };
-		A0EF61091AA4B6B600D74C01 /* EventosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventosViewController.h; sourceTree = "<group>"; };
-		A0EF610A1AA4B6B600D74C01 /* EventosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventosViewController.m; sourceTree = "<group>"; };
-		A0EF610B1AA4B6B600D74C01 /* EventosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventosViewController.xib; sourceTree = "<group>"; };
-		A0EF610D1AA4B6B600D74C01 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		A0EF610E1AA4B6B600D74C01 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		A0EF610F1AA4B6B600D74C01 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		A0EF61241AA4B70B00D74C01 /* NSDate+ParseFromString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+ParseFromString.swift"; sourceTree = "<group>"; };
 		A0EF61251AA4B70B00D74C01 /* NSManagedObject+addObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+addObject.swift"; sourceTree = "<group>"; };
 		A0EF61261AA4B70B00D74C01 /* UILabel+AutoHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AutoHeight.h"; sourceTree = "<group>"; };
@@ -269,6 +252,9 @@
 				A07358B11AD450EC00AA94DC /* FavoritesViewController.h */,
 				A07358B21AD450EC00AA94DC /* FavoritesViewController.m */,
 				A07358B31AD450EC00AA94DC /* FavoritesViewController.xib */,
+				A07358B61AD4553C00AA94DC /* FavoritesTableViewCell.h */,
+				A07358B71AD4553C00AA94DC /* FavoritesTableViewCell.m */,
+				A07358B81AD4553C00AA94DC /* FavoritesTableViewCell.xib */,
 			);
 			name = FavoritesViewController;
 			sourceTree = "<group>";
@@ -424,63 +410,11 @@
 				A0C5CEAC1AC3267D002A0A6C /* ActivitiesListViewController */,
 				A0C5CEAB1AC31EFF002A0A6C /* DetailViewController */,
 				A471B0F61AD3F17C00EC6571 /* MainMenu */,
-				A0EF60FB1AA4B6B600D74C01 /* ActivitiesViewControllerSwift */,
-				A0EF61051AA4B6B600D74C01 /* CategoriesViewControllerSwift */,
-				A0EF61081AA4B6B600D74C01 /* EventosViewController */,
-				A0EF610C1AA4B6B600D74C01 /* HomeViewController */,
 				A0C5CE181AAF6E2B002A0A6C /* LoginViewController.swift */,
 				A0C5CE191AAF6E2B002A0A6C /* LoginViewController.xib */,
 			);
 			name = ViewControllers;
 			path = "Que Hacer MDQ v2/ViewControllers";
-			sourceTree = "<group>";
-		};
-		A0EF60FB1AA4B6B600D74C01 /* ActivitiesViewControllerSwift */ = {
-			isa = PBXGroup;
-			children = (
-				A0EF60FC1AA4B6B600D74C01 /* ActivitiesCell */,
-				A0EF60FF1AA4B6B600D74C01 /* ActivitiesViewControllerSwift.swift */,
-				A0EF61001AA4B6B600D74C01 /* ActivitiesViewControllerSwift.xib */,
-			);
-			path = ActivitiesViewControllerSwift;
-			sourceTree = "<group>";
-		};
-		A0EF60FC1AA4B6B600D74C01 /* ActivitiesCell */ = {
-			isa = PBXGroup;
-			children = (
-				A0EF60FD1AA4B6B600D74C01 /* ActivityTableViewCell.swift */,
-				A0EF60FE1AA4B6B600D74C01 /* ActivityTableViewCell.xib */,
-			);
-			path = ActivitiesCell;
-			sourceTree = "<group>";
-		};
-		A0EF61051AA4B6B600D74C01 /* CategoriesViewControllerSwift */ = {
-			isa = PBXGroup;
-			children = (
-				A0EF61061AA4B6B600D74C01 /* CategoriesViewControllerSwift.swift */,
-				A0EF61071AA4B6B600D74C01 /* CategoriesViewControllerSwift.xib */,
-			);
-			path = CategoriesViewControllerSwift;
-			sourceTree = "<group>";
-		};
-		A0EF61081AA4B6B600D74C01 /* EventosViewController */ = {
-			isa = PBXGroup;
-			children = (
-				A0EF61091AA4B6B600D74C01 /* EventosViewController.h */,
-				A0EF610A1AA4B6B600D74C01 /* EventosViewController.m */,
-				A0EF610B1AA4B6B600D74C01 /* EventosViewController.xib */,
-			);
-			path = EventosViewController;
-			sourceTree = "<group>";
-		};
-		A0EF610C1AA4B6B600D74C01 /* HomeViewController */ = {
-			isa = PBXGroup;
-			children = (
-				A0EF610D1AA4B6B600D74C01 /* HomeViewController.h */,
-				A0EF610E1AA4B6B600D74C01 /* HomeViewController.m */,
-				A0EF610F1AA4B6B600D74C01 /* HomeViewController.xib */,
-			);
-			path = HomeViewController;
 			sourceTree = "<group>";
 		};
 		A0EF61221AA4B70B00D74C01 /* Assets */ = {
@@ -703,7 +637,6 @@
 				A0C5CECF1AC48E67002A0A6C /* bg_noche2-lansdscape.png in Resources */,
 				A471B0FE1AD3F17C00EC6571 /* PIMainMenuCell.xib in Resources */,
 				A0C5CE1B1AAF6E2B002A0A6C /* LoginViewController.xib in Resources */,
-				A0EF611B1AA4B6B600D74C01 /* CategoriesViewControllerSwift.xib in Resources */,
 				A0C5CEAA1AC31A02002A0A6C /* DetailViewController.xib in Resources */,
 				A0C5CED01AC48E67002A0A6C /* bg_noche2.png in Resources */,
 				A471B10B1AD43D9300EC6571 /* GOTHAM-BOOK.TTF in Resources */,
@@ -713,12 +646,12 @@
 				A0EF60E01AA4A6CA00D74C01 /* Main.storyboard in Resources */,
 				A0C5CEF31AC5F2B4002A0A6C /* CategoryCollectionViewCell.xib in Resources */,
 				A0C5CED31AC48E67002A0A6C /* cat_lnb1.png in Resources */,
+				A07358BA1AD4553C00AA94DC /* FavoritesTableViewCell.xib in Resources */,
 				A07358B51AD450EC00AA94DC /* FavoritesViewController.xib in Resources */,
 				A0EF60E51AA4A6CA00D74C01 /* LaunchScreen.xib in Resources */,
 				A0C5CEE61AC5D5F5002A0A6C /* art_checkbox_empty_32.png in Resources */,
 				A0C5CEE21AC59DEE002A0A6C /* CategoriesSelectionViewController.xib in Resources */,
 				A471B1031AD4153800EC6571 /* menu.png in Resources */,
-				A0EF61151AA4B6B600D74C01 /* ActivityTableViewCell.xib in Resources */,
 				A471B10C1AD43D9300EC6571 /* GOTHAM-MEDIUM.TTF in Resources */,
 				A0C5CEC81AC48E67002A0A6C /* bg_amanecer1.png in Resources */,
 				A0C5CECB1AC48E67002A0A6C /* bg_anochecer1.png in Resources */,
@@ -730,16 +663,13 @@
 				A0C5CED21AC48E67002A0A6C /* bg_soleado1.png in Resources */,
 				A0C5CECC1AC48E67002A0A6C /* bg_atardecer1.png in Resources */,
 				A0C5CF061ACC8DF5002A0A6C /* art_greyButton.png in Resources */,
-				A0EF611D1AA4B6B600D74C01 /* EventosViewController.xib in Resources */,
 				A0C5CEC91AC48E67002A0A6C /* bg_amanecer2.png in Resources */,
-				A0EF61171AA4B6B600D74C01 /* ActivitiesViewControllerSwift.xib in Resources */,
 				A0C5CEB91AC48A9A002A0A6C /* Default-568h@2x.png in Resources */,
 				A0EF61661AA76AE800D74C01 /* Localizable.strings in Resources */,
 				A0C5CF041ACC56C3002A0A6C /* ActivitiesListTableViewCell.xib in Resources */,
 				A0EF60E21AA4A6CA00D74C01 /* Images.xcassets in Resources */,
 				A0EF613C1AA4B70C00D74C01 /* BeachesTableViewCell.xib in Resources */,
 				A0C5CEC71AC48E67002A0A6C /* bg_amanecer1-landscape.png in Resources */,
-				A0EF611F1AA4B6B600D74C01 /* HomeViewController.xib in Resources */,
 				A0C5CECA1AC48E67002A0A6C /* bg_amanecer3.png in Resources */,
 				A471B10A1AD43D9300EC6571 /* GOTHAM-BOLD.TTF in Resources */,
 				A0C5CECE1AC48E67002A0A6C /* bg_noche1.png in Resources */,
@@ -796,11 +726,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C5CE1A1AAF6E2B002A0A6C /* LoginViewController.swift in Sources */,
-				A0EF611A1AA4B6B600D74C01 /* CategoriesViewControllerSwift.swift in Sources */,
 				A0EF60DA1AA4A6CA00D74C01 /* Que_Hacer_MDQ_v2.xcdatamodeld in Sources */,
-				A0EF611C1AA4B6B600D74C01 /* EventosViewController.m in Sources */,
 				A471B0FF1AD3F17C00EC6571 /* PIMainMenuController.m in Sources */,
-				A0EF611E1AA4B6B600D74C01 /* HomeViewController.m in Sources */,
 				A0C5CEB61AC45639002A0A6C /* SplashViewController.m in Sources */,
 				A0C5CEB01AC326B1002A0A6C /* ActivitiesListViewController.m in Sources */,
 				A0C5CE1F1AB1C4AC002A0A6C /* CoreDataHelper.m in Sources */,
@@ -808,9 +735,7 @@
 				A0EF60D71AA4A6CA00D74C01 /* AppDelegate.m in Sources */,
 				A0EF613A1AA4B70C00D74C01 /* Constants.m in Sources */,
 				A0C5CEA51ABB6579002A0A6C /* Synchronizer.m in Sources */,
-				A0EF61141AA4B6B600D74C01 /* ActivityTableViewCell.swift in Sources */,
 				A0C5CEF21AC5F2B4002A0A6C /* CategoryCollectionViewCell.m in Sources */,
-				A0EF61161AA4B6B600D74C01 /* ActivitiesViewControllerSwift.swift in Sources */,
 				A07358B41AD450EC00AA94DC /* FavoritesViewController.m in Sources */,
 				A0C5CE861AB70BDA002A0A6C /* Area.swift in Sources */,
 				A0EF61641AA4FE8000D74C01 /* WSMDQActivities.m in Sources */,
@@ -833,6 +758,7 @@
 				A0C5CEDC1AC58F4E002A0A6C /* ActivityCategory.m in Sources */,
 				A0EF613B1AA4B70C00D74C01 /* BeachesTableViewCell.m in Sources */,
 				A0EF614C1AA4B76700D74C01 /* WSMGPEventos.m in Sources */,
+				A07358B91AD4553C00AA94DC /* FavoritesTableViewCell.m in Sources */,
 				A0C5CEFF1AC99170002A0A6C /* AppSettings.m in Sources */,
 				A0C5CEA91AC31A02002A0A6C /* DetailViewController.m in Sources */,
 			);

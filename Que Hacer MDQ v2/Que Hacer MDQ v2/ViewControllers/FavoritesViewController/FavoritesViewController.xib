@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoritesViewController">
             <connections>
+                <outlet property="tableView" destination="4YU-r4-XVP" id="GUq-F3-XAz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -13,7 +15,32 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Favoritos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmB-PW-56Y">
+                    <rect key="frame" x="244" y="42" width="113" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4YU-r4-XVP">
+                    <rect key="frame" x="0.0" y="80" width="537" height="520"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="kPN-3r-AOz"/>
+                        <outlet property="delegate" destination="-1" id="7RS-xY-fLY"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4YU-r4-XVP" firstAttribute="top" secondItem="OmB-PW-56Y" secondAttribute="bottom" constant="17" id="GYf-e8-6N9"/>
+                <constraint firstAttribute="trailing" secondItem="4YU-r4-XVP" secondAttribute="trailing" id="IdY-XF-p9p"/>
+                <constraint firstItem="4YU-r4-XVP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ie8-yN-0Bq"/>
+                <constraint firstAttribute="bottom" secondItem="4YU-r4-XVP" secondAttribute="bottom" id="YJ8-Lw-SHx"/>
+                <constraint firstAttribute="centerX" secondItem="OmB-PW-56Y" secondAttribute="centerX" id="gwS-kR-LG7"/>
+                <constraint firstItem="OmB-PW-56Y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="42" id="zPz-fs-4IR"/>
+            </constraints>
+            <point key="canvasLocation" x="403" y="270"/>
         </view>
     </objects>
 </document>

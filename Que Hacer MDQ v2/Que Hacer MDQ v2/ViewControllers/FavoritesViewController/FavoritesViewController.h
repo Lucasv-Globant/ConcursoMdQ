@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppSettings.h"
+#import "DetailViewController.h"
+#import "Activity.h"
+#import "FavoritesTableViewCell.h"
 
-@interface FavoritesViewController : UIViewController
-
+@interface FavoritesViewController : UIViewController <UITableViewDelegate,UITableViewDataSource,FavoritesTableViewCellDelegate>
+@property (nonatomic, strong) NSArray* activities;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 @end

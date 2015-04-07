@@ -42,6 +42,7 @@
     for (ActivityCategory* category in self.categories) {
         selectionMade = selectionMade || category.isSelected;
     }
+    
     if (selectionMade)
     {
         //All OK, at least one category has been selected. Let's move on.
