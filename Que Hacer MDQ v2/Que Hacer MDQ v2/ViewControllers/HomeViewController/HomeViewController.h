@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "EventosViewController.h"
+#import "PIMainMenuController.h"
 
 
-@interface HomeViewController : UIViewController
-
+@interface HomeViewController : UIViewController <PIMainMenuControllerDelegate>
+@property (nonatomic, strong) PIMainMenuController *mainMenu;
 @end

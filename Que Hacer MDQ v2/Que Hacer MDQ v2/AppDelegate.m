@@ -11,8 +11,10 @@
 #import "Synchronizer.h"
 #import "HomeViewController.h"
 
+
 @interface AppDelegate ()
 
+@property (nonatomic, strong) PIMainMenuController *mainMenuController;
 @end
 
 @implementation AppDelegate
@@ -25,11 +27,38 @@
 
     // Override point for customization after application launch.
     self.window=[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    SplashViewController* viewObj= [[SplashViewController alloc] initWithNibName:@"SplashViewController" bundle:nil];
-    UINavigationController* navigationController=[[UINavigationController alloc] initWithRootViewController:viewObj];
-    self.window.rootViewController = navigationController;
-    [self.window makeKeyAndVisible];
+//    SplashViewController* viewObj= [[SplashViewController alloc] initWithNibName:@"SplashViewController" bundle:nil];
+//    UINavigationController* navigationController=[[UINavigationController alloc] initWithRootViewController:viewObj];
+//    self.window.rootViewController = navigationController;
+//    [self.window makeKeyAndVisible];
+    
+    self.sideBar = [self createSideBarStruct];
+    self.window.rootViewController = self.sideBar;
     return YES;
+}
+
+- (MMDrawerController *)createSideBarStruct
+{
+    if (!self.mainController) {
+        self.mainController = [SplashViewController new];
+    }
+    
+    if (!self.mainMenuController) {
+        self.mainMenuController = [PIMainMenuController new];
+    }
+    
+    if (!self.centerNavigation) {
+        self.centerNavigation = [[UINavigationController alloc] initWithRootViewController:self.mainController];
+    }
+    
+    self.mainController.isAccessibilityElement = YES;
+    self.mainMenuController.isAccessibilityElement = YES;
+    
+    MMDrawerController *sideBarContainer = [[MMDrawerController alloc] initWithCenterViewController:self.centerNavigation leftDrawerViewController:self.mainMenuController];
+    
+    sideBarContainer.isAccessibilityElement = YES;
+    
+    return sideBarContainer;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

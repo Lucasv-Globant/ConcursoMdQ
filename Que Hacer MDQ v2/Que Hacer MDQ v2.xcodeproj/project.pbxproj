@@ -81,6 +81,17 @@
 		A0EF614C1AA4B76700D74C01 /* WSMGPEventos.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61491AA4B76700D74C01 /* WSMGPEventos.m */; };
 		A0EF61641AA4FE8000D74C01 /* WSMDQActivities.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61631AA4FE8000D74C01 /* WSMDQActivities.m */; };
 		A0EF61661AA76AE800D74C01 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0EF61651AA76AE800D74C01 /* Localizable.strings */; };
+		A471B0FD1AD3F17C00EC6571 /* PIMainMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A471B0F81AD3F17C00EC6571 /* PIMainMenuCell.m */; };
+		A471B0FE1AD3F17C00EC6571 /* PIMainMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A471B0F91AD3F17C00EC6571 /* PIMainMenuCell.xib */; };
+		A471B0FF1AD3F17C00EC6571 /* PIMainMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = A471B0FB1AD3F17C00EC6571 /* PIMainMenuController.m */; };
+		A471B1001AD3F17C00EC6571 /* PIMainMenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A471B0FC1AD3F17C00EC6571 /* PIMainMenuController.xib */; };
+		A471B1031AD4153800EC6571 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = A471B1011AD4153800EC6571 /* menu.png */; };
+		A471B1041AD4153800EC6571 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A471B1021AD4153800EC6571 /* menu@2x.png */; };
+		A471B10A1AD43D9300EC6571 /* GOTHAM-BOLD.TTF in Resources */ = {isa = PBXBuildFile; fileRef = A471B1071AD43D9300EC6571 /* GOTHAM-BOLD.TTF */; };
+		A471B10B1AD43D9300EC6571 /* GOTHAM-BOOK.TTF in Resources */ = {isa = PBXBuildFile; fileRef = A471B1081AD43D9300EC6571 /* GOTHAM-BOOK.TTF */; };
+		A471B10C1AD43D9300EC6571 /* GOTHAM-MEDIUM.TTF in Resources */ = {isa = PBXBuildFile; fileRef = A471B1091AD43D9300EC6571 /* GOTHAM-MEDIUM.TTF */; };
+		A471B10F1AD43FA800EC6571 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = A471B10E1AD43FA800EC6571 /* Theme.m */; };
+		A471B1111AD4470100EC6571 /* Logo_nombre.png in Resources */ = {isa = PBXBuildFile; fileRef = A471B1101AD4470100EC6571 /* Logo_nombre.png */; };
 		F310C4A83EA7E2612DE2B98F /* libPods-Que Hacer MDQ v2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFAAE7248CABC14EFB98466 /* libPods-Que Hacer MDQ v2.a */; };
 /* End PBXBuildFile section */
 
@@ -204,6 +215,20 @@
 		A0EF61621AA4FE6700D74C01 /* WSMDQActivities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSMDQActivities.h; sourceTree = "<group>"; };
 		A0EF61631AA4FE8000D74C01 /* WSMDQActivities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMDQActivities.m; sourceTree = "<group>"; };
 		A0EF61651AA76AE800D74C01 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ../Services/Localizable.strings; sourceTree = "<group>"; };
+		A471B0F71AD3F17C00EC6571 /* PIMainMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIMainMenuCell.h; sourceTree = "<group>"; };
+		A471B0F81AD3F17C00EC6571 /* PIMainMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIMainMenuCell.m; sourceTree = "<group>"; };
+		A471B0F91AD3F17C00EC6571 /* PIMainMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PIMainMenuCell.xib; sourceTree = "<group>"; };
+		A471B0FA1AD3F17C00EC6571 /* PIMainMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIMainMenuController.h; sourceTree = "<group>"; };
+		A471B0FB1AD3F17C00EC6571 /* PIMainMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIMainMenuController.m; sourceTree = "<group>"; };
+		A471B0FC1AD3F17C00EC6571 /* PIMainMenuController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PIMainMenuController.xib; sourceTree = "<group>"; };
+		A471B1011AD4153800EC6571 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		A471B1021AD4153800EC6571 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		A471B1071AD43D9300EC6571 /* GOTHAM-BOLD.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GOTHAM-BOLD.TTF"; sourceTree = "<group>"; };
+		A471B1081AD43D9300EC6571 /* GOTHAM-BOOK.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GOTHAM-BOOK.TTF"; sourceTree = "<group>"; };
+		A471B1091AD43D9300EC6571 /* GOTHAM-MEDIUM.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GOTHAM-MEDIUM.TTF"; sourceTree = "<group>"; };
+		A471B10D1AD43FA800EC6571 /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
+		A471B10E1AD43FA800EC6571 /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
+		A471B1101AD4470100EC6571 /* Logo_nombre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_nombre.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -382,6 +407,7 @@
 				A0C5CEB21AC455ED002A0A6C /* SplashViewController */,
 				A0C5CEAC1AC3267D002A0A6C /* ActivitiesListViewController */,
 				A0C5CEAB1AC31EFF002A0A6C /* DetailViewController */,
+				A471B0F61AD3F17C00EC6571 /* MainMenu */,
 				A0EF60FB1AA4B6B600D74C01 /* ActivitiesViewControllerSwift */,
 				A0EF61051AA4B6B600D74C01 /* CategoriesViewControllerSwift */,
 				A0EF61081AA4B6B600D74C01 /* EventosViewController */,
@@ -444,12 +470,15 @@
 		A0EF61221AA4B70B00D74C01 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				A471B1061AD43D9300EC6571 /* Font */,
 				A0EF61651AA76AE800D74C01 /* Localizable.strings */,
 				A0EF61231AA4B70B00D74C01 /* Categories */,
 				A0EF61281AA4B70B00D74C01 /* Constants.h */,
 				A0EF61291AA4B70B00D74C01 /* Constants.m */,
 				A0EF612A1AA4B70B00D74C01 /* Custom Cells */,
 				A0EF61311AA4B70B00D74C01 /* Imgs */,
+				A471B10D1AD43FA800EC6571 /* Theme.h */,
+				A471B10E1AD43FA800EC6571 /* Theme.m */,
 			);
 			name = Assets;
 			path = "Que Hacer MDQ v2/Assets";
@@ -482,6 +511,7 @@
 		A0EF61311AA4B70B00D74C01 /* Imgs */ = {
 			isa = PBXGroup;
 			children = (
+				A471B1101AD4470100EC6571 /* Logo_nombre.png */,
 				A0C5CF051ACC8DF5002A0A6C /* art_greyButton.png */,
 				A0C5CEF41AC9772D002A0A6C /* art_checkbox_check_16.png */,
 				A0C5CEF51AC9772D002A0A6C /* art_checkbox_empty_16.png */,
@@ -496,6 +526,8 @@
 				A0C5CEC01AC48E67002A0A6C /* bg_noche1-landscape.png */,
 				A0C5CEC11AC48E67002A0A6C /* bg_noche1.png */,
 				A0C5CEC21AC48E67002A0A6C /* bg_noche2-lansdscape.png */,
+				A471B1011AD4153800EC6571 /* menu.png */,
+				A471B1021AD4153800EC6571 /* menu@2x.png */,
 				A0C5CEC31AC48E67002A0A6C /* bg_noche2.png */,
 				A0C5CEC41AC48E67002A0A6C /* bg_nublado1.png */,
 				A0C5CEC51AC48E67002A0A6C /* bg_soleado1.png */,
@@ -544,6 +576,29 @@
 				91E527D31B69B45960D711D2 /* Pods-Que Hacer MDQ v2.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A471B0F61AD3F17C00EC6571 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				A471B0F81AD3F17C00EC6571 /* PIMainMenuCell.m */,
+				A471B0F71AD3F17C00EC6571 /* PIMainMenuCell.h */,
+				A471B0F91AD3F17C00EC6571 /* PIMainMenuCell.xib */,
+				A471B0FA1AD3F17C00EC6571 /* PIMainMenuController.h */,
+				A471B0FB1AD3F17C00EC6571 /* PIMainMenuController.m */,
+				A471B0FC1AD3F17C00EC6571 /* PIMainMenuController.xib */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		A471B1061AD43D9300EC6571 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				A471B1071AD43D9300EC6571 /* GOTHAM-BOLD.TTF */,
+				A471B1081AD43D9300EC6571 /* GOTHAM-BOOK.TTF */,
+				A471B1091AD43D9300EC6571 /* GOTHAM-MEDIUM.TTF */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -630,10 +685,12 @@
 			files = (
 				A0C5CEB71AC45639002A0A6C /* SplashViewController.xib in Resources */,
 				A0C5CECF1AC48E67002A0A6C /* bg_noche2-lansdscape.png in Resources */,
+				A471B0FE1AD3F17C00EC6571 /* PIMainMenuCell.xib in Resources */,
 				A0C5CE1B1AAF6E2B002A0A6C /* LoginViewController.xib in Resources */,
 				A0EF611B1AA4B6B600D74C01 /* CategoriesViewControllerSwift.xib in Resources */,
 				A0C5CEAA1AC31A02002A0A6C /* DetailViewController.xib in Resources */,
 				A0C5CED01AC48E67002A0A6C /* bg_noche2.png in Resources */,
+				A471B10B1AD43D9300EC6571 /* GOTHAM-BOOK.TTF in Resources */,
 				A0C5CEF61AC9772D002A0A6C /* art_checkbox_check_16.png in Resources */,
 				A0EF613E1AA4B70C00D74C01 /* GenericTableViewCell.xib in Resources */,
 				A0C5CED11AC48E67002A0A6C /* bg_nublado1.png in Resources */,
@@ -643,12 +700,16 @@
 				A0EF60E51AA4A6CA00D74C01 /* LaunchScreen.xib in Resources */,
 				A0C5CEE61AC5D5F5002A0A6C /* art_checkbox_empty_32.png in Resources */,
 				A0C5CEE21AC59DEE002A0A6C /* CategoriesSelectionViewController.xib in Resources */,
+				A471B1031AD4153800EC6571 /* menu.png in Resources */,
 				A0EF61151AA4B6B600D74C01 /* ActivityTableViewCell.xib in Resources */,
+				A471B10C1AD43D9300EC6571 /* GOTHAM-MEDIUM.TTF in Resources */,
 				A0C5CEC81AC48E67002A0A6C /* bg_amanecer1.png in Resources */,
 				A0C5CECB1AC48E67002A0A6C /* bg_anochecer1.png in Resources */,
+				A471B1001AD3F17C00EC6571 /* PIMainMenuController.xib in Resources */,
 				A0C5CEF71AC9772D002A0A6C /* art_checkbox_empty_16.png in Resources */,
 				A0C5CEE51AC5D5F5002A0A6C /* art_checkbox_check_32.png in Resources */,
 				A0C5CECD1AC48E67002A0A6C /* bg_noche1-landscape.png in Resources */,
+				A471B1041AD4153800EC6571 /* menu@2x.png in Resources */,
 				A0C5CED21AC48E67002A0A6C /* bg_soleado1.png in Resources */,
 				A0C5CECC1AC48E67002A0A6C /* bg_atardecer1.png in Resources */,
 				A0C5CF061ACC8DF5002A0A6C /* art_greyButton.png in Resources */,
@@ -663,7 +724,9 @@
 				A0C5CEC71AC48E67002A0A6C /* bg_amanecer1-landscape.png in Resources */,
 				A0EF611F1AA4B6B600D74C01 /* HomeViewController.xib in Resources */,
 				A0C5CECA1AC48E67002A0A6C /* bg_amanecer3.png in Resources */,
+				A471B10A1AD43D9300EC6571 /* GOTHAM-BOLD.TTF in Resources */,
 				A0C5CECE1AC48E67002A0A6C /* bg_noche1.png in Resources */,
+				A471B1111AD4470100EC6571 /* Logo_nombre.png in Resources */,
 				A0C5CEB11AC326B2002A0A6C /* ActivitiesListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -719,10 +782,12 @@
 				A0EF611A1AA4B6B600D74C01 /* CategoriesViewControllerSwift.swift in Sources */,
 				A0EF60DA1AA4A6CA00D74C01 /* Que_Hacer_MDQ_v2.xcdatamodeld in Sources */,
 				A0EF611C1AA4B6B600D74C01 /* EventosViewController.m in Sources */,
+				A471B0FF1AD3F17C00EC6571 /* PIMainMenuController.m in Sources */,
 				A0EF611E1AA4B6B600D74C01 /* HomeViewController.m in Sources */,
 				A0C5CEB61AC45639002A0A6C /* SplashViewController.m in Sources */,
 				A0C5CEB01AC326B1002A0A6C /* ActivitiesListViewController.m in Sources */,
 				A0C5CE1F1AB1C4AC002A0A6C /* CoreDataHelper.m in Sources */,
+				A471B10F1AD43FA800EC6571 /* Theme.m in Sources */,
 				A0EF60D71AA4A6CA00D74C01 /* AppDelegate.m in Sources */,
 				A0EF613A1AA4B70C00D74C01 /* Constants.m in Sources */,
 				A0C5CEA51ABB6579002A0A6C /* Synchronizer.m in Sources */,
@@ -738,6 +803,7 @@
 				A0EF61381AA4B70C00D74C01 /* NSManagedObject+addObject.swift in Sources */,
 				A0C5CEA21ABB2901002A0A6C /* Activity.m in Sources */,
 				A0EF614B1AA4B76700D74C01 /* WSMGPCulturaEnVivoEventos.m in Sources */,
+				A471B0FD1AD3F17C00EC6571 /* PIMainMenuCell.m in Sources */,
 				A0EF60D41AA4A6CA00D74C01 /* main.m in Sources */,
 				A0C5CE951AB8AE3D002A0A6C /* Schedule.m in Sources */,
 				A0EF61391AA4B70C00D74C01 /* UILabel+AutoHeight.m in Sources */,

@@ -5,5 +5,7 @@ target 'Que Hacer MDQ v2' do
 pod 'AFNetworking', '~> 2.0'
 pod 'MBProgressHUD', '~> 0.8'
 pod 'M13InfiniteTabBar', '~> 2.3'
+pod 'MMDrawerController', '~> 0.5.5'
+
 end
 

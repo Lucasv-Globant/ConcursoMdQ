@@ -10,7 +10,11 @@
 #import "CategoryCollectionViewCell.h"
 #import "ActivityCategory.h"
 #import "ActivitiesListViewController.h"
+#import "PIMainMenuController.h"
 
-@interface CategoriesSelectionViewController : UIViewController <UICollectionViewDataSource,UICollectionViewDelegate>
+
+@interface CategoriesSelectionViewController : UIViewController <UICollectionViewDataSource,UICollectionViewDelegate,PIMainMenuControllerDelegate>
+
+@property (nonatomic, strong) PIMainMenuController *mainMenu;
 
 @end
