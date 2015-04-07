@@ -14,6 +14,7 @@
 @property int categoryId;
 @property (nonatomic,strong) NSString* name;
 @property (nonatomic, strong) NSString* imageFileName;
+@property (nonatomic,strong) NSNumber* tagId;
 @property BOOL isSelected;
 +(NSArray*)categoriesListing;
 +(void)saveSettingsForCategories:(NSArray*)categories;

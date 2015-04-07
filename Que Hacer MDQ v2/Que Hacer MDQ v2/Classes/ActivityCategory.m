@@ -57,71 +57,88 @@
             case 1:
                 self.imageFileName= @"cat_aireLibre.png";
                 self.name = @"Aire Libre";
+                self.tagId = [NSNumber numberWithInt:8];
                 break;
             case 2:
                 self.imageFileName = @"cat_arteYCultura.png";
                 self.name = @"Arte y Cultura";
+                self.tagId = [NSNumber numberWithInt:20];
                 break;
             case 3:
                 self.imageFileName = @"cat_casinosYBingos.png";
                 self.name = @"Casinos y Bingos";
+                self.tagId = [NSNumber numberWithInt:16];
                 break;
             case 4:
                 self.imageFileName = @"cat_actividadesDeportivas.png";
                 self.name = @"Actividades Deportivas";
+                self.tagId = [NSNumber numberWithInt:9];
                 break;
             case 5:
                 self.imageFileName = @"cat_espectaculosDeportivos.png";
                 self.name = @"Espectaculos Deportivos";
+                self.tagId = [NSNumber numberWithInt:10];
                 break;
             case 6:
                 self.imageFileName = @"cat_excursiones.png";
                 self.name = @"Excursiones";
+                self.tagId = [NSNumber numberWithInt:19];
                 break;
             case 7:
                 self.imageFileName = @"cat_exposicionesYFerias.png";
                 self.name = @"Exposiciones y Ferias";
+                self.tagId = [NSNumber numberWithInt:17];
                 break;
             case 8:
                 self.imageFileName = @"cat_fiestas.png";
                 self.name = @"Fiestas";
+                self.tagId = [NSNumber numberWithInt:18];
                 break;
             case 9:
                 self.imageFileName = @"cat_infantiles.png";
                 self.name = @"Infantiles";
+                self.tagId = [NSNumber numberWithInt:5];
                 break;
             case 10:
                 self.imageFileName = @"cat_literatura.png";
                 self.name = @"Literatura";
+                self.tagId = [NSNumber numberWithInt:12];
                 break;
             case 11:
                 self.imageFileName = @"cat_noche.png";
                 self.name = @"Noche";
+                self.tagId = [NSNumber numberWithInt:7];
                 break;
             case 12:
                 self.imageFileName = @"cat_paraTodaLaFamilia.png";
                 self.name = @"Para Toda La Familia";
+                self.tagId = [NSNumber numberWithInt:6];
                 break;
             case 13:
                 self.imageFileName = @"cat_parquesAcuaticos.png";
                 self.name = @"Parques Acuaticos";
+                self.tagId = [NSNumber numberWithInt:22];
                 break;
             case 14:
                 self.imageFileName = @"cat_playas.png";
                 self.name = @"Playas";
+                self.tagId = [NSNumber numberWithInt:23];
                 break;
             case 15:
                 self.imageFileName = @"cat_recitales.png";
                 self.name = @"Recitales";
+                self.tagId = [NSNumber numberWithInt:2];
                 break;
             case 16:
                 self.imageFileName = @"cat_teatros.png";
                 self.name = @"Teatros";
+                self.tagId = [NSNumber numberWithInt:15];
                 break;
             default:
                 //ID:17 - and any other value than 1..16
                 self.imageFileName = @"cat_otros.png";
                 self.name = @"Otros";
+                self.tagId = [NSNumber numberWithInt:1];
                 break;
         }
         
