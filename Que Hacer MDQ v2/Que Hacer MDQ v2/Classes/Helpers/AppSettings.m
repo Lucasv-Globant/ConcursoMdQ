@@ -60,7 +60,8 @@
 {
     NSDictionary* favoritesDictionary = [self getFavoritesDictionary];
     NSMutableDictionary* favoritesMutableDictionary = [favoritesDictionary mutableCopy];
-    [favoritesMutableDictionary setObject:favoriteDictionary forKey:@"activityId"];
+    NSString* activityId = [favoriteDictionary objectForKey:@"activityId"];
+    [favoritesMutableDictionary setObject:favoriteDictionary forKey:activityId];
     favoritesDictionary = [[NSDictionary alloc] initWithDictionary:favoritesMutableDictionary];
     [self setFavoritesDictionary:favoritesDictionary];
 }
