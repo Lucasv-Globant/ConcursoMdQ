@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "WSMDQActivities.h"
 #import "Synchronizer.h"
-#import "HomeViewController.h"
 
 
 @interface AppDelegate ()
