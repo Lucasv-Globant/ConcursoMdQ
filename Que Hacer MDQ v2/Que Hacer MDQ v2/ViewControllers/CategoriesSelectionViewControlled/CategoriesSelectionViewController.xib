@@ -23,12 +23,12 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Seleccioná algunas categorías que te gusten" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKN-YH-VUO">
-                    <rect key="frame" x="148" y="98" width="315" height="21"/>
+                    <rect key="frame" x="148" y="103" width="315" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="enb-Y1-KQB">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="enb-Y1-KQB">
                     <rect key="frame" x="8" y="139" width="584" height="379"/>
                     <inset key="scrollIndicatorInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="V3O-3w-sAw">
@@ -63,11 +63,13 @@
                 <constraint firstItem="enb-Y1-KQB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="1e0-jq-EkZ"/>
                 <constraint firstAttribute="bottom" secondItem="wy6-Pn-Tof" secondAttribute="bottom" constant="8" id="AYx-LH-jdN"/>
                 <constraint firstItem="wy6-Pn-Tof" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="OB5-0p-xDo"/>
+                <constraint firstItem="enb-Y1-KQB" firstAttribute="top" secondItem="pKN-YH-VUO" secondAttribute="bottom" constant="8" id="bcR-Vl-khC"/>
+                <constraint firstItem="wy6-Pn-Tof" firstAttribute="top" secondItem="enb-Y1-KQB" secondAttribute="bottom" constant="8" id="gPn-vJ-XXr"/>
+                <constraint firstItem="pKN-YH-VUO" firstAttribute="top" secondItem="gDN-P8-0Ym" secondAttribute="bottom" constant="3" id="gWC-3L-nMS"/>
                 <constraint firstAttribute="centerX" secondItem="gDN-P8-0Ym" secondAttribute="centerX" id="haB-HQ-rQo"/>
-                <constraint firstItem="gDN-P8-0Ym" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="iJC-Wv-hfa"/>
+                <constraint firstItem="gDN-P8-0Ym" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="iJC-Wv-hfa"/>
                 <constraint firstAttribute="trailing" secondItem="wy6-Pn-Tof" secondAttribute="trailing" constant="5" id="jyC-rt-cQv"/>
                 <constraint firstAttribute="trailing" secondItem="enb-Y1-KQB" secondAttribute="trailing" constant="8" id="u8n-Yv-VGW"/>
-                <constraint firstItem="pKN-YH-VUO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="yyc-ia-1Cp"/>
             </constraints>
             <point key="canvasLocation" x="379" y="467"/>
         </view>
