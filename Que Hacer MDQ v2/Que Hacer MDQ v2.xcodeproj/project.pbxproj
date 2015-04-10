@@ -431,12 +431,12 @@
 		A0EF60FA1AA4B6B600D74C01 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A07358CE1AD85E3200AA94DC /* FoodAndDrinkViewController */,
 				A07358C11AD6FDCD00AA94DC /* SearchActivityViewController */,
 				A07358B01AD450B600AA94DC /* FavoritesViewController */,
 				A0C5CEDD1AC59D3C002A0A6C /* CategoriesSelectionViewController */,
 				A0C5CEB21AC455ED002A0A6C /* SplashViewController */,
 				A0C5CEAC1AC3267D002A0A6C /* ActivitiesListViewController */,
+				A07358CE1AD85E3200AA94DC /* FoodAndDrinkViewController */,
 				A0C5CEAB1AC31EFF002A0A6C /* DetailViewController */,
 				A471B0F61AD3F17C00EC6571 /* MainMenu */,
 				A0C5CE181AAF6E2B002A0A6C /* LoginViewController.swift */,

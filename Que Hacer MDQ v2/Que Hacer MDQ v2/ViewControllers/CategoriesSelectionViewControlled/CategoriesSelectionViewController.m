@@ -10,6 +10,7 @@
 #import <UIViewController+MMDrawerController.h>
 #import "MMDrawerBarButtonItem.h"
 #import "FavoritesViewController.h"
+#import "FoodAndDrinkViewController.h"
 
 @interface CategoriesSelectionViewController ()
 @property (nonatomic,strong) NSArray* categories;
@@ -148,6 +149,9 @@
 
 -(void)didSelectGastronomia {
     [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+    FoodAndDrinkViewController* fadvc = [[FoodAndDrinkViewController alloc] initWithNibName:@"FoodAndDrinkViewController" bundle:nil];
+    [self.navigationController pushViewController:fadvc animated:YES];
+    
 }
 
 
