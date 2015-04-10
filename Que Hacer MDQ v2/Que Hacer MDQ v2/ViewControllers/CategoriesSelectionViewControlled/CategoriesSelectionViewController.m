@@ -9,6 +9,7 @@
 #import "CategoriesSelectionViewController.h"
 #import <UIViewController+MMDrawerController.h>
 #import "MMDrawerBarButtonItem.h"
+#import "FavoritesViewController.h"
 
 @interface CategoriesSelectionViewController ()
 @property (nonatomic,strong) NSArray* categories;
@@ -78,13 +79,13 @@
     
     [self configureLeftBarButton];
     
-    
+    /*
     self.mm_drawerController.isAccessibilityElement = YES;
     self.mm_drawerController.maximumLeftDrawerWidth = 270;
     self.mm_drawerController.maximumRightDrawerWidth = 270;
     self.mm_drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeCustom;
     self.mm_drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureModePanningCenterView;
-    
+    */
 }
 
 - (void)configureLeftBarButton {
@@ -121,15 +122,33 @@
     return space;
 }
 
--(void)didSelectSearch {}
+-(void)didSelectSearch {
+    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+}
 
--(void)didSelectInteres {}
+-(void)didSelectInteres {
+    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+}
 
--(void)didSelectAllEvent {}
+-(void)didSelectAllEvent {
+    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+}
 
--(void)didSelectFavorite {}
+-(void)didSelectFavorite {
+    
+    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+    
+    //FavoritesViewController* fvc = [[AppMain sharedInstance] sharedFavoritesViewController];
+    //self.navigationController.viewControllers = @[fvc];
+    
+    FavoritesViewController* fvc = [[FavoritesViewController alloc] initWithNibName:@"FavoritesViewController" bundle:nil];
+    [self.navigationController pushViewController:fvc animated:YES];
+    
+}
 
--(void)didSelectGastronomia {}
+-(void)didSelectGastronomia {
+    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+}
 
 
 

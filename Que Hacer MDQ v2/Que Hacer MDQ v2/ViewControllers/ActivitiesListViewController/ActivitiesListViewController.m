@@ -10,6 +10,7 @@
 #import "ActivitiesListTableViewCell.h"
 #import "DataTypesHelper.h"
 #import "DetailViewController.h"
+#import "UILabel+AutoHeight.h"
 
 @interface ActivitiesListViewController ()
 
@@ -77,7 +78,6 @@
     DetailViewController* dvc = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
     dvc.activity = selectedActivity;
     [self.navigationController pushViewController:dvc animated:YES];
-    
 }
 
 

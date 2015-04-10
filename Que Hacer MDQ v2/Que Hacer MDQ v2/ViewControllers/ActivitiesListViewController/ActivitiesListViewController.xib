@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivitiesListViewController">
@@ -16,35 +17,47 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="C0u-5Z-tlA">
-                    <rect key="frame" x="0.0" y="103" width="375" height="145"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Logo_nombre.png" translatesAutoresizingMaskIntoConstraints="NO" id="C0u-5Z-tlA">
+                    <rect key="frame" x="0.0" y="38" width="375" height="123"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="PyU-vV-37t"/>
+                        <constraint firstAttribute="width" secondItem="C0u-5Z-tlA" secondAttribute="height" multiplier="125:41" id="eBc-3V-I6I"/>
+                    </constraints>
                 </imageView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Rad-ki-ehf">
-                    <rect key="frame" x="8" y="267" width="359" height="381"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actividades que conciden con tus intereses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="07y-Nn-biO">
+                    <rect key="frame" x="8" y="18" width="359" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Rad-ki-ehf">
+                    <rect key="frame" x="0.0" y="169" width="359" height="486"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="QRq-Ja-qea"/>
                         <outlet property="delegate" destination="-1" id="10j-X8-CbY"/>
                     </connections>
                 </tableView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actividades que conciden con tus intereses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="07y-Nn-biO">
-                    <rect key="frame" x="8" y="40" width="359" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="07y-Nn-biO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="7eQ-YT-GMB"/>
+                <constraint firstAttribute="trailing" secondItem="07y-Nn-biO" secondAttribute="trailing" constant="8" id="Iab-e8-Gsr"/>
+                <constraint firstAttribute="bottom" secondItem="Rad-ki-ehf" secondAttribute="bottom" constant="8" id="PRJ-zv-IQZ"/>
+                <constraint firstAttribute="centerX" secondItem="07y-Nn-biO" secondAttribute="centerX" id="Utm-zo-sqC"/>
+                <constraint firstItem="Rad-ki-ehf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="bEz-O7-rWx"/>
+                <constraint firstItem="Rad-ki-ehf" firstAttribute="top" secondItem="C0u-5Z-tlA" secondAttribute="bottom" constant="8" id="gnW-BU-rhk"/>
+                <constraint firstItem="07y-Nn-biO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="18" id="hgQ-6V-Erq"/>
+                <constraint firstAttribute="trailing" secondItem="C0u-5Z-tlA" secondAttribute="trailing" id="kcD-FV-Exj"/>
+                <constraint firstItem="C0u-5Z-tlA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mfx-67-Mo5"/>
+                <constraint firstAttribute="trailing" secondItem="Rad-ki-ehf" secondAttribute="trailing" constant="8" id="rug-oG-Cfa"/>
+                <constraint firstItem="C0u-5Z-tlA" firstAttribute="top" secondItem="07y-Nn-biO" secondAttribute="bottom" id="zeH-Hv-mGi"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="238.5" y="466.5"/>
+            <point key="canvasLocation" x="238.5" y="440.5"/>
         </view>
     </objects>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
+    <resources>
+        <image name="Logo_nombre.png" width="307" height="180"/>
+    </resources>
 </document>

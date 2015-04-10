@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "Activity.h"
 #import "ActivityCategory.h"
+#import "AppSettings.h"
+#import "UILabel+AutoHeight.h"
+
 @interface DetailViewController : UIViewController
 
 @property (nonatomic, strong) Activity* activity;//The activity in question.

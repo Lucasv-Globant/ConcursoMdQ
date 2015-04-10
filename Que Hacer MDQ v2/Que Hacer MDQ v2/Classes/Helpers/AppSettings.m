@@ -31,9 +31,11 @@
  Favorites Dictionary:
  Indexed by ActivityID (as NSString)
  Structure (elements of type NSDictionary):
-    -activityId
+    -activityId (NSNumber)
     -name (NSString)
     -category (NSNumber)
+    -areaId (NSNumber)
+ 
 -------------------------------------------------
 */
 
@@ -60,7 +62,7 @@
 {
     NSDictionary* favoritesDictionary = [self getFavoritesDictionary];
     NSMutableDictionary* favoritesMutableDictionary = [favoritesDictionary mutableCopy];
-    NSString* activityId = [favoriteDictionary objectForKey:@"activityId"];
+    NSString* activityId = [[favoriteDictionary objectForKey:@"activityId"] stringValue];
     [favoritesMutableDictionary setObject:favoriteDictionary forKey:activityId];
     favoritesDictionary = [[NSDictionary alloc] initWithDictionary:favoritesMutableDictionary];
     [self setFavoritesDictionary:favoritesDictionary];

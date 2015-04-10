@@ -14,6 +14,7 @@
 -(NSDictionary*)getCategoriesSelectionDictionary;
 -(void)setCategoriesSelectionDictionary:(NSDictionary*)dict;
 + (instancetype) sharedInstance;
+-(NSDictionary*)getFavoritesDictionary;
 -(void)removeFavoriteWithID:(NSString*)activityID;
 -(void)addFavorite:(NSDictionary*)favoriteDictionary;
 @end

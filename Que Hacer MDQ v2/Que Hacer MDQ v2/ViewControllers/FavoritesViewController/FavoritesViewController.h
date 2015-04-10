@@ -11,8 +11,13 @@
 #import "DetailViewController.h"
 #import "Activity.h"
 #import "FavoritesTableViewCell.h"
+#import "PIMainMenuController.h"
+#import "CategoriesSelectionViewController.h"
 
-@interface FavoritesViewController : UIViewController <UITableViewDelegate,UITableViewDataSource,FavoritesTableViewCellDelegate>
+@interface FavoritesViewController : UIViewController <UITableViewDelegate,UITableViewDataSource,FavoritesTableViewCellDelegate,PIMainMenuControllerDelegate>
 @property (nonatomic, strong) NSArray* activities;
+@property (strong, nonatomic) IBOutlet UILabel *lblNoFavorites;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) PIMainMenuController *mainMenu;
+
 @end

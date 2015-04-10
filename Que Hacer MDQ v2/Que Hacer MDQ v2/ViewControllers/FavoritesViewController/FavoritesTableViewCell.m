@@ -23,14 +23,20 @@
 
 - (IBAction)btnGoToFavorite:(id)sender
 {
-    [self.delegate didTapOnGoToFavorite:self.activity.id];
+    [self.delegate didTapOnGoToFavorite:[self.activity objectForKey:@"activityId"]];
 }
 
 
 
 - (IBAction)btnDeleteFavorite:(id)sender
 {
-    [self.delegate didTapOnDeleteFavorite:self.activity.id];
+    [self.delegate didTapOnDeleteFavorite:[self.activity objectForKey:@"activityId"]];
+}
+
+-(void)populateCellWithDictionary:(NSDictionary*)aDictionary
+{
+    self.activity = aDictionary;
+    [self.btnGoToFavorite setTitle:[aDictionary objectForKey:@"name"] forState:UIControlStateNormal];
 }
 
 @end

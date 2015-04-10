@@ -23,7 +23,7 @@
                             <constraint firstAttribute="height" constant="80" id="oAv-ed-pZp"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icon_teatro1" translatesAutoresizingMaskIntoConstraints="NO" id="FAp-6v-64F">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="art_logo_qhmdq.png" translatesAutoresizingMaskIntoConstraints="NO" id="FAp-6v-64F">
                         <rect key="frame" x="8" y="10" width="64" height="64"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="64" id="8sM-II-7oV"/>
@@ -78,6 +78,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="icon_teatro1" width="32" height="32"/>
+        <image name="art_logo_qhmdq.png" width="252" height="249"/>
     </resources>
 </document>

@@ -7,15 +7,15 @@
 //
 
 #import "DetailViewController.h"
-#import "AppSettings.h"
+
 
 @interface DetailViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageHeader;
 @property (strong, nonatomic) IBOutlet UILabel *labelActivityName;
 @property (strong, nonatomic) IBOutlet UILabel *labelActivityLocation1;
 @property (strong, nonatomic) IBOutlet UILabel *labelActivityLocation2;
-@property (strong, nonatomic) IBOutlet UILabel *labelActivityTime1;
-@property (strong, nonatomic) IBOutlet UILabel *labelActivityTime2;
+
+@property (strong, nonatomic) IBOutlet UITextView *textViewActivityTime;
 @property (strong, nonatomic) IBOutlet UILabel *labelActivityPhone1;
 
 @property (strong, nonatomic) IBOutlet UITextView *textViewActivityDetails;
@@ -38,13 +38,10 @@
         locationString = [NSString stringWithFormat:@"%@ %@",self.activity.locationStreetOrRoute,self.activity.locationHouseNumberingOrKm];
     }
     self.labelActivityLocation2.text = locationString;
-    
-    self.labelActivityTime1.text = self.activity.visitingHoursString;
-    self.labelActivityTime2.text = @"";
+    self.textViewActivityTime.text = self.activity.visitingHoursString;
     self.textViewActivityDetails.text = self.activity.desc;
     self.labelActivityPhone1.text = self.activity.contactPhone1;
-    self.navigationItem.hidesBackButton = NO;
-    
+    self.navigationItem.hidesBackButton = NO;    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,12 +50,10 @@
 }
 - (IBAction)btnAddTofavorites:(id)sender
 {
-    NSString* activityIdStr = [self.activity.id stringValue];
-    NSDictionary* favoriteDictionary = [[NSDictionary alloc] initWithObjects:@[self.activity.name,activityIdStr,@"0"] forKeys:@[@"name",@"activityId",@"categoryId"]];
+    NSDictionary* favoriteDictionary = [[NSDictionary alloc] initWithObjects:@[self.activity.name,self.activity.id,@"0",self.activity.areaId] forKeys:@[@"name",@"activityId",@"categoryId",@"areaId"]];
     [[AppSettings sharedInstance] addFavorite:favoriteDictionary];
     UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Favorito" message:@"Favorito agregado!" delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
     [alert show];
-    
 }
 
 /*

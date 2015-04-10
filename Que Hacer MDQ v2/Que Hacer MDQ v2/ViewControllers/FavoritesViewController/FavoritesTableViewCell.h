@@ -22,8 +22,9 @@
 @interface FavoritesTableViewCell : UITableViewCell
     @property (strong, nonatomic) IBOutlet UIButton *btnDeleteFavorite;
     @property (strong, nonatomic) IBOutlet UIButton *btnGoToFavorite;
-    @property (strong,nonatomic) Activity* activity;
+    @property (strong,nonatomic) NSDictionary* activity;
     @property (nonatomic, assign) id<FavoritesTableViewCellDelegate> delegate;
+    -(void)populateCellWithDictionary:(NSDictionary*)aDictionary;
 @end
 
 

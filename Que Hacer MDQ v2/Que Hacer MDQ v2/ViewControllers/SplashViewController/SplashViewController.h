@@ -10,6 +10,7 @@
 #import "DataTypesHelper.h"
 #import "Synchronizer.h"
 #import "CategoriesSelectionViewController.h"
+#import "AppMain.h"
 
 @interface SplashViewController : UIViewController<UIAlertViewDelegate>
 

@@ -7,7 +7,8 @@
 //
 
 #import "FavoritesViewController.h"
-
+#import <UIViewController+MMDrawerController.h>
+#import "MMDrawerBarButtonItem.h"
 
 @interface FavoritesViewController ()
 
@@ -22,7 +23,9 @@
     self.activities = [self retrieveFavoriteActivities];
     UINib *cellNib = [UINib nibWithNibName:@"FavoritesTableViewCell" bundle:nil];
     [self.tableView registerNib:cellNib forCellReuseIdentifier:@"FavoritesTableViewCell"];
-    
+    self.mainMenu = (PIMainMenuController *)self.mm_drawerController.leftDrawerViewController;
+    self.mainMenu.delegate = self;
+    [self configureSideBar];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,33 +43,64 @@
 
 -(void)didTapOnDeleteFavorite:(NSNumber*)activityId
 {
+    //Remove from NSUserDefaults...
     [[AppSettings sharedInstance] removeFavoriteWithID:[activityId stringValue]];
+    
+    //Creating a temporary (mutable) array to add all items except the deleted one
+    NSMutableArray* mutableFavorites = [[NSMutableArray alloc] init];
+    
+    for (NSDictionary* dict in self.activities)
+    {
+        //Add all favorites to the temp array, except the one that was deleted
+        if ([dict objectForKey:@"activityId"] != activityId)
+        {
+            [mutableFavorites addObject:dict];
+        }
+    }
+    
+    //Replace the activities array used by the table
+    self.activities = [[NSArray alloc] initWithArray:mutableFavorites];
+    
+    
+
+    
+    
+    //Reload the table view
     [self.tableView reloadData];
 }
 
 #pragma mark Activities retrievers (helpers)
+//Gets a specific activity from persistence
 -(Activity*)retrieveActivityWithId:(NSNumber*)activityId
 {
-    //TO DO: retrieve from Core Data the activity with the given ID.
-    //For now, we'll return a blank activity
-    Activity* result = [[Activity alloc] init];
+    Activity* result = [[CoreDataHelper sharedInstance] getActivityWithId:activityId];
+    if (!result)
+    {
+        NSLog(@"WARNING: FavoritesViewController->retrieveActivityWithId:%@ returned Nil",activityId);
+    }
     return result;
 }
 
-
+//Returns a NSArray containing NSDictionaries with all the favorite activities
 -(NSArray*)retrieveFavoriteActivities
 {
-    //TO DO: Populate favorite activities (use the IDs saved in AppSettings to retrieve the model objects from CoreData)
-    //For now, we'll return an empty array
-    NSArray* result = [[NSArray alloc] init];
-    return result;
+    NSDictionary* appSettingsFavorites = [[AppSettings sharedInstance] getFavoritesDictionary];
+    
+    NSMutableArray* favoritesMutableArray = [[NSMutableArray alloc] init];
+    for (NSString* key in appSettingsFavorites)
+    {
+        [favoritesMutableArray addObject:[appSettingsFavorites objectForKey:key]];
+    }
+    
+    return [NSArray arrayWithArray:favoritesMutableArray];
 }
 
 #pragma mark UITableView Protocol
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     FavoritesTableViewCell* cell = [self.tableView dequeueReusableCellWithIdentifier:@"FavoritesTableViewCell" forIndexPath:indexPath];
-    cell.activity = [self.activities objectAtIndex:indexPath.row];
+    [cell populateCellWithDictionary:[self.activities objectAtIndex:indexPath.row]];
+    cell.delegate = self;
     return cell;
     
 
@@ -74,8 +108,106 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    
+    if ([self.activities count] == 0)
+    {
+        self.lblNoFavorites.hidden = NO;
+        //self.tableView.hidden = YES;
+    }
+    else
+    {
+        self.lblNoFavorites.hidden = YES;
+        //self.tableView.hidden = NO;
+    }
     return [self.activities count];
 }
+
+
+
+- (void)configureSideBar {
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    self.view.frame = screenRect;
+    
+    NSArray *ver = [[UIDevice currentDevice].systemVersion componentsSeparatedByString:@"."];
+    if ([[ver objectAtIndex:0] intValue] >= 7) {
+        self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+        self.navigationController.navigationBar.translucent = NO;
+    } else {
+        self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    }
+    
+    [self configureLeftBarButton];
+}
+
+- (void)configureLeftBarButton {
+    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIImage *leftButtonImage = [UIImage imageNamed:@"menu"];
+    leftButton.frame = CGRectMake(0, 0, 40, 40);
+    leftButton.contentMode = UIViewContentModeBottomLeft;
+    
+    [leftButton setImage:leftButtonImage forState:UIControlStateNormal];
+    [leftButton addTarget:self action:@selector(didSelectMainMenu:) forControlEvents:UIControlEventTouchUpInside];
+    
+    MMDrawerBarButtonItem *leftDrawerButton = [[MMDrawerBarButtonItem alloc] initWithCustomView:leftButton];
+    
+    UIButton *leftButton2 = [UIButton buttonWithType:UIButtonTypeCustom];
+    leftButton2.frame = CGRectMake(0, 0, 15, 40);
+    leftButton2.contentMode = UIViewContentModeBottomLeft;
+    [leftButton2 setBackgroundColor:[UIColor clearColor]];
+    [leftButton2 addTarget:self action:@selector(didSelectMainMenu:) forControlEvents:UIControlEventTouchUpInside];
+    
+    MMDrawerBarButtonItem *xxx = [[MMDrawerBarButtonItem alloc] initWithCustomView:leftButton2];
+    
+    [self.navigationItem setLeftBarButtonItems:@[[self spacer], leftDrawerButton, xxx]];
+}
+
+- (void)didSelectMainMenu:(id)sender {
+    
+    [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+}
+
+- (UIBarButtonItem *)spacer {
+    
+    UIBarButtonItem *space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    space.width = -11;
+    return space;
+}
+
+-(void)didSelectSearch {
+    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+    
+}
+
+-(void)didSelectInteres {
+    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+    
+    //CategoriesSelectionViewController* csvc = [[AppMain sharedInstance] sharedCategoriesSelectionViewController];
+    //self.navigationController.viewControllers = @[csvc];
+    
+    CategoriesSelectionViewController* csvc = [[CategoriesSelectionViewController alloc] initWithNibName:@"CategoriesSelectionViewController" bundle:nil];
+    [self.navigationController pushViewController:csvc animated:YES];    
+}
+
+-(void)didSelectAllEvent {
+    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+}
+
+-(void)didSelectFavorite {
+    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+}
+
+-(void)didSelectGastronomia {}
+
+
+
+
+
+
+
+
 /*
 #pragma mark - Navigation
 

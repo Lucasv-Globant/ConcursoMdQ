@@ -11,6 +11,13 @@
 		A07358B51AD450EC00AA94DC /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07358B31AD450EC00AA94DC /* FavoritesViewController.xib */; };
 		A07358B91AD4553C00AA94DC /* FavoritesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A07358B71AD4553C00AA94DC /* FavoritesTableViewCell.m */; };
 		A07358BA1AD4553C00AA94DC /* FavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07358B81AD4553C00AA94DC /* FavoritesTableViewCell.xib */; };
+		A07358BD1AD57BE700AA94DC /* art_logo_qhmdq.png in Resources */ = {isa = PBXBuildFile; fileRef = A07358BC1AD57BE700AA94DC /* art_logo_qhmdq.png */; };
+		A07358C01AD6CC5B00AA94DC /* AppMain.m in Sources */ = {isa = PBXBuildFile; fileRef = A07358BF1AD6CC5B00AA94DC /* AppMain.m */; };
+		A07358C31AD7157500AA94DC /* bg_app3.png in Resources */ = {isa = PBXBuildFile; fileRef = A07358C21AD7157500AA94DC /* bg_app3.png */; };
+		A07358C71AD7F3AF00AA94DC /* SearchActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07358C51AD7F3AF00AA94DC /* SearchActivityViewController.m */; };
+		A07358C81AD7F3AF00AA94DC /* SearchActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07358C61AD7F3AF00AA94DC /* SearchActivityViewController.xib */; };
+		A07358CC1AD85D8000AA94DC /* FoodAndDrinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07358CA1AD85D8000AA94DC /* FoodAndDrinkViewController.m */; };
+		A07358CD1AD85D8000AA94DC /* FoodAndDrinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07358CB1AD85D8000AA94DC /* FoodAndDrinkViewController.xib */; };
 		A0C5CE1A1AAF6E2B002A0A6C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CE181AAF6E2B002A0A6C /* LoginViewController.swift */; };
 		A0C5CE1B1AAF6E2B002A0A6C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CE191AAF6E2B002A0A6C /* LoginViewController.xib */; };
 		A0C5CE1F1AB1C4AC002A0A6C /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CE1E1AB1C4AC002A0A6C /* CoreDataHelper.m */; };
@@ -66,10 +73,6 @@
 		A0EF61381AA4B70C00D74C01 /* NSManagedObject+addObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61251AA4B70B00D74C01 /* NSManagedObject+addObject.swift */; };
 		A0EF61391AA4B70C00D74C01 /* UILabel+AutoHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61271AA4B70B00D74C01 /* UILabel+AutoHeight.m */; };
 		A0EF613A1AA4B70C00D74C01 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61291AA4B70B00D74C01 /* Constants.m */; };
-		A0EF613B1AA4B70C00D74C01 /* BeachesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF612C1AA4B70B00D74C01 /* BeachesTableViewCell.m */; };
-		A0EF613C1AA4B70C00D74C01 /* BeachesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EF612D1AA4B70B00D74C01 /* BeachesTableViewCell.xib */; };
-		A0EF613D1AA4B70C00D74C01 /* GenericTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF612F1AA4B70B00D74C01 /* GenericTableViewCell.m */; };
-		A0EF613E1AA4B70C00D74C01 /* GenericTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EF61301AA4B70B00D74C01 /* GenericTableViewCell.xib */; };
 		A0EF614A1AA4B76700D74C01 /* WSConcurso.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61451AA4B76700D74C01 /* WSConcurso.m */; };
 		A0EF614B1AA4B76700D74C01 /* WSMGPCulturaEnVivoEventos.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61471AA4B76700D74C01 /* WSMGPCulturaEnVivoEventos.m */; };
 		A0EF614C1AA4B76700D74C01 /* WSMGPEventos.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF61491AA4B76700D74C01 /* WSMGPEventos.m */; };
@@ -109,6 +112,16 @@
 		A07358B61AD4553C00AA94DC /* FavoritesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavoritesTableViewCell.h; path = FavoritesViewController/FavoritesTableViewCell.h; sourceTree = "<group>"; };
 		A07358B71AD4553C00AA94DC /* FavoritesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavoritesTableViewCell.m; path = FavoritesViewController/FavoritesTableViewCell.m; sourceTree = "<group>"; };
 		A07358B81AD4553C00AA94DC /* FavoritesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FavoritesTableViewCell.xib; path = FavoritesViewController/FavoritesTableViewCell.xib; sourceTree = "<group>"; };
+		A07358BC1AD57BE700AA94DC /* art_logo_qhmdq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_logo_qhmdq.png; sourceTree = "<group>"; };
+		A07358BE1AD6CC5B00AA94DC /* AppMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMain.h; sourceTree = "<group>"; };
+		A07358BF1AD6CC5B00AA94DC /* AppMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppMain.m; sourceTree = "<group>"; };
+		A07358C21AD7157500AA94DC /* bg_app3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_app3.png; sourceTree = "<group>"; };
+		A07358C41AD7F3AF00AA94DC /* SearchActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchActivityViewController.h; path = SearchActivityViewController/SearchActivityViewController.h; sourceTree = "<group>"; };
+		A07358C51AD7F3AF00AA94DC /* SearchActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchActivityViewController.m; path = SearchActivityViewController/SearchActivityViewController.m; sourceTree = "<group>"; };
+		A07358C61AD7F3AF00AA94DC /* SearchActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchActivityViewController.xib; path = SearchActivityViewController/SearchActivityViewController.xib; sourceTree = "<group>"; };
+		A07358C91AD85D8000AA94DC /* FoodAndDrinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodAndDrinkViewController.h; path = FoodAndDrinkViewController/FoodAndDrinkViewController.h; sourceTree = "<group>"; };
+		A07358CA1AD85D8000AA94DC /* FoodAndDrinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodAndDrinkViewController.m; path = FoodAndDrinkViewController/FoodAndDrinkViewController.m; sourceTree = "<group>"; };
+		A07358CB1AD85D8000AA94DC /* FoodAndDrinkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FoodAndDrinkViewController.xib; path = FoodAndDrinkViewController/FoodAndDrinkViewController.xib; sourceTree = "<group>"; };
 		A0C5CE181AAF6E2B002A0A6C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = LoginViewController/LoginViewController.swift; sourceTree = "<group>"; };
 		A0C5CE191AAF6E2B002A0A6C /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = LoginViewController/LoginViewController.xib; sourceTree = "<group>"; };
 		A0C5CE1D1AB1C4AC002A0A6C /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataHelper.h; path = CoreDataHelper/CoreDataHelper.h; sourceTree = "<group>"; };
@@ -187,12 +200,6 @@
 		A0EF61271AA4B70B00D74C01 /* UILabel+AutoHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AutoHeight.m"; sourceTree = "<group>"; };
 		A0EF61281AA4B70B00D74C01 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		A0EF61291AA4B70B00D74C01 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
-		A0EF612B1AA4B70B00D74C01 /* BeachesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeachesTableViewCell.h; sourceTree = "<group>"; };
-		A0EF612C1AA4B70B00D74C01 /* BeachesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeachesTableViewCell.m; sourceTree = "<group>"; };
-		A0EF612D1AA4B70B00D74C01 /* BeachesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeachesTableViewCell.xib; sourceTree = "<group>"; };
-		A0EF612E1AA4B70B00D74C01 /* GenericTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericTableViewCell.h; sourceTree = "<group>"; };
-		A0EF612F1AA4B70B00D74C01 /* GenericTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericTableViewCell.m; sourceTree = "<group>"; };
-		A0EF61301AA4B70B00D74C01 /* GenericTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenericTableViewCell.xib; sourceTree = "<group>"; };
 		A0EF61441AA4B76700D74C01 /* WSConcurso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSConcurso.h; sourceTree = "<group>"; };
 		A0EF61451AA4B76700D74C01 /* WSConcurso.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSConcurso.m; sourceTree = "<group>"; };
 		A0EF61461AA4B76700D74C01 /* WSMGPCulturaEnVivoEventos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSMGPCulturaEnVivoEventos.h; sourceTree = "<group>"; };
@@ -257,6 +264,16 @@
 				A07358B81AD4553C00AA94DC /* FavoritesTableViewCell.xib */,
 			);
 			name = FavoritesViewController;
+			sourceTree = "<group>";
+		};
+		A07358C11AD6FDCD00AA94DC /* SearchActivityViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A07358C41AD7F3AF00AA94DC /* SearchActivityViewController.h */,
+				A07358C51AD7F3AF00AA94DC /* SearchActivityViewController.m */,
+				A07358C61AD7F3AF00AA94DC /* SearchActivityViewController.xib */,
+			);
+			name = SearchActivityViewController;
 			sourceTree = "<group>";
 		};
 		A0C5CE1C1AB1C29A002A0A6C /* CoreDataHelper */ = {
@@ -404,6 +421,7 @@
 		A0EF60FA1AA4B6B600D74C01 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A07358C11AD6FDCD00AA94DC /* SearchActivityViewController */,
 				A07358B01AD450B600AA94DC /* FavoritesViewController */,
 				A0C5CEDD1AC59D3C002A0A6C /* CategoriesSelectionViewController */,
 				A0C5CEB21AC455ED002A0A6C /* SplashViewController */,
@@ -412,6 +430,9 @@
 				A471B0F61AD3F17C00EC6571 /* MainMenu */,
 				A0C5CE181AAF6E2B002A0A6C /* LoginViewController.swift */,
 				A0C5CE191AAF6E2B002A0A6C /* LoginViewController.xib */,
+				A07358C91AD85D8000AA94DC /* FoodAndDrinkViewController.h */,
+				A07358CA1AD85D8000AA94DC /* FoodAndDrinkViewController.m */,
+				A07358CB1AD85D8000AA94DC /* FoodAndDrinkViewController.xib */,
 			);
 			name = ViewControllers;
 			path = "Que Hacer MDQ v2/ViewControllers";
@@ -425,7 +446,6 @@
 				A0EF61231AA4B70B00D74C01 /* Categories */,
 				A0EF61281AA4B70B00D74C01 /* Constants.h */,
 				A0EF61291AA4B70B00D74C01 /* Constants.m */,
-				A0EF612A1AA4B70B00D74C01 /* Custom Cells */,
 				A0EF61311AA4B70B00D74C01 /* Imgs */,
 				A471B10D1AD43FA800EC6571 /* Theme.h */,
 				A471B10E1AD43FA800EC6571 /* Theme.m */,
@@ -445,22 +465,11 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		A0EF612A1AA4B70B00D74C01 /* Custom Cells */ = {
-			isa = PBXGroup;
-			children = (
-				A0EF612B1AA4B70B00D74C01 /* BeachesTableViewCell.h */,
-				A0EF612C1AA4B70B00D74C01 /* BeachesTableViewCell.m */,
-				A0EF612D1AA4B70B00D74C01 /* BeachesTableViewCell.xib */,
-				A0EF612E1AA4B70B00D74C01 /* GenericTableViewCell.h */,
-				A0EF612F1AA4B70B00D74C01 /* GenericTableViewCell.m */,
-				A0EF61301AA4B70B00D74C01 /* GenericTableViewCell.xib */,
-			);
-			path = "Custom Cells";
-			sourceTree = "<group>";
-		};
 		A0EF61311AA4B70B00D74C01 /* Imgs */ = {
 			isa = PBXGroup;
 			children = (
+				A07358C21AD7157500AA94DC /* bg_app3.png */,
+				A07358BC1AD57BE700AA94DC /* art_logo_qhmdq.png */,
 				A471B1101AD4470100EC6571 /* Logo_nombre.png */,
 				A0C5CF051ACC8DF5002A0A6C /* art_greyButton.png */,
 				A0C5CEF41AC9772D002A0A6C /* art_checkbox_check_16.png */,
@@ -514,6 +523,8 @@
 				A0C5CE931AB8AE3D002A0A6C /* Schedule.h */,
 				A0C5CE941AB8AE3D002A0A6C /* Schedule.m */,
 				A0C5CE851AB70BDA002A0A6C /* Area.swift */,
+				A07358BE1AD6CC5B00AA94DC /* AppMain.h */,
+				A07358BF1AD6CC5B00AA94DC /* AppMain.m */,
 			);
 			name = Classes;
 			path = "Que Hacer MDQ v2/Classes";
@@ -634,14 +645,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C5CEB71AC45639002A0A6C /* SplashViewController.xib in Resources */,
+				A07358BD1AD57BE700AA94DC /* art_logo_qhmdq.png in Resources */,
 				A0C5CECF1AC48E67002A0A6C /* bg_noche2-lansdscape.png in Resources */,
 				A471B0FE1AD3F17C00EC6571 /* PIMainMenuCell.xib in Resources */,
 				A0C5CE1B1AAF6E2B002A0A6C /* LoginViewController.xib in Resources */,
+				A07358CD1AD85D8000AA94DC /* FoodAndDrinkViewController.xib in Resources */,
 				A0C5CEAA1AC31A02002A0A6C /* DetailViewController.xib in Resources */,
 				A0C5CED01AC48E67002A0A6C /* bg_noche2.png in Resources */,
 				A471B10B1AD43D9300EC6571 /* GOTHAM-BOOK.TTF in Resources */,
 				A0C5CEF61AC9772D002A0A6C /* art_checkbox_check_16.png in Resources */,
-				A0EF613E1AA4B70C00D74C01 /* GenericTableViewCell.xib in Resources */,
 				A0C5CED11AC48E67002A0A6C /* bg_nublado1.png in Resources */,
 				A0EF60E01AA4A6CA00D74C01 /* Main.storyboard in Resources */,
 				A0C5CEF31AC5F2B4002A0A6C /* CategoryCollectionViewCell.xib in Resources */,
@@ -668,12 +680,13 @@
 				A0EF61661AA76AE800D74C01 /* Localizable.strings in Resources */,
 				A0C5CF041ACC56C3002A0A6C /* ActivitiesListTableViewCell.xib in Resources */,
 				A0EF60E21AA4A6CA00D74C01 /* Images.xcassets in Resources */,
-				A0EF613C1AA4B70C00D74C01 /* BeachesTableViewCell.xib in Resources */,
 				A0C5CEC71AC48E67002A0A6C /* bg_amanecer1-landscape.png in Resources */,
 				A0C5CECA1AC48E67002A0A6C /* bg_amanecer3.png in Resources */,
 				A471B10A1AD43D9300EC6571 /* GOTHAM-BOLD.TTF in Resources */,
 				A0C5CECE1AC48E67002A0A6C /* bg_noche1.png in Resources */,
 				A471B1111AD4470100EC6571 /* Logo_nombre.png in Resources */,
+				A07358C81AD7F3AF00AA94DC /* SearchActivityViewController.xib in Resources */,
+				A07358C31AD7157500AA94DC /* bg_app3.png in Resources */,
 				A0C5CEB11AC326B2002A0A6C /* ActivitiesListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -732,6 +745,7 @@
 				A0C5CEB01AC326B1002A0A6C /* ActivitiesListViewController.m in Sources */,
 				A0C5CE1F1AB1C4AC002A0A6C /* CoreDataHelper.m in Sources */,
 				A471B10F1AD43FA800EC6571 /* Theme.m in Sources */,
+				A07358C71AD7F3AF00AA94DC /* SearchActivityViewController.m in Sources */,
 				A0EF60D71AA4A6CA00D74C01 /* AppDelegate.m in Sources */,
 				A0EF613A1AA4B70C00D74C01 /* Constants.m in Sources */,
 				A0C5CEA51ABB6579002A0A6C /* Synchronizer.m in Sources */,
@@ -740,7 +754,6 @@
 				A0C5CE861AB70BDA002A0A6C /* Area.swift in Sources */,
 				A0EF61641AA4FE8000D74C01 /* WSMDQActivities.m in Sources */,
 				A0EF60DD1AA4A6CA00D74C01 /* ViewController.m in Sources */,
-				A0EF613D1AA4B70C00D74C01 /* GenericTableViewCell.m in Sources */,
 				A0C5CEE11AC59DEE002A0A6C /* CategoriesSelectionViewController.m in Sources */,
 				A0C5CE981AB8AE3E002A0A6C /* Tag.m in Sources */,
 				A0EF61381AA4B70C00D74C01 /* NSManagedObject+addObject.swift in Sources */,
@@ -755,8 +768,9 @@
 				A0C5CF031ACC56C3002A0A6C /* ActivitiesListTableViewCell.m in Sources */,
 				A0EF614A1AA4B76700D74C01 /* WSConcurso.m in Sources */,
 				A0EF61371AA4B70C00D74C01 /* NSDate+ParseFromString.swift in Sources */,
+				A07358CC1AD85D8000AA94DC /* FoodAndDrinkViewController.m in Sources */,
+				A07358C01AD6CC5B00AA94DC /* AppMain.m in Sources */,
 				A0C5CEDC1AC58F4E002A0A6C /* ActivityCategory.m in Sources */,
-				A0EF613B1AA4B70C00D74C01 /* BeachesTableViewCell.m in Sources */,
 				A0EF614C1AA4B76700D74C01 /* WSMGPEventos.m in Sources */,
 				A07358B91AD4553C00AA94DC /* FavoritesTableViewCell.m in Sources */,
 				A0C5CEFF1AC99170002A0A6C /* AppSettings.m in Sources */,

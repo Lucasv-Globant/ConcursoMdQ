@@ -11,7 +11,7 @@
 #import "ActivityCategory.h"
 #import "ActivitiesListViewController.h"
 #import "PIMainMenuController.h"
-
+#import "AppMain.h"
 
 @interface CategoriesSelectionViewController : UIViewController <UICollectionViewDataSource,UICollectionViewDelegate,PIMainMenuControllerDelegate>
 

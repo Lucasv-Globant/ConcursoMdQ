@@ -171,7 +171,7 @@
     else
     {
         NSPredicate* predicate = [NSPredicate predicateWithFormat:@"id == %@",activityId];
-        NSArray* entities =  [self fetchEntitiesForClass:[Tag class] withPredicate:predicate inManagedObjectContext:_managedObjectContext];
+        NSArray* entities =  [self fetchEntitiesForClass:[Activity class] withPredicate:predicate inManagedObjectContext:_managedObjectContext];
         if ([entities count] > 0)
         {
             result = [entities objectAtIndex:0];

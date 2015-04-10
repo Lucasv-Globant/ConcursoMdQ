@@ -60,7 +60,7 @@
     
     switch (indexPath.row) {
         case 0:
-            [menuCell configureWithTitle:@"Search"];
+            [menuCell configureWithTitle:@"Buscador"];
             break;
         
         case 1:

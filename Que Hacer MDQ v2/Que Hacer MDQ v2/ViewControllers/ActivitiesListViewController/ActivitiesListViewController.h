@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ActivityCategory.h"
 #import "CoreDataHelper.h"
+#import "AppMain.h"
 
 @interface ActivitiesListViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 

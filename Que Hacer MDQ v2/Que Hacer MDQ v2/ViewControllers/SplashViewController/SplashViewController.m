@@ -40,10 +40,11 @@
          NSLog(@"Entered synchro success block..");
          [self.activityIndicator stopAnimating];
          
+         /*
          CategoriesSelectionViewController* csvc = [[CategoriesSelectionViewController alloc] initWithNibName:@"CategoriesSelectionViewController" bundle:nil];
+          */
+         CategoriesSelectionViewController* csvc = [[AppMain sharedInstance] sharedCategoriesSelectionViewController];
          [self.navigationController pushViewController:csvc animated:YES];
-          
-
      }
                   failure:^(NSError* error)
      {
