@@ -276,6 +276,16 @@
 			name = SearchActivityViewController;
 			sourceTree = "<group>";
 		};
+		A07358CE1AD85E3200AA94DC /* FoodAndDrinkViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A07358C91AD85D8000AA94DC /* FoodAndDrinkViewController.h */,
+				A07358CA1AD85D8000AA94DC /* FoodAndDrinkViewController.m */,
+				A07358CB1AD85D8000AA94DC /* FoodAndDrinkViewController.xib */,
+			);
+			name = FoodAndDrinkViewController;
+			sourceTree = "<group>";
+		};
 		A0C5CE1C1AB1C29A002A0A6C /* CoreDataHelper */ = {
 			isa = PBXGroup;
 			children = (
@@ -421,6 +431,7 @@
 		A0EF60FA1AA4B6B600D74C01 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A07358CE1AD85E3200AA94DC /* FoodAndDrinkViewController */,
 				A07358C11AD6FDCD00AA94DC /* SearchActivityViewController */,
 				A07358B01AD450B600AA94DC /* FavoritesViewController */,
 				A0C5CEDD1AC59D3C002A0A6C /* CategoriesSelectionViewController */,
@@ -430,9 +441,6 @@
 				A471B0F61AD3F17C00EC6571 /* MainMenu */,
 				A0C5CE181AAF6E2B002A0A6C /* LoginViewController.swift */,
 				A0C5CE191AAF6E2B002A0A6C /* LoginViewController.xib */,
-				A07358C91AD85D8000AA94DC /* FoodAndDrinkViewController.h */,
-				A07358CA1AD85D8000AA94DC /* FoodAndDrinkViewController.m */,
-				A07358CB1AD85D8000AA94DC /* FoodAndDrinkViewController.xib */,
 			);
 			name = ViewControllers;
 			path = "Que Hacer MDQ v2/ViewControllers";

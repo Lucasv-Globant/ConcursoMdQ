@@ -53,6 +53,7 @@
     Activity* newActivity = [NSEntityDescription insertNewObjectForEntityForName:@"Activity" inManagedObjectContext:context];
     
     newActivity.id = [DataTypesHelper stringToNSNumber:[aDictionary objectForKey:@"activityId"]];
+    newActivity.areaId = [DataTypesHelper stringToNSNumber:[aDictionary objectForKey:@"areaId"]];
     newActivity.name = [aDictionary objectForKey:@"name"];
     newActivity.desc = [aDictionary objectForKey:@"description"];
     newActivity.contactPhone1 = [aDictionary objectForKey:@"contactPhone1"];
