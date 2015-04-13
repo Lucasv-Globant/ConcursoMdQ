@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.labelActivityName.text = self.activity.name;
+    [self sharingStatus];
     NSString* locationStringLine1 = self.activity.locationDetails;
     NSString* locationStringLine2 = @"";
     
@@ -51,6 +52,56 @@
     [[AppSettings sharedInstance] addFavorite:favoriteDictionary];
     UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Favorito" message:@"Favorito agregado!" delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
     [alert show];
+}
+
+#pragma mark - Share
+
+- (void)sharingStatus {
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+        NSLog(@"service available");
+        self.shareButton.enabled = YES;
+        self.shareButton.alpha = 1.0f;
+    } else {
+        self.shareButton.enabled = NO;
+        self.shareButton.alpha = 0.5f;
+    }
+}
+
+
+- (IBAction)btnShare:(id)sender
+{
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+        
+        SLComposeViewController *mySLComposerSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        
+        
+        NSString *shareText = [NSString stringWithFormat:@"Gastronomía en Mar del Plata: %@ - (compartido mediante mi App QueHacer?MDQ!)",self.activity.name];
+        [mySLComposerSheet setInitialText:shareText];
+        
+        //[mySLComposerSheet addImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:self.imageURL]]];
+        
+        [mySLComposerSheet addURL:[NSURL URLWithString:self.activity.sharingUrl]];
+        
+        [mySLComposerSheet setCompletionHandler:^(SLComposeViewControllerResult result) {
+            
+            switch (result) {
+                case SLComposeViewControllerResultCancelled:
+                    NSLog(@"Post Canceled");
+                    break;
+                case SLComposeViewControllerResultDone:
+                    NSLog(@"Post Sucessful");
+                    break;
+                default:
+                    break;
+            }
+        }];
+        
+        [self presentViewController:mySLComposerSheet animated:YES completion:nil];
+    }
+    else
+    {
+        NSLog(@"Facebook sharing not available");
+    }
 }
 
 - (void)didReceiveMemoryWarning {

@@ -12,6 +12,7 @@
                 <outlet property="labelActivityName" destination="VZ9-rg-VCR" id="zm9-AF-6Nd"/>
                 <outlet property="labelLocationDescription" destination="u9U-dM-BSR" id="7jF-4D-vWh"/>
                 <outlet property="labelLocationDescription2" destination="X62-pQ-0Q0" id="hFA-xX-fKa"/>
+                <outlet property="shareButton" destination="Qgk-eP-8hF" id="hPA-Go-H5r"/>
                 <outlet property="textViewActivityDescription" destination="z4c-6N-sWS" id="k2A-Lx-cg4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -68,6 +69,9 @@
                     <state key="normal" title="Compartir">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="btnShare:" destination="-1" eventType="touchUpInside" id="8C2-Ex-7pd"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ycq-iO-pyN">
                     <rect key="frame" x="8" y="629" width="359" height="30"/>

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Activity.h"
 #import "ActivityCategory.h"
+#import <Social/Social.h>
 
 @interface FoodAndDrinkDetailViewController : UIViewController
 
@@ -19,5 +20,6 @@
 @property (strong, nonatomic) IBOutlet UITextView *textViewActivityDescription;
 @property (strong, nonatomic) IBOutlet UIImageView *imageActivityHeader;
 @property (strong, nonatomic) IBOutlet UILabel *labelLocationDescription2;
+@property (strong, nonatomic) IBOutlet UIButton *shareButton;
 
 @end
