@@ -18,6 +18,8 @@
 		A07358C81AD7F3AF00AA94DC /* SearchActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07358C61AD7F3AF00AA94DC /* SearchActivityViewController.xib */; };
 		A07358CC1AD85D8000AA94DC /* FoodAndDrinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07358CA1AD85D8000AA94DC /* FoodAndDrinkViewController.m */; };
 		A07358CD1AD85D8000AA94DC /* FoodAndDrinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07358CB1AD85D8000AA94DC /* FoodAndDrinkViewController.xib */; };
+		A07358D31ADC012100AA94DC /* FoodAndDrinkDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07358D11ADC012100AA94DC /* FoodAndDrinkDetailViewController.m */; };
+		A07358D41ADC012100AA94DC /* FoodAndDrinkDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07358D21ADC012100AA94DC /* FoodAndDrinkDetailViewController.xib */; };
 		A0C5CE1A1AAF6E2B002A0A6C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CE181AAF6E2B002A0A6C /* LoginViewController.swift */; };
 		A0C5CE1B1AAF6E2B002A0A6C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CE191AAF6E2B002A0A6C /* LoginViewController.xib */; };
 		A0C5CE1F1AB1C4AC002A0A6C /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CE1E1AB1C4AC002A0A6C /* CoreDataHelper.m */; };
@@ -122,6 +124,9 @@
 		A07358C91AD85D8000AA94DC /* FoodAndDrinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodAndDrinkViewController.h; path = FoodAndDrinkViewController/FoodAndDrinkViewController.h; sourceTree = "<group>"; };
 		A07358CA1AD85D8000AA94DC /* FoodAndDrinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodAndDrinkViewController.m; path = FoodAndDrinkViewController/FoodAndDrinkViewController.m; sourceTree = "<group>"; };
 		A07358CB1AD85D8000AA94DC /* FoodAndDrinkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FoodAndDrinkViewController.xib; path = FoodAndDrinkViewController/FoodAndDrinkViewController.xib; sourceTree = "<group>"; };
+		A07358D01ADC012100AA94DC /* FoodAndDrinkDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodAndDrinkDetailViewController.h; path = FoodAndDrinkDetailViewController/FoodAndDrinkDetailViewController.h; sourceTree = "<group>"; };
+		A07358D11ADC012100AA94DC /* FoodAndDrinkDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodAndDrinkDetailViewController.m; path = FoodAndDrinkDetailViewController/FoodAndDrinkDetailViewController.m; sourceTree = "<group>"; };
+		A07358D21ADC012100AA94DC /* FoodAndDrinkDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FoodAndDrinkDetailViewController.xib; path = FoodAndDrinkDetailViewController/FoodAndDrinkDetailViewController.xib; sourceTree = "<group>"; };
 		A0C5CE181AAF6E2B002A0A6C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = LoginViewController/LoginViewController.swift; sourceTree = "<group>"; };
 		A0C5CE191AAF6E2B002A0A6C /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = LoginViewController/LoginViewController.xib; sourceTree = "<group>"; };
 		A0C5CE1D1AB1C4AC002A0A6C /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataHelper.h; path = CoreDataHelper/CoreDataHelper.h; sourceTree = "<group>"; };
@@ -286,6 +291,16 @@
 			name = FoodAndDrinkViewController;
 			sourceTree = "<group>";
 		};
+		A07358CF1ADBF41C00AA94DC /* FoodAndDrinkDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A07358D01ADC012100AA94DC /* FoodAndDrinkDetailViewController.h */,
+				A07358D11ADC012100AA94DC /* FoodAndDrinkDetailViewController.m */,
+				A07358D21ADC012100AA94DC /* FoodAndDrinkDetailViewController.xib */,
+			);
+			name = FoodAndDrinkDetailViewController;
+			sourceTree = "<group>";
+		};
 		A0C5CE1C1AB1C29A002A0A6C /* CoreDataHelper */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +451,7 @@
 				A0C5CEDD1AC59D3C002A0A6C /* CategoriesSelectionViewController */,
 				A0C5CEB21AC455ED002A0A6C /* SplashViewController */,
 				A0C5CEAC1AC3267D002A0A6C /* ActivitiesListViewController */,
+				A07358CF1ADBF41C00AA94DC /* FoodAndDrinkDetailViewController */,
 				A07358CE1AD85E3200AA94DC /* FoodAndDrinkViewController */,
 				A0C5CEAB1AC31EFF002A0A6C /* DetailViewController */,
 				A471B0F61AD3F17C00EC6571 /* MainMenu */,
@@ -679,6 +695,7 @@
 				A0C5CEF71AC9772D002A0A6C /* art_checkbox_empty_16.png in Resources */,
 				A0C5CEE51AC5D5F5002A0A6C /* art_checkbox_check_32.png in Resources */,
 				A0C5CECD1AC48E67002A0A6C /* bg_noche1-landscape.png in Resources */,
+				A07358D41ADC012100AA94DC /* FoodAndDrinkDetailViewController.xib in Resources */,
 				A471B1041AD4153800EC6571 /* menu@2x.png in Resources */,
 				A0C5CED21AC48E67002A0A6C /* bg_soleado1.png in Resources */,
 				A0C5CECC1AC48E67002A0A6C /* bg_atardecer1.png in Resources */,
@@ -748,6 +765,7 @@
 			files = (
 				A0C5CE1A1AAF6E2B002A0A6C /* LoginViewController.swift in Sources */,
 				A0EF60DA1AA4A6CA00D74C01 /* Que_Hacer_MDQ_v2.xcdatamodeld in Sources */,
+				A07358D31ADC012100AA94DC /* FoodAndDrinkDetailViewController.m in Sources */,
 				A471B0FF1AD3F17C00EC6571 /* PIMainMenuController.m in Sources */,
 				A0C5CEB61AC45639002A0A6C /* SplashViewController.m in Sources */,
 				A0C5CEB01AC326B1002A0A6C /* ActivitiesListViewController.m in Sources */,

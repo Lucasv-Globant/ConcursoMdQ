@@ -9,8 +9,9 @@
 #import "FoodAndDrinkViewController.h"
 #import "ActivitiesListTableViewCell.h"
 #import "DataTypesHelper.h"
-#import "DetailViewController.h"
+//#import "DetailViewController.h"
 #import "UILabel+AutoHeight.h"
+#import "FoodAndDrinkDetailViewController.h"
 
 @interface FoodAndDrinkViewController ()
 @property (strong, nonatomic) IBOutlet UITableView *activitiesUITableView;
@@ -76,9 +77,9 @@
 {
     //Identify the activity selected, create a detail view controller, and pass the activity to it.
     Activity* selectedActivity = [self.activities objectAtIndex:indexPath.row];
-    DetailViewController* dvc = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
-    dvc.activity = selectedActivity;
-    [self.navigationController pushViewController:dvc animated:YES];
+    FoodAndDrinkDetailViewController* fdvc = [[FoodAndDrinkDetailViewController alloc] initWithNibName:@"FoodAndDrinkDetailViewController" bundle:nil];
+    fdvc.activity = selectedActivity;
+    [self.navigationController pushViewController:fdvc animated:YES];
 }
 
 
