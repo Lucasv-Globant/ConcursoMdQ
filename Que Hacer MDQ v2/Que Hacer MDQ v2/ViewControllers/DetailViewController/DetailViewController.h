@@ -11,6 +11,7 @@
 #import "ActivityCategory.h"
 #import "AppSettings.h"
 #import "UILabel+AutoHeight.h"
+#import "MapViewController.h"
 
 @interface DetailViewController : UIViewController
 

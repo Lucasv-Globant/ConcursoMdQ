@@ -7,6 +7,7 @@
 //
 
 #import "FoodAndDrinkDetailViewController.h"
+#import "MapViewController.h"
 
 @interface FoodAndDrinkDetailViewController ()
 
@@ -102,6 +103,15 @@
     {
         NSLog(@"Facebook sharing not available");
     }
+}
+
+
+#pragma mark IBAction tap on "Show Map"
+- (IBAction)btnGoToMap:(id)sender
+{
+    MapViewController* mvc = [[MapViewController alloc] init];
+    [mvc setupforSingleActivity:self.activity];
+    [self.navigationController pushViewController:mvc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

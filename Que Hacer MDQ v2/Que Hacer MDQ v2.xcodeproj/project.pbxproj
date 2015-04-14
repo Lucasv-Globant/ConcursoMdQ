@@ -20,10 +20,13 @@
 		A07358CD1AD85D8000AA94DC /* FoodAndDrinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07358CB1AD85D8000AA94DC /* FoodAndDrinkViewController.xib */; };
 		A07358D31ADC012100AA94DC /* FoodAndDrinkDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07358D11ADC012100AA94DC /* FoodAndDrinkDetailViewController.m */; };
 		A07358D41ADC012100AA94DC /* FoodAndDrinkDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07358D21ADC012100AA94DC /* FoodAndDrinkDetailViewController.xib */; };
+		A07358D91ADD31CE00AA94DC /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07358D71ADD31CE00AA94DC /* MapViewController.m */; };
+		A07358DA1ADD31CE00AA94DC /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07358D81ADD31CE00AA94DC /* MapViewController.xib */; };
+		A07358DC1ADD42D700AA94DC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07358DB1ADD42D700AA94DC /* MapKit.framework */; };
+		A07358DF1ADD942600AA94DC /* Area.m in Sources */ = {isa = PBXBuildFile; fileRef = A07358DE1ADD942600AA94DC /* Area.m */; };
 		A0C5CE1A1AAF6E2B002A0A6C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CE181AAF6E2B002A0A6C /* LoginViewController.swift */; };
 		A0C5CE1B1AAF6E2B002A0A6C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CE191AAF6E2B002A0A6C /* LoginViewController.xib */; };
 		A0C5CE1F1AB1C4AC002A0A6C /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CE1E1AB1C4AC002A0A6C /* CoreDataHelper.m */; };
-		A0C5CE861AB70BDA002A0A6C /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CE851AB70BDA002A0A6C /* Area.swift */; };
 		A0C5CE951AB8AE3D002A0A6C /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CE941AB8AE3D002A0A6C /* Schedule.m */; };
 		A0C5CE981AB8AE3E002A0A6C /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CE971AB8AE3E002A0A6C /* Tag.m */; };
 		A0C5CE9F1AB9EC5F002A0A6C /* DataTypesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CE9E1AB9EC5F002A0A6C /* DataTypesHelper.m */; };
@@ -127,11 +130,16 @@
 		A07358D01ADC012100AA94DC /* FoodAndDrinkDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodAndDrinkDetailViewController.h; path = FoodAndDrinkDetailViewController/FoodAndDrinkDetailViewController.h; sourceTree = "<group>"; };
 		A07358D11ADC012100AA94DC /* FoodAndDrinkDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodAndDrinkDetailViewController.m; path = FoodAndDrinkDetailViewController/FoodAndDrinkDetailViewController.m; sourceTree = "<group>"; };
 		A07358D21ADC012100AA94DC /* FoodAndDrinkDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FoodAndDrinkDetailViewController.xib; path = FoodAndDrinkDetailViewController/FoodAndDrinkDetailViewController.xib; sourceTree = "<group>"; };
+		A07358D61ADD31CE00AA94DC /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = MapViewController/MapViewController.h; sourceTree = "<group>"; };
+		A07358D71ADD31CE00AA94DC /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = MapViewController/MapViewController.m; sourceTree = "<group>"; };
+		A07358D81ADD31CE00AA94DC /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapViewController.xib; path = MapViewController/MapViewController.xib; sourceTree = "<group>"; };
+		A07358DB1ADD42D700AA94DC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A07358DD1ADD942600AA94DC /* Area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Area.h; sourceTree = "<group>"; };
+		A07358DE1ADD942600AA94DC /* Area.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Area.m; sourceTree = "<group>"; };
 		A0C5CE181AAF6E2B002A0A6C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = LoginViewController/LoginViewController.swift; sourceTree = "<group>"; };
 		A0C5CE191AAF6E2B002A0A6C /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = LoginViewController/LoginViewController.xib; sourceTree = "<group>"; };
 		A0C5CE1D1AB1C4AC002A0A6C /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataHelper.h; path = CoreDataHelper/CoreDataHelper.h; sourceTree = "<group>"; };
 		A0C5CE1E1AB1C4AC002A0A6C /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataHelper.m; path = CoreDataHelper/CoreDataHelper.m; sourceTree = "<group>"; };
-		A0C5CE851AB70BDA002A0A6C /* Area.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
 		A0C5CE931AB8AE3D002A0A6C /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
 		A0C5CE941AB8AE3D002A0A6C /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
 		A0C5CE961AB8AE3E002A0A6C /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
@@ -236,6 +244,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07358DC1ADD42D700AA94DC /* MapKit.framework in Frameworks */,
 				F310C4A83EA7E2612DE2B98F /* libPods-Que Hacer MDQ v2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +262,7 @@
 		173E496853D206A0072C976F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A07358DB1ADD42D700AA94DC /* MapKit.framework */,
 				1AFAAE7248CABC14EFB98466 /* libPods-Que Hacer MDQ v2.a */,
 			);
 			name = Frameworks;
@@ -299,6 +309,16 @@
 				A07358D21ADC012100AA94DC /* FoodAndDrinkDetailViewController.xib */,
 			);
 			name = FoodAndDrinkDetailViewController;
+			sourceTree = "<group>";
+		};
+		A07358D51ADD315E00AA94DC /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A07358D61ADD31CE00AA94DC /* MapViewController.h */,
+				A07358D71ADD31CE00AA94DC /* MapViewController.m */,
+				A07358D81ADD31CE00AA94DC /* MapViewController.xib */,
+			);
+			name = MapViewController;
 			sourceTree = "<group>";
 		};
 		A0C5CE1C1AB1C29A002A0A6C /* CoreDataHelper */ = {
@@ -446,6 +466,7 @@
 		A0EF60FA1AA4B6B600D74C01 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A07358D51ADD315E00AA94DC /* MapViewController */,
 				A07358C11AD6FDCD00AA94DC /* SearchActivityViewController */,
 				A07358B01AD450B600AA94DC /* FavoritesViewController */,
 				A0C5CEDD1AC59D3C002A0A6C /* CategoriesSelectionViewController */,
@@ -546,9 +567,10 @@
 				A0C5CE971AB8AE3E002A0A6C /* Tag.m */,
 				A0C5CE931AB8AE3D002A0A6C /* Schedule.h */,
 				A0C5CE941AB8AE3D002A0A6C /* Schedule.m */,
-				A0C5CE851AB70BDA002A0A6C /* Area.swift */,
 				A07358BE1AD6CC5B00AA94DC /* AppMain.h */,
 				A07358BF1AD6CC5B00AA94DC /* AppMain.m */,
+				A07358DD1ADD942600AA94DC /* Area.h */,
+				A07358DE1ADD942600AA94DC /* Area.m */,
 			);
 			name = Classes;
 			path = "Que Hacer MDQ v2/Classes";
@@ -705,6 +727,7 @@
 				A0EF61661AA76AE800D74C01 /* Localizable.strings in Resources */,
 				A0C5CF041ACC56C3002A0A6C /* ActivitiesListTableViewCell.xib in Resources */,
 				A0EF60E21AA4A6CA00D74C01 /* Images.xcassets in Resources */,
+				A07358DA1ADD31CE00AA94DC /* MapViewController.xib in Resources */,
 				A0C5CEC71AC48E67002A0A6C /* bg_amanecer1-landscape.png in Resources */,
 				A0C5CECA1AC48E67002A0A6C /* bg_amanecer3.png in Resources */,
 				A471B10A1AD43D9300EC6571 /* GOTHAM-BOLD.TTF in Resources */,
@@ -763,6 +786,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07358DF1ADD942600AA94DC /* Area.m in Sources */,
 				A0C5CE1A1AAF6E2B002A0A6C /* LoginViewController.swift in Sources */,
 				A0EF60DA1AA4A6CA00D74C01 /* Que_Hacer_MDQ_v2.xcdatamodeld in Sources */,
 				A07358D31ADC012100AA94DC /* FoodAndDrinkDetailViewController.m in Sources */,
@@ -777,7 +801,6 @@
 				A0C5CEA51ABB6579002A0A6C /* Synchronizer.m in Sources */,
 				A0C5CEF21AC5F2B4002A0A6C /* CategoryCollectionViewCell.m in Sources */,
 				A07358B41AD450EC00AA94DC /* FavoritesViewController.m in Sources */,
-				A0C5CE861AB70BDA002A0A6C /* Area.swift in Sources */,
 				A0EF61641AA4FE8000D74C01 /* WSMDQActivities.m in Sources */,
 				A0EF60DD1AA4A6CA00D74C01 /* ViewController.m in Sources */,
 				A0C5CEE11AC59DEE002A0A6C /* CategoriesSelectionViewController.m in Sources */,
@@ -796,6 +819,7 @@
 				A0EF61371AA4B70C00D74C01 /* NSDate+ParseFromString.swift in Sources */,
 				A07358CC1AD85D8000AA94DC /* FoodAndDrinkViewController.m in Sources */,
 				A07358C01AD6CC5B00AA94DC /* AppMain.m in Sources */,
+				A07358D91ADD31CE00AA94DC /* MapViewController.m in Sources */,
 				A0C5CEDC1AC58F4E002A0A6C /* ActivityCategory.m in Sources */,
 				A0EF614C1AA4B76700D74C01 /* WSMGPEventos.m in Sources */,
 				A07358B91AD4553C00AA94DC /* FavoritesTableViewCell.m in Sources */,

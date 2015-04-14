@@ -55,6 +55,11 @@
     UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Favorito" message:@"Favorito agregado!" delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
     [alert show];
 }
+- (IBAction)btnGoToMap:(id)sender {
+    MapViewController* mvc = [[MapViewController alloc] init];
+    [mvc setupforSingleActivity:self.activity];
+    [self.navigationController pushViewController:mvc animated:YES];
+}
 
 /*
 #pragma mark - Navigation
