@@ -17,13 +17,11 @@
 
 @implementation MapViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    self.mapView.delegate = self;
-    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(-38.0255351f,-57.531561f);
+-(void)viewWillAppear:(BOOL)animated
+{
+    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake([self.activity.locationLatitude doubleValue],[self.activity.locationLongitude doubleValue]);
     [self.mapView setShowsUserLocation:YES];
-    [self.mapView setRegion:MKCoordinateRegionMake(coord, MKCoordinateSpanMake(0.1f,0.1f)) animated:YES];
+    [self.mapView setRegion:MKCoordinateRegionMake(coord, MKCoordinateSpanMake(0.05f,0.05f)) animated:YES];
     MKPointAnnotation* mkpa = [[MKPointAnnotation alloc] init];
     
     NSString* areaDescr = [Area getAreaSingularDescriptionById:self.activity.areaId];
@@ -32,9 +30,14 @@
     mkpa.coordinate = coord;
     [self.mapView addAnnotation:mkpa];
     [self.mapView selectAnnotation:mkpa animated:YES];
-    
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view from its nib.
+    self.mapView.delegate = self;    
+}
+/*
 -(void)setupforSingleActivity:(Activity*)activity
 {
     self.activity = activity;
@@ -52,7 +55,9 @@
 //-38.0109844
 //-57.5357881
 
+
 }
+*/
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -57,7 +57,8 @@
 }
 - (IBAction)btnGoToMap:(id)sender {
     MapViewController* mvc = [[MapViewController alloc] init];
-    [mvc setupforSingleActivity:self.activity];
+    mvc.activity = self.activity;
+    //[mvc setupforSingleActivity:self.activity];
     [self.navigationController pushViewController:mvc animated:YES];
 }
 
