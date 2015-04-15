@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivitiesListViewController">
@@ -17,21 +16,23 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Logo_nombre.png" translatesAutoresizingMaskIntoConstraints="NO" id="C0u-5Z-tlA">
-                    <rect key="frame" x="0.0" y="38" width="375" height="123"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="120" id="PyU-vV-37t"/>
-                        <constraint firstAttribute="width" secondItem="C0u-5Z-tlA" secondAttribute="height" multiplier="125:41" id="eBc-3V-I6I"/>
-                    </constraints>
-                </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actividades que conciden con tus intereses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="07y-Nn-biO">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Actividades que conciden con tus intereses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="07y-Nn-biO">
                     <rect key="frame" x="8" y="18" width="359" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Rad-ki-ehf">
-                    <rect key="frame" x="0.0" y="169" width="359" height="486"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="91z-fZ-T9W">
+                    <rect key="frame" x="8" y="57" width="359" height="52"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="P4V-Ba-BV4">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Rad-ki-ehf">
+                    <rect key="frame" x="5" y="126" width="350" height="450"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="QRq-Ja-qea"/>
@@ -40,24 +41,8 @@
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="07y-Nn-biO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="7eQ-YT-GMB"/>
-                <constraint firstAttribute="trailing" secondItem="07y-Nn-biO" secondAttribute="trailing" constant="8" id="Iab-e8-Gsr"/>
-                <constraint firstAttribute="bottom" secondItem="Rad-ki-ehf" secondAttribute="bottom" constant="8" id="PRJ-zv-IQZ"/>
-                <constraint firstAttribute="centerX" secondItem="07y-Nn-biO" secondAttribute="centerX" id="Utm-zo-sqC"/>
-                <constraint firstItem="Rad-ki-ehf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="bEz-O7-rWx"/>
-                <constraint firstItem="Rad-ki-ehf" firstAttribute="top" secondItem="C0u-5Z-tlA" secondAttribute="bottom" constant="8" id="gnW-BU-rhk"/>
-                <constraint firstItem="07y-Nn-biO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="18" id="hgQ-6V-Erq"/>
-                <constraint firstAttribute="trailing" secondItem="C0u-5Z-tlA" secondAttribute="trailing" id="kcD-FV-Exj"/>
-                <constraint firstItem="C0u-5Z-tlA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mfx-67-Mo5"/>
-                <constraint firstAttribute="trailing" secondItem="Rad-ki-ehf" secondAttribute="trailing" constant="8" id="rug-oG-Cfa"/>
-                <constraint firstItem="C0u-5Z-tlA" firstAttribute="top" secondItem="07y-Nn-biO" secondAttribute="bottom" id="zeH-Hv-mGi"/>
-            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="238.5" y="440.5"/>
+            <point key="canvasLocation" x="276.5" y="440.5"/>
         </view>
     </objects>
-    <resources>
-        <image name="Logo_nombre.png" width="307" height="180"/>
-    </resources>
 </document>
