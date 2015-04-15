@@ -12,5 +12,5 @@
 #import "Area.h"
 @interface MapViewController : UIViewController<MKMapViewDelegate>
 @property (nonatomic,strong) Activity* activity;
--(void)setupforSingleActivity:(Activity*)activity;
+//-(void)setupforSingleActivity:(Activity*)activity;
 @end

@@ -91,7 +91,7 @@
 
 - (void)configureLeftBarButton {
     UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    UIImage *leftButtonImage = [UIImage imageNamed:@"menu"];
+    UIImage *leftButtonImage = [UIImage imageNamed:@"menu2"];
     leftButton.frame = CGRectMake(0, 0, 40, 40);
     leftButton.contentMode = UIViewContentModeBottomLeft;
     
