@@ -32,11 +32,12 @@
     UINib *cellNib = [UINib nibWithNibName:@"ActivitiesListTableViewCell" bundle:nil];
     
     [self.activitiesUITableView registerNib:cellNib forCellReuseIdentifier:@"ActivitiesListTableViewCell"];
-    
-    [self.activitiesUITableView reloadData];
-
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self.foodAndDrinkUITableView reloadData];
+}
 
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

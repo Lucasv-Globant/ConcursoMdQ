@@ -48,6 +48,9 @@
     //self.labelActivityPhone1.text = self.activity.contactPhone1;
     self.navigationItem.hidesBackButton = NO;
 }
+
+
+
 - (IBAction)btnActionAddToFavorites:(id)sender {
     NSDictionary* favoriteDictionary = [[NSDictionary alloc] initWithObjects:@[self.activity.name,self.activity.id,@"0",self.activity.areaId] forKeys:@[@"name",@"activityId",@"categoryId",@"areaId"]];
     [[AppSettings sharedInstance] addFavorite:favoriteDictionary];

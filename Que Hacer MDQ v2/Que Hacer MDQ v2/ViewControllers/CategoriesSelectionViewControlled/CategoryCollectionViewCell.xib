@@ -9,43 +9,50 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCollectionViewCell" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+            <rect key="frame" x="0.0" y="0.0" width="125" height="140"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                <rect key="frame" x="0.0" y="0.0" width="125" height="140"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HXR-Id-oWc">
-                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HXR-Id-oWc">
+                        <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="HXR-Id-oWc" secondAttribute="height" multiplier="113:81" id="Csk-W5-uoq"/>
+                            <constraint firstAttribute="width" secondItem="HXR-Id-oWc" secondAttribute="height" multiplier="60:49" id="Zxo-4m-AWg"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdX-SJ-b0i">
-                        <rect key="frame" x="0.0" y="54" width="120" height="59"/>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdX-SJ-b0i">
+                        <rect key="frame" x="0.0" y="124" width="120" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="oIr-Sa-EjO"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" alpha="0.34999999999999964" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7cH-Hy-NUd">
-                        <rect key="frame" x="0.0" y="0.0" width="120" height="36"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="art_checkbox_empty_32.png" translatesAutoresizingMaskIntoConstraints="NO" id="JhA-6i-2bs">
-                        <rect key="frame" x="92" y="10" width="16" height="16"/>
-                    </imageView>
-                    <imageView hidden="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="art_checkbox_check_32.png" translatesAutoresizingMaskIntoConstraints="NO" id="bX4-IR-pcG">
-                        <rect key="frame" x="92" y="12" width="16" height="16"/>
+                    <imageView hidden="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="art_roundbutton_selected_checkmark.png" translatesAutoresizingMaskIntoConstraints="NO" id="bX4-IR-pcG">
+                        <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="bX4-IR-pcG" secondAttribute="height" multiplier="1:1" id="CFt-IP-Cez"/>
+                        </constraints>
                     </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="bX4-IR-pcG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="J0T-a3-itn"/>
+                <constraint firstItem="HXR-Id-oWc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="J7T-1y-KbX"/>
+                <constraint firstAttribute="trailing" secondItem="HXR-Id-oWc" secondAttribute="trailing" id="KAR-JT-E1F"/>
+                <constraint firstItem="bX4-IR-pcG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RNa-pB-4GD"/>
+                <constraint firstAttribute="trailing" secondItem="bX4-IR-pcG" secondAttribute="trailing" id="Rm1-j1-BWQ"/>
+                <constraint firstAttribute="bottom" secondItem="HXR-Id-oWc" secondAttribute="bottom" constant="15" id="XDz-6B-Q6I"/>
+                <constraint firstAttribute="bottom" secondItem="bX4-IR-pcG" secondAttribute="bottom" constant="15" id="hCb-Sf-8Ne"/>
+                <constraint firstItem="HXR-Id-oWc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="z2B-pE-n70"/>
+            </constraints>
             <size key="customSize" width="226" height="161"/>
-            <point key="canvasLocation" x="171" y="258"/>
+            <point key="canvasLocation" x="170.5" y="260.5"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="art_checkbox_check_32.png" width="32" height="32"/>
-        <image name="art_checkbox_empty_32.png" width="25" height="25"/>
+        <image name="art_roundbutton_selected_checkmark.png" width="250" height="250"/>
     </resources>
 </document>

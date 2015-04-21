@@ -29,13 +29,14 @@
     UINib *cellNib = [UINib nibWithNibName:@"CategoryCollectionViewCell" bundle:nil];
 
     [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"CategoryCollectionViewCell"];
- //   self.navigationItem.hidesBackButton = YES;
+    //self.navigationItem.hidesBackButton = YES;
     NSLog(@"%@",self.parentViewController);
     self.mainMenu = (PIMainMenuController *)self.mm_drawerController.leftDrawerViewController;
     self.mainMenu.delegate = self;
     [self configureSideBar];
      
 }
+
 
 - (IBAction)btnContinue2:(id)sender {
 

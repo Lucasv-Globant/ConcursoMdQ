@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FoodAndDrinkViewController">
             <connections>
                 <outlet property="activitiesUITableView" destination="3Rr-iF-28s" id="MUj-lK-rI9"/>
+                <outlet property="foodAndDrinkUITableView" destination="3Rr-iF-28s" id="QyU-to-Ly6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

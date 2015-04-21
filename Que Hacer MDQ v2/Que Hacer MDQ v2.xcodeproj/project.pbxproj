@@ -66,6 +66,24 @@
 		A0C5CF031ACC56C3002A0A6C /* ActivitiesListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CF011ACC56C3002A0A6C /* ActivitiesListTableViewCell.m */; };
 		A0C5CF041ACC56C3002A0A6C /* ActivitiesListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CF021ACC56C3002A0A6C /* ActivitiesListTableViewCell.xib */; };
 		A0C5CF061ACC8DF5002A0A6C /* art_greyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CF051ACC8DF5002A0A6C /* art_greyButton.png */; };
+		A0D483681AE53B190006BD0E /* art_button_plastic-arts.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D483581AE53B190006BD0E /* art_button_plastic-arts.png */; };
+		A0D483691AE53B190006BD0E /* art_category_roundbutton_AppLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D483591AE53B190006BD0E /* art_category_roundbutton_AppLogo.png */; };
+		A0D4836A1AE53B190006BD0E /* art_category_roundbutton_art-gallery.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D4835A1AE53B190006BD0E /* art_category_roundbutton_art-gallery.png */; };
+		A0D4836B1AE53B190006BD0E /* art_category_roundbutton_art.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D4835B1AE53B190006BD0E /* art_category_roundbutton_art.png */; };
+		A0D4836C1AE53B190006BD0E /* art_category_roundbutton_ballet.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D4835C1AE53B190006BD0E /* art_category_roundbutton_ballet.png */; };
+		A0D4836D1AE53B190006BD0E /* art_category_roundbutton_books.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D4835D1AE53B190006BD0E /* art_category_roundbutton_books.png */; };
+		A0D4836E1AE53B190006BD0E /* art_category_roundbutton_casino.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D4835E1AE53B190006BD0E /* art_category_roundbutton_casino.png */; };
+		A0D4836F1AE53B190006BD0E /* art_category_roundbutton_entertainment-shows.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D4835F1AE53B190006BD0E /* art_category_roundbutton_entertainment-shows.png */; };
+		A0D483701AE53B190006BD0E /* art_category_roundbutton_family.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D483601AE53B190006BD0E /* art_category_roundbutton_family.png */; };
+		A0D483711AE53B190006BD0E /* art_category_roundbutton_kids.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D483611AE53B190006BD0E /* art_category_roundbutton_kids.png */; };
+		A0D483721AE53B190006BD0E /* art_category_roundbutton_nightlife.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D483621AE53B190006BD0E /* art_category_roundbutton_nightlife.png */; };
+		A0D483731AE53B190006BD0E /* art_category_roundbutton_outdoors.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D483631AE53B190006BD0E /* art_category_roundbutton_outdoors.png */; };
+		A0D483741AE53B190006BD0E /* art_category_roundbutton_party.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D483641AE53B190006BD0E /* art_category_roundbutton_party.png */; };
+		A0D483751AE53B190006BD0E /* art_category_roundbutton_scubadiving.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D483651AE53B190006BD0E /* art_category_roundbutton_scubadiving.png */; };
+		A0D483761AE53B190006BD0E /* art_category_roundbutton_sports.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D483661AE53B190006BD0E /* art_category_roundbutton_sports.png */; };
+		A0D483771AE53B190006BD0E /* art_category_roundbutton_waterpark.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D483671AE53B190006BD0E /* art_category_roundbutton_waterpark.png */; };
+		A0D673731AE696570013FEA2 /* art_roundbutton_selected_checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D673711AE696570013FEA2 /* art_roundbutton_selected_checkmark.png */; };
+		A0D673741AE696570013FEA2 /* art_roundbutton_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D673721AE696570013FEA2 /* art_roundbutton_selected.png */; };
 		A0E669511ADEFA060023AE4D /* menu2.png in Resources */ = {isa = PBXBuildFile; fileRef = A0E669501ADEFA060023AE4D /* menu2.png */; };
 		A0EF60D41AA4A6CA00D74C01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60D31AA4A6CA00D74C01 /* main.m */; };
 		A0EF60D71AA4A6CA00D74C01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60D61AA4A6CA00D74C01 /* AppDelegate.m */; };
@@ -194,6 +212,24 @@
 		A0C5CF011ACC56C3002A0A6C /* ActivitiesListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivitiesListTableViewCell.m; path = ActivitiesListViewController/ActivitiesListTableViewCell.m; sourceTree = "<group>"; };
 		A0C5CF021ACC56C3002A0A6C /* ActivitiesListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ActivitiesListTableViewCell.xib; path = ActivitiesListViewController/ActivitiesListTableViewCell.xib; sourceTree = "<group>"; };
 		A0C5CF051ACC8DF5002A0A6C /* art_greyButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_greyButton.png; sourceTree = "<group>"; };
+		A0D483581AE53B190006BD0E /* art_button_plastic-arts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "art_button_plastic-arts.png"; sourceTree = "<group>"; };
+		A0D483591AE53B190006BD0E /* art_category_roundbutton_AppLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_AppLogo.png; sourceTree = "<group>"; };
+		A0D4835A1AE53B190006BD0E /* art_category_roundbutton_art-gallery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "art_category_roundbutton_art-gallery.png"; sourceTree = "<group>"; };
+		A0D4835B1AE53B190006BD0E /* art_category_roundbutton_art.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_art.png; sourceTree = "<group>"; };
+		A0D4835C1AE53B190006BD0E /* art_category_roundbutton_ballet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_ballet.png; sourceTree = "<group>"; };
+		A0D4835D1AE53B190006BD0E /* art_category_roundbutton_books.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_books.png; sourceTree = "<group>"; };
+		A0D4835E1AE53B190006BD0E /* art_category_roundbutton_casino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_casino.png; sourceTree = "<group>"; };
+		A0D4835F1AE53B190006BD0E /* art_category_roundbutton_entertainment-shows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "art_category_roundbutton_entertainment-shows.png"; sourceTree = "<group>"; };
+		A0D483601AE53B190006BD0E /* art_category_roundbutton_family.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_family.png; sourceTree = "<group>"; };
+		A0D483611AE53B190006BD0E /* art_category_roundbutton_kids.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_kids.png; sourceTree = "<group>"; };
+		A0D483621AE53B190006BD0E /* art_category_roundbutton_nightlife.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_nightlife.png; sourceTree = "<group>"; };
+		A0D483631AE53B190006BD0E /* art_category_roundbutton_outdoors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_outdoors.png; sourceTree = "<group>"; };
+		A0D483641AE53B190006BD0E /* art_category_roundbutton_party.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_party.png; sourceTree = "<group>"; };
+		A0D483651AE53B190006BD0E /* art_category_roundbutton_scubadiving.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_scubadiving.png; sourceTree = "<group>"; };
+		A0D483661AE53B190006BD0E /* art_category_roundbutton_sports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_sports.png; sourceTree = "<group>"; };
+		A0D483671AE53B190006BD0E /* art_category_roundbutton_waterpark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_waterpark.png; sourceTree = "<group>"; };
+		A0D673711AE696570013FEA2 /* art_roundbutton_selected_checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_roundbutton_selected_checkmark.png; sourceTree = "<group>"; };
+		A0D673721AE696570013FEA2 /* art_roundbutton_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_roundbutton_selected.png; sourceTree = "<group>"; };
 		A0E669501ADEFA060023AE4D /* menu2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu2.png; sourceTree = "<group>"; };
 		A0EF60CE1AA4A6CA00D74C01 /* Que Hacer MDQ v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Que Hacer MDQ v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EF60D21AA4A6CA00D74C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -396,6 +432,31 @@
 			name = CategoriesSelectionViewController;
 			sourceTree = "<group>";
 		};
+		A0D483571AE53AEC0006BD0E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A0D673711AE696570013FEA2 /* art_roundbutton_selected_checkmark.png */,
+				A0D673721AE696570013FEA2 /* art_roundbutton_selected.png */,
+				A0D483581AE53B190006BD0E /* art_button_plastic-arts.png */,
+				A0D483591AE53B190006BD0E /* art_category_roundbutton_AppLogo.png */,
+				A0D4835A1AE53B190006BD0E /* art_category_roundbutton_art-gallery.png */,
+				A0D4835B1AE53B190006BD0E /* art_category_roundbutton_art.png */,
+				A0D4835C1AE53B190006BD0E /* art_category_roundbutton_ballet.png */,
+				A0D4835D1AE53B190006BD0E /* art_category_roundbutton_books.png */,
+				A0D4835E1AE53B190006BD0E /* art_category_roundbutton_casino.png */,
+				A0D4835F1AE53B190006BD0E /* art_category_roundbutton_entertainment-shows.png */,
+				A0D483601AE53B190006BD0E /* art_category_roundbutton_family.png */,
+				A0D483611AE53B190006BD0E /* art_category_roundbutton_kids.png */,
+				A0D483621AE53B190006BD0E /* art_category_roundbutton_nightlife.png */,
+				A0D483631AE53B190006BD0E /* art_category_roundbutton_outdoors.png */,
+				A0D483641AE53B190006BD0E /* art_category_roundbutton_party.png */,
+				A0D483651AE53B190006BD0E /* art_category_roundbutton_scubadiving.png */,
+				A0D483661AE53B190006BD0E /* art_category_roundbutton_sports.png */,
+				A0D483671AE53B190006BD0E /* art_category_roundbutton_waterpark.png */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		A0EF60C51AA4A6CA00D74C01 = {
 			isa = PBXGroup;
 			children = (
@@ -515,6 +576,7 @@
 		A0EF61311AA4B70B00D74C01 /* Imgs */ = {
 			isa = PBXGroup;
 			children = (
+				A0D483571AE53AEC0006BD0E /* Categories */,
 				A0E669501ADEFA060023AE4D /* menu2.png */,
 				A07358C21AD7157500AA94DC /* bg_app3.png */,
 				A07358BC1AD57BE700AA94DC /* art_logo_qhmdq.png */,
@@ -694,15 +756,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C5CEB71AC45639002A0A6C /* SplashViewController.xib in Resources */,
+				A0D483751AE53B190006BD0E /* art_category_roundbutton_scubadiving.png in Resources */,
 				A07358BD1AD57BE700AA94DC /* art_logo_qhmdq.png in Resources */,
 				A0C5CECF1AC48E67002A0A6C /* bg_noche2-lansdscape.png in Resources */,
 				A471B0FE1AD3F17C00EC6571 /* PIMainMenuCell.xib in Resources */,
 				A0C5CE1B1AAF6E2B002A0A6C /* LoginViewController.xib in Resources */,
+				A0D483731AE53B190006BD0E /* art_category_roundbutton_outdoors.png in Resources */,
 				A07358CD1AD85D8000AA94DC /* FoodAndDrinkViewController.xib in Resources */,
 				A0C5CEAA1AC31A02002A0A6C /* DetailViewController.xib in Resources */,
+				A0D483721AE53B190006BD0E /* art_category_roundbutton_nightlife.png in Resources */,
 				A0C5CED01AC48E67002A0A6C /* bg_noche2.png in Resources */,
 				A471B10B1AD43D9300EC6571 /* GOTHAM-BOOK.TTF in Resources */,
 				A0C5CEF61AC9772D002A0A6C /* art_checkbox_check_16.png in Resources */,
+				A0D483691AE53B190006BD0E /* art_category_roundbutton_AppLogo.png in Resources */,
 				A0C5CED11AC48E67002A0A6C /* bg_nublado1.png in Resources */,
 				A0EF60E01AA4A6CA00D74C01 /* Main.storyboard in Resources */,
 				A0C5CEF31AC5F2B4002A0A6C /* CategoryCollectionViewCell.xib in Resources */,
@@ -713,8 +779,13 @@
 				A0C5CEE61AC5D5F5002A0A6C /* art_checkbox_empty_32.png in Resources */,
 				A0C5CEE21AC59DEE002A0A6C /* CategoriesSelectionViewController.xib in Resources */,
 				A471B1031AD4153800EC6571 /* menu.png in Resources */,
+				A0D4836D1AE53B190006BD0E /* art_category_roundbutton_books.png in Resources */,
+				A0D483701AE53B190006BD0E /* art_category_roundbutton_family.png in Resources */,
+				A0D483771AE53B190006BD0E /* art_category_roundbutton_waterpark.png in Resources */,
 				A471B10C1AD43D9300EC6571 /* GOTHAM-MEDIUM.TTF in Resources */,
 				A0C5CEC81AC48E67002A0A6C /* bg_amanecer1.png in Resources */,
+				A0D483681AE53B190006BD0E /* art_button_plastic-arts.png in Resources */,
+				A0D4836C1AE53B190006BD0E /* art_category_roundbutton_ballet.png in Resources */,
 				A0E669511ADEFA060023AE4D /* menu2.png in Resources */,
 				A0C5CECB1AC48E67002A0A6C /* bg_anochecer1.png in Resources */,
 				A471B1001AD3F17C00EC6571 /* PIMainMenuController.xib in Resources */,
@@ -726,18 +797,27 @@
 				A0C5CED21AC48E67002A0A6C /* bg_soleado1.png in Resources */,
 				A0C5CECC1AC48E67002A0A6C /* bg_atardecer1.png in Resources */,
 				A0C5CF061ACC8DF5002A0A6C /* art_greyButton.png in Resources */,
+				A0D4836A1AE53B190006BD0E /* art_category_roundbutton_art-gallery.png in Resources */,
+				A0D4836B1AE53B190006BD0E /* art_category_roundbutton_art.png in Resources */,
 				A0C5CEC91AC48E67002A0A6C /* bg_amanecer2.png in Resources */,
 				A0C5CEB91AC48A9A002A0A6C /* Default-568h@2x.png in Resources */,
 				A0EF61661AA76AE800D74C01 /* Localizable.strings in Resources */,
 				A0C5CF041ACC56C3002A0A6C /* ActivitiesListTableViewCell.xib in Resources */,
+				A0D483761AE53B190006BD0E /* art_category_roundbutton_sports.png in Resources */,
 				A0EF60E21AA4A6CA00D74C01 /* Images.xcassets in Resources */,
 				A07358DA1ADD31CE00AA94DC /* MapViewController.xib in Resources */,
+				A0D673731AE696570013FEA2 /* art_roundbutton_selected_checkmark.png in Resources */,
+				A0D4836E1AE53B190006BD0E /* art_category_roundbutton_casino.png in Resources */,
 				A0C5CEC71AC48E67002A0A6C /* bg_amanecer1-landscape.png in Resources */,
 				A0C5CECA1AC48E67002A0A6C /* bg_amanecer3.png in Resources */,
+				A0D483741AE53B190006BD0E /* art_category_roundbutton_party.png in Resources */,
+				A0D4836F1AE53B190006BD0E /* art_category_roundbutton_entertainment-shows.png in Resources */,
 				A471B10A1AD43D9300EC6571 /* GOTHAM-BOLD.TTF in Resources */,
+				A0D483711AE53B190006BD0E /* art_category_roundbutton_kids.png in Resources */,
 				A0C5CECE1AC48E67002A0A6C /* bg_noche1.png in Resources */,
 				A471B1111AD4470100EC6571 /* Logo_nombre.png in Resources */,
 				A07358C81AD7F3AF00AA94DC /* SearchActivityViewController.xib in Resources */,
+				A0D673741AE696570013FEA2 /* art_roundbutton_selected.png in Resources */,
 				A07358C31AD7157500AA94DC /* bg_app3.png in Resources */,
 				A0C5CEB11AC326B2002A0A6C /* ActivitiesListViewController.xib in Resources */,
 			);

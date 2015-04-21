@@ -37,6 +37,10 @@
 
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self.activitiesUITableView reloadData];
+}
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {

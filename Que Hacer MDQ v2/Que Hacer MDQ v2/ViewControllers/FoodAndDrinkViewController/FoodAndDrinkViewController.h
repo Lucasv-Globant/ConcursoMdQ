@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FoodAndDrinkViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UITableView *foodAndDrinkUITableView;
 
 @end
