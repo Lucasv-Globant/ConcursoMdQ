@@ -8,7 +8,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController">
             <connections>
-                <outlet property="btnAddToFavorites" destination="tvg-yc-0AY" id="UXJ-hL-so4"/>
+                <outlet property="btnAddToFavorites" destination="tvg-yc-0AY" id="f9k-g6-Dzk"/>
+                <outlet property="btnGoToMap" destination="30F-EO-JgY" id="t1n-L0-Ttz"/>
                 <outlet property="btnShare" destination="RIS-eo-Agh" id="oE2-zS-Zcp"/>
                 <outlet property="imageHeader" destination="8oh-cG-bE5" id="TXH-wC-Gfa"/>
                 <outlet property="labelActivityLocation1" destination="nHP-N8-cdK" id="JFa-um-jPu"/>

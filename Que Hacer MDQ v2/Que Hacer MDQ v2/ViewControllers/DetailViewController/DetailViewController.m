@@ -25,7 +25,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.btnAddToFavorites.layer.cornerRadius = 20;
+    self.btnAddToFavorites.layer.cornerRadius = 10;
+    self.btnShare.layer.cornerRadius = 10;
+    self.btnGoToMap.layer.cornerRadius = 10;
+    
     // Do any additional setup after loading the view from its nib.
     self.labelActivityName.text = self.activity.name;
     self.labelActivityLocation1.text = self.activity.locationDetails;
