@@ -18,4 +18,6 @@
 @property (nonatomic, strong) Activity* activity;//The activity in question.
 
 @property (nonatomic, strong) ActivityCategory* category;//The category the activity belongs to.
+@property (strong, nonatomic) IBOutlet UIButton *btnShare;
+@property (strong, nonatomic) IBOutlet UIButton *btnAddToFavorites;
 @end

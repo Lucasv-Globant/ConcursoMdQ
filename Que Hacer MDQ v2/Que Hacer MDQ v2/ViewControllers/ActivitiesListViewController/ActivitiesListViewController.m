@@ -12,6 +12,9 @@
 #import "DetailViewController.h"
 #import "UILabel+AutoHeight.h"
 
+#define CATEGORY_ICON_COLLECTION_VIEW_CELL @"CategoryIconCollectionViewCell"
+
+
 @interface ActivitiesListViewController ()
 
 @property (nonatomic, strong) NSArray* activities;
@@ -20,6 +23,7 @@
 @end
 
 @implementation ActivitiesListViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,6 +39,9 @@
     
     [self.activitiesUITableView registerNib:cellNib forCellReuseIdentifier:@"ActivitiesListTableViewCell"];
 
+    UINib *collectionViewCellNib = [UINib nibWithNibName:CATEGORY_ICON_COLLECTION_VIEW_CELL bundle:nil];
+    
+    [self.categoriesMenu registerNib:collectionViewCellNib forCellWithReuseIdentifier:CATEGORY_ICON_COLLECTION_VIEW_CELL];
 }
 
 -(void)viewWillAppear:(BOOL)animated

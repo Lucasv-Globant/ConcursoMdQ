@@ -70,7 +70,7 @@
                 self.tagId = [NSNumber numberWithInt:16];
                 break;
             case 4:
-                self.imageFileName = @"art_category_roundbutton_sports.png";
+                self.imageFileName = @"art_category_roundbutton_sportActivities.png";
                 self.name = @"Actividades Deportivas";
                 self.tagId = [NSNumber numberWithInt:9];
                 break;
@@ -85,7 +85,7 @@
                 self.tagId = [NSNumber numberWithInt:19];
                 break;
             case 7:
-                self.imageFileName = @"art_category_roundbutton_AppLogo.png";
+                self.imageFileName = @"art_category_roundbutton_expo1.png";
                 self.name = @"Exposiciones y Ferias";
                 self.tagId = [NSNumber numberWithInt:17];
                 break;
@@ -120,17 +120,17 @@
                 self.tagId = [NSNumber numberWithInt:22];
                 break;
             case 14:
-                self.imageFileName = @"art_category_roundbutton_AppLogo.png";
+                self.imageFileName = @"art_category_roundbutton_beach01.png";
                 self.name = @"Playas";
                 self.tagId = [NSNumber numberWithInt:23];
                 break;
             case 15:
-                self.imageFileName = @"cart_category_roundbutton_AppLogo.png";
+                self.imageFileName = @"art_category_roundbutton_rockConcert.png";
                 self.name = @"Recitales";
                 self.tagId = [NSNumber numberWithInt:2];
                 break;
             case 16:
-                self.imageFileName = @"art_category_roundbutton_entertainment-shows.png";
+                self.imageFileName = @"art_category_roundbutton_theatre.png";
                 self.name = @"Teatros";
                 self.tagId = [NSNumber numberWithInt:15];
                 break;

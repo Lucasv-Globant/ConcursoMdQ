@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A055BDAE1AE92C2300DB1FBF /* art_category_roundbutton_sportActivities.png in Resources */ = {isa = PBXBuildFile; fileRef = A055BDAD1AE92C2300DB1FBF /* art_category_roundbutton_sportActivities.png */; };
+		A055BDB01AE9347A00DB1FBF /* art_category_roundbutton_rockConcert.png in Resources */ = {isa = PBXBuildFile; fileRef = A055BDAF1AE9347900DB1FBF /* art_category_roundbutton_rockConcert.png */; };
+		A055BDB21AE9368E00DB1FBF /* art_category_roundbutton_theatre.png in Resources */ = {isa = PBXBuildFile; fileRef = A055BDB11AE9368E00DB1FBF /* art_category_roundbutton_theatre.png */; };
+		A055BDB41AE9381300DB1FBF /* art_category_roundbutton_beach01.png in Resources */ = {isa = PBXBuildFile; fileRef = A055BDB31AE9381300DB1FBF /* art_category_roundbutton_beach01.png */; };
 		A07358B41AD450EC00AA94DC /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07358B21AD450EC00AA94DC /* FavoritesViewController.m */; };
 		A07358B51AD450EC00AA94DC /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07358B31AD450EC00AA94DC /* FavoritesViewController.xib */; };
 		A07358B91AD4553C00AA94DC /* FavoritesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A07358B71AD4553C00AA94DC /* FavoritesTableViewCell.m */; };
@@ -84,6 +88,8 @@
 		A0D483771AE53B190006BD0E /* art_category_roundbutton_waterpark.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D483671AE53B190006BD0E /* art_category_roundbutton_waterpark.png */; };
 		A0D673731AE696570013FEA2 /* art_roundbutton_selected_checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D673711AE696570013FEA2 /* art_roundbutton_selected_checkmark.png */; };
 		A0D673741AE696570013FEA2 /* art_roundbutton_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D673721AE696570013FEA2 /* art_roundbutton_selected.png */; };
+		A0D673771AE6F1CB0013FEA2 /* art_category_roundbutton_expo1.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D673751AE6F1CB0013FEA2 /* art_category_roundbutton_expo1.png */; };
+		A0D673781AE6F1CB0013FEA2 /* art_category_roundbutton_expo2.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D673761AE6F1CB0013FEA2 /* art_category_roundbutton_expo2.png */; };
 		A0E669511ADEFA060023AE4D /* menu2.png in Resources */ = {isa = PBXBuildFile; fileRef = A0E669501ADEFA060023AE4D /* menu2.png */; };
 		A0EF60D41AA4A6CA00D74C01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60D31AA4A6CA00D74C01 /* main.m */; };
 		A0EF60D71AA4A6CA00D74C01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF60D61AA4A6CA00D74C01 /* AppDelegate.m */; };
@@ -130,6 +136,10 @@
 		1AFAAE7248CABC14EFB98466 /* libPods-Que Hacer MDQ v2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Que Hacer MDQ v2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29DCABC4F6AA7800E8EE2E68 /* Pods-Que Hacer MDQ v2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Que Hacer MDQ v2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Que Hacer MDQ v2/Pods-Que Hacer MDQ v2.debug.xcconfig"; sourceTree = "<group>"; };
 		91E527D31B69B45960D711D2 /* Pods-Que Hacer MDQ v2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Que Hacer MDQ v2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Que Hacer MDQ v2/Pods-Que Hacer MDQ v2.release.xcconfig"; sourceTree = "<group>"; };
+		A055BDAD1AE92C2300DB1FBF /* art_category_roundbutton_sportActivities.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_sportActivities.png; sourceTree = "<group>"; };
+		A055BDAF1AE9347900DB1FBF /* art_category_roundbutton_rockConcert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_rockConcert.png; sourceTree = "<group>"; };
+		A055BDB11AE9368E00DB1FBF /* art_category_roundbutton_theatre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_theatre.png; sourceTree = "<group>"; };
+		A055BDB31AE9381300DB1FBF /* art_category_roundbutton_beach01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_beach01.png; sourceTree = "<group>"; };
 		A07358B11AD450EC00AA94DC /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavoritesViewController.h; path = FavoritesViewController/FavoritesViewController.h; sourceTree = "<group>"; };
 		A07358B21AD450EC00AA94DC /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavoritesViewController.m; path = FavoritesViewController/FavoritesViewController.m; sourceTree = "<group>"; };
 		A07358B31AD450EC00AA94DC /* FavoritesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FavoritesViewController.xib; path = FavoritesViewController/FavoritesViewController.xib; sourceTree = "<group>"; };
@@ -230,6 +240,8 @@
 		A0D483671AE53B190006BD0E /* art_category_roundbutton_waterpark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_waterpark.png; sourceTree = "<group>"; };
 		A0D673711AE696570013FEA2 /* art_roundbutton_selected_checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_roundbutton_selected_checkmark.png; sourceTree = "<group>"; };
 		A0D673721AE696570013FEA2 /* art_roundbutton_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_roundbutton_selected.png; sourceTree = "<group>"; };
+		A0D673751AE6F1CB0013FEA2 /* art_category_roundbutton_expo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_expo1.png; sourceTree = "<group>"; };
+		A0D673761AE6F1CB0013FEA2 /* art_category_roundbutton_expo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_expo2.png; sourceTree = "<group>"; };
 		A0E669501ADEFA060023AE4D /* menu2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu2.png; sourceTree = "<group>"; };
 		A0EF60CE1AA4A6CA00D74C01 /* Que Hacer MDQ v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Que Hacer MDQ v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EF60D21AA4A6CA00D74C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -435,6 +447,12 @@
 		A0D483571AE53AEC0006BD0E /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				A055BDB31AE9381300DB1FBF /* art_category_roundbutton_beach01.png */,
+				A055BDB11AE9368E00DB1FBF /* art_category_roundbutton_theatre.png */,
+				A055BDAF1AE9347900DB1FBF /* art_category_roundbutton_rockConcert.png */,
+				A055BDAD1AE92C2300DB1FBF /* art_category_roundbutton_sportActivities.png */,
+				A0D673751AE6F1CB0013FEA2 /* art_category_roundbutton_expo1.png */,
+				A0D673761AE6F1CB0013FEA2 /* art_category_roundbutton_expo2.png */,
 				A0D673711AE696570013FEA2 /* art_roundbutton_selected_checkmark.png */,
 				A0D673721AE696570013FEA2 /* art_roundbutton_selected.png */,
 				A0D483581AE53B190006BD0E /* art_button_plastic-arts.png */,
@@ -757,10 +775,12 @@
 			files = (
 				A0C5CEB71AC45639002A0A6C /* SplashViewController.xib in Resources */,
 				A0D483751AE53B190006BD0E /* art_category_roundbutton_scubadiving.png in Resources */,
+				A055BDB01AE9347A00DB1FBF /* art_category_roundbutton_rockConcert.png in Resources */,
 				A07358BD1AD57BE700AA94DC /* art_logo_qhmdq.png in Resources */,
 				A0C5CECF1AC48E67002A0A6C /* bg_noche2-lansdscape.png in Resources */,
 				A471B0FE1AD3F17C00EC6571 /* PIMainMenuCell.xib in Resources */,
 				A0C5CE1B1AAF6E2B002A0A6C /* LoginViewController.xib in Resources */,
+				A055BDAE1AE92C2300DB1FBF /* art_category_roundbutton_sportActivities.png in Resources */,
 				A0D483731AE53B190006BD0E /* art_category_roundbutton_outdoors.png in Resources */,
 				A07358CD1AD85D8000AA94DC /* FoodAndDrinkViewController.xib in Resources */,
 				A0C5CEAA1AC31A02002A0A6C /* DetailViewController.xib in Resources */,
@@ -779,6 +799,7 @@
 				A0C5CEE61AC5D5F5002A0A6C /* art_checkbox_empty_32.png in Resources */,
 				A0C5CEE21AC59DEE002A0A6C /* CategoriesSelectionViewController.xib in Resources */,
 				A471B1031AD4153800EC6571 /* menu.png in Resources */,
+				A0D673781AE6F1CB0013FEA2 /* art_category_roundbutton_expo2.png in Resources */,
 				A0D4836D1AE53B190006BD0E /* art_category_roundbutton_books.png in Resources */,
 				A0D483701AE53B190006BD0E /* art_category_roundbutton_family.png in Resources */,
 				A0D483771AE53B190006BD0E /* art_category_roundbutton_waterpark.png in Resources */,
@@ -788,6 +809,7 @@
 				A0D4836C1AE53B190006BD0E /* art_category_roundbutton_ballet.png in Resources */,
 				A0E669511ADEFA060023AE4D /* menu2.png in Resources */,
 				A0C5CECB1AC48E67002A0A6C /* bg_anochecer1.png in Resources */,
+				A055BDB41AE9381300DB1FBF /* art_category_roundbutton_beach01.png in Resources */,
 				A471B1001AD3F17C00EC6571 /* PIMainMenuController.xib in Resources */,
 				A0C5CEF71AC9772D002A0A6C /* art_checkbox_empty_16.png in Resources */,
 				A0C5CEE51AC5D5F5002A0A6C /* art_checkbox_check_32.png in Resources */,
@@ -799,8 +821,10 @@
 				A0C5CF061ACC8DF5002A0A6C /* art_greyButton.png in Resources */,
 				A0D4836A1AE53B190006BD0E /* art_category_roundbutton_art-gallery.png in Resources */,
 				A0D4836B1AE53B190006BD0E /* art_category_roundbutton_art.png in Resources */,
+				A0D673771AE6F1CB0013FEA2 /* art_category_roundbutton_expo1.png in Resources */,
 				A0C5CEC91AC48E67002A0A6C /* bg_amanecer2.png in Resources */,
 				A0C5CEB91AC48A9A002A0A6C /* Default-568h@2x.png in Resources */,
+				A055BDB21AE9368E00DB1FBF /* art_category_roundbutton_theatre.png in Resources */,
 				A0EF61661AA76AE800D74C01 /* Localizable.strings in Resources */,
 				A0C5CF041ACC56C3002A0A6C /* ActivitiesListTableViewCell.xib in Resources */,
 				A0D483761AE53B190006BD0E /* art_category_roundbutton_sports.png in Resources */,
