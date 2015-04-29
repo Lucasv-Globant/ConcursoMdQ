@@ -12,7 +12,7 @@
 #import "DetailViewController.h"
 #import "UILabel+AutoHeight.h"
 
-#define CATEGORY_ICON_COLLECTION_VIEW_CELL @"CategoryIconCollectionViewCell"
+#define CATEGORY_ICON_COLLECTION_VIEW_CELL @"CategoriesIconCollectionViewCell"
 
 
 @interface ActivitiesListViewController ()
@@ -28,6 +28,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.categories = [ActivityCategory categoriesListing];
     
     NSPredicate* predicate = [NSPredicate predicateWithFormat:@"areaId = 1"];
     self.activities = [[CoreDataHelper sharedInstance] fetchEntitiesForClass:[Activity class] withPredicate:predicate inManagedObjectContext:[[CoreDataHelper sharedInstance] managedObjectContext]];
@@ -47,6 +49,29 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [self.activitiesUITableView reloadData];
+}
+
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return [self.categories count];
+}
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:CATEGORY_ICON_COLLECTION_VIEW_CELL forIndexPath:indexPath];
+    
+    ActivityCategory* category = [self.categories objectAtIndex:[indexPath row]];
+    
+    //Set the text label:
+    //UILabel* label = (UILabel*)[cell viewWithTag:2];
+    //label.text = [category name];
+    
+    //Set the icon:
+    UIImageView* icon = (UIImageView*)[cell viewWithTag:1];
+    icon.image = [UIImage imageNamed:[category iconFileName]];
+    
+    return cell;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

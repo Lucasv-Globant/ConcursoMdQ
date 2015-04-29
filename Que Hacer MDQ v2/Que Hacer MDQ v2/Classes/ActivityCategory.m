@@ -56,87 +56,104 @@
         {
             case 1:
                 self.imageFileName= @"art_category_roundbutton_outdoors.png";
+                self.iconFileName = @"icon_category_menu_outdoors.png";
                 self.name = @"Aire Libre";
                 self.tagId = [NSNumber numberWithInt:8];
                 break;
             case 2:
                 self.imageFileName = @"art_category_roundbutton_art.png";
+                self.iconFileName = @"icon_category_menu_art.png";
                 self.name = @"Arte y Cultura";
                 self.tagId = [NSNumber numberWithInt:20];
                 break;
             case 3:
                 self.imageFileName = @"art_category_roundbutton_casino.png";
+                self.iconFileName = @"icon_category_menu_casino.png";
                 self.name = @"Casinos y Bingos";
                 self.tagId = [NSNumber numberWithInt:16];
                 break;
             case 4:
                 self.imageFileName = @"art_category_roundbutton_sportActivities.png";
+                self.iconFileName = @"icon_category_menu_sportActivities.png";
                 self.name = @"Actividades Deportivas";
                 self.tagId = [NSNumber numberWithInt:9];
                 break;
             case 5:
                 self.imageFileName = @"art_category_roundbutton_sports.png";
+                self.iconFileName = @"icon_category_menu_sports.png";
                 self.name = @"Espectaculos Deportivos";
                 self.tagId = [NSNumber numberWithInt:10];
                 break;
             case 6:
                 self.imageFileName = @"art_category_roundbutton_outdoors.png";
+                self.iconFileName = @"icon_category_menu_outdoors.png";
                 self.name = @"Excursiones";
                 self.tagId = [NSNumber numberWithInt:19];
                 break;
             case 7:
                 self.imageFileName = @"art_category_roundbutton_expo1.png";
+                self.iconFileName = @"icon_category_menu_expo1.png";
                 self.name = @"Exposiciones y Ferias";
                 self.tagId = [NSNumber numberWithInt:17];
                 break;
             case 8:
                 self.imageFileName = @"art_category_roundbutton_party.png";
+                self.iconFileName = @"icon_category_menu_party.png";
                 self.name = @"Fiestas";
                 self.tagId = [NSNumber numberWithInt:18];
                 break;
             case 9:
                 self.imageFileName = @"art_category_roundbutton_kids.png";
+                self.iconFileName = @"icon_category_menu_kids.png";
                 self.name = @"Infantiles";
                 self.tagId = [NSNumber numberWithInt:5];
                 break;
             case 10:
                 self.imageFileName = @"art_category_roundbutton_books.png";
+                self.iconFileName = @"icon_category_menu_books.png";
                 self.name = @"Literatura";
                 self.tagId = [NSNumber numberWithInt:12];
                 break;
             case 11:
                 self.imageFileName = @"art_category_roundbutton_nightlife.png";
+                self.iconFileName = @"icon_category_menu_nightlife.png";
                 self.name = @"Noche";
                 self.tagId = [NSNumber numberWithInt:7];
                 break;
             case 12:
                 self.imageFileName = @"art_category_roundbutton_family.png";
+                self.iconFileName = @"icon_category_menu_family.png";
                 self.name = @"Para Toda La Familia";
                 self.tagId = [NSNumber numberWithInt:6];
                 break;
             case 13:
                 self.imageFileName = @"art_category_roundbutton_waterpark.png";
+                self.iconFileName = @"icon_category_menu_waterpark.png";
                 self.name = @"Parques Acuaticos";
                 self.tagId = [NSNumber numberWithInt:22];
                 break;
             case 14:
                 self.imageFileName = @"art_category_roundbutton_beach01.png";
+                self.iconFileName = @"icon_category_menu_beach01.png";
                 self.name = @"Playas";
                 self.tagId = [NSNumber numberWithInt:23];
                 break;
             case 15:
                 self.imageFileName = @"art_category_roundbutton_rockConcert.png";
+                self.iconFileName = @"icon_category_menu_rockConcert.png";
                 self.name = @"Recitales";
                 self.tagId = [NSNumber numberWithInt:2];
                 break;
             case 16:
                 self.imageFileName = @"art_category_roundbutton_theatre.png";
+                self.iconFileName = @"icon_category_menu_theatre.png";
                 self.name = @"Teatros";
                 self.tagId = [NSNumber numberWithInt:15];
                 break;
             default:
                 //ID:17 - and any other value than 1..16
                 self.imageFileName = @"art_category_roundbutton_AppLogo.png";
+                self.iconFileName = @"icon_category_menu_AppLogo.png";
                 self.name = @"Otros";
                 self.tagId = [NSNumber numberWithInt:1];
                 break;

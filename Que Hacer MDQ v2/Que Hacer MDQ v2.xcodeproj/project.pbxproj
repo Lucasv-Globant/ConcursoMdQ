@@ -28,6 +28,23 @@
 		A07358DA1ADD31CE00AA94DC /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07358D81ADD31CE00AA94DC /* MapViewController.xib */; };
 		A07358DC1ADD42D700AA94DC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07358DB1ADD42D700AA94DC /* MapKit.framework */; };
 		A07358DF1ADD942600AA94DC /* Area.m in Sources */ = {isa = PBXBuildFile; fileRef = A07358DE1ADD942600AA94DC /* Area.m */; };
+		A07974511AF13FAB0030696F /* CategoriesIconCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A079744F1AF13FAB0030696F /* CategoriesIconCollectionViewCell.m */; };
+		A07974521AF13FAB0030696F /* CategoriesIconCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07974501AF13FAB0030696F /* CategoriesIconCollectionViewCell.xib */; };
+		A07974611AF14AA40030696F /* icon_category_menu_art.png in Resources */ = {isa = PBXBuildFile; fileRef = A07974531AF14AA40030696F /* icon_category_menu_art.png */; };
+		A07974621AF14AA40030696F /* icon_category_menu_beach01.png in Resources */ = {isa = PBXBuildFile; fileRef = A07974541AF14AA40030696F /* icon_category_menu_beach01.png */; };
+		A07974631AF14AA40030696F /* icon_category_menu_books.png in Resources */ = {isa = PBXBuildFile; fileRef = A07974551AF14AA40030696F /* icon_category_menu_books.png */; };
+		A07974641AF14AA40030696F /* icon_category_menu_casino.png in Resources */ = {isa = PBXBuildFile; fileRef = A07974561AF14AA40030696F /* icon_category_menu_casino.png */; };
+		A07974651AF14AA40030696F /* icon_category_menu_expo.png in Resources */ = {isa = PBXBuildFile; fileRef = A07974571AF14AA40030696F /* icon_category_menu_expo.png */; };
+		A07974661AF14AA40030696F /* icon_category_menu_family.png in Resources */ = {isa = PBXBuildFile; fileRef = A07974581AF14AA40030696F /* icon_category_menu_family.png */; };
+		A07974671AF14AA40030696F /* icon_category_menu_kids.png in Resources */ = {isa = PBXBuildFile; fileRef = A07974591AF14AA40030696F /* icon_category_menu_kids.png */; };
+		A07974681AF14AA40030696F /* icon_category_menu_nightlife.png in Resources */ = {isa = PBXBuildFile; fileRef = A079745A1AF14AA40030696F /* icon_category_menu_nightlife.png */; };
+		A07974691AF14AA40030696F /* icon_category_menu_outdoors.png in Resources */ = {isa = PBXBuildFile; fileRef = A079745B1AF14AA40030696F /* icon_category_menu_outdoors.png */; };
+		A079746A1AF14AA40030696F /* icon_category_menu_party.png in Resources */ = {isa = PBXBuildFile; fileRef = A079745C1AF14AA40030696F /* icon_category_menu_party.png */; };
+		A079746B1AF14AA40030696F /* icon_category_menu_rockConcert.png in Resources */ = {isa = PBXBuildFile; fileRef = A079745D1AF14AA40030696F /* icon_category_menu_rockConcert.png */; };
+		A079746C1AF14AA40030696F /* icon_category_menu_sportActivities.png in Resources */ = {isa = PBXBuildFile; fileRef = A079745E1AF14AA40030696F /* icon_category_menu_sportActivities.png */; };
+		A079746D1AF14AA40030696F /* icon_category_menu_theatre.png in Resources */ = {isa = PBXBuildFile; fileRef = A079745F1AF14AA40030696F /* icon_category_menu_theatre.png */; };
+		A079746E1AF14AA40030696F /* icon_category_menu_waterpark.png in Resources */ = {isa = PBXBuildFile; fileRef = A07974601AF14AA40030696F /* icon_category_menu_waterpark.png */; };
+		A07974701AF15B260030696F /* icon_category_menu_border.png in Resources */ = {isa = PBXBuildFile; fileRef = A079746F1AF15B260030696F /* icon_category_menu_border.png */; };
 		A0C5CE1A1AAF6E2B002A0A6C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CE181AAF6E2B002A0A6C /* LoginViewController.swift */; };
 		A0C5CE1B1AAF6E2B002A0A6C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C5CE191AAF6E2B002A0A6C /* LoginViewController.xib */; };
 		A0C5CE1F1AB1C4AC002A0A6C /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5CE1E1AB1C4AC002A0A6C /* CoreDataHelper.m */; };
@@ -165,6 +182,24 @@
 		A07358DB1ADD42D700AA94DC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A07358DD1ADD942600AA94DC /* Area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Area.h; sourceTree = "<group>"; };
 		A07358DE1ADD942600AA94DC /* Area.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Area.m; sourceTree = "<group>"; };
+		A079744E1AF13FAA0030696F /* CategoriesIconCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoriesIconCollectionViewCell.h; path = CategoryIconsMenu/CategoriesIconCollectionViewCell.h; sourceTree = "<group>"; };
+		A079744F1AF13FAB0030696F /* CategoriesIconCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoriesIconCollectionViewCell.m; path = CategoryIconsMenu/CategoriesIconCollectionViewCell.m; sourceTree = "<group>"; };
+		A07974501AF13FAB0030696F /* CategoriesIconCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoriesIconCollectionViewCell.xib; path = CategoryIconsMenu/CategoriesIconCollectionViewCell.xib; sourceTree = "<group>"; };
+		A07974531AF14AA40030696F /* icon_category_menu_art.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_category_menu_art.png; sourceTree = "<group>"; };
+		A07974541AF14AA40030696F /* icon_category_menu_beach01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_category_menu_beach01.png; sourceTree = "<group>"; };
+		A07974551AF14AA40030696F /* icon_category_menu_books.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_category_menu_books.png; sourceTree = "<group>"; };
+		A07974561AF14AA40030696F /* icon_category_menu_casino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_category_menu_casino.png; sourceTree = "<group>"; };
+		A07974571AF14AA40030696F /* icon_category_menu_expo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_category_menu_expo.png; sourceTree = "<group>"; };
+		A07974581AF14AA40030696F /* icon_category_menu_family.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_category_menu_family.png; sourceTree = "<group>"; };
+		A07974591AF14AA40030696F /* icon_category_menu_kids.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_category_menu_kids.png; sourceTree = "<group>"; };
+		A079745A1AF14AA40030696F /* icon_category_menu_nightlife.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_category_menu_nightlife.png; sourceTree = "<group>"; };
+		A079745B1AF14AA40030696F /* icon_category_menu_outdoors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_category_menu_outdoors.png; sourceTree = "<group>"; };
+		A079745C1AF14AA40030696F /* icon_category_menu_party.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_category_menu_party.png; sourceTree = "<group>"; };
+		A079745D1AF14AA40030696F /* icon_category_menu_rockConcert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_category_menu_rockConcert.png; sourceTree = "<group>"; };
+		A079745E1AF14AA40030696F /* icon_category_menu_sportActivities.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_category_menu_sportActivities.png; sourceTree = "<group>"; };
+		A079745F1AF14AA40030696F /* icon_category_menu_theatre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_category_menu_theatre.png; sourceTree = "<group>"; };
+		A07974601AF14AA40030696F /* icon_category_menu_waterpark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_category_menu_waterpark.png; sourceTree = "<group>"; };
+		A079746F1AF15B260030696F /* icon_category_menu_border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_category_menu_border.png; sourceTree = "<group>"; };
 		A0C5CE181AAF6E2B002A0A6C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = LoginViewController/LoginViewController.swift; sourceTree = "<group>"; };
 		A0C5CE191AAF6E2B002A0A6C /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = LoginViewController/LoginViewController.xib; sourceTree = "<group>"; };
 		A0C5CE1D1AB1C4AC002A0A6C /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataHelper.h; path = CoreDataHelper/CoreDataHelper.h; sourceTree = "<group>"; };
@@ -371,6 +406,16 @@
 			name = MapViewController;
 			sourceTree = "<group>";
 		};
+		A079744D1AF13F2C0030696F /* CategoryIconsMenu */ = {
+			isa = PBXGroup;
+			children = (
+				A079744E1AF13FAA0030696F /* CategoriesIconCollectionViewCell.h */,
+				A079744F1AF13FAB0030696F /* CategoriesIconCollectionViewCell.m */,
+				A07974501AF13FAB0030696F /* CategoriesIconCollectionViewCell.xib */,
+			);
+			name = CategoryIconsMenu;
+			sourceTree = "<group>";
+		};
 		A0C5CE1C1AB1C29A002A0A6C /* CoreDataHelper */ = {
 			isa = PBXGroup;
 			children = (
@@ -447,6 +492,21 @@
 		A0D483571AE53AEC0006BD0E /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				A079746F1AF15B260030696F /* icon_category_menu_border.png */,
+				A07974531AF14AA40030696F /* icon_category_menu_art.png */,
+				A07974541AF14AA40030696F /* icon_category_menu_beach01.png */,
+				A07974551AF14AA40030696F /* icon_category_menu_books.png */,
+				A07974561AF14AA40030696F /* icon_category_menu_casino.png */,
+				A07974571AF14AA40030696F /* icon_category_menu_expo.png */,
+				A07974581AF14AA40030696F /* icon_category_menu_family.png */,
+				A07974591AF14AA40030696F /* icon_category_menu_kids.png */,
+				A079745A1AF14AA40030696F /* icon_category_menu_nightlife.png */,
+				A079745B1AF14AA40030696F /* icon_category_menu_outdoors.png */,
+				A079745C1AF14AA40030696F /* icon_category_menu_party.png */,
+				A079745D1AF14AA40030696F /* icon_category_menu_rockConcert.png */,
+				A079745E1AF14AA40030696F /* icon_category_menu_sportActivities.png */,
+				A079745F1AF14AA40030696F /* icon_category_menu_theatre.png */,
+				A07974601AF14AA40030696F /* icon_category_menu_waterpark.png */,
 				A055BDB31AE9381300DB1FBF /* art_category_roundbutton_beach01.png */,
 				A055BDB11AE9368E00DB1FBF /* art_category_roundbutton_theatre.png */,
 				A055BDAF1AE9347900DB1FBF /* art_category_roundbutton_rockConcert.png */,
@@ -547,6 +607,7 @@
 		A0EF60FA1AA4B6B600D74C01 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A079744D1AF13F2C0030696F /* CategoryIconsMenu */,
 				A07358D51ADD315E00AA94DC /* MapViewController */,
 				A07358C11AD6FDCD00AA94DC /* SearchActivityViewController */,
 				A07358B01AD450B600AA94DC /* FavoritesViewController */,
@@ -777,6 +838,7 @@
 				A0D483751AE53B190006BD0E /* art_category_roundbutton_scubadiving.png in Resources */,
 				A055BDB01AE9347A00DB1FBF /* art_category_roundbutton_rockConcert.png in Resources */,
 				A07358BD1AD57BE700AA94DC /* art_logo_qhmdq.png in Resources */,
+				A079746E1AF14AA40030696F /* icon_category_menu_waterpark.png in Resources */,
 				A0C5CECF1AC48E67002A0A6C /* bg_noche2-lansdscape.png in Resources */,
 				A471B0FE1AD3F17C00EC6571 /* PIMainMenuCell.xib in Resources */,
 				A0C5CE1B1AAF6E2B002A0A6C /* LoginViewController.xib in Resources */,
@@ -784,14 +846,22 @@
 				A0D483731AE53B190006BD0E /* art_category_roundbutton_outdoors.png in Resources */,
 				A07358CD1AD85D8000AA94DC /* FoodAndDrinkViewController.xib in Resources */,
 				A0C5CEAA1AC31A02002A0A6C /* DetailViewController.xib in Resources */,
+				A079746C1AF14AA40030696F /* icon_category_menu_sportActivities.png in Resources */,
 				A0D483721AE53B190006BD0E /* art_category_roundbutton_nightlife.png in Resources */,
+				A07974681AF14AA40030696F /* icon_category_menu_nightlife.png in Resources */,
 				A0C5CED01AC48E67002A0A6C /* bg_noche2.png in Resources */,
+				A079746A1AF14AA40030696F /* icon_category_menu_party.png in Resources */,
+				A07974661AF14AA40030696F /* icon_category_menu_family.png in Resources */,
 				A471B10B1AD43D9300EC6571 /* GOTHAM-BOOK.TTF in Resources */,
 				A0C5CEF61AC9772D002A0A6C /* art_checkbox_check_16.png in Resources */,
 				A0D483691AE53B190006BD0E /* art_category_roundbutton_AppLogo.png in Resources */,
+				A079746B1AF14AA40030696F /* icon_category_menu_rockConcert.png in Resources */,
+				A07974621AF14AA40030696F /* icon_category_menu_beach01.png in Resources */,
 				A0C5CED11AC48E67002A0A6C /* bg_nublado1.png in Resources */,
+				A07974641AF14AA40030696F /* icon_category_menu_casino.png in Resources */,
 				A0EF60E01AA4A6CA00D74C01 /* Main.storyboard in Resources */,
 				A0C5CEF31AC5F2B4002A0A6C /* CategoryCollectionViewCell.xib in Resources */,
+				A07974521AF13FAB0030696F /* CategoriesIconCollectionViewCell.xib in Resources */,
 				A0C5CED31AC48E67002A0A6C /* cat_lnb1.png in Resources */,
 				A07358BA1AD4553C00AA94DC /* FavoritesTableViewCell.xib in Resources */,
 				A07358B51AD450EC00AA94DC /* FavoritesViewController.xib in Resources */,
@@ -800,23 +870,28 @@
 				A0C5CEE21AC59DEE002A0A6C /* CategoriesSelectionViewController.xib in Resources */,
 				A471B1031AD4153800EC6571 /* menu.png in Resources */,
 				A0D673781AE6F1CB0013FEA2 /* art_category_roundbutton_expo2.png in Resources */,
+				A07974691AF14AA40030696F /* icon_category_menu_outdoors.png in Resources */,
 				A0D4836D1AE53B190006BD0E /* art_category_roundbutton_books.png in Resources */,
+				A07974611AF14AA40030696F /* icon_category_menu_art.png in Resources */,
 				A0D483701AE53B190006BD0E /* art_category_roundbutton_family.png in Resources */,
 				A0D483771AE53B190006BD0E /* art_category_roundbutton_waterpark.png in Resources */,
 				A471B10C1AD43D9300EC6571 /* GOTHAM-MEDIUM.TTF in Resources */,
 				A0C5CEC81AC48E67002A0A6C /* bg_amanecer1.png in Resources */,
 				A0D483681AE53B190006BD0E /* art_button_plastic-arts.png in Resources */,
+				A079746D1AF14AA40030696F /* icon_category_menu_theatre.png in Resources */,
 				A0D4836C1AE53B190006BD0E /* art_category_roundbutton_ballet.png in Resources */,
 				A0E669511ADEFA060023AE4D /* menu2.png in Resources */,
 				A0C5CECB1AC48E67002A0A6C /* bg_anochecer1.png in Resources */,
 				A055BDB41AE9381300DB1FBF /* art_category_roundbutton_beach01.png in Resources */,
 				A471B1001AD3F17C00EC6571 /* PIMainMenuController.xib in Resources */,
+				A07974651AF14AA40030696F /* icon_category_menu_expo.png in Resources */,
 				A0C5CEF71AC9772D002A0A6C /* art_checkbox_empty_16.png in Resources */,
 				A0C5CEE51AC5D5F5002A0A6C /* art_checkbox_check_32.png in Resources */,
 				A0C5CECD1AC48E67002A0A6C /* bg_noche1-landscape.png in Resources */,
 				A07358D41ADC012100AA94DC /* FoodAndDrinkDetailViewController.xib in Resources */,
 				A471B1041AD4153800EC6571 /* menu@2x.png in Resources */,
 				A0C5CED21AC48E67002A0A6C /* bg_soleado1.png in Resources */,
+				A07974631AF14AA40030696F /* icon_category_menu_books.png in Resources */,
 				A0C5CECC1AC48E67002A0A6C /* bg_atardecer1.png in Resources */,
 				A0C5CF061ACC8DF5002A0A6C /* art_greyButton.png in Resources */,
 				A0D4836A1AE53B190006BD0E /* art_category_roundbutton_art-gallery.png in Resources */,
@@ -830,11 +905,13 @@
 				A0D483761AE53B190006BD0E /* art_category_roundbutton_sports.png in Resources */,
 				A0EF60E21AA4A6CA00D74C01 /* Images.xcassets in Resources */,
 				A07358DA1ADD31CE00AA94DC /* MapViewController.xib in Resources */,
+				A07974701AF15B260030696F /* icon_category_menu_border.png in Resources */,
 				A0D673731AE696570013FEA2 /* art_roundbutton_selected_checkmark.png in Resources */,
 				A0D4836E1AE53B190006BD0E /* art_category_roundbutton_casino.png in Resources */,
 				A0C5CEC71AC48E67002A0A6C /* bg_amanecer1-landscape.png in Resources */,
 				A0C5CECA1AC48E67002A0A6C /* bg_amanecer3.png in Resources */,
 				A0D483741AE53B190006BD0E /* art_category_roundbutton_party.png in Resources */,
+				A07974671AF14AA40030696F /* icon_category_menu_kids.png in Resources */,
 				A0D4836F1AE53B190006BD0E /* art_category_roundbutton_entertainment-shows.png in Resources */,
 				A471B10A1AD43D9300EC6571 /* GOTHAM-BOLD.TTF in Resources */,
 				A0D483711AE53B190006BD0E /* art_category_roundbutton_kids.png in Resources */,
@@ -925,6 +1002,7 @@
 				A0C5CF031ACC56C3002A0A6C /* ActivitiesListTableViewCell.m in Sources */,
 				A0EF614A1AA4B76700D74C01 /* WSConcurso.m in Sources */,
 				A0EF61371AA4B70C00D74C01 /* NSDate+ParseFromString.swift in Sources */,
+				A07974511AF13FAB0030696F /* CategoriesIconCollectionViewCell.m in Sources */,
 				A07358CC1AD85D8000AA94DC /* FoodAndDrinkViewController.m in Sources */,
 				A07358C01AD6CC5B00AA94DC /* AppMain.m in Sources */,
 				A07358D91ADD31CE00AA94DC /* MapViewController.m in Sources */,
