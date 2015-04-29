@@ -18,5 +18,6 @@
 @property (nonatomic,strong) NSNumber* tagId;
 @property BOOL isSelected;
 +(NSArray*)categoriesListing;
++(NSArray*)getSelectedCategories;
 +(void)saveSettingsForCategories:(NSArray*)categories;
 @end

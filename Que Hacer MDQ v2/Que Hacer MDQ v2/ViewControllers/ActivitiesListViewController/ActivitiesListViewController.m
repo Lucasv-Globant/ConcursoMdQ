@@ -29,7 +29,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.categories = [ActivityCategory categoriesListing];
+    self.categories = [ActivityCategory getSelectedCategories];
     
     NSPredicate* predicate = [NSPredicate predicateWithFormat:@"areaId = 1"];
     self.activities = [[CoreDataHelper sharedInstance] fetchEntitiesForClass:[Activity class] withPredicate:predicate inManagedObjectContext:[[CoreDataHelper sharedInstance] managedObjectContext]];

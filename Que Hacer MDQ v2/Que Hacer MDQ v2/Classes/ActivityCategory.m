@@ -43,6 +43,28 @@
     return [NSArray arrayWithArray:list];
 }
 
++(NSArray*)getSelectedCategories
+{
+    NSDictionary* selectionDictionary = [ActivityCategory getCategoriesSelectionDictionary];
+
+    NSMutableArray* result = [[NSMutableArray alloc] init];
+    for (id categoryId in selectionDictionary) {
+
+        //Get the selection value YES/NO from the dictionary (it's a boolean saved as NSNumber)
+        BOOL isSelected = [[selectionDictionary objectForKey:categoryId] boolValue];
+        
+        //Only add it to the resulting array if it is marked as selected
+        if (isSelected)
+        {
+            int categoryIdInt = [categoryId intValue];
+            ActivityCategory* category = [[ActivityCategory alloc] initById:categoryIdInt];
+            category.isSelected = YES;
+            [result addObject:category];
+        }
+    }
+    return [NSArray arrayWithArray:result];
+}
+
 
 #pragma mark - (Internal) Initializer by Category ID
 -(ActivityCategory*)initById:(int)categoryId
