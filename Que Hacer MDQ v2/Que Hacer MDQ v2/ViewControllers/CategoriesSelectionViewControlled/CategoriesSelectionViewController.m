@@ -11,10 +11,14 @@
 #import "MMDrawerBarButtonItem.h"
 #import "FavoritesViewController.h"
 #import "FoodAndDrinkViewController.h"
+#import "Theme.h"
 
 @interface CategoriesSelectionViewController ()
 @property (nonatomic,strong) NSArray* categories;
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (strong, nonatomic) IBOutlet UILabel *lbl_title;
+@property (strong, nonatomic) IBOutlet UILabel *lbl_subtitle;
+@property (strong, nonatomic) IBOutlet UIButton *btn_continue;
 
 @end
 
@@ -29,15 +33,51 @@
     UINib *cellNib = [UINib nibWithNibName:@"CategoryCollectionViewCell" bundle:nil];
 
     [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"CategoryCollectionViewCell"];
-    //self.navigationItem.hidesBackButton = YES;
     NSLog(@"%@",self.parentViewController);
     self.mainMenu = (PIMainMenuController *)self.mm_drawerController.leftDrawerViewController;
     self.mainMenu.delegate = self;
     [self configureSideBar];
-     
+    self.btn_continue.tintColor = [UIColor whiteColor];
+    self.btn_continue.backgroundColor = [Theme colorGreen];
+    [self.btn_continue.titleLabel setFont:[Theme fontButton]];
+    [self.btn_continue setTitle:@"CONTINUAR" forState:UIControlStateNormal];
+    self.btn_continue.layer.cornerRadius = 20;
+    [self confingNavigationbar];
+    [self confingLabel];
+    
 }
 
+-(void)confingLabel
+{
+    [self.lbl_title setText:@"¿Qué cosas te interesan?"];
+    self.lbl_title.font = [Theme fontButton01];
+    self.lbl_title.font = [UIFont systemFontOfSize:16];
+    
+    [self.lbl_subtitle setText: @"Seleccioná algunas categorías que te gusten"];
+    [self.lbl_subtitle setFont:[Theme fontButton02]];
+    self.lbl_subtitle.font = [UIFont systemFontOfSize:12];
+}
 
+-(void)confingNavigationbar
+{
+    
+    self.navigationController.navigationBar.hidden = NO;
+    self.navigationController.navigationBar.barStyle = UIStatusBarStyleLightContent;
+    self.navigationController.navigationBar.barTintColor = [Theme colorPink];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    //self.navigationItem.hidesBackButton = YES;
+    
+    CGRect frame = CGRectMake(0,0,200,44);
+    UILabel *titlelabel = [[UILabel alloc] initWithFrame:frame];
+    UIView* view =[[UIView alloc]initWithFrame:frame];
+    titlelabel.font = [Theme fontButton];
+    titlelabel.textAlignment = NSTextAlignmentCenter;
+    titlelabel.backgroundColor = [UIColor clearColor];
+    titlelabel.textColor = [UIColor whiteColor];;
+    titlelabel.text = @"Intereses";
+    [view addSubview:titlelabel];
+    self.navigationItem.titleView = view;
+}
 - (IBAction)btnContinue2:(id)sender {
 
     //Check if there is **at least** one category selected:
@@ -71,28 +111,14 @@
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     self.view.frame = screenRect;
     
-    NSArray *ver = [[UIDevice currentDevice].systemVersion componentsSeparatedByString:@"."];
-    if ([[ver objectAtIndex:0] intValue] >= 7) {
-        self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
-        self.navigationController.navigationBar.translucent = NO;
-    } else {
-        self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    }
-    
     [self configureLeftBarButton];
     
-    /*
-    self.mm_drawerController.isAccessibilityElement = YES;
-    self.mm_drawerController.maximumLeftDrawerWidth = 270;
-    self.mm_drawerController.maximumRightDrawerWidth = 270;
-    self.mm_drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeCustom;
-    self.mm_drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureModePanningCenterView;
-    */
 }
 
 - (void)configureLeftBarButton {
     UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    UIImage *leftButtonImage = [UIImage imageNamed:@"menu2"];
+    UIImage *leftButtonImage = [UIImage imageNamed:@"menu"];
+    leftButton.backgroundColor = [UIColor clearColor];
     leftButton.frame = CGRectMake(0, 0, 40, 40);
     leftButton.contentMode = UIViewContentModeBottomLeft;
     

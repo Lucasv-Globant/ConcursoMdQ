@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+    self.navigationController.navigationBar.hidden = YES;
     //Set the background according to the time of the day:
     [[self background] setImage:[UIImage imageNamed:[self backgroundImageFileNameByTime]]];
     [self startSynchronizing];

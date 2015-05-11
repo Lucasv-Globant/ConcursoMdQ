@@ -43,6 +43,14 @@
     return [UIFont fontWithName:@"GOTHAM-BOOK" size:12];
 }
 
++ (UIFont *) fontButton01 {
+    return [UIFont fontWithName:@"GOTHAM-MEDIUM" size:7];
+}
+
++ (UIFont *) fontButton02 {
+    return [UIFont fontWithName:@"GOTHAM-MEDIUM" size:10];
+}
+
 #pragma mark private methods
 
 + (UIColor *)getUIColorObjectFromHexString:(NSString *)hexStr alpha:(CGFloat)alpha {

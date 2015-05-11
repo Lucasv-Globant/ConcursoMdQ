@@ -18,6 +18,8 @@
 +(UIColor *) colorDarkGrey;
 
 +(UIFont *) fontButton;
++(UIFont *) fontButton01;
++(UIFont *) fontButton02;
 +(UIFont *) fontTitle;
 +(UIFont *) fontMedium;
 

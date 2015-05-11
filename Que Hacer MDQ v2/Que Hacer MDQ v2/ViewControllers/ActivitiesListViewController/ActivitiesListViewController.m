@@ -8,9 +8,14 @@
 
 #import "ActivitiesListViewController.h"
 #import "ActivitiesListTableViewCell.h"
+#import <UIViewController+MMDrawerController.h>
+#import "MMDrawerBarButtonItem.h"
 #import "DataTypesHelper.h"
 #import "DetailViewController.h"
 #import "UILabel+AutoHeight.h"
+#import "Theme.h"
+#import "FoodAndDrinkDetailViewController.h"
+#import "CategoriesIconCollectionViewCell.h"
 
 #define CATEGORY_ICON_COLLECTION_VIEW_CELL @"CategoriesIconCollectionViewCell"
 
@@ -19,7 +24,8 @@
 
 @property (nonatomic, strong) NSArray* activities;
 @property (strong, nonatomic) IBOutlet UITableView *activitiesUITableView;
-
+@property (strong, nonatomic) IBOutlet UIImageView *activitiesUIImageView;
+@property (assign, nonatomic) NSInteger indexPathSelect;
 @end
 
 @implementation ActivitiesListViewController
@@ -43,7 +49,10 @@
 
     UINib *collectionViewCellNib = [UINib nibWithNibName:CATEGORY_ICON_COLLECTION_VIEW_CELL bundle:nil];
     
+    self.categoriesMenu.backgroundColor = [UIColor whiteColor];
     [self.categoriesMenu registerNib:collectionViewCellNib forCellWithReuseIdentifier:CATEGORY_ICON_COLLECTION_VIEW_CELL];
+    [self configureSideBar];
+    [self confingNavigationbar];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -69,10 +78,39 @@
     
     //Set the icon:
     UIImageView* icon = (UIImageView*)[cell viewWithTag:1];
-    icon.image = [UIImage imageNamed:[category iconFileName]];
+    icon.image = [UIImage imageNamed:[category imageFileName]];
+    
+     UIImageView* check = (UIImageView*)[cell viewWithTag:2];
+    if (indexPath.row == self.indexPathSelect)
+    {
+       check.hidden = NO;
+    }
+    else
+    {
+        check.hidden = YES;
+    }
+    
     
     return cell;
 }
+
+- (void)collectionView:(UICollectionView *)collectionView
+didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    //When a cell is tapped, its' "selected" value should be inverted
+    UICollectionViewCell* cell = [collectionView cellForItemAtIndexPath:indexPath];
+    
+    self.indexPathSelect = indexPath.row ;
+    UIImageView* check = (UIImageView*)[cell viewWithTag:2];
+   
+    if (check.hidden)
+    {
+        check.hidden = NO;
+        [self.categoriesMenu reloadData];
+    }
+   
+}
+
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -118,19 +156,97 @@
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)configureSideBar {
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    self.view.frame = screenRect;
+    
+    [self configureLeftBarButton];
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)confingNavigationbar
+{
+    
+    CGRect frame = CGRectMake(0,0,200,44);
+    UILabel *titlelabel = [[UILabel alloc] initWithFrame:frame];
+    UIView* view =[[UIView alloc]initWithFrame:frame];
+    titlelabel.font = [Theme fontButton];
+    titlelabel.textAlignment = NSTextAlignmentCenter;
+    titlelabel.backgroundColor = [UIColor clearColor];
+    titlelabel.textColor = [UIColor whiteColor];;
+    titlelabel.text = @"Intereses";
+    [view addSubview:titlelabel];
+    self.navigationItem.titleView = view;
 }
-*/
+
+- (void)configureLeftBarButton {
+    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIImage *leftButtonImage = [UIImage imageNamed:@"menu"];
+    leftButton.backgroundColor = [UIColor clearColor];
+    leftButton.frame = CGRectMake(0, 0, 40, 40);
+    leftButton.contentMode = UIViewContentModeBottomLeft;
+    
+    [leftButton setImage:leftButtonImage forState:UIControlStateNormal];
+    [leftButton addTarget:self action:@selector(didSelectMainMenu:) forControlEvents:UIControlEventTouchUpInside];
+    
+    MMDrawerBarButtonItem *leftDrawerButton = [[MMDrawerBarButtonItem alloc] initWithCustomView:leftButton];
+    
+    UIButton *leftButton2 = [UIButton buttonWithType:UIButtonTypeCustom];
+    leftButton2.frame = CGRectMake(0, 0, 15, 40);
+    leftButton2.contentMode = UIViewContentModeBottomLeft;
+    [leftButton2 setBackgroundColor:[UIColor clearColor]];
+    [leftButton2 addTarget:self action:@selector(didSelectMainMenu:) forControlEvents:UIControlEventTouchUpInside];
+    
+    MMDrawerBarButtonItem *xxx = [[MMDrawerBarButtonItem alloc] initWithCustomView:leftButton2];
+    
+    [self.navigationItem setLeftBarButtonItems:@[[self spacer], leftDrawerButton, xxx]];
+}
+
+- (void)didSelectMainMenu:(id)sender {
+    
+    [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+}
+
+- (UIBarButtonItem *)spacer {
+    
+    UIBarButtonItem *space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    space.width = -11;
+    return space;
+}
+
+-(void)didSelectSearch {
+    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+}
+
+-(void)didSelectInteres {
+    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+}
+
+-(void)didSelectAllEvent {
+    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+}
+
+-(void)didSelectFavorite {
+    
+    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+    
+    //FavoritesViewController* fvc = [[AppMain sharedInstance] sharedFavoritesViewController];
+    //self.navigationController.viewControllers = @[fvc];
+    
+    FavoritesViewController* fvc = [[FavoritesViewController alloc] initWithNibName:@"FavoritesViewController" bundle:nil];
+    [self.navigationController pushViewController:fvc animated:YES];
+    
+}
+
+-(void)didSelectGastronomia {
+    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+    FoodAndDrinkDetailViewController* fadvc = [[FoodAndDrinkDetailViewController alloc] initWithNibName:@"FoodAndDrinkViewController" bundle:nil];
+    [self.navigationController pushViewController:fadvc animated:YES];
+    
+}
+
 
 @end

@@ -136,6 +136,8 @@
 		A471B10C1AD43D9300EC6571 /* GOTHAM-MEDIUM.TTF in Resources */ = {isa = PBXBuildFile; fileRef = A471B1091AD43D9300EC6571 /* GOTHAM-MEDIUM.TTF */; };
 		A471B10F1AD43FA800EC6571 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = A471B10E1AD43FA800EC6571 /* Theme.m */; };
 		A471B1111AD4470100EC6571 /* Logo_nombre.png in Resources */ = {isa = PBXBuildFile; fileRef = A471B1101AD4470100EC6571 /* Logo_nombre.png */; };
+		A482BB491B01368A00C6A66A /* splash_final_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = A482BB471B01368A00C6A66A /* splash_final_iphone.png */; };
+		A482BB4A1B01368A00C6A66A /* splash_final_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = A482BB481B01368A00C6A66A /* splash_final_retina.png */; };
 		F310C4A83EA7E2612DE2B98F /* libPods-Que Hacer MDQ v2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFAAE7248CABC14EFB98466 /* libPods-Que Hacer MDQ v2.a */; };
 /* End PBXBuildFile section */
 
@@ -322,6 +324,8 @@
 		A471B10D1AD43FA800EC6571 /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
 		A471B10E1AD43FA800EC6571 /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
 		A471B1101AD4470100EC6571 /* Logo_nombre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_nombre.png; sourceTree = "<group>"; };
+		A482BB471B01368A00C6A66A /* splash_final_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_final_iphone.png; sourceTree = "<group>"; };
+		A482BB481B01368A00C6A66A /* splash_final_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_final_retina.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -541,9 +545,9 @@
 				A0C5CEB81AC48A9A002A0A6C /* Default-568h@2x.png */,
 				A0EF61611AA4D51F00D74C01 /* Que Hacer MDQ v2-Bridging-Header.h */,
 				A0C5CE9C1AB9EC12002A0A6C /* Helpers */,
+				A0EF61221AA4B70B00D74C01 /* Assets */,
 				A0EF614D1AA4CF4600D74C01 /* Classes */,
 				A0EF61431AA4B76700D74C01 /* Services */,
-				A0EF61221AA4B70B00D74C01 /* Assets */,
 				A0EF60FA1AA4B6B600D74C01 /* ViewControllers */,
 				A0EF60D01AA4A6CA00D74C01 /* Que Hacer MDQ v2 */,
 				A0EF60ED1AA4A6CA00D74C01 /* Que Hacer MDQ v2Tests */,
@@ -628,6 +632,7 @@
 		A0EF61221AA4B70B00D74C01 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				A482BB461B01367900C6A66A /* LaunchScreen */,
 				A471B1061AD43D9300EC6571 /* Font */,
 				A0EF61651AA76AE800D74C01 /* Localizable.strings */,
 				A0EF61231AA4B70B00D74C01 /* Categories */,
@@ -752,6 +757,15 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		A482BB461B01367900C6A66A /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A482BB471B01368A00C6A66A /* splash_final_iphone.png */,
+				A482BB481B01368A00C6A66A /* splash_final_retina.png */,
+			);
+			name = LaunchScreen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -834,6 +848,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A482BB4A1B01368A00C6A66A /* splash_final_retina.png in Resources */,
 				A0C5CEB71AC45639002A0A6C /* SplashViewController.xib in Resources */,
 				A0D483751AE53B190006BD0E /* art_category_roundbutton_scubadiving.png in Resources */,
 				A055BDB01AE9347A00DB1FBF /* art_category_roundbutton_rockConcert.png in Resources */,
@@ -873,6 +888,7 @@
 				A07974691AF14AA40030696F /* icon_category_menu_outdoors.png in Resources */,
 				A0D4836D1AE53B190006BD0E /* art_category_roundbutton_books.png in Resources */,
 				A07974611AF14AA40030696F /* icon_category_menu_art.png in Resources */,
+				A482BB491B01368A00C6A66A /* splash_final_iphone.png in Resources */,
 				A0D483701AE53B190006BD0E /* art_category_roundbutton_family.png in Resources */,
 				A0D483771AE53B190006BD0E /* art_category_roundbutton_waterpark.png in Resources */,
 				A471B10C1AD43D9300EC6571 /* GOTHAM-MEDIUM.TTF in Resources */,
@@ -1135,6 +1151,7 @@
 			baseConfigurationReference = 29DCABC4F6AA7800E8EE2E68 /* Pods-Que Hacer MDQ v2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "Que Hacer MDQ v2/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -1149,6 +1166,7 @@
 			baseConfigurationReference = 91E527D31B69B45960D711D2 /* Pods-Que Hacer MDQ v2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "Que Hacer MDQ v2/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
