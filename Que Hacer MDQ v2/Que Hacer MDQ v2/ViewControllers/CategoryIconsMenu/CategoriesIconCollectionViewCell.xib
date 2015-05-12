@@ -40,8 +40,8 @@
                 <constraint firstAttribute="bottom" secondItem="itQ-oQ-QZM" secondAttribute="bottom" id="x1g-67-dPf"/>
             </constraints>
             <connections>
-                <outlet property="imageCategory" destination="itQ-oQ-QZM" id="OI5-xL-JnV"/>
-                <outlet property="imageSelect" destination="fFY-qp-2SG" id="eK8-Kc-TZ9"/>
+                <outlet property="imageCategory" destination="itQ-oQ-QZM" id="tPs-r8-5SW"/>
+                <outlet property="imageSelect" destination="fFY-qp-2SG" id="WHq-JQ-MMh"/>
             </connections>
             <point key="canvasLocation" x="200" y="84"/>
         </collectionViewCell>

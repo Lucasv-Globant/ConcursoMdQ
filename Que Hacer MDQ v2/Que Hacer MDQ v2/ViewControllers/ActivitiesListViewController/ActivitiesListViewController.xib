@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivitiesListViewController">
@@ -43,8 +44,11 @@
                         <outlet property="delegate" destination="-1" id="10j-X8-CbY"/>
                     </connections>
                 </tableView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_nombre.png" translatesAutoresizingMaskIntoConstraints="NO" id="GjN-je-H6z">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_nombre.png" translatesAutoresizingMaskIntoConstraints="NO" id="GjN-je-H6z">
                     <rect key="frame" x="0.0" y="124" width="375" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="GjN-je-H6z" secondAttribute="height" multiplier="25:12" id="Plu-mG-clz"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

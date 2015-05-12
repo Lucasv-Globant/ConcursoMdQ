@@ -53,6 +53,7 @@
     [self.categoriesMenu registerNib:collectionViewCellNib forCellWithReuseIdentifier:CATEGORY_ICON_COLLECTION_VIEW_CELL];
     [self configureSideBar];
     [self confingNavigationbar];
+  
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -80,10 +81,12 @@
     UIImageView* icon = (UIImageView*)[cell viewWithTag:1];
     icon.image = [UIImage imageNamed:[category imageFileName]];
     
+    
      UIImageView* check = (UIImageView*)[cell viewWithTag:2];
     if (indexPath.row == self.indexPathSelect)
     {
        check.hidden = NO;
+       self.activitiesUIImageView.image = [UIImage imageNamed: category.imageOriginFileName];
     }
     else
     {
@@ -99,16 +102,17 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     //When a cell is tapped, its' "selected" value should be inverted
     UICollectionViewCell* cell = [collectionView cellForItemAtIndexPath:indexPath];
-    
+    ActivityCategory* category = [self.categories objectAtIndex:[indexPath row]];
     self.indexPathSelect = indexPath.row ;
     UIImageView* check = (UIImageView*)[cell viewWithTag:2];
-   
+    
     if (check.hidden)
     {
         check.hidden = NO;
         [self.categoriesMenu reloadData];
+        
     }
-   
+   self.activitiesUIImageView.image = [UIImage imageNamed: category.imageOriginFileName];
 }
 
 
@@ -143,6 +147,7 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath
     }
         
     cell.labelActivityLocation.text = [DataTypesHelper removeReturnCarriageFromString:[DataTypesHelper truncateString:locationString withLength:25]];
+    
     return cell;
 }
 

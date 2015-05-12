@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CategoriesIconCollectionViewCell : UICollectionViewCell
+@property (strong, nonatomic) IBOutlet UIImageView *imageSelect;
+@property (strong, nonatomic) IBOutlet UIImageView *imageCategory;
 
 @end

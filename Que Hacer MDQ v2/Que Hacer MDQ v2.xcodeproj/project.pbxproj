@@ -136,6 +136,26 @@
 		A471B10C1AD43D9300EC6571 /* GOTHAM-MEDIUM.TTF in Resources */ = {isa = PBXBuildFile; fileRef = A471B1091AD43D9300EC6571 /* GOTHAM-MEDIUM.TTF */; };
 		A471B10F1AD43FA800EC6571 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = A471B10E1AD43FA800EC6571 /* Theme.m */; };
 		A471B1111AD4470100EC6571 /* Logo_nombre.png in Resources */ = {isa = PBXBuildFile; fileRef = A471B1101AD4470100EC6571 /* Logo_nombre.png */; };
+		A47E45301B024783006507F0 /* art_button_plastic-arts_origin.png in Resources */ = {isa = PBXBuildFile; fileRef = A47E451C1B024783006507F0 /* art_button_plastic-arts_origin.png */; };
+		A47E45311B024783006507F0 /* art_category_roundbutton_art-gallery_origin.png in Resources */ = {isa = PBXBuildFile; fileRef = A47E451D1B024783006507F0 /* art_category_roundbutton_art-gallery_origin.png */; };
+		A47E45321B024783006507F0 /* art_category_roundbutton_ballet_origin.png in Resources */ = {isa = PBXBuildFile; fileRef = A47E451E1B024783006507F0 /* art_category_roundbutton_ballet_origin.png */; };
+		A47E45331B024783006507F0 /* art_category_roundbutton_beach01_origin.png in Resources */ = {isa = PBXBuildFile; fileRef = A47E451F1B024783006507F0 /* art_category_roundbutton_beach01_origin.png */; };
+		A47E45341B024783006507F0 /* art_category_roundbutton_books_origin.png in Resources */ = {isa = PBXBuildFile; fileRef = A47E45201B024783006507F0 /* art_category_roundbutton_books_origin.png */; };
+		A47E45351B024783006507F0 /* art_category_roundbutton_casino_origin.png in Resources */ = {isa = PBXBuildFile; fileRef = A47E45211B024783006507F0 /* art_category_roundbutton_casino_origin.png */; };
+		A47E45361B024783006507F0 /* art_category_roundbutton_entertainment-shows_origin.png in Resources */ = {isa = PBXBuildFile; fileRef = A47E45221B024783006507F0 /* art_category_roundbutton_entertainment-shows_origin.png */; };
+		A47E45371B024783006507F0 /* art_category_roundbutton_expo1_origin.png in Resources */ = {isa = PBXBuildFile; fileRef = A47E45231B024783006507F0 /* art_category_roundbutton_expo1_origin.png */; };
+		A47E45381B024783006507F0 /* art_category_roundbutton_expo2_origin.png in Resources */ = {isa = PBXBuildFile; fileRef = A47E45241B024783006507F0 /* art_category_roundbutton_expo2_origin.png */; };
+		A47E45391B024783006507F0 /* art_category_roundbutton_family_origin.png in Resources */ = {isa = PBXBuildFile; fileRef = A47E45251B024783006507F0 /* art_category_roundbutton_family_origin.png */; };
+		A47E453A1B024783006507F0 /* art_category_roundbutton_kids_origin.png in Resources */ = {isa = PBXBuildFile; fileRef = A47E45261B024783006507F0 /* art_category_roundbutton_kids_origin.png */; };
+		A47E453B1B024783006507F0 /* art_category_roundbutton_nightlife_origin.png in Resources */ = {isa = PBXBuildFile; fileRef = A47E45271B024783006507F0 /* art_category_roundbutton_nightlife_origin.png */; };
+		A47E453C1B024783006507F0 /* art_category_roundbutton_outdoors_origin.png in Resources */ = {isa = PBXBuildFile; fileRef = A47E45281B024783006507F0 /* art_category_roundbutton_outdoors_origin.png */; };
+		A47E453D1B024783006507F0 /* art_category_roundbutton_party_origin.png in Resources */ = {isa = PBXBuildFile; fileRef = A47E45291B024783006507F0 /* art_category_roundbutton_party_origin.png */; };
+		A47E453E1B024783006507F0 /* art_category_roundbutton_rockConcert_origin.png in Resources */ = {isa = PBXBuildFile; fileRef = A47E452A1B024783006507F0 /* art_category_roundbutton_rockConcert_origin.png */; };
+		A47E453F1B024783006507F0 /* art_category_roundbutton_scubadiving_origin.png in Resources */ = {isa = PBXBuildFile; fileRef = A47E452B1B024783006507F0 /* art_category_roundbutton_scubadiving_origin.png */; };
+		A47E45401B024783006507F0 /* art_category_roundbutton_sportActivities_origin.png in Resources */ = {isa = PBXBuildFile; fileRef = A47E452C1B024783006507F0 /* art_category_roundbutton_sportActivities_origin.png */; };
+		A47E45411B024783006507F0 /* art_category_roundbutton_sports_origin.png in Resources */ = {isa = PBXBuildFile; fileRef = A47E452D1B024783006507F0 /* art_category_roundbutton_sports_origin.png */; };
+		A47E45421B024783006507F0 /* art_category_roundbutton_theatre_origin.png in Resources */ = {isa = PBXBuildFile; fileRef = A47E452E1B024783006507F0 /* art_category_roundbutton_theatre_origin.png */; };
+		A47E45431B024783006507F0 /* art_category_roundbutton_waterpark_origin.png in Resources */ = {isa = PBXBuildFile; fileRef = A47E452F1B024783006507F0 /* art_category_roundbutton_waterpark_origin.png */; };
 		A482BB491B01368A00C6A66A /* splash_final_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = A482BB471B01368A00C6A66A /* splash_final_iphone.png */; };
 		A482BB4A1B01368A00C6A66A /* splash_final_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = A482BB481B01368A00C6A66A /* splash_final_retina.png */; };
 		F310C4A83EA7E2612DE2B98F /* libPods-Que Hacer MDQ v2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFAAE7248CABC14EFB98466 /* libPods-Que Hacer MDQ v2.a */; };
@@ -324,6 +344,26 @@
 		A471B10D1AD43FA800EC6571 /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
 		A471B10E1AD43FA800EC6571 /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
 		A471B1101AD4470100EC6571 /* Logo_nombre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_nombre.png; sourceTree = "<group>"; };
+		A47E451C1B024783006507F0 /* art_button_plastic-arts_origin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "art_button_plastic-arts_origin.png"; sourceTree = "<group>"; };
+		A47E451D1B024783006507F0 /* art_category_roundbutton_art-gallery_origin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "art_category_roundbutton_art-gallery_origin.png"; sourceTree = "<group>"; };
+		A47E451E1B024783006507F0 /* art_category_roundbutton_ballet_origin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_ballet_origin.png; sourceTree = "<group>"; };
+		A47E451F1B024783006507F0 /* art_category_roundbutton_beach01_origin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_beach01_origin.png; sourceTree = "<group>"; };
+		A47E45201B024783006507F0 /* art_category_roundbutton_books_origin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_books_origin.png; sourceTree = "<group>"; };
+		A47E45211B024783006507F0 /* art_category_roundbutton_casino_origin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_casino_origin.png; sourceTree = "<group>"; };
+		A47E45221B024783006507F0 /* art_category_roundbutton_entertainment-shows_origin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "art_category_roundbutton_entertainment-shows_origin.png"; sourceTree = "<group>"; };
+		A47E45231B024783006507F0 /* art_category_roundbutton_expo1_origin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_expo1_origin.png; sourceTree = "<group>"; };
+		A47E45241B024783006507F0 /* art_category_roundbutton_expo2_origin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_expo2_origin.png; sourceTree = "<group>"; };
+		A47E45251B024783006507F0 /* art_category_roundbutton_family_origin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_family_origin.png; sourceTree = "<group>"; };
+		A47E45261B024783006507F0 /* art_category_roundbutton_kids_origin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_kids_origin.png; sourceTree = "<group>"; };
+		A47E45271B024783006507F0 /* art_category_roundbutton_nightlife_origin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_nightlife_origin.png; sourceTree = "<group>"; };
+		A47E45281B024783006507F0 /* art_category_roundbutton_outdoors_origin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_outdoors_origin.png; sourceTree = "<group>"; };
+		A47E45291B024783006507F0 /* art_category_roundbutton_party_origin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_party_origin.png; sourceTree = "<group>"; };
+		A47E452A1B024783006507F0 /* art_category_roundbutton_rockConcert_origin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_rockConcert_origin.png; sourceTree = "<group>"; };
+		A47E452B1B024783006507F0 /* art_category_roundbutton_scubadiving_origin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_scubadiving_origin.png; sourceTree = "<group>"; };
+		A47E452C1B024783006507F0 /* art_category_roundbutton_sportActivities_origin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_sportActivities_origin.png; sourceTree = "<group>"; };
+		A47E452D1B024783006507F0 /* art_category_roundbutton_sports_origin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_sports_origin.png; sourceTree = "<group>"; };
+		A47E452E1B024783006507F0 /* art_category_roundbutton_theatre_origin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_theatre_origin.png; sourceTree = "<group>"; };
+		A47E452F1B024783006507F0 /* art_category_roundbutton_waterpark_origin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art_category_roundbutton_waterpark_origin.png; sourceTree = "<group>"; };
 		A482BB471B01368A00C6A66A /* splash_final_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_final_iphone.png; sourceTree = "<group>"; };
 		A482BB481B01368A00C6A66A /* splash_final_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_final_retina.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -535,6 +575,26 @@
 				A0D483651AE53B190006BD0E /* art_category_roundbutton_scubadiving.png */,
 				A0D483661AE53B190006BD0E /* art_category_roundbutton_sports.png */,
 				A0D483671AE53B190006BD0E /* art_category_roundbutton_waterpark.png */,
+				A47E451C1B024783006507F0 /* art_button_plastic-arts_origin.png */,
+				A47E451D1B024783006507F0 /* art_category_roundbutton_art-gallery_origin.png */,
+				A47E451E1B024783006507F0 /* art_category_roundbutton_ballet_origin.png */,
+				A47E451F1B024783006507F0 /* art_category_roundbutton_beach01_origin.png */,
+				A47E45201B024783006507F0 /* art_category_roundbutton_books_origin.png */,
+				A47E45211B024783006507F0 /* art_category_roundbutton_casino_origin.png */,
+				A47E45221B024783006507F0 /* art_category_roundbutton_entertainment-shows_origin.png */,
+				A47E45231B024783006507F0 /* art_category_roundbutton_expo1_origin.png */,
+				A47E45241B024783006507F0 /* art_category_roundbutton_expo2_origin.png */,
+				A47E45251B024783006507F0 /* art_category_roundbutton_family_origin.png */,
+				A47E45261B024783006507F0 /* art_category_roundbutton_kids_origin.png */,
+				A47E45271B024783006507F0 /* art_category_roundbutton_nightlife_origin.png */,
+				A47E45281B024783006507F0 /* art_category_roundbutton_outdoors_origin.png */,
+				A47E45291B024783006507F0 /* art_category_roundbutton_party_origin.png */,
+				A47E452A1B024783006507F0 /* art_category_roundbutton_rockConcert_origin.png */,
+				A47E452B1B024783006507F0 /* art_category_roundbutton_scubadiving_origin.png */,
+				A47E452C1B024783006507F0 /* art_category_roundbutton_sportActivities_origin.png */,
+				A47E452D1B024783006507F0 /* art_category_roundbutton_sports_origin.png */,
+				A47E452E1B024783006507F0 /* art_category_roundbutton_theatre_origin.png */,
+				A47E452F1B024783006507F0 /* art_category_roundbutton_waterpark_origin.png */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -850,6 +910,7 @@
 			files = (
 				A482BB4A1B01368A00C6A66A /* splash_final_retina.png in Resources */,
 				A0C5CEB71AC45639002A0A6C /* SplashViewController.xib in Resources */,
+				A47E45401B024783006507F0 /* art_category_roundbutton_sportActivities_origin.png in Resources */,
 				A0D483751AE53B190006BD0E /* art_category_roundbutton_scubadiving.png in Resources */,
 				A055BDB01AE9347A00DB1FBF /* art_category_roundbutton_rockConcert.png in Resources */,
 				A07358BD1AD57BE700AA94DC /* art_logo_qhmdq.png in Resources */,
@@ -858,7 +919,10 @@
 				A471B0FE1AD3F17C00EC6571 /* PIMainMenuCell.xib in Resources */,
 				A0C5CE1B1AAF6E2B002A0A6C /* LoginViewController.xib in Resources */,
 				A055BDAE1AE92C2300DB1FBF /* art_category_roundbutton_sportActivities.png in Resources */,
+				A47E45321B024783006507F0 /* art_category_roundbutton_ballet_origin.png in Resources */,
+				A47E453B1B024783006507F0 /* art_category_roundbutton_nightlife_origin.png in Resources */,
 				A0D483731AE53B190006BD0E /* art_category_roundbutton_outdoors.png in Resources */,
+				A47E45351B024783006507F0 /* art_category_roundbutton_casino_origin.png in Resources */,
 				A07358CD1AD85D8000AA94DC /* FoodAndDrinkViewController.xib in Resources */,
 				A0C5CEAA1AC31A02002A0A6C /* DetailViewController.xib in Resources */,
 				A079746C1AF14AA40030696F /* icon_category_menu_sportActivities.png in Resources */,
@@ -866,7 +930,9 @@
 				A07974681AF14AA40030696F /* icon_category_menu_nightlife.png in Resources */,
 				A0C5CED01AC48E67002A0A6C /* bg_noche2.png in Resources */,
 				A079746A1AF14AA40030696F /* icon_category_menu_party.png in Resources */,
+				A47E45301B024783006507F0 /* art_button_plastic-arts_origin.png in Resources */,
 				A07974661AF14AA40030696F /* icon_category_menu_family.png in Resources */,
+				A47E45341B024783006507F0 /* art_category_roundbutton_books_origin.png in Resources */,
 				A471B10B1AD43D9300EC6571 /* GOTHAM-BOOK.TTF in Resources */,
 				A0C5CEF61AC9772D002A0A6C /* art_checkbox_check_16.png in Resources */,
 				A0D483691AE53B190006BD0E /* art_category_roundbutton_AppLogo.png in Resources */,
@@ -880,11 +946,14 @@
 				A0C5CED31AC48E67002A0A6C /* cat_lnb1.png in Resources */,
 				A07358BA1AD4553C00AA94DC /* FavoritesTableViewCell.xib in Resources */,
 				A07358B51AD450EC00AA94DC /* FavoritesViewController.xib in Resources */,
+				A47E45371B024783006507F0 /* art_category_roundbutton_expo1_origin.png in Resources */,
 				A0EF60E51AA4A6CA00D74C01 /* LaunchScreen.xib in Resources */,
 				A0C5CEE61AC5D5F5002A0A6C /* art_checkbox_empty_32.png in Resources */,
 				A0C5CEE21AC59DEE002A0A6C /* CategoriesSelectionViewController.xib in Resources */,
 				A471B1031AD4153800EC6571 /* menu.png in Resources */,
 				A0D673781AE6F1CB0013FEA2 /* art_category_roundbutton_expo2.png in Resources */,
+				A47E45311B024783006507F0 /* art_category_roundbutton_art-gallery_origin.png in Resources */,
+				A47E453E1B024783006507F0 /* art_category_roundbutton_rockConcert_origin.png in Resources */,
 				A07974691AF14AA40030696F /* icon_category_menu_outdoors.png in Resources */,
 				A0D4836D1AE53B190006BD0E /* art_category_roundbutton_books.png in Resources */,
 				A07974611AF14AA40030696F /* icon_category_menu_art.png in Resources */,
@@ -895,18 +964,23 @@
 				A0C5CEC81AC48E67002A0A6C /* bg_amanecer1.png in Resources */,
 				A0D483681AE53B190006BD0E /* art_button_plastic-arts.png in Resources */,
 				A079746D1AF14AA40030696F /* icon_category_menu_theatre.png in Resources */,
+				A47E45421B024783006507F0 /* art_category_roundbutton_theatre_origin.png in Resources */,
 				A0D4836C1AE53B190006BD0E /* art_category_roundbutton_ballet.png in Resources */,
 				A0E669511ADEFA060023AE4D /* menu2.png in Resources */,
+				A47E45361B024783006507F0 /* art_category_roundbutton_entertainment-shows_origin.png in Resources */,
 				A0C5CECB1AC48E67002A0A6C /* bg_anochecer1.png in Resources */,
 				A055BDB41AE9381300DB1FBF /* art_category_roundbutton_beach01.png in Resources */,
 				A471B1001AD3F17C00EC6571 /* PIMainMenuController.xib in Resources */,
 				A07974651AF14AA40030696F /* icon_category_menu_expo.png in Resources */,
 				A0C5CEF71AC9772D002A0A6C /* art_checkbox_empty_16.png in Resources */,
+				A47E45331B024783006507F0 /* art_category_roundbutton_beach01_origin.png in Resources */,
 				A0C5CEE51AC5D5F5002A0A6C /* art_checkbox_check_32.png in Resources */,
 				A0C5CECD1AC48E67002A0A6C /* bg_noche1-landscape.png in Resources */,
 				A07358D41ADC012100AA94DC /* FoodAndDrinkDetailViewController.xib in Resources */,
 				A471B1041AD4153800EC6571 /* menu@2x.png in Resources */,
+				A47E45411B024783006507F0 /* art_category_roundbutton_sports_origin.png in Resources */,
 				A0C5CED21AC48E67002A0A6C /* bg_soleado1.png in Resources */,
+				A47E453D1B024783006507F0 /* art_category_roundbutton_party_origin.png in Resources */,
 				A07974631AF14AA40030696F /* icon_category_menu_books.png in Resources */,
 				A0C5CECC1AC48E67002A0A6C /* bg_atardecer1.png in Resources */,
 				A0C5CF061ACC8DF5002A0A6C /* art_greyButton.png in Resources */,
@@ -919,19 +993,25 @@
 				A0EF61661AA76AE800D74C01 /* Localizable.strings in Resources */,
 				A0C5CF041ACC56C3002A0A6C /* ActivitiesListTableViewCell.xib in Resources */,
 				A0D483761AE53B190006BD0E /* art_category_roundbutton_sports.png in Resources */,
+				A47E453A1B024783006507F0 /* art_category_roundbutton_kids_origin.png in Resources */,
 				A0EF60E21AA4A6CA00D74C01 /* Images.xcassets in Resources */,
 				A07358DA1ADD31CE00AA94DC /* MapViewController.xib in Resources */,
+				A47E453F1B024783006507F0 /* art_category_roundbutton_scubadiving_origin.png in Resources */,
 				A07974701AF15B260030696F /* icon_category_menu_border.png in Resources */,
 				A0D673731AE696570013FEA2 /* art_roundbutton_selected_checkmark.png in Resources */,
 				A0D4836E1AE53B190006BD0E /* art_category_roundbutton_casino.png in Resources */,
 				A0C5CEC71AC48E67002A0A6C /* bg_amanecer1-landscape.png in Resources */,
 				A0C5CECA1AC48E67002A0A6C /* bg_amanecer3.png in Resources */,
 				A0D483741AE53B190006BD0E /* art_category_roundbutton_party.png in Resources */,
+				A47E453C1B024783006507F0 /* art_category_roundbutton_outdoors_origin.png in Resources */,
+				A47E45381B024783006507F0 /* art_category_roundbutton_expo2_origin.png in Resources */,
 				A07974671AF14AA40030696F /* icon_category_menu_kids.png in Resources */,
+				A47E45431B024783006507F0 /* art_category_roundbutton_waterpark_origin.png in Resources */,
 				A0D4836F1AE53B190006BD0E /* art_category_roundbutton_entertainment-shows.png in Resources */,
 				A471B10A1AD43D9300EC6571 /* GOTHAM-BOLD.TTF in Resources */,
 				A0D483711AE53B190006BD0E /* art_category_roundbutton_kids.png in Resources */,
 				A0C5CECE1AC48E67002A0A6C /* bg_noche1.png in Resources */,
+				A47E45391B024783006507F0 /* art_category_roundbutton_family_origin.png in Resources */,
 				A471B1111AD4470100EC6571 /* Logo_nombre.png in Resources */,
 				A07358C81AD7F3AF00AA94DC /* SearchActivityViewController.xib in Resources */,
 				A0D673741AE696570013FEA2 /* art_roundbutton_selected.png in Resources */,

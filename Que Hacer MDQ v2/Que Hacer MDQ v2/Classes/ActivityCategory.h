@@ -15,6 +15,7 @@
 @property (nonatomic,strong) NSString* name;
 @property (nonatomic, strong) NSString* imageFileName;
 @property (nonatomic, strong) NSString* iconFileName;
+@property (nonatomic, strong) NSString* imageOriginFileName;
 @property (nonatomic,strong) NSNumber* tagId;
 @property BOOL isSelected;
 +(NSArray*)categoriesListing;
