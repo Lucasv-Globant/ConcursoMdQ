@@ -10,7 +10,8 @@
 
 @interface Constants : NSObject
 
-
+//App Global
+#define APP_VERSION @"1.0"
 
 //Networking Constants
 extern float const requestsTimeout;
