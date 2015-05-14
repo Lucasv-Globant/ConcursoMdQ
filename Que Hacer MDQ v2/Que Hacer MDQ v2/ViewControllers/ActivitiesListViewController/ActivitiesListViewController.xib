@@ -36,7 +36,7 @@
                         <outlet property="delegate" destination="-1" id="qjW-JV-p5Q"/>
                     </connections>
                 </collectionView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Rad-ki-ehf">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Rad-ki-ehf">
                     <rect key="frame" x="0.0" y="307" width="375" height="360"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
@@ -44,8 +44,8 @@
                         <outlet property="delegate" destination="-1" id="10j-X8-CbY"/>
                     </connections>
                 </tableView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_nombre.png" translatesAutoresizingMaskIntoConstraints="NO" id="GjN-je-H6z">
-                    <rect key="frame" x="0.0" y="124" width="375" height="180"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="art_category_banner_AppLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="GjN-je-H6z">
+                    <rect key="frame" x="0.0" y="125" width="375" height="121"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="GjN-je-H6z" secondAttribute="height" multiplier="25:12" id="Plu-mG-clz"/>
                     </constraints>
@@ -55,11 +55,11 @@
             <constraints>
                 <constraint firstItem="Rad-ki-ehf" firstAttribute="top" secondItem="GjN-je-H6z" secondAttribute="bottom" constant="3" id="0Zc-4N-OOt"/>
                 <constraint firstAttribute="bottom" secondItem="Rad-ki-ehf" secondAttribute="bottom" id="0fo-IA-Yfj"/>
-                <constraint firstItem="GjN-je-H6z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="124" id="2v0-9E-rGq"/>
                 <constraint firstItem="91z-fZ-T9W" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="4de-xP-4bD"/>
                 <constraint firstAttribute="trailing" secondItem="GjN-je-H6z" secondAttribute="trailing" id="Dqj-bz-XdV"/>
                 <constraint firstItem="91z-fZ-T9W" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OoA-JX-rLb"/>
                 <constraint firstItem="Rad-ki-ehf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ps4-yF-XWw"/>
+                <constraint firstItem="GjN-je-H6z" firstAttribute="top" secondItem="91z-fZ-T9W" secondAttribute="bottom" id="bgV-Ab-iIw"/>
                 <constraint firstAttribute="trailing" secondItem="91z-fZ-T9W" secondAttribute="trailing" id="ehn-ce-lbh"/>
                 <constraint firstAttribute="trailing" secondItem="Rad-ki-ehf" secondAttribute="trailing" id="hj6-TU-n3K"/>
                 <constraint firstItem="GjN-je-H6z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qqS-9x-ROp"/>
@@ -70,6 +70,6 @@
         </view>
     </objects>
     <resources>
-        <image name="Logo_nombre.png" width="307" height="180"/>
+        <image name="art_category_banner_AppLogo.png" width="470" height="150"/>
     </resources>
 </document>
