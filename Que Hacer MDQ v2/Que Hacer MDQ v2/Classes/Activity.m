@@ -82,11 +82,17 @@
     
     //Relationship: Tags
     NSArray* tagsSource = [aDictionary objectForKey:@"tags"];
-    //NSMutableArray* tagsArray = [[NSMutableArray alloc] init];
-    for ( NSDictionary* tagDictionary in tagsSource) {
-        //[tagsArray addObject:[[CoreDataHelper sharedInstance] getTagWithId:[tagDictionary objectForKey:@"tagId"]]];
-        [newActivity addTagsObject:[[CoreDataHelper sharedInstance] getTagWithId:[tagDictionary objectForKey:@"tagId"]]] ;
-
+    //If the activity's JSON came with tags in it, associate them with the Tag objects
+    if ([tagsSource count] > 0)
+    {
+        for ( NSDictionary* tagDictionary in tagsSource) {
+            [newActivity addTagsObject:[[CoreDataHelper sharedInstance] getTagWithId:[tagDictionary objectForKey:@"tagId"]]] ;
+        }
+    }
+    else
+    {
+        //If the activity's JSON did not bring any tags with it, assign an empty NSSet
+        newActivity.tags = [[NSSet alloc] init];
     }
 
     //Relationship: Schedules

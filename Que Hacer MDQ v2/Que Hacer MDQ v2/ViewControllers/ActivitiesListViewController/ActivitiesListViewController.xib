@@ -50,6 +50,13 @@
                         <constraint firstAttribute="width" secondItem="GjN-je-H6z" secondAttribute="height" multiplier="25:12" id="Plu-mG-clz"/>
                     </constraints>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Categoria Seleccionada" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUf-qP-Lxl">
+                    <rect key="frame" x="1" y="288" width="374" height="21"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -59,10 +66,13 @@
                 <constraint firstAttribute="trailing" secondItem="GjN-je-H6z" secondAttribute="trailing" id="Dqj-bz-XdV"/>
                 <constraint firstItem="91z-fZ-T9W" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OoA-JX-rLb"/>
                 <constraint firstItem="Rad-ki-ehf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ps4-yF-XWw"/>
+                <constraint firstAttribute="trailing" secondItem="yUf-qP-Lxl" secondAttribute="trailing" id="UW5-Oj-XDF"/>
                 <constraint firstItem="GjN-je-H6z" firstAttribute="top" secondItem="91z-fZ-T9W" secondAttribute="bottom" id="bgV-Ab-iIw"/>
                 <constraint firstAttribute="trailing" secondItem="91z-fZ-T9W" secondAttribute="trailing" id="ehn-ce-lbh"/>
+                <constraint firstItem="Rad-ki-ehf" firstAttribute="top" secondItem="yUf-qP-Lxl" secondAttribute="bottom" id="fXR-iY-OOm"/>
                 <constraint firstAttribute="trailing" secondItem="Rad-ki-ehf" secondAttribute="trailing" id="hj6-TU-n3K"/>
                 <constraint firstItem="GjN-je-H6z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qqS-9x-ROp"/>
+                <constraint firstItem="yUf-qP-Lxl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zPn-WQ-Ipi"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>

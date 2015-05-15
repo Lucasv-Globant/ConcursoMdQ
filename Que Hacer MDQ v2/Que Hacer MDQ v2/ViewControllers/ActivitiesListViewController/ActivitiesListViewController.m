@@ -16,16 +16,19 @@
 #import "Theme.h"
 #import "FoodAndDrinkDetailViewController.h"
 #import "CategoriesIconCollectionViewCell.h"
+#import "ActivitiesCollection.h"
 
 #define CATEGORY_ICON_COLLECTION_VIEW_CELL @"CategoriesIconCollectionViewCell"
 
 
 @interface ActivitiesListViewController ()
 
-@property (nonatomic, strong) NSArray* activities;
+@property (nonatomic, strong) NSArray* activities;//The activities filtered by selected category
+@property (assign, nonatomic) NSArray* allActivities;//All activities from Core Data (no filtering)
 @property (strong, nonatomic) IBOutlet UITableView *activitiesUITableView;
 @property (strong, nonatomic) IBOutlet UIImageView *activitiesUIImageView;
 @property (assign, nonatomic) NSInteger indexPathSelect;
+
 @end
 
 @implementation ActivitiesListViewController
@@ -37,10 +40,15 @@
     
     self.categories = [ActivityCategory getSelectedCategories];
     
-    NSPredicate* predicate = [NSPredicate predicateWithFormat:@"areaId = 1"];
-    self.activities = [[CoreDataHelper sharedInstance] fetchEntitiesForClass:[Activity class] withPredicate:predicate inManagedObjectContext:[[CoreDataHelper sharedInstance] managedObjectContext]];
+    self.indexPathSelect = 0; //Set the first item from the collection as the one selected
+    
+    [self filterActivitiesBySelectedCategory];
+
     for (Activity* act in self.activities) {
         NSLog(@"Activity name: %@",act.name);
+        for (Tag* someTag in act.tags) {
+            NSLog(someTag.name,nil);
+        }
     }
     
     UINib *cellNib = [UINib nibWithNibName:@"ActivitiesListTableViewCell" bundle:nil];
@@ -56,11 +64,42 @@
   
 }
 
--(void)viewWillAppear:(BOOL)animated
+-(void)retrieveAllActivitiesFromCoreData
 {
-    [self.activitiesUITableView reloadData];
+    //NSString* predicateString = [NSString stringWithFormat:@"tags.id == %@",categoryTagId];
+    //NSString* predicateString = [NSString stringWithFormat:@"tags.name == 1"];
+    //NSString* predicateString = [NSString stringWithFormat:@"tags.name = 'General'"];
+    NSString* predicateString = [NSString stringWithFormat:@"areaId = 1"];
+    NSPredicate* predicate = [NSPredicate predicateWithFormat:predicateString];
+    self.allActivities = [[CoreDataHelper sharedInstance] fetchEntitiesForClass:[Activity class] withPredicate:predicate inManagedObjectContext:[[CoreDataHelper sharedInstance] managedObjectContext]];
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+   [self.activitiesUITableView reloadData];
+}
+
+
+-(void)filterActivitiesBySelectedCategory
+{
+    //This method filters the activities with the tagId of the selected category
+    //It filters the "self.allActivities" array (which contains ALL objects) and assigns an array of filtered results to self.activities
+    
+    //Get all activities (unfiltered) from Core Data
+    [self retrieveAllActivitiesFromCoreData];
+    
+    //Calculate which category has been selected
+    ActivityCategory* category = [self.categories objectAtIndex:self.indexPathSelect];
+    
+    //Obtain the equivalent tagId of the selected category
+    NSNumber* categoryTagId = category.tagId;
+   
+    //Use a "collection of activities" in order to filter items easily
+    ActivitiesCollection* collection = [[ActivitiesCollection alloc] initWithArray:self.allActivities];
+    self.activities = [collection filterActivitiesWithTagIds:[NSArray arrayWithObject:categoryTagId]];
+    
+    
+}
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
@@ -73,16 +112,12 @@
     
     ActivityCategory* category = [self.categories objectAtIndex:[indexPath row]];
     
-    //Set the text label:
-    //UILabel* label = (UILabel*)[cell viewWithTag:2];
-    //label.text = [category name];
-    
     //Set the icon:
     UIImageView* icon = (UIImageView*)[cell viewWithTag:1];
     icon.image = [UIImage imageNamed:[category imageFileName]];
     
     
-     UIImageView* check = (UIImageView*)[cell viewWithTag:2];
+    UIImageView* check = (UIImageView*)[cell viewWithTag:2];
     if (indexPath.row == self.indexPathSelect)
     {
        check.hidden = NO;
@@ -108,9 +143,10 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath
     
     if (check.hidden)
     {
+        [self filterActivitiesBySelectedCategory];
         check.hidden = NO;
         [self.categoriesMenu reloadData];
-        
+        [self.activitiesUITableView reloadData];
     }
    self.activitiesUIImageView.image = [UIImage imageNamed: category.imageOriginFileName];
 }

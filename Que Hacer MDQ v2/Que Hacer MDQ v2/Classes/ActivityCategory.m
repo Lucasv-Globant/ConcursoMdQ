@@ -86,7 +86,7 @@
             case 2:
                 self.imageFileName = @"art_button_plastic-arts";
                 self.iconFileName = @"icon_category_menu_art.png";
-                self.imageOriginFileName = @"art_category_banner_plastic.png";
+                self.imageOriginFileName = @"art_category_banner_plastic-arts.png";
                 self.name = @"Arte y Cultura";
                 self.tagId = [NSNumber numberWithInt:20];
                 break;
