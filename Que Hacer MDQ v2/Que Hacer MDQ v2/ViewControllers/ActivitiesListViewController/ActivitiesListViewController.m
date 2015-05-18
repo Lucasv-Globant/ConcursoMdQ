@@ -173,7 +173,7 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath
     cell.labelActivityDescription.text = [DataTypesHelper removeReturnCarriageFromString:[DataTypesHelper truncateString:activity.desc withLength:25]];
     
     NSString* locationString;
-    if ([activity.locationStreetOrRoute containsString:@"Ruta"] || [activity.locationStreetOrRoute containsString:@"Autovía"])
+    if ([activity.locationStreetOrRoute rangeOfString:@"Ruta"].length > 0 || [activity.locationStreetOrRoute rangeOfString:@"Autovía"].length > 0 )
     {
         locationString = [NSString stringWithFormat:@"%@ Km.%@",activity.locationStreetOrRoute,activity.locationHouseNumberingOrKm];
     }

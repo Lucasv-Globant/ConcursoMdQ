@@ -12,6 +12,7 @@
 #import "AppMain.h"
 
 @interface ActivitiesListViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UICollectionViewDataSource,UICollectionViewDelegate>
+
 @property (strong, nonatomic) IBOutlet UICollectionView *categoriesMenu;
 
 @property (nonatomic,strong) NSArray* categories;

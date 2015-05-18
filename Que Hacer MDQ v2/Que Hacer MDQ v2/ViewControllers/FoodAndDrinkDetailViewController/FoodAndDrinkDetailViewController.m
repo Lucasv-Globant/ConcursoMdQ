@@ -23,7 +23,7 @@
     NSString* locationStringLine1 = self.activity.locationDetails;
     NSString* locationStringLine2 = @"";
     
-    if ([self.activity.locationStreetOrRoute containsString:@"Ruta"] || [self.activity.locationStreetOrRoute containsString:@"Autovía"])
+    if ([self.activity.locationStreetOrRoute rangeOfString:@"Ruta"].length > 0 || [self.activity.locationStreetOrRoute rangeOfString:@"Autovía"].length > 0 )
     {
         locationStringLine2 = [NSString stringWithFormat:@"%@ Km.%@",self.activity.locationStreetOrRoute,self.activity.locationHouseNumberingOrKm];
     }

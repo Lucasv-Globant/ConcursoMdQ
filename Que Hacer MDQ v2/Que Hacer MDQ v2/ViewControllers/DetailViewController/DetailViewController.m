@@ -33,7 +33,7 @@
     self.labelActivityName.text = self.activity.name;
     self.labelActivityLocation1.text = self.activity.locationDetails;
     NSString* locationString;
-    if ([self.activity.locationStreetOrRoute containsString:@"Ruta"] || [self.activity.locationStreetOrRoute containsString:@"Autovía"])
+    if ([self.activity.locationStreetOrRoute rangeOfString:@"Ruta"].length > 0 || [self.activity.locationStreetOrRoute rangeOfString:@"Autovía"].length > 0 )
     {
         locationString = [NSString stringWithFormat:@"%@ Km.%@",self.activity.locationStreetOrRoute,self.activity.locationHouseNumberingOrKm];
     }
