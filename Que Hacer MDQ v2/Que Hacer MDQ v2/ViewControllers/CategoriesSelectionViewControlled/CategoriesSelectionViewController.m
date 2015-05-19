@@ -42,12 +42,12 @@
     [self.btn_continue.titleLabel setFont:[Theme fontButton]];
     [self.btn_continue setTitle:@"CONTINUAR" forState:UIControlStateNormal];
     self.btn_continue.layer.cornerRadius = 20;
-    [self confingNavigationbar];
-    [self confingLabel];
+    [self configNavigationbar];
+    [self configLabel];
     
 }
 
--(void)confingLabel
+-(void)configLabel
 {
     [self.lbl_title setText:@"¿Qué cosas te interesan?"];
     self.lbl_title.font = [Theme fontButton01];
@@ -58,7 +58,7 @@
     self.lbl_subtitle.font = [UIFont systemFontOfSize:12];
 }
 
--(void)confingNavigationbar
+-(void)configNavigationbar
 {
     
     self.navigationController.navigationBar.hidden = NO;

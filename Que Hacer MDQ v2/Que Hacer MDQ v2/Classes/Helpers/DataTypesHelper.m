@@ -122,6 +122,22 @@
     return [DataTypesHelper stringToNSNumber:hoursString];
 }
 
+#pragma mark Supporting methods - Month of current date
++(NSNumber*)getMonthOfCurrentDate
+{
+    //Set a date formater to hours only:
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"MM"];
+    
+    //Get current date & time:
+    NSDate* now = [NSDate date];
+    
+    //Convert to hours (as string):
+    NSString *monthString = [df stringFromDate:now];
+    
+    //Convert the string to NSNumber and return it:
+    return [DataTypesHelper stringToNSNumber:monthString];
+}
 
 #pragma mark Supporting methods - Deprecated
 +(NSString *)getTimeStartOfDay
