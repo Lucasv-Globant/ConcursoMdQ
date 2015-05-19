@@ -17,4 +17,6 @@
 -(NSDictionary*)getFavoritesDictionary;
 -(void)removeFavoriteWithID:(NSString*)activityID;
 -(void)addFavorite:(NSDictionary*)favoriteDictionary;
+-(BOOL)shouldSynchronize;
+-(void)synchronizationDoneSuccessfully;
 @end

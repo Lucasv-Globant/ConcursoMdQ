@@ -26,7 +26,16 @@
     self.navigationController.navigationBar.hidden = YES;
     //Set the background according to the time of the day:
     [[self background] setImage:[UIImage imageNamed:[self backgroundImageFileNameByTime]]];
-    [self startSynchronizing];
+    if ([[AppSettings sharedInstance] shouldSynchronize])
+         {
+             [self startSynchronizing];
+         }
+        else
+        {
+            CategoriesSelectionViewController* csvc = [[AppMain sharedInstance] sharedCategoriesSelectionViewController];
+            [self.navigationController pushViewController:csvc animated:YES];
+        }
+    
     
 }
 
@@ -38,6 +47,7 @@
     [sync syncWithSuccess:^(NSMutableArray* activitiesArray)
      {
          NSLog(@"Entered synchro success block..");
+         [[AppSettings sharedInstance] synchronizationDoneSuccessfully];
          [self.activityIndicator stopAnimating];
          
          /*
