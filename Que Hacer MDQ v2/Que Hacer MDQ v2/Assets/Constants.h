@@ -30,4 +30,6 @@ extern NSString* const WSMDQActivities_TagsList;
 //Key strings for NSUserDefaults
 extern NSString* const NSUserDefaults_KeyForCategoriesSelection;
 extern NSString* const NSUserDefaults_KeyForFavorites;
+#define NSUserDefaults_KeyForDateOfLasSynchronization @"NSUSERDEFAULTS_LAST_SYNCHRO_DATE"
+
 @end

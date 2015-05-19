@@ -25,6 +25,50 @@
 }
 
 
+-(BOOL)shouldSynchronize
+{
+    BOOL result = YES;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSDate* lastSynchro = [defaults objectForKey:NSUserDefaults_KeyForDateOfLasSynchronization];
+    if (lastSynchro)
+    {
+        NSComparisonResult comparison = [lastSynchro compare:[self synchronizationDateThreshold]];
+        if ( comparison == NSOrderedDescending)
+        {
+            result = NO;
+        }
+    }
+    return result;
+    
+}
+
+
+-(NSDate*) synchronizationDateThreshold
+//Returns the maximum accepted aging for the latest synchronization, in NSDate format
+{
+    NSDate* result = [NSDate date];
+    NSInteger interval = -1 * [self synchronizationDaysThreshold] * 24 * 60 * 60;
+    return [result dateByAddingTimeInterval:interval];
+}
+
+-(NSInteger) synchronizationDaysThreshold
+//Returns the maximum accepted aging in terms of days for the latest synchronization
+{
+    //A week should be just fine
+    return 7;
+}
+
+
+-(void) synchronizationDoneSuccessfully
+//Sets today as the last day of a successful synchronization
+//After a syncrhonization is made, this method should be called to keep track of the last update's date
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[NSDate date] forKey:NSUserDefaults_KeyForDateOfLasSynchronization];
+}
+
+
+
 
 /*
 ----------------------------------------------------------------------------------------
