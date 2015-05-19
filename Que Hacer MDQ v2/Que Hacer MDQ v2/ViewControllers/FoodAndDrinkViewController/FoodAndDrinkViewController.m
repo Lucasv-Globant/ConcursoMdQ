@@ -9,9 +9,14 @@
 #import "FoodAndDrinkViewController.h"
 #import "ActivitiesListTableViewCell.h"
 #import "DataTypesHelper.h"
-//#import "DetailViewController.h"
+#import "FavoritesViewController.h"
 #import "UILabel+AutoHeight.h"
 #import "FoodAndDrinkDetailViewController.h"
+#import <UIViewController+MMDrawerController.h>
+#import "MMDrawerBarButtonItem.h"
+#import "SearchActivityViewController.h"
+#import "Theme.h"
+
 
 @interface FoodAndDrinkViewController ()
 @property (strong, nonatomic) IBOutlet UITableView *activitiesUITableView;
@@ -32,6 +37,32 @@
     UINib *cellNib = [UINib nibWithNibName:@"ActivitiesListTableViewCell" bundle:nil];
     
     [self.activitiesUITableView registerNib:cellNib forCellReuseIdentifier:@"ActivitiesListTableViewCell"];
+    [self configureSideBar];
+    [self configNavigationbar];
+}
+
+
+
+
+-(void)configNavigationbar
+{
+    
+    self.navigationController.navigationBar.hidden = NO;
+    self.navigationController.navigationBar.barStyle = UIStatusBarStyleLightContent;
+    self.navigationController.navigationBar.barTintColor = [Theme colorPink];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    //self.navigationItem.hidesBackButton = YES;
+    
+    CGRect frame = CGRectMake(0,0,200,44);
+    UILabel *titlelabel = [[UILabel alloc] initWithFrame:frame];
+    UIView* view =[[UIView alloc]initWithFrame:frame];
+    titlelabel.font = [Theme fontButton];
+    titlelabel.textAlignment = NSTextAlignmentCenter;
+    titlelabel.backgroundColor = [UIColor clearColor];
+    titlelabel.textColor = [UIColor whiteColor];;
+    titlelabel.text = @"Gastronomía";
+    [view addSubview:titlelabel];
+    self.navigationItem.titleView = view;
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -83,6 +114,86 @@
     fdvc.activity = selectedActivity;
     [self.navigationController pushViewController:fdvc animated:YES];
 }
+
+
+- (void)configureSideBar {
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    self.view.frame = screenRect;
+    
+    [self configureLeftBarButton];
+    
+}
+
+- (void)configureLeftBarButton {
+    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIImage *leftButtonImage = [UIImage imageNamed:@"menu"];
+    leftButton.backgroundColor = [UIColor clearColor];
+    leftButton.frame = CGRectMake(0, 0, 40, 40);
+    leftButton.contentMode = UIViewContentModeBottomLeft;
+    
+    [leftButton setImage:leftButtonImage forState:UIControlStateNormal];
+    [leftButton addTarget:self action:@selector(didSelectMainMenu:) forControlEvents:UIControlEventTouchUpInside];
+    
+    MMDrawerBarButtonItem *leftDrawerButton = [[MMDrawerBarButtonItem alloc] initWithCustomView:leftButton];
+    
+    UIButton *leftButton2 = [UIButton buttonWithType:UIButtonTypeCustom];
+    leftButton2.frame = CGRectMake(0, 0, 15, 40);
+    leftButton2.contentMode = UIViewContentModeBottomLeft;
+    [leftButton2 setBackgroundColor:[UIColor clearColor]];
+    [leftButton2 addTarget:self action:@selector(didSelectMainMenu:) forControlEvents:UIControlEventTouchUpInside];
+    
+    MMDrawerBarButtonItem *xxx = [[MMDrawerBarButtonItem alloc] initWithCustomView:leftButton2];
+    
+    [self.navigationItem setLeftBarButtonItems:@[[self spacer], leftDrawerButton, xxx]];
+}
+
+- (void)didSelectMainMenu:(id)sender {
+    
+    [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+}
+
+- (UIBarButtonItem *)spacer {
+    
+    UIBarButtonItem *space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    space.width = -11;
+    return space;
+}
+
+-(void)didSelectSearch {
+    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+    SearchActivityViewController* savc = [[SearchActivityViewController alloc] initWithNibName:@"SearchActivityViewController" bundle:nil];
+    [self.navigationController pushViewController:savc animated:YES];
+}
+
+-(void)didSelectInteres {
+    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+    CategoriesSelectionViewController* csvc = [[CategoriesSelectionViewController alloc] initWithNibName:@"CategoriesSelectionViewController" bundle:nil];
+    [self.navigationController pushViewController:csvc animated:YES];
+}
+
+-(void)didSelectAllEvent {
+    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+}
+
+-(void)didSelectGastronomia{
+    //Already there. Do nothing, just pull the drawer back in.
+    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+}
+-(void)didSelectFavorite {
+    
+    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+    
+    //FavoritesViewController* fvc = [[AppMain sharedInstance] sharedFavoritesViewController];
+    //self.navigationController.viewControllers = @[fvc];
+    
+    FavoritesViewController* fvc = [[FavoritesViewController alloc] initWithNibName:@"FavoritesViewController" bundle:nil];
+    [self.navigationController pushViewController:fvc animated:YES];
+    
+}
+
 
 
 

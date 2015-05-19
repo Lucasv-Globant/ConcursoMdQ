@@ -15,5 +15,6 @@
 +(NSString*)truncateString:(NSString*)aNSString withLength:(int)length;
 +(NSString*)removeReturnCarriageFromString:(NSString*)aStr;
 +(NSNumber*)getHourOfCurrentTime;
++(NSNumber*)getMonthOfCurrentDate;
 +(NSDate*)qhmdqDateTimeStringToNSDate:(NSString*)str;
 @end

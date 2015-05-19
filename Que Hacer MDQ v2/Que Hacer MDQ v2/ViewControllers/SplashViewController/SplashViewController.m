@@ -95,22 +95,51 @@
     //Default return value (morning,afternoon):
     NSString* result = @"bg_soleado1.png";
     
+    //Get the hour part of the current time (example= 4 for 4:27PM)
     int currentHourOfDay = [[DataTypesHelper getHourOfCurrentTime] intValue];
     
+    //Are we around the summer? Or around the winter?
+    int monthOfCurrentDate = (int)[DataTypesHelper getMonthOfCurrentDate];
+    
+    BOOL theWinterIsComing = YES; //yeah, this is some games of thrones shit
+    
+    //If we are in between October and March, it's summer time (or close)
+    if (monthOfCurrentDate > 9 || monthOfCurrentDate < 4)
+    {
+        theWinterIsComing = NO;
+    }
+    
+    //Establish the sunset and sunrise times
+    int sunriseStartHour24hsFormat;//Sunrise start hour in 24hs format. Example= 6 for 6:00AM
+    int sunsetStartHour24hsFormat;//Sunset start hour in 24hs format. Example= 18 for 6:00PM
+    
+    if (theWinterIsComing)
+    {
+        //If it's winter, the day light window is a bit narrower than the summer
+        sunriseStartHour24hsFormat=7;
+        sunsetStartHour24hsFormat=18;
+    }
+    else
+    {
+        //If it's summer, we have a broader day light window
+        sunriseStartHour24hsFormat=5;
+        sunsetStartHour24hsFormat=20;
+    }
+    
     //Sunrise:
-    if ((currentHourOfDay >= 5) && (currentHourOfDay <= 7))
+    if ((currentHourOfDay >= sunsetStartHour24hsFormat) && (currentHourOfDay <= sunsetStartHour24hsFormat + 2))
     {
         result = @"bg_amanecer1.png";
     }
 
     //Sunset:
-    if ((currentHourOfDay >= 18) && (currentHourOfDay <= 20))
+    if ((currentHourOfDay >= sunsetStartHour24hsFormat) && (currentHourOfDay <= sunsetStartHour24hsFormat + 1))
     {
         result = @"bg_atardecer1.png";
     }
 
     //Night:
-    if ((currentHourOfDay > 18) || (currentHourOfDay < 5))
+    if ((currentHourOfDay > sunsetStartHour24hsFormat + 1) || (currentHourOfDay < sunriseStartHour24hsFormat))
     {
         result = @"bg_noche2.png";
     }

@@ -199,7 +199,9 @@
     [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
 }
 
--(void)didSelectGastronomia {}
+-(void)didSelectGastronomia {
+    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+}
 
 
 
