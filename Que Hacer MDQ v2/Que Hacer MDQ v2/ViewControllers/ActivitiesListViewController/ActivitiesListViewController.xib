@@ -11,6 +11,7 @@
                 <outlet property="activitiesUIImageView" destination="GjN-je-H6z" id="QxG-4O-XsR"/>
                 <outlet property="activitiesUITableView" destination="Rad-ki-ehf" id="abg-fv-UOm"/>
                 <outlet property="categoriesMenu" destination="91z-fZ-T9W" id="wBy-7V-tTg"/>
+                <outlet property="lbl_nameCategory" destination="yUf-qP-Lxl" id="mPx-9o-nin"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

@@ -25,8 +25,9 @@
 
 @property (nonatomic, strong) NSArray* activities;//The activities filtered by selected category
 @property (assign, nonatomic) NSArray* allActivities;//All activities from Core Data (no filtering)
-@property (strong, nonatomic) IBOutlet UITableView *activitiesUITableView;
-@property (strong, nonatomic) IBOutlet UIImageView *activitiesUIImageView;
+@property (weak, nonatomic) IBOutlet UITableView *activitiesUITableView;
+@property (weak, nonatomic) IBOutlet UIImageView *activitiesUIImageView;
+@property (weak, nonatomic) IBOutlet UILabel *lbl_nameCategory;
 @property (assign, nonatomic) NSInteger indexPathSelect;
 
 @end
@@ -97,7 +98,8 @@
     //Use a "collection of activities" in order to filter items easily
     ActivitiesCollection* collection = [[ActivitiesCollection alloc] initWithArray:self.allActivities];
     self.activities = [collection filterActivitiesWithTagIds:[NSArray arrayWithObject:categoryTagId]];
-    
+    self.lbl_nameCategory.text = category.name;
+
     
 }
 
@@ -149,8 +151,13 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath
         [self.activitiesUITableView reloadData];
     }
    self.activitiesUIImageView.image = [UIImage imageNamed: category.imageOriginFileName];
+   self.lbl_nameCategory.text = category.name;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 133;
+}
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -159,7 +166,7 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    Activity* activity = [self.activities objectAtIndex:indexPath.row];
+    Activity *activity = [self.activities objectAtIndex:indexPath.row];
     ActivitiesListTableViewCell* cell = [self.activitiesUITableView dequeueReusableCellWithIdentifier:@"ActivitiesListTableViewCell" forIndexPath:indexPath];
     
     if (cell == nil)
@@ -169,8 +176,16 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath
     }
     
     //Set the labels. Remove return carriage and truncate:
-    cell.labelActivityName.text = [DataTypesHelper removeReturnCarriageFromString:[DataTypesHelper truncateString:activity.name withLength:25]];
-    cell.labelActivityDescription.text = [DataTypesHelper removeReturnCarriageFromString:[DataTypesHelper truncateString:activity.desc withLength:25]];
+    cell.labelActivityName.text = [DataTypesHelper removeReturnCarriageFromString:[DataTypesHelper truncateString:activity.name withLength:100]];
+    cell.labelActivityName.textAlignment = NSTextAlignmentCenter;
+    cell.labelActivityName.textColor = [Theme colorGreen];
+    [cell.labelActivityName setFont:[UIFont fontWithName:@"Arial-BoldMT" size:15]];
+    cell.labelActivityName.lineBreakMode = NSLineBreakByWordWrapping;
+    cell.labelActivityName.numberOfLines = 2;
+   // cell.labelActivityDescription.text = [DataTypesHelper removeReturnCarriageFromString:[DataTypesHelper truncateString:activity.visitingHoursString withLength:100]];
+    cell.labelActivityDescription.text = activity.visitingHoursString;
+    cell.labelActivityDescription.lineBreakMode = NSLineBreakByWordWrapping;
+    cell.labelActivityDescription.numberOfLines = 4;
     
     NSString* locationString;
     if ([activity.locationStreetOrRoute rangeOfString:@"Ruta"].length > 0 || [activity.locationStreetOrRoute rangeOfString:@"Autovía"].length > 0 )
@@ -181,9 +196,19 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath
     {
         locationString = [NSString stringWithFormat:@"%@ %@",activity.locationStreetOrRoute,activity.locationHouseNumberingOrKm];
     }
-        
-    cell.labelActivityLocation.text = [DataTypesHelper removeReturnCarriageFromString:[DataTypesHelper truncateString:locationString withLength:25]];
     
+    if ([locationString isEqualToString:@" "] && ![activity.contactPhone1 isEqualToString:@""])
+    {
+        cell.labelActivityLocation.text = [NSString stringWithFormat:@"Comuniquese al %@", activity.contactPhone1];
+        
+    } else if ([locationString isEqualToString:@" "] && [activity.contactPhone1 isEqualToString:@""])
+    {
+        cell.labelActivityLocation.text = @"Ver en la descripcion del Evento";
+    }
+    else
+    {
+    cell.labelActivityLocation.text = [DataTypesHelper removeReturnCarriageFromString:[DataTypesHelper truncateString:locationString withLength:100]];
+    }
     return cell;
 }
 
