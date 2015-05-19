@@ -17,8 +17,16 @@
 extern float const requestsTimeout;
 extern NSString* const token;
 
+//Nib Names for View Controllers:
+#define NIB_NAME_VC_FOODANDDRINK_LIST @"FoodAndDrinkViewController"
+#define NIB_NAME_VC_FOODANDDRINK_DETAIL @"FoodAndDrinkDetailViewController"
+#define NIB_NAME_VC_SEARCH @"SearchActivityViewController"
+#define NIB_NAME_VC_ACTIVITIES_LIST @"ActivitiesListViewController"
+#define NIB_NAME_VC_ACTIVITY_DETAIL @"DetailViewController"
+#define NIB_NAME_VC_CATEGORIES_SELECTION @"CategoriesSelectionViewController"
+#define NIB_NAME_VC_FAVORITES @"FavoritesViewController"
 
-//Concurso
+//Concurso WS
 extern NSString* const ConcursoWS_baseURL;
 extern NSString* const ConcursoWS_Activities;
 

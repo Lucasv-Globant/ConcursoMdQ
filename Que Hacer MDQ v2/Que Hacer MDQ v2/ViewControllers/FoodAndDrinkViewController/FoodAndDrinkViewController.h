@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "PIMainMenuController.h"
 
-@interface FoodAndDrinkViewController : UIViewController<PIMainMenuControllerDelegate>
+@interface FoodAndDrinkViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITableView *foodAndDrinkUITableView;
-@property (nonatomic, strong) PIMainMenuController *mainMenu;
+
 @end

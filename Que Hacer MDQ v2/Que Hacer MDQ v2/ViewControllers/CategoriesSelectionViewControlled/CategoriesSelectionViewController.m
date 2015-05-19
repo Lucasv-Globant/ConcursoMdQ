@@ -60,7 +60,6 @@
 
 -(void)configNavigationbar
 {
-    
     self.navigationController.navigationBar.hidden = NO;
     self.navigationController.navigationBar.barStyle = UIStatusBarStyleLightContent;
     self.navigationController.navigationBar.barTintColor = [Theme colorPink];
@@ -78,6 +77,7 @@
     [view addSubview:titlelabel];
     self.navigationItem.titleView = view;
 }
+
 - (IBAction)btnContinue2:(id)sender {
 
     //Check if there is **at least** one category selected:
@@ -169,14 +169,14 @@
     //FavoritesViewController* fvc = [[AppMain sharedInstance] sharedFavoritesViewController];
     //self.navigationController.viewControllers = @[fvc];
     
-    FavoritesViewController* fvc = [[FavoritesViewController alloc] initWithNibName:@"FavoritesViewController" bundle:nil];
+    FavoritesViewController* fvc = [[FavoritesViewController alloc] initWithNibName:NIB_NAME_VC_FAVORITES bundle:nil];
     [self.navigationController pushViewController:fvc animated:YES];
     
 }
 
 -(void)didSelectGastronomia {
     [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
-    FoodAndDrinkViewController* fadvc = [[FoodAndDrinkViewController alloc] initWithNibName:@"FoodAndDrinkViewController" bundle:nil];
+    FoodAndDrinkViewController* fadvc = [[FoodAndDrinkViewController alloc] initWithNibName:NIB_NAME_VC_FOODANDDRINK_LIST bundle:nil];
     [self.navigationController pushViewController:fadvc animated:YES];
     
 }

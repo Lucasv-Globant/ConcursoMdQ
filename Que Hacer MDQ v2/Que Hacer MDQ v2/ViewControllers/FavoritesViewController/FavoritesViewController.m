@@ -9,6 +9,10 @@
 #import "FavoritesViewController.h"
 #import <UIViewController+MMDrawerController.h>
 #import "MMDrawerBarButtonItem.h"
+#import "FoodAndDrinkViewController.h"
+#import "SearchActivityViewController.h"
+#import "CategoriesSelectionViewController.h"
+
 
 @interface FavoritesViewController ()
 
@@ -23,9 +27,11 @@
     self.activities = [self retrieveFavoriteActivities];
     UINib *cellNib = [UINib nibWithNibName:@"FavoritesTableViewCell" bundle:nil];
     [self.tableView registerNib:cellNib forCellReuseIdentifier:@"FavoritesTableViewCell"];
+    
     self.mainMenu = (PIMainMenuController *)self.mm_drawerController.leftDrawerViewController;
     self.mainMenu.delegate = self;
     [self configureSideBar];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -131,20 +137,14 @@
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     self.view.frame = screenRect;
     
-    NSArray *ver = [[UIDevice currentDevice].systemVersion componentsSeparatedByString:@"."];
-    if ([[ver objectAtIndex:0] intValue] >= 7) {
-        self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
-        self.navigationController.navigationBar.translucent = NO;
-    } else {
-        self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    }
-    
     [self configureLeftBarButton];
+    
 }
 
 - (void)configureLeftBarButton {
     UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
     UIImage *leftButtonImage = [UIImage imageNamed:@"menu"];
+    leftButton.backgroundColor = [UIColor clearColor];
     leftButton.frame = CGRectMake(0, 0, 40, 40);
     leftButton.contentMode = UIViewContentModeBottomLeft;
     
@@ -176,19 +176,18 @@
     return space;
 }
 
+
+
 -(void)didSelectSearch {
     [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
-    
+    SearchActivityViewController* sadvc = [[SearchActivityViewController alloc] initWithNibName:NIB_NAME_VC_SEARCH bundle:nil];
+    [self.navigationController pushViewController:sadvc animated:YES];
 }
 
 -(void)didSelectInteres {
     [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
-    
-    //CategoriesSelectionViewController* csvc = [[AppMain sharedInstance] sharedCategoriesSelectionViewController];
-    //self.navigationController.viewControllers = @[csvc];
-    
-    CategoriesSelectionViewController* csvc = [[CategoriesSelectionViewController alloc] initWithNibName:@"CategoriesSelectionViewController" bundle:nil];
-    [self.navigationController pushViewController:csvc animated:YES];    
+    CategoriesSelectionViewController* csvc = [[CategoriesSelectionViewController alloc] initWithNibName:NIB_NAME_VC_CATEGORIES_SELECTION bundle:nil];
+    [self.navigationController pushViewController:csvc animated:YES];
 }
 
 -(void)didSelectAllEvent {
@@ -196,11 +195,15 @@
 }
 
 -(void)didSelectFavorite {
+    
     [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
 }
 
 -(void)didSelectGastronomia {
     [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+    FoodAndDrinkViewController* fadvc = [[FoodAndDrinkViewController alloc] initWithNibName:NIB_NAME_VC_FOODANDDRINK_LIST bundle:nil];
+    [self.navigationController pushViewController:fadvc animated:YES];
+    
 }
 
 
