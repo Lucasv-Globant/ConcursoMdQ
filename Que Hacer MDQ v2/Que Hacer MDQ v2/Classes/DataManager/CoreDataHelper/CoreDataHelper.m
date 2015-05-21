@@ -7,7 +7,6 @@
 //
 
 #import "CoreDataHelper.h"
-//#import "Que_Hacer_MDQ_v2-Swift.h"
 
 @interface CoreDataHelper ()
 @end
