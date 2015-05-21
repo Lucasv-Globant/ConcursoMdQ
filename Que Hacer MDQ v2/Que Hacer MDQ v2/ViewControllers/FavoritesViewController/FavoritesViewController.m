@@ -195,7 +195,6 @@
 }
 
 -(void)didSelectFavorite {
-    
     [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
 }
 
