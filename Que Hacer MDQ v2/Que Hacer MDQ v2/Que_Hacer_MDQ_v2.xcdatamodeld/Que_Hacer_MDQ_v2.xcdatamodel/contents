@@ -28,11 +28,11 @@
         <attribute name="sharingUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sourceWebServiceName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="start" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="tags" optional="YES" attributeType="Transformable" valueTransformerName="ArrayToDataTransformer" syncable="YES"/>
         <attribute name="visible" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="visitingHoursString" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="schedules" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Schedule" inverseName="activity" inverseEntity="Schedule" syncable="YES"/>
-        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" syncable="YES"/>
     </entity>
     <entity name="Schedule" representedClassName="Schedule" syncable="YES">
         <attribute name="dayDescription" optional="YES" attributeType="String" syncable="YES"/>
@@ -50,7 +50,7 @@
         <relationship name="activity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Activity" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Activity" positionX="-63" positionY="-18" width="128" height="523"/>
+        <element name="Activity" positionX="-63" positionY="-18" width="128" height="525"/>
         <element name="Schedule" positionX="252" positionY="482" width="128" height="148"/>
         <element name="Tag" positionX="-45" positionY="611" width="128" height="103"/>
     </elements>

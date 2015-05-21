@@ -2,49 +2,48 @@
 //  Activity.m
 //  Que Hacer MDQ v2
 //
-//  Created by Lucas on 3/19/15.
+//  Created by Lucas on 5/21/15.
 //  Copyright (c) 2015 Globant iOS MDQ. All rights reserved.
 //
 
 #import "Activity.h"
 #import "Schedule.h"
-#import "Tag.h"
 
 
 @implementation Activity
 
+@dynamic areaId;
+@dynamic contactPhone1;
+@dynamic contactPhone2;
+@dynamic contactPhone3;
 @dynamic cost;
+@dynamic costNumber;
 @dynamic costString;
 @dynamic desc;
 @dynamic end;
 @dynamic handicapAccessRamp;
 @dynamic handicapRestroom;
-@dynamic id;
-@dynamic name;
-@dynamic paidParkingZone;
-@dynamic sharingUrl;
-@dynamic start;
-@dynamic visible;
-@dynamic website;
-@dynamic contactPhone1;
-@dynamic contactPhone2;
-@dynamic contactPhone3;
-@dynamic costNumber;
 @dynamic handicapRestroomInGroundFloor;
+@dynamic id;
 @dynamic locationDetails;
 @dynamic locationHouseNumberingOrKm;
+@dynamic locationLatitude;
+@dynamic locationLongitude;
 @dynamic locationStreetOrRoute;
+@dynamic name;
 @dynamic ocurrsOnce;
+@dynamic paidParkingZone;
 @dynamic photoUrl1;
 @dynamic photoUrl2;
 @dynamic photoUrl3;
+@dynamic sharingUrl;
 @dynamic sourceWebServiceName;
+@dynamic start;
+@dynamic visible;
 @dynamic visitingHoursString;
-@dynamic locationLatitude;
-@dynamic locationLongitude;
-@dynamic areaId;
-@dynamic schedules;
+@dynamic website;
 @dynamic tags;
+@dynamic schedules;
 
 
 +(Activity*)persistentInstanceFromDictionary:(NSDictionary*)aDictionary
@@ -81,11 +80,13 @@
     
     
     //Relationship: Tags
+    newActivity.tags = [[NSArray alloc] init];
     NSArray* tagsSource = [aDictionary objectForKey:@"tags"];
     //If the activity's JSON came with tags in it, associate them with the Tag objects
     if ([tagsSource count] > 0)
     {
         for ( NSDictionary* tagDictionary in tagsSource) {
+            
             [newActivity addTagsObject:[[CoreDataHelper sharedInstance] getTagWithId:[tagDictionary objectForKey:@"tagId"]]] ;
         }
     }
@@ -94,14 +95,14 @@
         //If the activity's JSON did not bring any tags with it, assign an empty NSSet
         newActivity.tags = [[NSSet alloc] init];
     }
-
+    
     //Relationship: Schedules
     NSArray* schedulesSource = [aDictionary objectForKey:@"schedules"];
     for (NSDictionary* scheduleDictionary in schedulesSource)
     {
         [newActivity addSchedulesObject:[[NSEntityDescription insertNewObjectForEntityForName:@"Schedule" inManagedObjectContext:context] initWithDictionary:scheduleDictionary]];
     }
-
+    
     
     NSError* error;
     [context save:&error];
@@ -162,6 +163,8 @@
     
     return self;
 }
+
+
 
 
 
