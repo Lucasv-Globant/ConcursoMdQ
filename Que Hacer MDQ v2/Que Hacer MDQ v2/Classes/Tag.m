@@ -13,7 +13,7 @@
 @implementation Tag
 
 @dynamic desc;
-@dynamic id;
+@dynamic tagId;
 @dynamic name;
 @dynamic activity;
 
@@ -34,8 +34,8 @@
      */
     NSManagedObjectContext* context = [[CoreDataHelper sharedInstance] managedObjectContext];
     Tag* tag = [NSEntityDescription insertNewObjectForEntityForName:@"Tag" inManagedObjectContext:context];
-    tag.id = [DataTypesHelper stringToNSNumber:[aDictionary objectForKey:@"id"]];
-
+    tag.tagId = [DataTypesHelper stringToNSNumber:[aDictionary objectForKey:@"id"]];
+    
     if ([[aDictionary objectForKey:@"name"] isKindOfClass:[NSNull class]])
     {
         tag.name = @"";
@@ -58,7 +58,7 @@
     [context save:&error];
     if (error)
     {
-        NSLog(@"Something went wrong when saving the tag with id %@",tag.id);
+        NSLog(@"Something went wrong when saving the tag with id %@",tag.tagId);
         NSLog(@"The error description is : %@",error.localizedDescription);
         return nil;
     }

@@ -2,7 +2,7 @@
 //  Schedule.h
 //  Que Hacer MDQ v2
 //
-//  Created by Lucas on 3/17/15.
+//  Created by Lucas on 5/22/15.
 //  Copyright (c) 2015 Globant iOS MDQ. All rights reserved.
 //
 
@@ -17,10 +17,12 @@
 @property (nonatomic, retain) NSString * dayDescription;
 @property (nonatomic, retain) NSDate * endDate;
 @property (nonatomic, retain) NSDate * endTime;
-@property (nonatomic, retain) NSNumber * id;
+@property (nonatomic, retain) NSNumber * scheduleId;
 @property (nonatomic, retain) NSDate * startDate;
 @property (nonatomic, retain) NSDate * startTime;
 @property (nonatomic, retain) Activity *activity;
+
 -(id)initWithDictionary:scheduleDictionary;
 +(Schedule*)instanceFromDictionary:(NSDictionary*)aDictionary;
+
 @end

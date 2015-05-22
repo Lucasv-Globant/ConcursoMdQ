@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14C109" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Activity" representedClassName="Activity" syncable="YES">
+        <attribute name="activityId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="areaId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="contactPhone1" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="contactPhone2" optional="YES" attributeType="String" syncable="YES"/>
@@ -13,7 +14,6 @@
         <attribute name="handicapAccessRamp" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="handicapRestroom" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="handicapRestroomInGroundFloor" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="locationDetails" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="locationHouseNumberingOrKm" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="locationLatitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
@@ -38,20 +38,20 @@
         <attribute name="dayDescription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="endTime" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="scheduleId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="startTime" optional="YES" attributeType="Date" syncable="YES"/>
         <relationship name="activity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Activity" inverseName="schedules" inverseEntity="Activity" syncable="YES"/>
     </entity>
     <entity name="Tag" representedClassName="Tag" syncable="YES">
         <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tagId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <relationship name="activity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Activity" syncable="YES"/>
     </entity>
     <elements>
         <element name="Activity" positionX="-63" positionY="-18" width="128" height="525"/>
-        <element name="Schedule" positionX="252" positionY="482" width="128" height="148"/>
-        <element name="Tag" positionX="-45" positionY="611" width="128" height="103"/>
+        <element name="Schedule" positionX="252" positionY="482" width="128" height="150"/>
+        <element name="Tag" positionX="-45" positionY="611" width="128" height="105"/>
     </elements>
 </model>

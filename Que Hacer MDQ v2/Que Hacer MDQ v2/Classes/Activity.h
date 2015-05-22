@@ -2,14 +2,15 @@
 //  Activity.h
 //  Que Hacer MDQ v2
 //
-//  Created by Lucas on 5/21/15.
+//  Created by Lucas on 5/22/15.
 //  Copyright (c) 2015 Globant iOS MDQ. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "CoreDataHelper.h"
 
-@class Schedule;
+@class Schedule, Tag;
 
 @interface Activity : NSManagedObject
 
@@ -25,7 +26,7 @@
 @property (nonatomic, retain) NSNumber * handicapAccessRamp;
 @property (nonatomic, retain) NSNumber * handicapRestroom;
 @property (nonatomic, retain) NSNumber * handicapRestroomInGroundFloor;
-@property (nonatomic, retain) NSNumber * id;
+@property (nonatomic, retain) NSNumber * activityId;
 @property (nonatomic, retain) NSString * locationDetails;
 @property (nonatomic, retain) NSString * locationHouseNumberingOrKm;
 @property (nonatomic, retain) NSNumber * locationLatitude;
@@ -53,5 +54,9 @@
 - (void)removeSchedulesObject:(Schedule *)value;
 - (void)addSchedules:(NSSet *)values;
 - (void)removeSchedules:(NSSet *)values;
+
+
+-(Activity*)setFromDictionary:(NSDictionary*)aDictionary;
++(Activity*)persistentInstanceFromDictionary:(NSDictionary*)aDictionary;
 
 @end

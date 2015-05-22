@@ -2,12 +2,12 @@
 //  Schedule.m
 //  Que Hacer MDQ v2
 //
-//  Created by Lucas on 3/17/15.
+//  Created by Lucas on 5/22/15.
 //  Copyright (c) 2015 Globant iOS MDQ. All rights reserved.
 //
 
 #import "Schedule.h"
-
+#import "Activity.h"
 
 
 @implementation Schedule
@@ -15,10 +15,12 @@
 @dynamic dayDescription;
 @dynamic endDate;
 @dynamic endTime;
-@dynamic id;
+@dynamic scheduleId;
 @dynamic startDate;
 @dynamic startTime;
 @dynamic activity;
+
+
 
 -(id)initWithDictionary:scheduleDictionary
 {
@@ -50,6 +52,5 @@
     //TO BE COMPLETED
     return [[Schedule alloc] init];
 }
-
 
 @end

@@ -123,14 +123,6 @@
     return items;
 }
 
-/*
- Removing this, since it does not seem consistent with a Core Data approach
--(NSArray*)getTagsForActivityId:(NSNumber*)activityId
-{
-    NSPredicate* predicate = [NSPredicate predicateWithFormat:@"id == %@",activityId];
-    return [self fetchEntitiesForClass:[Tag class] withPredicate:predicate inManagedObjectContext:[self managedObjectContext]];
-}
-*/
 
 -(Tag*)getTagWithId:(NSNumber*)tagId
 {

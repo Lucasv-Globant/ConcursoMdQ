@@ -54,7 +54,7 @@
 }
 - (IBAction)btnAddTofavorites:(id)sender
 {
-    NSDictionary* favoriteDictionary = [[NSDictionary alloc] initWithObjects:@[self.activity.name,self.activity.id,@"0",self.activity.areaId] forKeys:@[@"name",@"activityId",@"categoryId",@"areaId"]];
+    NSDictionary* favoriteDictionary = [[NSDictionary alloc] initWithObjects:@[self.activity.name,self.activity.activityId,@"0",self.activity.areaId] forKeys:@[@"name",@"activityId",@"categoryId",@"areaId"]];
     [[AppSettings sharedInstance] addFavorite:favoriteDictionary];
     UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Favorito" message:@"Favorito agregado!" delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
     [alert show];
