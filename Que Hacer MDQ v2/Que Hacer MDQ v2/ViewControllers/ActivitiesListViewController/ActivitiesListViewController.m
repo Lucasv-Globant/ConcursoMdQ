@@ -47,8 +47,8 @@
 
     for (Activity* act in self.activities) {
         NSLog(@"Activity name: %@",act.name);
-        for (Tag* someTag in act.tags) {
-            NSLog(someTag.name,nil);
+        for (NSNumber* someTagId in act.tags) {
+            NSLog(@"%@",someTagId,nil);
         }
     }
     

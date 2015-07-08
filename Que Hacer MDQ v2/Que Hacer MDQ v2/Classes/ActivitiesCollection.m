@@ -33,9 +33,9 @@
     {
         for (Activity* act in self.activities)
         {
-            for (Tag* tag in act.tags)
+            for (NSNumber* activityTagId in act.tags)
             {
-                if ([tagId isEqualToNumber:tag.id])
+                if ([tagId isEqualToNumber:activityTagId])//[tagId isEqualToNumber:activityTagId])
                 {
                     [result addObject:act];
                 }
