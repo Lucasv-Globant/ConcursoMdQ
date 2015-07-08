@@ -50,66 +50,7 @@
 {
     NSManagedObjectContext* context = [[CoreDataHelper sharedInstance] managedObjectContext];
     Activity* newActivity = [NSEntityDescription insertNewObjectForEntityForName:@"Activity" inManagedObjectContext:context];
-    
-    newActivity.activityId = [DataTypesHelper stringToNSNumber:[aDictionary objectForKey:@"activityId"]];
-    newActivity.areaId = [DataTypesHelper stringToNSNumber:[aDictionary objectForKey:@"areaId"]];
-    newActivity.name = [aDictionary objectForKey:@"name"];
-    newActivity.desc = [aDictionary objectForKey:@"description"];
-    newActivity.contactPhone1 = [aDictionary objectForKey:@"contactPhone1"];
-    newActivity.contactPhone2 = [aDictionary objectForKey:@"contactPhone2"];
-    newActivity.contactPhone3 = [aDictionary objectForKey:@"contactPhone3"];
-    newActivity.photoUrl1 = [aDictionary objectForKey:@"photoUrl1"];
-    newActivity.photoUrl2 = [aDictionary objectForKey:@"photoUrl2"];
-    newActivity.photoUrl3 = [aDictionary objectForKey:@"photoUrl3"];
-    newActivity.locationStreetOrRoute = [aDictionary objectForKey:@"locationStreetOrRoute"];
-    newActivity.locationHouseNumberingOrKm = [aDictionary objectForKey:@"locationHouseNumberingOrKm"];
-    newActivity.locationDetails = [aDictionary objectForKey:@"locationDetails"];
-    newActivity.locationLatitude = [DataTypesHelper stringToNSNumber:[aDictionary objectForKey:@"locationLatitude"]];
-    newActivity.locationLongitude = [DataTypesHelper stringToNSNumber:[aDictionary objectForKey:@"locationLongitude"]];
-    newActivity.website = [aDictionary objectForKey:@"website"];
-    newActivity.visitingHoursString = [aDictionary objectForKey:@"visitingHoursString"];
-    newActivity.start = [DataTypesHelper qhmdqDateTimeStringToNSDate:[aDictionary objectForKey:@"start"]];
-    newActivity.end = [DataTypesHelper qhmdqDateTimeStringToNSDate:[aDictionary objectForKey:@"end"]];
-    newActivity.cost = [DataTypesHelper stringToNSNumber:[aDictionary objectForKey:@"cost"]];
-    newActivity.costString = [aDictionary objectForKey:@"costString"];
-    newActivity.handicapAccessRamp = [DataTypesHelper stringToNSNumber:[aDictionary objectForKey:@"handicapAccessRamp"] ];
-    newActivity.handicapRestroom = [DataTypesHelper stringToNSNumber:[aDictionary objectForKey:@"handicapRestroom"]];
-    newActivity.handicapRestroomInGroundFloor = [DataTypesHelper stringToNSNumber:[aDictionary objectForKey:@"handicapRestroomInGroundFloor"]];
-    newActivity.paidParkingZone = [DataTypesHelper stringToNSNumber:[aDictionary objectForKey:@"paidParkingZone"]];
-    newActivity.sharingUrl = [aDictionary objectForKey:@"sharingUrl"];
-    
-    
-    //Relationship: Tags
-    NSMutableArray* tempMutableArray = [[NSMutableArray alloc] init];
-    NSArray* tagsSource = [aDictionary objectForKey:@"tags"];
-    //If the activity's JSON came with tags in it, associate them with the Tag objects
-    if ([tagsSource count] > 0)
-    {
-        for ( NSDictionary* tagDictionary in tagsSource) {
-            
-            NSString* tagIdNSString = [tagDictionary objectForKey:@"tagId"];
-            NSNumber* tagIdNSNumber = [DataTypesHelper stringToNSNumber:tagIdNSString];
-            [tempMutableArray addObject:tagIdNSNumber];
-            //[newActivity addTagsObject:[[CoreDataHelper sharedInstance] getTagWithId:[tagDictionary objectForKey:@"tagId"]]] ;
-        }
-    }
-    newActivity.tags = [NSArray arrayWithArray:tempMutableArray];
-    
-    //Relationship: Schedules
-    NSArray* schedulesSource = [aDictionary objectForKey:@"schedules"];
-    for (NSDictionary* scheduleDictionary in schedulesSource)
-    {
-        [newActivity addSchedulesObject:[[NSEntityDescription insertNewObjectForEntityForName:@"Schedule" inManagedObjectContext:context] initWithDictionary:scheduleDictionary]];
-    }
-    
-    
-    NSError* error;
-    [context save:&error];
-    if (error)
-    {
-        NSLog(@"There was an error when trying to save the activity with id %@", newActivity.activityId);
-        return nil;
-    }
+    [newActivity setFromDictionary:aDictionary];
     return newActivity;
 }
 
