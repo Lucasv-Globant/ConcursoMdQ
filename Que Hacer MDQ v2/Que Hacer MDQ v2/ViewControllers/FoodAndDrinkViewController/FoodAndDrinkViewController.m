@@ -27,7 +27,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     NSPredicate* predicate = [NSPredicate predicateWithFormat:@"areaId = 2"];
-    self.activities = [[CoreDataHelper sharedInstance] fetchEntitiesForClass:[Activity class] withPredicate:predicate inManagedObjectContext:[[CoreDataHelper sharedInstance] managedObjectContext]];
+    //Debugging: setting nil for predicate
+    self.activities = [[CoreDataHelper sharedInstance] fetchEntitiesForClass:[Activity class] withPredicate:nil inManagedObjectContext:[[CoreDataHelper sharedInstance] managedObjectContext]];
     for (Activity* act in self.activities) {
         NSLog(@"Activity name: %@",act.name);
     }

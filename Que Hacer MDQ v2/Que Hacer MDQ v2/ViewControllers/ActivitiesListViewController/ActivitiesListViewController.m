@@ -45,7 +45,7 @@
     
     [self filterActivitiesBySelectedCategory];
 
-    for (Activity* act in self.activities) {
+    for (Activity* act in self.allActivities) {
         NSLog(@"Activity name: %@",act.name);
         for (NSNumber* someTagId in act.tags) {
             NSLog(@"%@",someTagId,nil);
@@ -72,7 +72,7 @@
     //NSString* predicateString = [NSString stringWithFormat:@"tags.name = 'General'"];
     NSString* predicateString = [NSString stringWithFormat:@"areaId = 1"];
     NSPredicate* predicate = [NSPredicate predicateWithFormat:predicateString];
-    self.allActivities = [[CoreDataHelper sharedInstance] fetchEntitiesForClass:[Activity class] withPredicate:predicate inManagedObjectContext:[[CoreDataHelper sharedInstance] managedObjectContext]];
+    self.allActivities = [[CoreDataHelper sharedInstance] fetchEntitiesForClass:[Activity class] withPredicate:nil inManagedObjectContext:[[CoreDataHelper sharedInstance] managedObjectContext]];
 }
 
 -(void)viewWillAppear:(BOOL)animated

@@ -46,4 +46,19 @@
     
     return [NSArray arrayWithArray:result];
 }
+
+-(NSArray*)filterActivitiesWithKeyWords:(NSArray*)arrayOfStrings
+{
+    NSMutableArray *result = [[NSMutableArray alloc] init];
+    /*
+    for (NSString* keyWord in arrayOfStrings)
+    {
+        if ()
+        {
+            
+        }
+    }
+    */
+    return result;
+}
 @end

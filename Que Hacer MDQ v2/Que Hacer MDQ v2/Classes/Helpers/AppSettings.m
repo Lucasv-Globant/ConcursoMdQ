@@ -28,18 +28,27 @@
 -(BOOL)shouldSynchronize
 {
     BOOL result = YES;
+    
+    //Get the date of last synchronization:
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSDate* lastSynchro = [defaults objectForKey:NSUserDefaults_KeyForDateOfLasSynchronization];
+    
+    //Is lastSynchro set? (meaning, is this the first sync?)
     if (lastSynchro)
     {
-        NSComparisonResult comparison = [lastSynchro compare:[self synchronizationDateThreshold]];
-        if ( comparison == NSOrderedDescending)
+        //Calculate time difference between today and the last synchro
+        NSDate* now = [NSDate date];
+        NSTimeInterval timeDeltaInSeconds = [now timeIntervalSinceDate:lastSynchro];
+        int numberOfDays = (timeDeltaInSeconds / 86400) - 1;
+        
+        //Is the time difference within the accepted limits?
+        if (numberOfDays < [self synchronizationDaysThreshold])
         {
             result = NO;
         }
     }
-    return result;
-    
+    //return result;
+    return YES;
 }
 
 
